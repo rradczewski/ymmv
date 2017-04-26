@@ -36,5 +36,13 @@ I of course remember how nervous I've been at every interview, checking the loca
 
 - Working on a production code base
 - Managing expectations about what we should achieve
+- Goal:
+  - Find out how the candidate works with problems
+  - See how chemistry works out
+  - See if they are open to a conversation
+- Not Goals:
+  - Culture Fit (unless you really want to, which I discourage you to want)
+  - Grilling someone
+  - Creating an artificial and awfully inaccurate performance measure of that persons skill
 
 ## The retrospective
