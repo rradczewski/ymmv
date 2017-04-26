@@ -36,6 +36,7 @@ I of course remember how nervous I've been at every interview, checking the loca
 
 - Working on a production code base
 - Managing expectations about what we should achieve
+- Do not Pair-Programm with a candidate if you're not coding on the project in your day-to-day
 - Goal:
   - Find out how the candidate works with problems
   - See how chemistry works out
