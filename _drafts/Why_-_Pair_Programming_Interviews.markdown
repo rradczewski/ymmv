@@ -11,6 +11,18 @@ I'm happy they chose the former, because it gave me the opportunity to reason ab
 
 ## The rationale
 
+# An Example
+
+## The context I tried it
+
+- Small company
+- Not-(considering-my-own-biased-ladder)-senior candidates
+
+## The disclaimer
+
+- YMMV
+> pair programming by no means makes for an exhaustive hiring proces
+
 ## The invitation
 
 I of course remember how nervous I've been at every interview, checking the location of the office and the scheduled time every other minute as the interview came closer.
@@ -35,6 +47,12 @@ I of course remember how nervous I've been at every interview, checking the loca
 ## The pairing
 
 - Working on a production code base
+  - Legal ramifications
+    > I don't care about that too much  
+    > Worst case, you throw away a few hours of pair programming and rewrite everything from scratch  
+    > If legal steps in on this, either ask the candidate to delete the result (might leave them dissatisfied) or make them sign the simplest form you can come up with to cover against this...  
+
+
 - Managing expectations about what we should achieve
 - Do not Pair-Programm with a candidate if you're not coding on the project in your day-to-day
 - Goal:
@@ -45,5 +63,10 @@ I of course remember how nervous I've been at every interview, checking the loca
   - Culture Fit (unless you really want to, which I discourage you to want)
   - Grilling someone
   - Creating an artificial and awfully inaccurate performance measure of that persons skill
+- Things to cover:
+  - Interactions
+  - Keyboard engagement
+  - Knowing the answer to a problem (letting people make errors, crucial to every learning process)
+  - Exploring a problem space (sorting?)
 
 ## The retrospective
