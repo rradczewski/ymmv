@@ -12,6 +12,8 @@ This is my approach at challenging this. Starting with this and **The Daily Stan
 
 ## The Daily Stand-up
 
+Refer to [Davids Blogpost](http://devteams.at/stop_the_daily_standup_meeting?utm_content=buffer94556&utm_medium=social&utm_source=twitter.com&utm_campaign=buffer)
+
 ## Choosing the right rituals
 
 ### Context
