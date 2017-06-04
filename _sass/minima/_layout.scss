@@ -163,6 +163,12 @@
 
 .post-content {
   margin-bottom: $spacing-unit;
+  font-family: medium-content-serif-font,Georgia,Cambria,"Times New Roman",Times,serif;
+  font-size: 1.2em;
+
+  h2, h3, h4, h5 {
+    font-family: $base-font-family;
+  }
 
   h2 {
     font-size: 32px;

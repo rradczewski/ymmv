@@ -2,17 +2,7 @@
 
   <div class="wrapper">
 
-    <a class="site-title" href="{{ "/" | relative_url}}"><span class="site-title-text">{{ site.title | escape }}</span></a>
-
-    <nav class="site-nav">
-      <div class="trigger">
-        {% for my_page in site.pages %}
-          {% if my_page.title %}
-          <a class="page-link" href="{{ my_page.url | relative_url }}">{{ my_page.title | escape }}</a>
-          {% endif %}
-        {% endfor %}
-      </div>
-    </nav>
+    <a class="site-title" href="{{ "/" | relative_url}}" title="Your Mileage May Vary - @rradczewski"><span class="site-title-text">{{ site.title | escape }}</span></a>
 
   </div>
 

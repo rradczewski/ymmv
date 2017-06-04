@@ -1,7 +1,6 @@
 ---
 layout: post
 title: "Why? Pair-Programming Interviews"
-categories: why
 ---
 
 _In [this ongoing series](/) I explore why we have specific rituals and from there try to reason how they should be implemented so they live up to their original idea._
@@ -11,7 +10,7 @@ I'm happy they chose the former, because it gave me the opportunity to reason ab
 
 ## The rationale
 
-# An Example
+## An Example
 
 ## The context I tried it
 

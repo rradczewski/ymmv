@@ -1,7 +1,6 @@
 ---
 layout: post
 title: "'Why?-Series' on exploring the reasoning behind rituals"
-categories: why
 ---
 
 Daily stand-ups are **not** status updates, yet we've seen them become one so often.  
