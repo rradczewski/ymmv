@@ -4,9 +4,7 @@ layout: default
 
 <div class="home">
 
-  <h1 class="page-heading">Posts</h1>
-  
-  {{ content }}
+   {{ content }}
 
   <ul class="post-list">
     {% for post in site.posts %}
@@ -16,6 +14,7 @@ layout: default
         <h2>
           <a class="post-link" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
         </h2>
+        {{ post.excerpt }} <a class="read-more" href="{{ post.url | relative_url }}">...more</a>
       </li>
     {% endfor %}
   </ul>

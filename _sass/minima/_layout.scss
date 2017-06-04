@@ -86,6 +86,12 @@
   text-align: center;
 }
 
+.read-more {
+  &:visited, &:active {
+    color: #aaa;
+  }
+  color: #aaa;
+}
 
 
 @include media-query($on-palm) {
@@ -139,7 +145,6 @@
 .post-title {
   font-size: 42px;
   letter-spacing: -1px;
-  line-height: 1;
 
   @include media-query($on-laptop) {
     font-size: 36px;
@@ -149,10 +154,14 @@
 .post-content {
   margin-bottom: $spacing-unit;
   font-family: medium-content-serif-font,Georgia,Cambria,"Times New Roman",Times,serif;
-  font-size: 1.2em;
+  font-size: 22px;
 
   h2, h3, h4, h5 {
     font-family: $base-font-family;
+  }
+
+  a {
+    text-decoration: underline;
   }
 
   h2 {
