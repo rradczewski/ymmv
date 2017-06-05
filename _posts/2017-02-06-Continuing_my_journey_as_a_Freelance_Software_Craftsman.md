@@ -33,7 +33,7 @@ I put all my experience, patience and empathy into coaching people, be it mentor
 
 ## Bringing Craftsmanship values into a company
 
-One thing I'm deeply passionate about is helping others learn about craftsmanship and agile values. I'm grateful for having worked in professional, honest and empathetic teams in the past and I love to share my insights and experience with other teams and whole companies.
+One thing I'm deeply passionate about is helping others learn about craftsmanship and agile values. I'm grateful for having worked in professional, honest and empathetic teams in the past and I love to share my insights and experience with other teams and their companies.
 
 My favorite method to spark a flame of professional software development practices is without a doubt a coderetreat. Best organized as a day-long event far away from the daily chores of a software developer, it's a workshop designed to enable developers to learn about TDD, pair programming and software design in an environment created for a deliberate learning experience. I've been running plenty of coderetreats and I'm honored to organize the Global Day Of Coderereat for the second time this year.
 
