@@ -22,7 +22,7 @@ url: "https://rradczewski.github.io" # the base hostname & protocol for your sit
 twitter_username: rradczewski
 github_username:  rradczewski
 
-permalink: /:categories/:year/:month/:day/:title
+permalink: /:categories/:year/:month/:title
 # Build settings
 markdown: kramdown
 gems:
