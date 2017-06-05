@@ -151,6 +151,18 @@
   }
 }
 
+.post-image {
+  display: block;
+  width: 120%;
+  max-width: initial;
+  margin-left: -10%;
+
+  @include media-query($on-laptop) {
+    width: 100vw;
+    margin-left: -15px;
+  }
+}
+
 .post-content {
   margin-bottom: $spacing-unit;
   font-family: medium-content-serif-font,Georgia,Cambria,"Times New Roman",Times,serif;

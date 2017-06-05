@@ -1,7 +1,11 @@
 ---
 layout: post
 title: "Continuing my journey as a Freelance Software Craftsman"
+image: /assets/continuing_background.png
+excerpt: After spending the last two years at vaamo, working on a lot of very interesting and most diverse projects with an awesome team, I decided that it is time for me to continue my journey as a freelance software craftsman, so now I’m looking for teams and projects to work with in order to create awesome products and to help them shape their culture.
 ---
+
+*This post is republished from [medium](https://medium.com/@rradczewski/continuing-my-journey-as-a-freelance-software-craftsman-4df60f023f20)*
 
 It's been about five years now since [Jan](https://twitter.com/janernsting) introduced me to the wonderful community that is Software Craftsmanship and the SoCraTes conferences, something for which I'm infinitely grateful to him.
 

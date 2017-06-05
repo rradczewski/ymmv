@@ -1,11 +1,22 @@
 ---
 layout: default
 ---
+{% assign minutesToRead = content | number_of_words | divided_by: 130 %}
+
 <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
 
   <header class="post-header">
+    <p class="post-meta">
+      <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
+        {{ page.date | date: "%b %-d, %Y" }}
+      </time>
+      {% if site.author %} • <a href="https://twitter.com/{{ site.twitter_username }}"><span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">{{ site.author }}</span></span></a>{% endif %}
+      {% if minutesToRead != 0 %} • {{ minutesToRead }} minutes to read{% endif %}
+    </p>
     <h1 class="post-title" itemprop="name headline">{{ page.title | escape }}</h1>
-    <p class="post-meta"><time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%b %-d, %Y" }}</time>{% if page.author %} • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">{{ page.author }}</span></span>{% endif %}</p>
+    {% if page.image %}
+    <img class="post-image" role="presentation" src="{{ page.image | relative_url }}" />
+    {% endif %}
   </header>
 
   <div class="post-content" itemprop="articleBody">
