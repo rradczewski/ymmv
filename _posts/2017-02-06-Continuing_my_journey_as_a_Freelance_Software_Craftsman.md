@@ -17,7 +17,7 @@ If you're interested in me working with you, don't hesitate to [get in touch wit
 
 For me, writing code provides a means to an end — that is creating products and value for stakeholders in the best possible way, especially if that means not to develop fancy technically-challenging code at all but to find a solution that helps the people who will use the software at the end of a day. I'm passionate about programming, don't get me wrong, but having happy customers and clients is without any doubt more important to me.
 
-That being said, I'm always curious about new languages and I'm familiar with the concepts of both functional and object-oriented programming, so if you're working with e.g. Elixir, Go, Kotlin or Elm, I'm most interested about working on such a project with you.
+That being said, I'm always curious about new languages and I'm familiar with the concepts of both functional and object-oriented programming, so if you're working with e.g. Elixir, Kotlin or Elm, I'm most interested about working on such a project with you.
 
 Furthermore, I'm a very proficient *senior JavaScript developer*, having worked with plenty of frontend frameworks like [React](https://facebook.github.io/react/) with [Redux](http://redux.js.org/) (for which I'm maintaining a small testing library called [expect-redux](https://github.com/rradczewski/expect-redux)) or KnockoutJS in the past. Just recently, I published a redux-like eventstore, [simple-eventstore](https://github.com/rradczewski/simple-eventstore), that has helped me tremendously develop MVPs and small-scale apps.
 
