@@ -13,6 +13,11 @@
   line-height: 56px;
   margin: 80px 0;
 
+  @include media-query($on-palm) {
+    margin: 40px 0 20px 0;
+  }
+
+
   &,
   &:visited {
     color: $grey-color-dark;
@@ -127,6 +132,9 @@
 .post-meta {
   font-size: $small-font-size;
   color: $grey-color;
+  @include media-query($on-palm) {
+    font-size: 12px;
+  }
 }
 
 .post-link {
@@ -148,7 +156,8 @@
   letter-spacing: -1px;
 
   @include media-query($on-laptop) {
-    font-size: 36px;
+    font-size: 32px;
+    line-height: 36px;
   }
 }
 
@@ -157,6 +166,7 @@
   width: 120%;
   max-width: initial;
   margin-left: -10%;
+  box-shadow: #999 0px 3px 10px;
 
   @include media-query($on-laptop) {
     width: 100vw;
@@ -166,8 +176,12 @@
 
 .post-content {
   margin-bottom: $spacing-unit;
-  font-family: medium-content-serif-font,Georgia,Cambria,"Times New Roman",Times,serif;
+  font-family: Georgia,medium-content-serif-font,Cambria,"Times New Roman",Times,serif;
   font-size: 22px;
+
+  @include media-query($on-laptop) {
+    font-size: 18px;
+  }
 
   h2, h3, h4, h5 {
     font-family: $base-font-family;
