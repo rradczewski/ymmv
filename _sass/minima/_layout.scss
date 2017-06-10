@@ -6,6 +6,7 @@
 
 .site-title {
   font-family: "Cutive Mono", monospace;
+  text-shadow: #999 0px 3px 10px;
   text-align: center;
   display: block;
   font-size: 72px;
@@ -163,14 +164,12 @@
 
 .post-image-wrapper {
   width: 120%;
-  text-align: center;
-  display: block;
-  max-width: initial;
+  overflow: hidden;
+  padding: 10px 5px;
   margin-left: -10%;
 
   @include media-query($on-laptop) {
     width: 100%;
-    box-shadow: initial;
     margin-left: 0px;
   }
 }
