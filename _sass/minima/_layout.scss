@@ -161,17 +161,22 @@
   }
 }
 
-.post-image {
-  display: block;
+.post-image-wrapper {
   width: 120%;
+  text-align: center;
+  display: block;
   max-width: initial;
   margin-left: -10%;
-  box-shadow: #999 0px 3px 10px;
 
   @include media-query($on-laptop) {
-    width: 100vw;
-    margin-left: -30px;
+    width: 100%;
+    box-shadow: initial;
+    margin-left: 0px;
   }
+}
+
+.post-image {
+  box-shadow: #999 0px 3px 10px;
 }
 
 .post-content {
