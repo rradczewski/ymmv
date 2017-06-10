@@ -16,7 +16,7 @@ layout: default
     <h1 class="post-title" itemprop="name headline">{{ page.title | escape }}</h1>
     {% if page.image %}
     <div class="post-image-wrapper">
-      <img class="post-image" role="presentation" src="{{ page.image | relative_url }}" />
+      <img class="post-image" alt="{{ page.image_alt }}" role="presentation" src="{{ page.image | relative_url }}" />
     </div>
     {% endif %}
   </header>

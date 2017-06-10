@@ -2,6 +2,7 @@
 layout: post
 title: "Continuing my journey as a Freelance Software Craftsman"
 image: /assets/continuing_background.jpg
+image_alt: A railroad, meant as a metaphor for travelling and continuing my journey
 excerpt: After spending the last two years at vaamo, working on a lot of very interesting and most diverse projects with an awesome team, I decided that it is time for me to continue my journey as a freelance software craftsman, so now I’m looking for teams and projects to work with in order to create awesome products and to help them shape their culture.
 ---
 
@@ -23,7 +24,7 @@ Furthermore, I'm a very proficient *senior JavaScript developer*, having worked 
 
 I'm an experienced *backend developer* as well, preferably in a JVM-language (Scala, Java and some Groovy) or JavaScript and you can most definitely count me in for a project that involves EventSourcing:
 
-Chances are, if you have already met me before, you probably know I have a thing for the architecture pattern called *EventSourcing* and the accompanying methods of *Domain-driven Design*. I've given quite a few talks about this in the past (next time will be at the eBay TechTalks in Berlin **UPDATE:** [The talk has been recorded](https://www.youtube.com/watch?v=bOX0akLqXeA) ) and it is — to this day — a pattern that fascinates me because it makes developing applications feel much more natural and close to what the business wants and needs.
+Chances are, if you have already met me before, you probably know I have a thing for the architecture pattern called *EventSourcing*yo and the accompanying methods of *Domain-driven Design*. I've given quite a few talks about this in the past (next time will be at the eBay TechTalks in Berlin **UPDATE:** [The talk has been recorded](https://www.youtube.com/watch?v=bOX0akLqXeA) ) and it is — to this day — a pattern that fascinates me because it makes developing applications feel much more natural and close to what the business wants and needs.
 
 ## Sharing my knowledge
 
