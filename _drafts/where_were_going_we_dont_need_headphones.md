@@ -17,6 +17,10 @@ See for example how [vaamo](https://codecraft.vaamo.de/jobs/web-frontend-dev.htm
 
 >Your workplace is no-bullshit, like many other things at vaamo: Work where you want! You need an office? No problem, we have a beautiful office space in Frankfurt, which is easily reachable with public transit. You want to work from home or a coworking space? No problem! GitHub, Slack, Screenhero, Hangout etc will make sure nothing gets lost and we stay up to date. Except for that you miss being challenged at the soccer table … just sayin’.
 
+<TODO>
+What's the least your culture should have so remote is possible at all?
+</TODO>
+
 If that's out of the question though - and I understand there are plenty of reasons why remote might does not fit your company right now - it might be time to consider a new office or some serious investments in noise canceling features in the present office.
 
 Get some [sound barriers](http://www.ikea.com/de/de/catalog/products/70268811/) for workstations, [acoustic foam](https://acousticalsolutions.com/product-category/acoustic-foam/) for phone boots and [ceiling baffles](https://acousticalsolutions.com/product-category/ceiling-treatments/ceiling-sound-baffles/) for the whole office. Create extra spaces for people to have a conversation. This is no cost compared to the loss in productivity that interruptions create throughout every day of operation.
