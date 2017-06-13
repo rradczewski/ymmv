@@ -182,17 +182,38 @@
   margin-bottom: $spacing-unit;
   font-family: Georgia,medium-content-serif-font,Cambria,"Times New Roman",Times,serif;
   font-size: 22px;
+  line-height: 1.58;
+  letter-spacing: -0.02em;
 
   @include media-query($on-laptop) {
     font-size: 20px;
+  }
+
+  todo {
+    display: block;
+    padding: 5px 5px 5px 15px;
+    font-weight: bold;
+    font-family: sans-serif;
+    color: red;
+    border-left: 3px solid red;
+    &:before {
+      content: 'TODO: ';
+    }
   }
 
   @include media-query($on-palm) {
     font-size: 18px;
   }
 
+  img {
+    display: block;
+    margin: 30px auto;
+    box-shadow: #999 0px 3px 10px;
+  }
+
   h2, h3, h4, h5 {
     font-family: $base-font-family;
+    padding-top: 30px;
   }
 
   a {
@@ -200,7 +221,7 @@
   }
 
   h2 {
-    font-size: 32px;
+    font-size: 30px;
 
     @include media-query($on-laptop) {
       font-size: 28px;
