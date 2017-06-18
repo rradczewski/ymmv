@@ -19,7 +19,7 @@
           <div class="trigger">
             <ul class="pages-list">
               {% for my_page in site.pages %}
-                {% if my_page.title %}
+                {% if my_page.title and my_page.hidden != true %}
                 <li><a class="page-link" href="{{ my_page.url | relative_url }}">{{ my_page.title | escape }}</a></li>
                 {% endif %}
               {% endfor %}
