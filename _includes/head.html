@@ -14,4 +14,25 @@
   <link rel="icon" href="{{ "favicon128.png" | relative_url }}" sizes="128x128" type="image/png">
   <link rel="shortcut icon" href="{{ "favicon128.png" | relative_url }}" sizes="128x128" type="image/png">
   <link rel="apple-touch-icon-precomposed" href="{{ "favicon128.png" | relative_url }}" type="image/png">
+
+  <!-- From https://github.com/mmistakes/hpstr-jekyll-theme/blob/master/_includes/head.html -->
+  {% if site.twitter_username %}<!-- Twitter Cards -->
+    {% if page.image %}
+      <meta name="twitter:card" content="summary_large_image">
+      <meta name="twitter:image" content="{{ site.url }}{{ page.image | relative_url }}">
+    {% else %}
+      <meta name="twitter:card" content="summary">
+    {% endif %}
+    <meta name="twitter:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}">
+    <meta name="twitter:description" content="{{ page.excerpt | strip_html | trim }}">
+    <meta name="twitter:creator" content="@{{ site.twitter_username }}">
+  {% endif %}
+  <!-- Open Graph -->
+
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}">
+  <meta property="og:description" content="{{ page.excerpt | strip_html }}">
+  <meta property="og:url" content="{{ site.url }}{{ page.url }}">
+  <meta property="og:site_name" content="{{ site.title }}">
+
 </head>
