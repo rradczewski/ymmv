@@ -24,14 +24,11 @@ Get some [sound barriers](http://www.ikea.com/de/de/catalog/products/70268811/) 
 
 In recent weeks, I've seen two particular office designs that stuck with me: First, [Markus Tacker](https://twitter.com/coderbyheart) shared his efforts of creating [his vision of an office](https://coderbyheart.com/office-design-by-an-office-hater/), a tour worth doing. He also mentions *visual noise*, distractions that happen in your field of view, as something to account for, with which I fully agree.
 
-The second encounter was visiting friends from [Zweitag](http://zweitag.de/) in Münster a few weeks ago. For two weeks, I worked in their office and was amazed by how they manage to provide enclosed spaces to focus on work, all while also creating spaces and opportunities for smalltalk and collaboration in the hallways.
-
-<TODO>Image of Zweitag Offices with framed glass</TODO>
-
+The second encounter was visiting friends from [Zweitag](http://zweitag.de/) in Münster a few weeks ago. For two weeks, I worked in their office and was amazed by how they manage to provide enclosed spaces to focus on work, all while also creating spaces and opportunities for smalltalk and collaboration in the hallways.  
 Their office is fairly large, divided into offices for four people each. The rooms are not directly connected, but the same small part of the wall in each room is replaced with framed glass, giving you the opportunity to glance into the other offices in order to see if people are still working there ("light's still on").  
 In their hallways, there are places to sit and work sprinkled across, a coffee bar, a terrace for smokers 😅 and plenty of other occasions to have a chat throughout the day.
 
-<TODO>Image of Zweitag Office Hallways</TODO>
+*I tried to sketch the office in SketchUp but failed miserably. If you're curious, you either have to visit them in beautiful Münster or wait for me to get my hands on a decent mouse 😅.*
 
 ## Enable people to raise awareness about loudness
 
