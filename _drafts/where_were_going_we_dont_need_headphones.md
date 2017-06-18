@@ -6,10 +6,9 @@ image_alt: Headphones on the keyboard on a laptop, depicting a typical way to fl
 ---
 
 If there is one single complaint about work I hear most often from clients and friends, it's that they have a hard time focusing in their office. No matter if you're pairing with someone or need some quiet time - if you can't escape the background noise, you'll have a hard time getting any work done.  
-
 Let me share with you how I try to have people happily leave their headphones in their backpack.
 
-## Improve your office or don't force people to come
+## Fix your office or don't force people to come
 
 A strong position, given, but let's be honest: If a company can't provide room for focus time, it needs to create a decent remote/home office culture (and policies).
 
