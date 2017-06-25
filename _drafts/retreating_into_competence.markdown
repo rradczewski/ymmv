@@ -24,6 +24,8 @@ After an hour, this \[[source](https://gist.github.com/rradczewski/a6e2ba725b7fc
 
 This is to me what David H. Hoover and Adewale Oshineye described as [Retreating Into Competence](http://chimera.labs.oreilly.com/books/1234000001813/ch02.html#solution_id8) in their most excellent book *Apprenticeship Patterns*, (free to read on [Chimera](http://chimera.labs.oreilly.com/books/1234000001813/index.html)): As someone getting into a new subject, be it a new programming language, a framework, or, like with me, *Agile Coaching*, there are patterns like [Exposing Your Ignorance](http://chimera.labs.oreilly.com/books/1234000001813/ch02.html#expose_your_ignorance) or [Being The Worst](http://chimera.labs.oreilly.com/books/1234000001813/ch04.html#be_the_worst) that helped me plenty of times getting into the mood of starting from scratch. But every once in a while, all those new insights can be overwhelming.
 
+<TODO>Briefly explain Retreating  Into Competence here</TODO>
+
 ## I'm more confident in coding than I am in coaching
 
 Since becoming a [Frelancer earlier this year]({{ site.baseurl }}{% post_url 2017-02-06-Continuing_my_journey_as_a_Freelance_Software_Craftsman %}) I've been working with clients in a very interesting mode: Almost half of my time is spent working on frontend projects, the other half is spent improving their rituals and culture.
