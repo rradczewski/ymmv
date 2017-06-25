@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "AgileCoachCamp2017 and on Retreating Into Competence"
+title: "The Agile Coach Camp 2017 and Retreating Into Competence"
 image: /assets/retreating_into_competence.jpg
 image_alt: A photo taking outside of the venue in Rückersbach, showing parts of a terrace, some green and trees and a path through that.
 ---
@@ -30,10 +30,13 @@ This is to me what David H. Hoover and Adewale Oshineye described as [Retreating
 
 Since becoming a [Frelancer earlier this year]({{ site.baseurl }}{% post_url 2017-02-06-Continuing_my_journey_as_a_Freelance_Software_Craftsman %}) I've been working with clients in a very interesting mode: Almost half of my time is spent working on frontend projects, the other half is spent improving their rituals and culture.
 
-Now there is an interesting thing I found out about me in this time: I'm very much enjoying doing both coding and coaching, yet the latter is much more challenging and exhausting for me. After spending days on preparing retrospectives and revisiting the rituals we implemented, I noticed that I'm recharging through coding.  
-It can be a refactoring on production code, or something like this little clustering algorithm. I've gone so far as to implement the same business logic of a side project **three times** now - each time changing perspectives, starting with something different, going a different direction.
+Now there is an interesting thing I found out about me in this time: I'm very much enjoying doing both coding and coaching, yet the latter is much more challenging and exhausting for me. After spending days on preparing retrospectives and revisiting the rituals we implemented, very much depleting my batteries, I noticed that I'm back at recharging them through coding.
+It can be a refactoring on production code, or something like this little clustering algorithm. I've gone so far as to implement the same business logic of a side project **three times** now - each time changing perspectives, starting with something different, going a different direction.  
+The side-project are nowhere near being finished, but the exercise itself keeps being interesting to me.
+
 
 ## From time to time, do what you're good at
 
-Going back since the my first days at vaamo, *Retreating into Competence* has to be the single most helpful of all *Apprenticeship Patterns* to me.
-It's been part of my pattern toolkit of learning something new ever since and I'm convinced it can be useful to others as well.
+Going back to my first days at vaamo, *Retreating into Competence* has been the single most helpful of all *Apprenticeship Patterns* to me. It's been part of my pattern toolkit of learning something new ever since and I'm convinced it can be useful to others as well.  
+
+<TODO>Moaaaaah motivation here</TODO>
