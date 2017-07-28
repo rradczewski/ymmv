@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?><?xml-stylesheet type="text/xml" href="https://rradczewski.github.io/ymmv/feed.xslt.xml"?><feed xmlns="http://www.w3.org/2005/Atom"><generator uri="http://jekyllrb.com" version="3.4.0">Jekyll</generator><link href="https://rradczewski.github.io/ymmv/feed.xml" rel="self" type="application/atom+xml" /><link href="https://rradczewski.github.io/ymmv/" rel="alternate" type="text/html" /><updated>2017-07-28T23:47:00+02:00</updated><id>https://rradczewski.github.io/ymmv//</id><title type="html">YMMV</title><subtitle></subtitle><author><name>Raimo Radczewski</name></author><entry><title type="html">The Agile Coach Camp 2017 and Retreating Into Competence</title><link href="https://rradczewski.github.io/ymmv/2017/06/AgileCoachCamp-and-RetreatingIntoCompetence" rel="alternate" type="text/html" title="The Agile Coach Camp 2017 and Retreating Into Competence" /><published>2017-06-26T00:00:00+02:00</published><updated>2017-06-26T00:00:00+02:00</updated><id>https://rradczewski.github.io/ymmv/2017/06/AgileCoachCamp-and-RetreatingIntoCompetence</id><content type="html" xml:base="https://rradczewski.github.io/ymmv/2017/06/AgileCoachCamp-and-RetreatingIntoCompetence">&lt;p&gt;I had a great time as a first-timer at the &lt;a href=&quot;http://agilecoachcamp.de/&quot;&gt;Agile Coach Camp Germany&lt;/a&gt;, but sometimes, learning new things can get very overwhelming.
+After gaining confidence in one subject, really diving into another one usually turns out to be a lesson in humility for me. As I’m learning the In’s and Out’s of agile coaching, I’m finding myself getting back into building side-projects, just in order to &lt;em&gt;Retreat Into Competence&lt;/em&gt;.&lt;/p&gt;
+
+&lt;h2 id=&quot;immersing-myself-in-an-agile-coaching-conference&quot;&gt;Immersing myself in an Agile Coaching conference&lt;/h2&gt;
+
+&lt;p&gt;The Agile Coach Camp is an annual unconference in a hotel in Rückersbach in Bavaria. The first &lt;a href=&quot;https://socrates-conference.de&quot;&gt;SoCraTes conference&lt;/a&gt; took place in Rückersbach years ago, so it’s an interesting mix of me discovering the origins of a community I’m very engaged with, all while joining a community I had less connection with before. A lot of topics where familiar but vastly more intense, with a lot of knowledge I could tap into.&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;I invite you to check out the market place for &lt;a href=&quot;https://twitter.com/rradczewski/status/878528171406237696&quot;&gt;Saturday&lt;/a&gt; and &lt;a href=&quot;https://twitter.com/rradczewski/status/878886460971208704&quot;&gt;Sunday&lt;/a&gt; so you get an idea how interesting and diverse in topics the unconference was.&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;I spent the evenings and nights talking to a lot of new people, then spent my time at the Open Space understanding &lt;em&gt;Where Everybody Is At&lt;/em&gt; with &lt;a href=&quot;https://twitter.com/bertholdb&quot;&gt;@BertholdB&lt;/a&gt;, listened to &lt;a href=&quot;https://twitter.com/MarianneRady&quot;&gt;@MarianneRady&lt;/a&gt; sharing her ways of &lt;a href=&quot;https://twitter.com/rradczewski/status/878611376033419264&quot;&gt;dealing with her inner critic&lt;/a&gt;, and together with &lt;a href=&quot;https://twitter.com/ArminSchubert&quot;&gt;@ArminSchubert&lt;/a&gt; brainstormed ways to challenge a very mature team of craftspeople. I hosted my own session on &lt;em&gt;Evolving a Team at Startup-Speed&lt;/em&gt;, sharing my insights and explaining the challenges I faced back when my clients team size doubled every month. I got very valuable feedback from it and took with me a lot of new ideas how to further build and form the team.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;On Saturday evening, I felt exhausted&lt;/strong&gt;. A lot of new things to process, yet not much energy to do so. This is when I brought my laptop from my room, sat down outside and started coding. The task I picked was quite simple, having implemented similar algorithms plenty of times in the past: I wanted to have an algorithm that could tell me the most significant &lt;em&gt;Neuland Markers&lt;/em&gt; used in a photo of a sketchnote.&lt;/p&gt;
+
+&lt;p&gt;After an hour, this [&lt;a href=&quot;https://gist.github.com/rradczewski/a6e2ba725b7fc5f0f3549e30d92c4a2d&quot;&gt;source&lt;/a&gt;] is what I had, plus some code (in React) for the UI:&lt;/p&gt;
+
+&lt;blockquote class=&quot;twitter-tweet&quot; data-lang=&quot;en&quot;&gt;&lt;p lang=&quot;en&quot; dir=&quot;ltr&quot;&gt;Borrowed some &lt;a href=&quot;https:&amp;lt;//twitter.com/hashtag/sketchnotes?src=hash&quot;&gt;#sketchnotes&lt;/a&gt; by &lt;a href=&quot;https://twitter.com/michelgrootjans&quot;&gt;@michelgrootjans&lt;/a&gt; for an experiment in detecting the significant marker in a sketchnote. Onto something here 👍 &lt;a href=&quot;https://t.co/Y0vyl8bGa2&quot;&gt;pic.twitter.com/Y0vyl8bGa2&lt;/a&gt;&lt;/p&gt;&amp;mdash; Raimo Radczewski (@rradczewski) &lt;a href=&quot;https://twitter.com/rradczewski/status/878723681232531457&quot;&gt;June 24, 2017&lt;/a&gt;&lt;/blockquote&gt;
+&lt;script async=&quot;&quot; src=&quot;//platform.twitter.com/widgets.js&quot; charset=&quot;utf-8&quot;&gt;&lt;/script&gt;
+
+&lt;p&gt;This is to me what David H. Hoover and Adewale Oshineye described as &lt;a href=&quot;http://chimera.labs.oreilly.com/books/1234000001813/ch02.html#solution_id8&quot;&gt;Retreating Into Competence&lt;/a&gt; in their most excellent book &lt;em&gt;Apprenticeship Patterns&lt;/em&gt;, (free to read on &lt;a href=&quot;http://chimera.labs.oreilly.com/books/1234000001813/index.html&quot;&gt;Chimera&lt;/a&gt;): As someone getting into a new subject, be it a new programming language, a framework, or, like with me, &lt;em&gt;Agile Coaching&lt;/em&gt;, there are patterns like &lt;a href=&quot;http://chimera.labs.oreilly.com/books/1234000001813/ch02.html#expose_your_ignorance&quot;&gt;Exposing Your Ignorance&lt;/a&gt; or &lt;a href=&quot;http://chimera.labs.oreilly.com/books/1234000001813/ch04.html#be_the_worst&quot;&gt;Being The Worst&lt;/a&gt; that helped me plenty of times getting into the mood of starting from scratch. But every once in a while, all those new insights can be overwhelming.&lt;br /&gt;
+&lt;strong&gt;Retreating Into Competence&lt;/strong&gt; means getting back to doing something you feel competent in to recharge your batteries, so you can regain some confidence and to remind yourself that you’ve reached competency before. Especially when struggling with a subject or feeling overwhelmed, getting back into something you’re good at is a nice and short vacation from learning.&lt;/p&gt;
+
+&lt;h2 id=&quot;im-more-confident-in-coding-than-i-am-in-coaching&quot;&gt;I’m more confident in coding than I am in coaching&lt;/h2&gt;
+
+&lt;p&gt;Since becoming a &lt;a href=&quot;/ymmv/2017/02/Continuing_my_journey_as_a_Freelance_Software_Craftsman&quot;&gt;Freelancer earlier this year&lt;/a&gt;, I’ve been working with clients in a very interesting setting: Almost half of my time is spent working on frontend projects, the other half is spent improving their rituals and their company culture.&lt;/p&gt;
+
+&lt;p&gt;Now there is an interesting thing I found out about me in this time: I’m very much enjoying doing both coding and coaching, yet the latter is much more challenging and exhausting for me. After spending days preparing retrospectives and revisiting the rituals the team implemented - doing something that is depleting my batteries - I noticed that I’d like to take a step back and recharge them through coding.&lt;/p&gt;
+
+&lt;p&gt;It can be a refactoring on production code, or something like this little clustering algorithm. I’ve gone so far as to implement the same business logic of a side project &lt;strong&gt;three times&lt;/strong&gt; now - each time changing perspectives, starting with something different, going a different direction.&lt;br /&gt;
+The side-project are nowhere near being finished, but the exercise itself keeps being interesting to me.&lt;/p&gt;
+
+&lt;h2 id=&quot;from-time-to-time-do-what-youre-good-at&quot;&gt;From time to time, do what you’re good at&lt;/h2&gt;
+
+&lt;p&gt;Going back to my first days at vaamo, &lt;em&gt;Retreating into Competence&lt;/em&gt; has been the single most helpful of all &lt;em&gt;Apprenticeship Patterns&lt;/em&gt; to me. It’s been part of my pattern toolkit of learning something new ever since and I’m convinced it can be useful to others as well.&lt;/p&gt;
+
+&lt;p&gt;I enjoyed my time at the &lt;strong&gt;Agile Coach Camp&lt;/strong&gt; and will definitely be back next year, contributing more than this year, feeling more confident in sharing my insights and ideas with the other attendees.&lt;/p&gt;
+
+&lt;p&gt;I’m wrapping up this post with a quote from the &lt;em&gt;&lt;a href=&quot;http://agilecoachcamp.de/f-a-q-2017/&quot;&gt;Agile Coach Camp FAQ&lt;/a&gt;&lt;/em&gt;:&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;ul&gt;
+    &lt;li&gt;The unconference will be very exhausting… take care of yourself… take breaks, get some sleep, relax&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Noted. 😄&lt;/p&gt;</content><author><name>Raimo Radczewski</name></author><summary type="html">I had a great time as a first-timer at the Agile Coach Camp Germany, but sometimes, learning new things can get very overwhelming.
+After gaining confidence in one subject, really diving into another one usually turns out to be a lesson in humility for me. As I’m learning the In’s and Out’s of agile coaching, I’m finding myself getting back into building side-projects, just in order to Retreat Into Competence.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://rradczewski.github.io/ymmv/assets/retreating_into_competence.jpg" /></entry><entry><title type="html">Where we’re going, we don’t need headphones!</title><link href="https://rradczewski.github.io/ymmv/2017/06/Where-we-are-going-we-dont-need-headphones" rel="alternate" type="text/html" title="Where we're going, we don't need headphones!" /><published>2017-06-18T00:00:00+02:00</published><updated>2017-06-18T00:00:00+02:00</updated><id>https://rradczewski.github.io/ymmv/2017/06/Where-we-are-going-we-dont-need-headphones</id><content type="html" xml:base="https://rradczewski.github.io/ymmv/2017/06/Where-we-are-going-we-dont-need-headphones">&lt;p&gt;If there is one single complaint about work I hear most often from clients and friends, it’s that they have a hard time focusing in their office. No matter if you’re pairing with someone or need some quiet time - if you can’t escape the background noise, you’ll have a hard time getting any work done.&lt;br /&gt;
+Let me share with you how I try to have people happily leave their headphones in their backpack.&lt;/p&gt;
+
+&lt;h2 id=&quot;fix-your-office-or-dont-force-people-to-come&quot;&gt;Fix your office or don’t force people to come&lt;/h2&gt;
+
+&lt;p&gt;A strong position, given, but let’s be honest: If a company can’t provide room for focus time, it needs to create a decent remote/home office culture and policies.&lt;/p&gt;
+
+&lt;p&gt;See for example how &lt;a href=&quot;https://codecraft.vaamo.de/jobs/web-frontend-dev.html&quot;&gt;vaamo&lt;/a&gt;, my previous employer, describes their &lt;em&gt;Remote Culture&lt;/em&gt; in one of their current job offerings:&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Your workplace is no-bullshit, like many other things at vaamo: Work where you want! You need an office? No problem, we have a beautiful office space in Frankfurt, which is easily reachable with public transit. You want to work from home or a coworking space? No problem! GitHub, Slack, Screenhero, Hangout etc will make sure nothing gets lost and we stay up to date. Except for that you miss being challenged at the soccer table … just sayin’.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;If that’s out of the question though - and I understand there are plenty of reasons why remote might does not fit your company right now - it might be time to consider a new office or some serious investments in noise canceling features in the present office.&lt;/p&gt;
+
+&lt;p&gt;Get some &lt;a href=&quot;http://www.ikea.com/de/de/catalog/products/70268811/&quot;&gt;sound barriers&lt;/a&gt; for workstations, &lt;a href=&quot;https://acousticalsolutions.com/product-category/acoustic-foam/&quot;&gt;acoustic foam&lt;/a&gt; for phone boots and &lt;a href=&quot;https://acousticalsolutions.com/product-category/ceiling-treatments/ceiling-sound-baffles/&quot;&gt;ceiling baffles&lt;/a&gt; for the whole office. Create extra spaces for people to have a conversation. This is no cost compared to the loss in productivity that interruptions create throughout everyone’s workday.&lt;/p&gt;
+
+&lt;h2 id=&quot;design-offices-for-functionality&quot;&gt;Design offices for functionality&lt;/h2&gt;
+
+&lt;p&gt;In recent weeks, I’ve seen two particular office designs that stuck with me: First, &lt;a href=&quot;https://twitter.com/coderbyheart&quot;&gt;Markus Tacker&lt;/a&gt; shared his efforts of creating &lt;a href=&quot;https://coderbyheart.com/office-design-by-an-office-hater/&quot;&gt;his vision of an office&lt;/a&gt;, a tour worth doing. He also mentions &lt;em&gt;visual noise&lt;/em&gt;, distractions that happen in your field of view, as something to account for, with which I fully agree.&lt;/p&gt;
+
+&lt;p&gt;The second encounter was visiting friends from &lt;a href=&quot;http://zweitag.de/&quot;&gt;Zweitag&lt;/a&gt; in Münster a few weeks ago. For two weeks, I worked in their office and was amazed by how they manage to provide enclosed spaces to focus on work, all while also creating spaces and opportunities for smalltalk and collaboration in the hallways.&lt;br /&gt;
+Their office is fairly large, divided into offices for four people each. The rooms are not directly connected, but the same small part of the wall in each room is replaced with framed glass, giving you the opportunity to glance into the other offices in order to see if people are still working there (“light’s still on”).&lt;br /&gt;
+In their hallways, there are places to sit and work sprinkled across, a coffee bar, a terrace for smokers 😅 and plenty of other occasions to have a chat throughout the day.&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;I tried to sketch the office in SketchUp but failed miserably. If you’re curious, you either have to visit them in beautiful Münster or wait for me to get my hands on a decent mouse 😅.&lt;/em&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;enable-people-to-raise-awareness-about-loudness&quot;&gt;Enable people to raise awareness about loudness&lt;/h2&gt;
+
+&lt;p&gt;At the core of the issue with noise is, like so often, a &lt;em&gt;people problem&lt;/em&gt;; One can, without bad intentions, be completely oblivious to the fact of how loud they’re talking or how disrupting it is to shout across a room.
+Making it visible that people are actively being disturbed in their work is a good starting point in order to sensitise people.
+This way, they might move into a meeting room before the noise level gets out of hand.&lt;/p&gt;
+
+&lt;p&gt;This is where &lt;em&gt;Noisy&lt;/em&gt; comes into play, a small Slackbot I wrote that enables people to anonymously raise the issue for everyone else to see.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/ymmv/assets/noisy.png&quot; alt=&quot;Noisy, the awareness-creating-Slackbot, asking people to tune it down a little after someone issued a particular slack command anonymously&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Mind you that Noisy does not help stopping an immediate interruption as the people talking most likely are not looking at Slack in that particular moment, but only afterwards makes them notice how their behavior was affecting people. It further lowers the barrier of people coming forward and speaking out about the noise. At the same time, it does not address or blame individuals.&lt;/p&gt;
+
+&lt;p&gt;Setting up something like &lt;em&gt;Noisy&lt;/em&gt; is easy as pie: It’s an &lt;em&gt;AWS Lambda&lt;/em&gt;-Function being called through a Slack &lt;a href=&quot;https://api.slack.com/slash-commands&quot;&gt;Slash Command&lt;/a&gt; Webhook that uses the &lt;a href=&quot;https://api.slack.com/incoming-webhooks&quot;&gt;Incoming Webhooks&lt;/a&gt; API from Slack to send a message to &lt;code class=&quot;highlighter-rouge&quot;&gt;#general&lt;/code&gt; without mentioning the person who triggered the command.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/ymmv/assets/office_noise_noisy_invocations.png&quot; alt=&quot;Noisy Invocations after deploying it: Day 1: 1, Day 2: 2, Day 3: 0, Day 4: 1, Day 5: 3, Day 6: 7, Day 7: 0 &quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;I assembled this chart to show how this can already have an impact five days into the experiment: At some days, people triggered &lt;em&gt;Noisy&lt;/em&gt; (dark grey) more than once a day, provoking some 👍 (light grey) that further drove the point across.&lt;/p&gt;
+
+&lt;p&gt;But Noisy is just the start. I wondered how I could create a mindful atmosphere in the office so I could remove &lt;em&gt;Noisy&lt;/em&gt; from the Slack Team at some point.&lt;/p&gt;
+
+&lt;h2 id=&quot;automating-the-loudness-indicator&quot;&gt;Automating the loudness indicator&lt;/h2&gt;
+
+&lt;p&gt;Going a step further, I’d love to have people learn to look for a meeting room before it gets too loud. &lt;em&gt;Cleware&lt;/em&gt;, a company in North Germany, sells a &lt;a href=&quot;http://www.cleware-shop.de/epages/63698188.sf/en_US/?ViewObjectPath=%2FShops%2F63698188%2FProducts%2F42%2FSubProducts%2F42-1&quot;&gt;USB Traffic Light&lt;/a&gt;. I set it up with a Raspberry Pi and a microphone to permanently measure the noise level in the office.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/ymmv/assets/traffic_light.jpg&quot; alt=&quot;USB Traffic Light (green is on) and a microphone attached to a raspberry pi&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;The color coding is straight forward:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;If the traffic light is &lt;strong&gt;green&lt;/strong&gt;, all is well.&lt;/li&gt;
+  &lt;li&gt;If it turns &lt;strong&gt;yellow&lt;/strong&gt;, the mic picked up a raise in noise over the last few seconds&lt;/li&gt;
+  &lt;li&gt;If it turns &lt;strong&gt;red&lt;/strong&gt;, someone issued the by now familiar &lt;code class=&quot;highlighter-rouge&quot;&gt;/noisy&lt;/code&gt; command in Slack.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;This all needs some tweaking, especially the &lt;a href=&quot;https://twitter.com/fdeberle/status/875324353096896512&quot;&gt;sensitivity of the microphone&lt;/a&gt;, but I’m looking forward to seeing how &lt;a href=&quot;https://twitter.com/rradczewski/status/874563225781755904&quot;&gt;this experiment&lt;/a&gt; turns out.&lt;/p&gt;
+
+&lt;h2 id=&quot;no-headphones-beyond-this-point&quot;&gt;No headphones beyond this point&lt;/h2&gt;
+
+&lt;p&gt;There is no black or white in handling this. While you might be able to create &lt;em&gt;Quiet Zones&lt;/em&gt;, just as you can create &lt;em&gt;Collaboration Zones&lt;/em&gt;, people working together in a room will make noise and hopefully it’s productive noise most of the time.&lt;/p&gt;
+
+&lt;p&gt;The first step here is being aware that there are different types of people in your company; some who like the background noise, some who very much dislike it.  Giving them both the option to work the way they enjoy the most is something to start with. Working on their awareness of each other is the next step.&lt;/p&gt;</content><author><name>Raimo Radczewski</name></author><summary type="html">If there is one single complaint about work I hear most often from clients and friends, it’s that they have a hard time focusing in their office. No matter if you’re pairing with someone or need some quiet time - if you can’t escape the background noise, you’ll have a hard time getting any work done.
+Let me share with you how I try to have people happily leave their headphones in their backpack.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://rradczewski.github.io/ymmv/assets/office_noise_background.jpg" /></entry><entry><title type="html">Continuing my journey as a Freelance Software Craftsman</title><link href="https://rradczewski.github.io/ymmv/2017/02/Continuing_my_journey_as_a_Freelance_Software_Craftsman" rel="alternate" type="text/html" title="Continuing my journey as a Freelance Software Craftsman" /><published>2017-02-06T00:00:00+01:00</published><updated>2017-02-06T00:00:00+01:00</updated><id>https://rradczewski.github.io/ymmv/2017/02/Continuing_my_journey_as_a_Freelance_Software_Craftsman</id><content type="html" xml:base="https://rradczewski.github.io/ymmv/2017/02/Continuing_my_journey_as_a_Freelance_Software_Craftsman">&lt;p&gt;&lt;em&gt;This post is republished from &lt;a href=&quot;https://medium.com/@rradczewski/continuing-my-journey-as-a-freelance-software-craftsman-4df60f023f20&quot;&gt;medium&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;It’s been about five years now since &lt;a href=&quot;https://twitter.com/janernsting&quot;&gt;Jan&lt;/a&gt; introduced me to the wonderful community that is Software Craftsmanship and the SoCraTes conferences, something for which I’m infinitely grateful to him.&lt;/p&gt;
+
+&lt;p&gt;After spending the last two years at &lt;a href=&quot;https://codecraft.vaamo.de&quot;&gt;vaamo&lt;/a&gt;, working on a lot of very interesting and most diverse projects with an awesome team, I decided that it is time for me to continue my journey as a freelance software craftsman, so now &lt;em&gt;I’m looking for teams and projects to work with in order to create awesome products and to help them shape their culture.&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;If you’re interested in me working with you, don’t hesitate to &lt;a href=&quot;mailto:raimo@craftswerk.io&quot;&gt;get in touch with me&lt;/a&gt;!&lt;/p&gt;
+
+&lt;h2 id=&quot;developing-software&quot;&gt;Developing software&lt;/h2&gt;
+
+&lt;p&gt;For me, writing code provides a means to an end — that is creating products and value for stakeholders in the best possible way, especially if that means not to develop fancy technically-challenging code at all but to find a solution that helps the people who will use the software at the end of a day. I’m passionate about programming, don’t get me wrong, but having happy customers and clients is without any doubt more important to me.&lt;/p&gt;
+
+&lt;p&gt;That being said, I’m always curious about new languages and I’m familiar with the concepts of both functional and object-oriented programming, so if you’re working with e.g. Elixir, Kotlin or Elm, I’m most interested about working on such a project with you.&lt;/p&gt;
+
+&lt;p&gt;Furthermore, I’m a very proficient &lt;em&gt;senior JavaScript developer&lt;/em&gt;, having worked with plenty of frontend frameworks like &lt;a href=&quot;https://facebook.github.io/react/&quot;&gt;React&lt;/a&gt; with &lt;a href=&quot;http://redux.js.org/&quot;&gt;Redux&lt;/a&gt; (for which I’m maintaining a small testing library called &lt;a href=&quot;https://github.com/rradczewski/expect-redux&quot;&gt;expect-redux&lt;/a&gt;) or KnockoutJS in the past. Just recently, I published a redux-like eventstore, &lt;a href=&quot;https://github.com/rradczewski/simple-eventstore&quot;&gt;simple-eventstore&lt;/a&gt;, that has helped me tremendously develop MVPs and small-scale apps.&lt;/p&gt;
+
+&lt;p&gt;I’m an experienced &lt;em&gt;backend developer&lt;/em&gt; as well, preferably in a JVM-language (Scala, Java and some Groovy) or JavaScript and you can most definitely count me in for a project that involves EventSourcing:&lt;/p&gt;
+
+&lt;p&gt;Chances are, if you have already met me before, you probably know I have a thing for the architecture pattern called &lt;em&gt;EventSourcing&lt;/em&gt;yo and the accompanying methods of &lt;em&gt;Domain-driven Design&lt;/em&gt;. I’ve given quite a few talks about this in the past (next time will be at the eBay TechTalks in Berlin &lt;strong&gt;UPDATE:&lt;/strong&gt; &lt;a href=&quot;https://www.youtube.com/watch?v=bOX0akLqXeA&quot;&gt;The talk has been recorded&lt;/a&gt; ) and it is — to this day — a pattern that fascinates me because it makes developing applications feel much more natural and close to what the business wants and needs.&lt;/p&gt;
+
+&lt;h2 id=&quot;sharing-my-knowledge&quot;&gt;Sharing my knowledge&lt;/h2&gt;
+
+&lt;p&gt;Organizing the &lt;a href=&quot;http://www.meetup.com/Software-Craftsmanship-Berlin/&quot;&gt;Software Craftsmanship Community in Berlin&lt;/a&gt; for the last two years has taught me what it takes to host and facilitate group workshops. For over 2300 members, we’re organizing a Coding Kata every month and a few full-day coderetreats every year and I’m always there helping people to get into TDD, pair programming, new programming languages and more.&lt;/p&gt;
+
+&lt;p&gt;I put all my experience, patience and empathy into coaching people, be it mentoring novices to get them up to speed with JavaScript, or facilitating workshops for whole teams to get them into the practices of Extreme Programming.&lt;/p&gt;
+
+&lt;h2 id=&quot;bringing-craftsmanship-values-into-acompany&quot;&gt;Bringing Craftsmanship values into a company&lt;/h2&gt;
+
+&lt;p&gt;One thing I’m deeply passionate about is helping others learn about craftsmanship and agile values. I’m grateful for having worked in professional, honest and empathetic teams in the past and I love to share my insights and experience with other teams and their companies.&lt;/p&gt;
+
+&lt;p&gt;My favorite method to spark a flame of professional software development practices is without a doubt a coderetreat. Best organized as a day-long event far away from the daily chores of a software developer, it’s a workshop designed to enable developers to learn about TDD, pair programming and software design in an environment created for a deliberate learning experience. I’ve been running plenty of coderetreats and I’m honored to organize the Global Day Of Coderereat for the second time this year.&lt;/p&gt;
+
+&lt;h2 id=&quot;get-in-touch-withme&quot;&gt;Get in touch with me&lt;/h2&gt;
+
+&lt;p&gt;If you’re interested in working with me after reading this post, feel free to reach out to me via &lt;a href=&quot;mailto:raimo@craftswerk.io&quot;&gt;mail&lt;/a&gt; (or &lt;a href=&quot;https://twitter.com/rradczewski&quot;&gt;Twitter&lt;/a&gt; or by &lt;a href=&quot;https://rradczewski.github.io/&quot;&gt;other means&lt;/a&gt;) and we’ll have a chat about it over a coffee in Berlin or via Hangouts.&lt;/p&gt;</content><author><name>Raimo Radczewski</name></author><summary type="html">After spending the last two years at vaamo, working on a lot of very interesting and most diverse projects with an awesome team, I decided that it is time for me to continue my journey as a freelance software craftsman, so now I’m looking for teams and projects to work with in order to create awesome products and to help them shape their culture.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://rradczewski.github.io/ymmv/assets/continuing_background.jpg" /></entry></feed>
