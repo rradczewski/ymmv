@@ -11,7 +11,7 @@ permalink: /about/
 
 I'm a [self-employed Software Craftsman]({{ site.baseurl }}{% post_url 2017-02-06-Continuing_my_journey_as_a_Freelance_Software_Craftsman %}) from Berlin, Germany. I help companys build a culture suited to grow and empower craftspeople and have them enjoy their work. I also write a lot of code (mostly in JavaScript, React, Redux lately), am fond of Domain-Driven Design and an advocate for Test-Driven-Development.
 
-I owe a lot to the communities out there, which is why I'm trying to give something back by organizing the [Software Craftsmanship Meetup Berlin](http://www.meetup.com/Software-Craftsmanship-Berlin/), the [Global Day of Coderetreat](https://www.coderetreat.org), the [worldwide Software Craftsmanship Slack](http://slack.softwarecraftsmanship.org/) and help out at the [Domain-Driven Design Meetup Berlin](https://www.meetup.com/Domain-Driven-Design-Berlin/).
+I owe a lot to the communities out there, which is why I'm trying to give something back by organizing the [Software Craftsmanship Meetup Berlin](http://www.meetup.com/Software-Craftsmanship-Berlin/), the [Global Day of Coderetreat](http://www.coderetreat.org), the [worldwide Software Craftsmanship Slack](http://slack.softwarecraftsmanship.org/) and help out at the [Domain-Driven Design Meetup Berlin](https://www.meetup.com/Domain-Driven-Design-Berlin/).
 
 I'm all in for working with you, if...
  - you need a senior developer to build or support a team
