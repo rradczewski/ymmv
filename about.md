@@ -19,7 +19,7 @@ I'm all in for working with you, if...
  - you would like to host a workshop for your employees on a plethora of topics, be it JavaScript, EventSourcing or Craftsmanship values in general
  - you want to host a coderetreat in your company
 
-I'm very fond of a professional relationship with my clients. Mutual trust and openness are the most important aspect of a business relationship for me. I will ask you to be part of the team from day one and to expect me to challenge aspects of your company where I see potential for improvements.
+I'm very fond of a professional relationship with my clients. Mutual trust and openness are the most important aspect of a business relationship for me. I will ask you to establish me as part of the team from day one and to expect me to challenge aspects of your company where I see potential for improvements.
 
 If you're interested in working with me, please send me a mail at [hello@craftswerk.io](mailto:hello@craftswerk.io). I prefer talking to the people I'd work with, so I'd kindly ask external recruiters to not contact me.
 
