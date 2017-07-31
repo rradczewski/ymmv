@@ -156,6 +156,7 @@
 
 .post-link {
   display: block;
+  margin-top: 10px;
   font-size: 24px;
 }
 
@@ -169,7 +170,8 @@
 }
 
 .post-title {
-  font-size: 42px;
+  margin-top: 10px;
+  font-size: 24px;
 
   @include media-query($on-laptop) {
     font-size: 24px;
