@@ -9,12 +9,12 @@ layout: default
   <ul class="post-list">
     {% for post in site.posts %}
       <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+        <p class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</p>
 
         <h2>
           <a class="post-link" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
         </h2>
-        {{ post.excerpt }} <a class="read-more" href="{{ post.url | relative_url }}">...more</a>
+        <p class="post-content">{{ post.excerpt | remove: '<p>' | remove: '</p>' }} <a class="read-more" href="{{ post.url | relative_url }}">more...</a></p>
       </li>
     {% endfor %}
   </ul>
