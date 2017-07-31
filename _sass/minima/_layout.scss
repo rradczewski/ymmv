@@ -4,15 +4,23 @@
 .site-header {
 }
 
+.site-subtitle {
+  color: #bbb;
+  font-family: $serif-font-family;
+  text-align: center;
+  font-style: italic;
+  letter-spacing: 1.5px;
+}
+
 .site-title {
   font-family: "Cutive Mono", monospace;
   text-shadow: #999 0px 3px 10px;
   text-align: center;
   display: block;
-  font-size: 72px;
+  font-size: 60px;
   font-weight: 300;
   line-height: 56px;
-  margin: 80px 0;
+  margin: 80px 0 40px 0;
 
   @include media-query($on-palm) {
     margin: 40px 0 20px 0;
@@ -27,9 +35,11 @@
   .site-title-text {
     &:before {
       content: '{';
+      padding-right: 3px;
     }
     &:after {
       content: '};';
+      padding-left: 3px;
     }
   }
 }
@@ -181,7 +191,7 @@
 
 .post-content {
   margin-bottom: $spacing-unit;
-  font-family: Georgia,medium-content-serif-font,Cambria,"Times New Roman",Times,serif;
+  font-family: $serif-font-family;
   font-size: 22px;
   line-height: 1.58;
   letter-spacing: -0.02em;
