@@ -24,7 +24,7 @@ Furthermore, I'm a very proficient *senior JavaScript developer*, having worked 
 
 I'm an experienced *backend developer* as well, preferably in a JVM-language (Scala, Java and some Groovy) or JavaScript and you can most definitely count me in for a project that involves EventSourcing:
 
-Chances are, if you have already met me before, you probably know I have a thing for the architecture pattern called *EventSourcing*yo and the accompanying methods of *Domain-driven Design*. I've given quite a few talks about this in the past (next time will be at the eBay TechTalks in Berlin **UPDATE:** [The talk has been recorded](https://www.youtube.com/watch?v=bOX0akLqXeA) ) and it is — to this day — a pattern that fascinates me because it makes developing applications feel much more natural and close to what the business wants and needs.
+Chances are, if you have already met me before, you probably know I have a thing for the architecture pattern called *EventSourcing* and the accompanying methods of *Domain-driven Design*. I've given quite a few talks about this in the past (next time will be at the eBay TechTalks in Berlin **UPDATE:** [The talk has been recorded](https://www.youtube.com/watch?v=bOX0akLqXeA) ) and it is — to this day — a pattern that fascinates me because it makes developing applications feel much more natural and close to what the business wants and needs.
 
 ## Sharing my knowledge
 
