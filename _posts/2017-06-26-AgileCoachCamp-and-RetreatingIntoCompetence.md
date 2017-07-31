@@ -52,6 +52,7 @@ I enjoyed my time at the **Agile Coach Camp** and will definitely be back next y
 
 I'm wrapping up this post with a quote from the *[Agile Coach Camp FAQ](http://agilecoachcamp.de/f-a-q-2017/)*:
 
-> - The unconference will be very exhausting… take care of yourself… take breaks, get some sleep, relax
+> The unconference will be very exhausting…  
+> take care of yourself… take breaks, get some sleep, relax
 
 Noted. 😄
