@@ -1,6 +1,7 @@
 ---
 layout: page
 title: About
+excerpt: Hi, I'm Raimo, a self-employed Software Craftsman from Berlin, Germany. I help companies build a culture suited to grow and empower craftspeople and have them enjoy their work. I also write code ;-)
 hide_title: true
 permalink: /about/
 ---
