@@ -201,6 +201,13 @@
 .post-content {
   margin-bottom: $spacing-unit;
   font-family: $serif-font-family;
+  font-size: $base-desktop-font-size;
+
+  @include media-query($on-laptop) {
+    font-size: $base-font-size;
+
+  }
+
   line-height: 1.58;
   letter-spacing: -0.02em;
 
@@ -241,7 +248,7 @@
     font-size: 30px;
 
     @include media-query($on-laptop) {
-      font-size: 28px;
+      font-size: 26px;
     }
   }
 
