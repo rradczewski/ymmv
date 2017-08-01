@@ -22,7 +22,7 @@
       <meta name="twitter:image" content="{{ site.url }}{{ page.image | relative_url }}">
     {% else %}
       <meta name="twitter:card" content="summary">
-      <meta name="twitter:image" content="{{ "twitter_card_image.png" | relative_url }}">
+      <meta name="twitter:image" content="{{ site.url }}{{ "twitter_card_image.png" | relative_url }}">
     {% endif %}
     <meta name="twitter:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}">
     <meta name="twitter:description" content="{{ page.excerpt | strip_html | trim }}">
@@ -38,7 +38,7 @@
   {% if page.image %}
     <meta name="og:image" content="{{ site.url }}{{ page.image | relative_url }}">
   {% else %}
-    <meta name="og:image" content="{{ "twitter_card_image.png" | relative_url }}">
+    <meta name="og:image" content="{{ site.url }}{{ "twitter_card_image.png" | relative_url }}">
   {% endif %}
 
 </head>
