@@ -199,13 +199,8 @@
 .post-content {
   margin-bottom: $spacing-unit;
   font-family: $serif-font-family;
-  font-size: 22px;
   line-height: 1.58;
   letter-spacing: -0.02em;
-
-  @include media-query($on-laptop) {
-    font-size: 20px;
-  }
 
   .twitter-tweet {
     margin-left: auto;
@@ -224,10 +219,6 @@
     }
   }
 
-  @include media-query($on-palm) {
-    font-size: 18px;
-  }
-
   img {
     display: block;
     margin: 30px auto;
@@ -241,6 +232,7 @@
 
   a {
     text-decoration: underline;
+    text-decoration-skip: ink;
   }
 
   h2 {
