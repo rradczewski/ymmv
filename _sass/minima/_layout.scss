@@ -185,27 +185,19 @@
 }
 
 .post-image-wrapper {
-  width: 120%;
-  overflow: hidden;
-  padding: 10px 5px;
-  margin-left: -10%;
+  width: -webkit-calc(100% + (#{$spacing-unit} * 2));
+  width:         calc(100% + (#{$spacing-unit} * 2));
+  padding: 10px 0px;
+  margin-left: -$spacing-unit;
 
   @include media-query($content-width + $spacing-unit * 2) {
-    width: 100%;
-    padding: 0;
-    margin-left: 0px;
-    padding: initial;
-  }
-
-  @include media-query($on-palm) {
     width: -webkit-calc(100% + (#{$spacing-unit}));
     width:         calc(100% + (#{$spacing-unit}));
     margin-left: -($spacing-unit/2);
-    overflow: hidden;
     padding: initial;
   }
-}
 
+}
 .post-image {
   box-shadow: #999 0px 3px 10px;
 }
