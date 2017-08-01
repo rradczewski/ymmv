@@ -5,13 +5,14 @@
 }
 
 .site-subtitle {
-  color: #bbb;
+  color: $grey-color;
   font-family: $serif-font-family;
   text-align: center;
-  font-size: $base-font-size*0.8;
+  font-size: $base-font-size*0.9;
   font-style: italic;
   padding-right: 25px;
   letter-spacing: 1.3px;
+  margin-bottom: 25px;
 }
 
 .site-title {
@@ -22,7 +23,7 @@
   font-size: 60px;
   font-weight: 300;
   line-height: 56px;
-  margin: 80px 0 40px 0;
+  margin: 80px 0 30px 0;
 
   @include media-query($on-palm) {
     margin: 40px 0 20px 0;
