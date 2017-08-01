@@ -226,6 +226,17 @@
     &:before {
       content: 'TODO: ';
     }
+    &:after {
+      position: fixed;
+      top: 0px;
+      left: 0px;
+      width: 100vw;
+      text-align: center;
+      background: red;
+      color: white;
+      content: "TODO ON THIS PAGE";
+      display: block;
+    }
   }
 
   img {
