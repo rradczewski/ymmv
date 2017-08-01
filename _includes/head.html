@@ -11,6 +11,23 @@
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | absolute_url }}">
   <link rel="alternate" type="application/rss+xml" title="{{ site.title | escape }}" href="{{ "/feed.xml" | relative_url }}">
 
+  <link rel="apple-touch-icon" sizes="57x57" href="{{ "/apple-icon-57x57.png" | relative_url }}">
+  <link rel="apple-touch-icon" sizes="60x60" href="{{ "/apple-icon-60x60.png" | relative_url }}">
+  <link rel="apple-touch-icon" sizes="72x72" href="{{ "/apple-icon-72x72.png" | relative_url }}">
+  <link rel="apple-touch-icon" sizes="76x76" href="{{ "/apple-icon-76x76.png" | relative_url }}">
+  <link rel="apple-touch-icon" sizes="114x114" href="{{ "/apple-icon-114x114.png" | relative_url }}">
+  <link rel="apple-touch-icon" sizes="120x120" href="{{ "/apple-icon-120x120.png" | relative_url }}">
+  <link rel="apple-touch-icon" sizes="144x144" href="{{ "/apple-icon-144x144.png" | relative_url }}">
+  <link rel="apple-touch-icon" sizes="152x152" href="{{ "/apple-icon-152x152.png" | relative_url }}">
+  <link rel="apple-touch-icon" sizes="180x180" href="{{ "/apple-icon-180x180.png" | relative_url }}">
+  <link rel="icon" type="image/png" sizes="192x192"  href="{{ "/android-icon-192x192.png" | relative_url }}">
+  <link rel="icon" type="image/png" sizes="32x32" href="{{ "/favicon-32x32.png" | relative_url }}">
+  <link rel="icon" type="image/png" sizes="96x96" href="{{ "/favicon-96x96.png" | relative_url }}">
+  <link rel="icon" type="image/png" sizes="16x16" href="{{ "/favicon-16x16.png" | relative_url }}">
+  <link rel="manifest" href="{{ "/manifest.json" | relative_url }}">
+  <meta name="msapplication-TileColor" content="#AAAAAA">
+  <meta name="msapplication-TileImage" content="{{ "/ms-icon-144x144.png" | relative_url }}">
+
   <link rel="icon" href="{{ "favicon128.png" | relative_url }}" sizes="128x128" type="image/png">
   <link rel="shortcut icon" href="{{ "favicon128.png" | relative_url }}" sizes="128x128" type="image/png">
   <link rel="apple-touch-icon-precomposed" href="{{ "favicon128.png" | relative_url }}" type="image/png">
@@ -25,14 +42,14 @@
       <meta name="twitter:image" content="{{ site.url }}{{ "twitter_card_image.png" | relative_url }}">
     {% endif %}
     <meta name="twitter:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}">
-    <meta name="twitter:description" content="{{ page.excerpt | strip_html | trim }}">
+    <meta name="twitter:description" content="{{ page.excerpt | strip_html | trim | escape }}">
     <meta name="twitter:creator" content="@{{ site.twitter_username }}">
   {% endif %}
   <!-- Open Graph -->
 
   <meta property="og:type" content="article">
   <meta property="og:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}">
-  <meta property="og:description" content="{{ page.excerpt | strip_html }}">
+  <meta property="og:description" content="{{ page.excerpt | strip_html | escape }}">
   <meta property="og:url" content="{{ site.url }}{{ page.url }}">
   <meta property="og:site_name" content="{{ site.title }}">
   {% if page.image %}
