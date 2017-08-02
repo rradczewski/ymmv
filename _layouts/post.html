@@ -16,17 +16,7 @@ layout: default
     <h1 class="post-title" itemprop="name headline">{{ page.title | escape }}</h1>
     {% if page.image %}
     <div class="post-image-wrapper">
-      {% if page.image_preview %}
-        <div class="progressive-image-container">
-          <img class="post-image progressive-image-preview" alt="{{ page.image_alt }}" role="presentation" src="{{ page.image_preview | relative_url }}" />
-          <img class="post-image progressive-image" alt="{{ page.image_alt }}" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="  data-src="{{ page.image | relative_url }}" role="presentation" />
-        </div>
-        <noscript>
-          <img class="post-image" alt="{{ page.image_alt }}" role="presentation" src="{{ page.image | relative_url }}" />
-        </noscript>
-      {% else %}
-        <img class="post-image" alt="{{ page.image_alt }}" role="presentation" src="{{ page.image | relative_url }}" />
-      {% endif %}
+      {% include progressive-image.html classes="post-image" image=page.image image_preview=page.image_preview %}
     </div>
     {% endif %}
   </header>
@@ -39,19 +29,3 @@ layout: default
     {% include disqus_comments.html %}
   {% endif %}
 </article>
-
-<script>
-function loadImage(container) {
-  const preview = container.querySelector('.progressive-image-preview');
-  const image = container.querySelector('.progressive-image');
-
-  image.onload = function() {
-    image.classList.add('progressive-image-loaded');
-  }
-  image.src = image.dataset.src;
-}
-
-document.addEventListener('DOMContentLoaded', function() {
-  document.querySelectorAll('.progressive-image-container').forEach(loadImage);
-})
-</script>

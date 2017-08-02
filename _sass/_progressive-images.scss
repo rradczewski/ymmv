@@ -1,0 +1,38 @@
+.progressive-image-container {
+  position: relative;
+  width: 100%;
+  padding-top: 40.6%;
+
+  img {
+    box-shadow: 0;
+  }
+
+  .progressive-image,
+  .progressive-image-preview,
+  .progressive-image-placeholder {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    bottom: 0px;
+    right: 0px;
+  }
+
+  .progressive-image-preview {
+    opacity: 0;
+    &.progressive-image-preview-loaded {
+      opacity: 1;
+    }
+  }
+
+  .progressive-image-placeholder {
+    background-image: url(data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==);
+  }
+
+  .progressive-image {
+    opacity: 0;
+    &.progressive-image-loaded {
+      transition: 1000ms;
+      opacity: 1;
+    }
+  }
+}

@@ -202,29 +202,6 @@
   width: 100%;
 }
 
-.progressive-image-container {
-  position: relative;
-  width: 100%;
-  padding-top: 40.6%;
-
-  .progressive-image, .progressive-image-preview {
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    bottom: 0px;
-    right: 0px;
-  }
-
-  .progressive-image {
-    opacity: 0;
-    &.progressive-image-loaded {
-      transition: 2000ms;
-      opacity: 1;
-    }
-  }
-
-}
-
 .post-content {
   margin-bottom: $spacing-unit;
   font-family: $serif-font-family;
