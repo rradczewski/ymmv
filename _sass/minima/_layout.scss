@@ -218,7 +218,7 @@
   .progressive-image {
     opacity: 0;
     &.progressive-image-loaded {
-      transition: 400ms;
+      transition: 2000ms;
       opacity: 1;
     }
   }
