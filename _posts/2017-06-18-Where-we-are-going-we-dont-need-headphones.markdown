@@ -10,7 +10,7 @@ Let me share with you how I try to have people happily leave their headphones in
 
 ## Fix your office or don't force people to come
 
-A strong position, given, but let's be honest: If a company can't provide room for focus time, it needs to create a decent remote/home office culture and policies.
+A strong position, granted, but let's be honest: If a company can't provide room for focus time, it needs to create a decent remote/home office culture and policies.
 
 See for example how [vaamo](https://codecraft.vaamo.de/jobs/web-frontend-dev.html), my previous employer, describes their *Remote Culture* in one of their current job offerings:
 
