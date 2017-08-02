@@ -2,6 +2,7 @@
 layout: post
 title: "Continuing my journey as a Freelance Software Craftsman"
 image: /assets/continuing_background.jpg
+image_preview: /assets/continuing_background_preview.jpg
 image_alt: A railroad, meant as a metaphor for travelling and continuing my journey
 excerpt: After spending the last two years at vaamo, working on a lot of very interesting and most diverse projects with an awesome team, I decided that it is time for me to continue my journey as a freelance software craftsman, so now I’m looking for teams and projects to work with in order to create awesome products and to help them shape their culture.
 ---

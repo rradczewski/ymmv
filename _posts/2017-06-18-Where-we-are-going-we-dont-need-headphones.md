@@ -2,6 +2,7 @@
 layout: post
 title: "Where we're going, we don't need headphones!"
 image: /assets/office_noise_background.jpg
+image_preview: /assets/office_noise_background_preview.jpg
 image_alt: Headphones on the keyboard on a laptop, depicting a typical way to flee loud environments
 ---
 
