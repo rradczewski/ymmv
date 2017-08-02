@@ -1,0 +1,43 @@
+---
+---
+/* cutive-mono-regular - latin */
+@font-face {
+  font-family: 'Cutive Mono';
+  font-style: normal;
+  font-weight: 400;
+  src: url({{ "/assets/fonts/cutive-mono-v5-latin-regular.eot" | relative_url }}); /* IE9 Compat Modes */
+  src: local('Cutive Mono Regular'), local('CutiveMono-Regular'),
+       url({{ "/assets/fonts/cutive-mono-v5-latin-regular.eot?#iefix" | relative_url }}) format('embedded-opentype'), /* IE6-IE8 */
+       url({{ "/assets/fonts/cutive-mono-v5-latin-regular.woff2" | relative_url }}) format('woff2'), /* Super Modern Browsers */
+       url({{ "/assets/fonts/cutive-mono-v5-latin-regular.woff" | relative_url }}) format('woff'), /* Modern Browsers */
+       url({{ "/assets/fonts/cutive-mono-v5-latin-regular.ttf" | relative_url }}) format('truetype'), /* Safari, Android, iOS */
+       url({{ "/assets/fonts/cutive-mono-v5-latin-regular.svg#CutiveMono" | relative_url }}) format('svg'); /* Legacy iOS */
+}
+
+/* fanwood-text-regular - latin */
+@font-face {
+  font-family: 'Fanwood Text';
+  font-style: normal;
+  font-weight: 400;
+  src: url({{ "/assets/fonts/fanwood-text-v6-latin-regular.eot" | relative_url }}); /* IE9 Compat Modes */
+  src: local('Fanwood Text'), local('FanwoodText-Regular'),
+       url({{ "/assets/fonts/fanwood-text-v6-latin-regular.eot?#iefix" | relative_url }}) format('embedded-opentype'), /* IE6-IE8 */
+       url({{ "/assets/fonts/fanwood-text-v6-latin-regular.woff2" | relative_url }}) format('woff2'), /* Super Modern Browsers */
+       url({{ "/assets/fonts/fanwood-text-v6-latin-regular.woff" | relative_url }}) format('woff'), /* Modern Browsers */
+       url({{ "/assets/fonts/fanwood-text-v6-latin-regular.ttf" | relative_url }}) format('truetype'), /* Safari, Android, iOS */
+       url({{ "/assets/fonts/fanwood-text-v6-latin-regular.svg#FanwoodText" | relative_url }}) format('svg'); /* Legacy iOS */
+}
+
+/* open-sans-regular - latin */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: url({{ "/assets/fonts/open-sans-v14-latin-regular.eot" | relative_url }}); /* IE9 Compat Modes */
+  src: local('Open Sans Regular'), local('OpenSans-Regular'),
+       url({{ "/assets/fonts/open-sans-v14-latin-regular.eot?#iefix" | relative_url }}) format('embedded-opentype'), /* IE6-IE8 */
+       url({{ "/assets/fonts/open-sans-v14-latin-regular.woff2" | relative_url }}) format('woff2'), /* Super Modern Browsers */
+       url({{ "/assets/fonts/open-sans-v14-latin-regular.woff" | relative_url }}) format('woff'), /* Modern Browsers */
+       url({{ "/assets/fonts/open-sans-v14-latin-regular.ttf" | relative_url }}) format('truetype'), /* Safari, Android, iOS */
+       url({{ "/assets/fonts/open-sans-v14-latin-regular.svg#OpenSans" | relative_url }}) format('svg'); /* Legacy iOS */
+}
