@@ -1,0 +1,12 @@
+{% if include.image_preview %}
+  <div class="progressive-image-container">
+    <div class="progressive-image-placeholder">&nbsp;</div>
+    <img class="{{ include.classes }} progressive-image-preview" alt="{{ include.image_alt }}" role="presentation" data-src="{{ include.image_preview | relative_url }}" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" />
+    <img class="{{ include.classes }} progressive-image" alt="{{ include.image_alt }}" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="  data-src="{{ include.image | relative_url }}" role="presentation" />
+  </div>
+  <noscript>
+    <img class="{{ include.classes }}" alt="{{ include.image_alt }}" role="presentation" src="{{ include.image | relative_url }}" />
+  </noscript>
+{% else %}
+  <img class="{{ include.classes }}" alt="{{ include.image_alt }}" role="presentation" src="{{ include.image | relative_url }}" />
+{% endif %}
