@@ -1,17 +1,17 @@
 ---
 layout: post
-title: "Continuing my journey as a Freelance Software Craftsman"
+title: "Continuing my journey as a Freelance Software Craftsperson"
 image: /assets/continuing_background.jpg
 image_preview: /assets/continuing_background_preview.jpg
 image_alt: A railroad, meant as a metaphor for travelling and continuing my journey
-excerpt: After spending the last two years at vaamo, working on a lot of very interesting and most diverse projects with an awesome team, I decided that it is time for me to continue my journey as a freelance software craftsman, so now I’m looking for teams and projects to work with in order to create awesome products and to help them shape their culture.
+excerpt: After spending the last two years at vaamo, working on a lot of very interesting and most diverse projects with an awesome team, I decided that it is time for me to continue my journey as a freelance software craftsperson, so now I’m looking for teams and projects to work with in order to create awesome products and to help them shape their culture.
 ---
 
 *This post is republished from [medium](https://medium.com/@rradczewski/continuing-my-journey-as-a-freelance-software-craftsman-4df60f023f20)*
 
 It's been about five years now since [Jan](https://twitter.com/janernsting) introduced me to the wonderful community that is Software Craftsmanship and the SoCraTes conferences, something for which I'm infinitely grateful to him.
 
-After spending the last two years at [vaamo](https://codecraft.vaamo.de), working on a lot of very interesting and most diverse projects with an awesome team, I decided that it is time for me to continue my journey as a freelance software craftsman, so now *I'm looking for teams and projects to work with in order to create awesome products and to help them shape their culture.*
+After spending the last two years at [vaamo](https://codecraft.vaamo.de), working on a lot of very interesting and most diverse projects with an awesome team, I decided that it is time for me to continue my journey as a freelance software craftsperson, so now *I'm looking for teams and projects to work with in order to create awesome products and to help them shape their culture.*
 
 If you're interested in me working with you, don't hesitate to [get in touch with me](mailto:raimo@craftswerk.io)!
 
@@ -33,9 +33,9 @@ Organizing the [Software Craftsmanship Community in Berlin](http://www.meetup.co
 
 I put all my experience, patience and empathy into coaching people, be it mentoring novices to get them up to speed with JavaScript, or facilitating workshops for whole teams to get them into the practices of Extreme Programming.
 
-## Bringing Craftsmanship values into a company
+## Bringing Craft values into a company
 
-One thing I'm deeply passionate about is helping others learn about craftsmanship and agile values. I'm grateful for having worked in professional, honest and empathetic teams in the past and I love to share my insights and experience with other teams and their companies.
+One thing I'm deeply passionate about is helping others learn about craft and agile values. I'm grateful for having worked in professional, honest and empathetic teams in the past and I love to share my insights and experience with other teams and their companies.
 
 My favorite method to spark a flame of professional software development practices is without a doubt a coderetreat. Best organized as a day-long event far away from the daily chores of a software developer, it's a workshop designed to enable developers to learn about TDD, pair programming and software design in an environment created for a deliberate learning experience. I've been running plenty of coderetreats and I'm honored to organize the Global Day Of Coderereat for the second time this year.
 
