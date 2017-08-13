@@ -1,7 +1,7 @@
 ---
 layout: page
 title: About
-excerpt: Hi, I'm Raimo, a self-employed Software Craftsperson from Berlin, Germany. I help companies build a culture suited to grow and empower people and have them enjoy their work. I also write code ;-)
+excerpt: Hi, I'm Raimo, a self-employed Software Crafter from Berlin, Germany. I help companies build a culture suited to grow and empower people and have them enjoy their work. I also write code ;-)
 hide_title: true
 permalink: /about/
 ---
@@ -10,7 +10,7 @@ permalink: /about/
 
 ## Hi, I'm Raimo
 
-I'm a [self-employed Software Craftsperson]({{ site.baseurl }}{% post_url 2017-02-06-Continuing_my_journey_as_a_Freelance_Software_Craftsperson %}) from Berlin, Germany. I help companies build a culture suited to grow and empower people and have them enjoy their work. I also write a lot of code (mostly in JavaScript, React, Redux lately), am fond of Domain-Driven Design and an advocate for Test-Driven-Development.
+I'm a [self-employed Software Crafter]({{ site.baseurl }}{% post_url 2017-02-06-Continuing_my_journey_as_a_Freelance_Software_Crafter %}) from Berlin, Germany. I help companies build a culture suited to grow and empower people and have them enjoy their work. I also write a lot of code (mostly in JavaScript, React, Redux lately), am fond of Domain-Driven Design and an advocate for Test-Driven-Development.
 
 I owe a lot to the communities out there, which is why I'm trying to give something back, by sharing my experience through this blog and by organizing the [Software Craftsmanship Meetup Berlin](http://www.meetup.com/Software-Craftsmanship-Berlin/), the [Global Day of Coderetreat](http://www.coderetreat.org), the [worldwide Software Craftsmanship Slack](http://slack.softwarecraftsmanship.org/) and help out at the [Domain-Driven Design Meetup Berlin](https://www.meetup.com/Domain-Driven-Design-Berlin/).
 

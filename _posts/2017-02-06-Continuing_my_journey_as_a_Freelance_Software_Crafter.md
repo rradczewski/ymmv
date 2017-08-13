@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Continuing my journey as a Freelance Software Craftsperson"
+title: "Continuing my journey as a Freelance Software Crafter"
 image: /assets/continuing_background.jpg
 image_preview: /assets/continuing_background_preview.jpg
 image_alt: A railroad, meant as a metaphor for travelling and continuing my journey
@@ -9,9 +9,9 @@ excerpt: After spending the last two years at vaamo, working on a lot of very in
 
 *This post is republished from [medium](https://medium.com/@rradczewski/continuing-my-journey-as-a-freelance-software-craftsman-4df60f023f20)*
 
-It's been about five years now since [Jan](https://twitter.com/janernsting) introduced me to the wonderful community that is Software Craftsmanship and the SoCraTes conferences, something for which I'm infinitely grateful to him.
+It's been about five years now since [Jan](https://twitter.com/janernsting) introduced me to the wonderful community that is the Software Craft movement and the SoCraTes conferences, something for which I'm infinitely grateful to him.
 
-After spending the last two years at [vaamo](https://codecraft.vaamo.de), working on a lot of very interesting and most diverse projects with an awesome team, I decided that it is time for me to continue my journey as a freelance software craftsperson, so now *I'm looking for teams and projects to work with in order to create awesome products and to help them shape their culture.*
+After spending the last two years at [vaamo](https://codecraft.vaamo.de), working on a lot of very interesting and most diverse projects with an awesome team, I decided that it is time for me to continue my journey as a freelance software crafter, so now *I'm looking for teams and projects to work with in order to create awesome products and to help them shape their culture.*
 
 If you're interested in me working with you, don't hesitate to [get in touch with me](mailto:raimo@craftswerk.io)!
 
@@ -29,7 +29,7 @@ Chances are, if you have already met me before, you probably know I have a thing
 
 ## Sharing my knowledge
 
-Organizing the [Software Craftsmanship Community in Berlin](http://www.meetup.com/Software-Craftsmanship-Berlin/) for the last two years has taught me what it takes to host and facilitate group workshops. For over 2300 members, we're organizing a Coding Kata every month and a few full-day coderetreats every year and I'm always there helping people to get into TDD, pair programming, new programming languages and more.
+Organizing the [Software Craft Community in Berlin](http://www.meetup.com/Software-Craftsmanship-Berlin/) for the last two years has taught me what it takes to host and facilitate group workshops. For over 2300 members, we're organizing a Coding Kata every month and a few full-day coderetreats every year and I'm always there helping people to get into TDD, pair programming, new programming languages and more.
 
 I put all my experience, patience and empathy into coaching people, be it mentoring novices to get them up to speed with JavaScript, or facilitating workshops for whole teams to get them into the practices of Extreme Programming.
 

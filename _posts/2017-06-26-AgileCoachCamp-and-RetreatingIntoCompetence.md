@@ -36,7 +36,7 @@ Especially when struggling with a subject or feeling overwhelmed, getting back i
 
 ## I'm more confident in coding than I am in coaching
 
-Since becoming a [Freelancer earlier this year]({{ site.baseurl }}{% post_url 2017-02-06-Continuing_my_journey_as_a_Freelance_Software_Craftsperson %}), I've been working with clients in a very interesting setting: Almost half of my time is spent working on frontend projects, the other half is spent improving their rituals and their company culture.
+Since becoming a [Freelancer earlier this year]({{ site.baseurl }}{% post_url 2017-02-06-Continuing_my_journey_as_a_Freelance_Software_Crafter %}), I've been working with clients in a very interesting setting: Almost half of my time is spent working on frontend projects, the other half is spent improving their rituals and their company culture.
 
 Now here is an interesting thing I found out about me in this time: I'm very much enjoying doing both coding and coaching, yet the latter is much more challenging and exhausting for me.  
 After spending days preparing retrospectives and revisiting the rituals the team implemented - doing something that is depleting my batteries - I noticed that I'd like to take a step back and recharge them through coding.
