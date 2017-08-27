@@ -41,3 +41,59 @@
        url({{ "/assets/fonts/open-sans-v14-latin-regular.ttf" | relative_url }}) format('truetype'), /* Safari, Android, iOS */
        url({{ "/assets/fonts/open-sans-v14-latin-regular.svg#OpenSans" | relative_url }}) format('svg'); /* Legacy iOS */
 }
+
+/* noto-serif-regular - latin */
+@font-face {
+  font-family: 'Noto Serif';
+  font-style: normal;
+  font-weight: 400;
+  src: url({{ "/assets/fonts/noto-serif-v4-latin-regular.eot" | relative_url }}); /* IE9 Compat Modes */
+  src: local('Noto Serif'), local('NotoSerif'),
+       url({{ "/assets/fonts/noto-serif-v4-latin-regular.eot?#iefix" | relative_url }}) format('embedded-opentype'), /* IE6-IE8 */
+       url({{ "/assets/fonts/noto-serif-v4-latin-regular.woff2" | relative_url }}) format('woff2'), /* Super Modern Browsers */
+       url({{ "/assets/fonts/noto-serif-v4-latin-regular.woff" | relative_url }}) format('woff'), /* Modern Browsers */
+       url({{ "/assets/fonts/noto-serif-v4-latin-regular.ttf" | relative_url }}) format('truetype'), /* Safari, Android, iOS */
+       url({{ "/assets/fonts/noto-serif-v4-latin-regular.svg#NotoSerif" | relative_url }}) format('svg'); /* Legacy iOS */
+}
+
+/* noto-serif-italic - latin */
+@font-face {
+  font-family: 'Noto Serif';
+  font-style: italic;
+  font-weight: 400;
+  src: url({{ "/assets/fonts/noto-serif-v4-latin-italic.eot" | relative_url }}); /* IE9 Compat Modes */
+  src: local('Noto Serif Italic'), local('NotoSerif-Italic'),
+       url({{ "/assets/fonts/noto-serif-v4-latin-italic.eot?#iefix" | relative_url }}) format('embedded-opentype'), /* IE6-IE8 */
+       url({{ "/assets/fonts/noto-serif-v4-latin-italic.woff2" | relative_url }}) format('woff2'), /* Super Modern Browsers */
+       url({{ "/assets/fonts/noto-serif-v4-latin-italic.woff" | relative_url }}) format('woff'), /* Modern Browsers */
+       url({{ "/assets/fonts/noto-serif-v4-latin-italic.ttf" | relative_url }}) format('truetype'), /* Safari, Android, iOS */
+       url({{ "/assets/fonts/noto-serif-v4-latin-italic.svg#NotoSerif" | relative_url }}) format('svg'); /* Legacy iOS */
+}
+
+/* noto-serif-700 - latin */
+@font-face {
+  font-family: 'Noto Serif';
+  font-style: normal;
+  font-weight: 700;
+  src: url({{ "/assets/fonts/noto-serif-v4-latin-700.eot" | relative_url }}); /* IE9 Compat Modes */
+  src: local('Noto Serif Bold'), local('NotoSerif-Bold'),
+       url({{ "/assets/fonts/noto-serif-v4-latin-700.eot?#iefix" | relative_url }}) format('embedded-opentype'), /* IE6-IE8 */
+       url({{ "/assets/fonts/noto-serif-v4-latin-700.woff2" | relative_url }}) format('woff2'), /* Super Modern Browsers */
+       url({{ "/assets/fonts/noto-serif-v4-latin-700.woff" | relative_url }}) format('woff'), /* Modern Browsers */
+       url({{ "/assets/fonts/noto-serif-v4-latin-700.ttf" | relative_url }}) format('truetype'), /* Safari, Android, iOS */
+       url({{ "/assets/fonts/noto-serif-v4-latin-700.svg#NotoSerif" | relative_url }}) format('svg'); /* Legacy iOS */
+}
+
+/* noto-serif-700italic - latin */
+@font-face {
+  font-family: 'Noto Serif';
+  font-style: italic;
+  font-weight: 700;
+  src: url({{ "/assets/fonts/noto-serif-v4-latin-700italic.eot" | relative_url }}); /* IE9 Compat Modes */
+  src: local('Noto Serif Bold Italic'), local('NotoSerif-BoldItalic'),
+       url({{ "/assets/fonts/noto-serif-v4-latin-700italic.eot?#iefix" | relative_url }}) format('embedded-opentype'), /* IE6-IE8 */
+       url({{ "/assets/fonts/noto-serif-v4-latin-700italic.woff2" | relative_url }}) format('woff2'), /* Super Modern Browsers */
+       url({{ "/assets/fonts/noto-serif-v4-latin-700italic.woff" | relative_url }}) format('woff'), /* Modern Browsers */
+       url({{ "/assets/fonts/noto-serif-v4-latin-700italic.ttf" | relative_url }}) format('truetype'), /* Safari, Android, iOS */
+       url({{ "/assets/fonts/noto-serif-v4-latin-700italic.svg#NotoSerif" | relative_url }}) format('svg'); /* Legacy iOS */
+}
