@@ -162,10 +162,7 @@
 .post-link {
   display: block;
   margin-top: 10px;
-  font-size: 24px;
 }
-
-
 
 /**
  * Posts
@@ -174,14 +171,13 @@
   margin-bottom: $spacing-unit;
 }
 
+.post-link, .post-title {
+  font-size: 24px;
+  line-height: 36px;
+}
+
 .post-title {
   margin-top: 10px;
-  font-size: 24px;
-
-  @include media-query($on-laptop) {
-    font-size: 24px;
-    line-height: 36px;
-  }
 }
 
 .post-image-wrapper {
