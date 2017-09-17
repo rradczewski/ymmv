@@ -44,6 +44,8 @@ I of course remember how nervous I've been at every interview, checking the loca
 >
 > Looking forward to meeting you!
 
+Suggestion by Ruben: "I bring my own laptop, with this setup, I will happily show you how it works. If you have, you can also ging your own, but it's no necessity'
+
 ## The pairing
 
 - Working on a production code base
