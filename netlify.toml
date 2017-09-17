@@ -1,0 +1,8 @@
+[build]
+  command = jekyll build
+  publish = _site
+
+[context.draft]
+  command = jekyll build --drafts
+  publish = _site
+
