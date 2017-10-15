@@ -102,7 +102,7 @@ The *Tooling* chapter should answer questions related to the tools you use every
 
 ### 💅 Guidelines for coding style, conventions
 
-> If you're in doubt our might implement complex or critical features, please write a test that gives you (and future-you and me who will have to take care of maintenance) enough confidence in that it will notify us if the feature is broken (by failing).
+> If you're in doubt or implementing complex or critical features, please write a test that gives you (and future-you and me who will have to take care of maintenance) enough confidence in that it will notify us if the feature is broken (by failing).
 
 The nit-picky part. What coding style should everyone adhere to? What is your *definition of done* when it comes to test-coverage? Avoid flawed Pull Requests by mentioning your quality expectations here.
 
