@@ -9,7 +9,9 @@ Have a look at your `README` right now. How easy is it for *anyone* to get your 
 
 If you're the newest hire in a company or their onboarding-buddy, here's a good housekeeping task **for both of you**: Whatever project you need to setup on your machine, make sure to update the README and document all your findings as you set up the project. You reached your goal if someone completely unfamiliar with your project can set it up in a few minutes without major issues.
 
-If you could use some guidance, the following post explains how I'd like to setup READMEs.
+If you could use some guidance, the following post explains how I like to setup READMEs.
+
+Let me encourage you to go the extra mile on this one, it will make life so much easier for everyone who would like to contribute to your project! 👌
 
 ## 🤔 Your project at a glance: What and how?
 
@@ -110,8 +112,16 @@ If you have a particular way of structuring your modules and folders, explaining
 
 ## 💡 Resources
 
-### 📖 Further Readings
+If someone reaches this at the end of your README, you've done a good job and they might be longing for more information about your project. Now take a step back and think about what helped you getting started.
 
-### 🎥 Workshops, Talks
+What are the resources you keep coming back to while developing, the resources that shaped the project in some way and of course resources that helped you learn the intricacies of the language your project is written in and the libraries you use the most?
 
-### 🔗 Important Libraries
+Link to important 📖 blogposts and books, 🎥 talks to watch and 📂 repositories of the libraries you're using. If there's a good online course, add that to it as well.
+
+## What you'll end up with
+
+If you've followed the guide above, your `README` should now cover most of the steps needed in order to get started on your project - no matter if someone wants to correct a translation, fix a minor bug or develop a brand new feature. Your next teammate will be able to deploy on their first day on the job 🎉.
+
+![A task on trello that asks new hires to update the README if they run into problems]({{ "/assets/update-the-readme.png" | relative_url }})
+
+The last thing left for you now is to ask your next team member - on their first day on the job - to setup the project and document everything in the README, updating it as they go along and encounter problems.
