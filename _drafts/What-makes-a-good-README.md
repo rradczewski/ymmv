@@ -5,21 +5,28 @@ image: /assets/readme_background.jpg
 image_preview: /assets/readme_background_preview.jpg
 image_alt: The README of the SoftwareCrafters/website project
 ---
-Have a look at your `README` right now. How easy is it to get your project up and running from scratch? What does someone need to know about making changes to the codebase? Chances are, if your README is not providing definite and up to date answers to these questions, you're making it harder than necessary for people to contribute and experiment.
+Have a look at your `README` right now. How easy is it for *anyone* to get your project up and running from scratch? What does someone need to know about making changes to the codebase? Chances are, if your README is not providing definite and up to date answers to these questions, you're making it harder than necessary for people to contribute and experiment.
 
 If you're the newest hire in a company or their onboarding-buddy, here's a good housekeeping task **for both of you**: Whatever project you need to setup on your machine, make sure to update the README and document all your findings as you set up the project. You reached your goal if someone completely unfamiliar with your project can set it up in a few minutes without major issues.
 
 If you could use some guidance, the following post explains how I'd like to setup READMEs.
 
-## Your project at a glance: What and how?
+## 🤔 Your project at a glance: What and how?
 
 Your `README` is the first thing you see when you go on a project repository, be it on github oder gitlab. The first question it should answer is: *Is this what I'm looking for?*
 
 What is the project good for? Is it the frontend? Is it the backend? Is it a collection of database migration scripts?
+If it is deployed, here's a good place to put links to the deployments.
 
-## Prerequisites: What do you need to get started?
+> | Name | URL | What is deployed |
+|-------|--------|---------|
+| live | https://your-company.example | Everything that is tagged on master will be auto-deployed here |
+| staging | https://staging.your-company.example | The latest master version, usually volatile and without live data |
+| pull_requests | https://$BRANCH--staging.your-company.example | Every Pull Request is auto-deployed |
 
-> Run this once
+
+## 🚀 Prerequisites: What do you need to get started?
+
 > ```shell
 $ brew install nvm gnu-sed watchman  # Mac
 $ yaourt -S nvm                      # Linux
@@ -29,7 +36,7 @@ There's always something. You usually need to install a version manager (looking
 
 It's always a good idea to cover the major platforms and ecosystems your colleagues might have.
 
-## Running it - You need this all the time
+## ▶️ Running it - You need this all the time
 
 > ```shell
 $ git pull origin   # Get the latest changes
@@ -42,11 +49,11 @@ Why bother adding `git pull` here you may ask. The answer is, I want everyone in
 
 What I also do here (with `nvm install` and `npm install`), is cover updating dependencies should they have changed.
 
-## Housekeeping / Troubleshooting
+## 🔎 Housekeeping / Troubleshooting
 
 > ```shell
-$ git checkout -f master  # Make sure you're on master
-$ git reset --hard HEAD   # Undo all changes you did
+$ git checkout -f master  # Make sure you're on master and throw away all changes
+$ git clean -xfd          # Undo all untracked changes you did
 $ git pull origin         # Retrieve latest commit
 >
 $ nvm install             # Make sure you're running the node version we need
@@ -60,19 +67,51 @@ If someone is running into problems setting up your project, chances are they ha
 
 Make sure to warn them about commands like `git clean -xfd` or `git checkout -f master` though - these will remove all untracked files, even those ignored through `.gitignore`, and undo all changes they did to tracked files - possibly resulting in data loss.
 
-## Contributing: What you should know if you want to change something
+## 😍 Contributing
 
+> ```shell
+npm run test    # Run the tests
+npm run build   # Try building the application
+```
 
-# development
+Now that you helped them get the project running, it's time to explain what they need to observe in order to contribute. Public repositories usually go for a `CONTRIBUTE.md`, a file that is also integrated into [GitHubs Pull Request & Issue workflow](https://github.com/blog/1184-contributing-guidelines), but in private repositories, it usually suffices to explain the steps necessary for people to get their changes into the app.
 
-## repository structure
+The most important questions to answer here are *"Can I break something?"* and if so, *"How can I check that I didn't break something"* and *"How do I unbreak the app?"*.
 
-## guidelines for style, conventions
+Explain how to run the tests locally to verify changes. If you're using a branching model, explain that contributions on a branch can not break the application running on a server. If you're working with *Pull Requests*, explain how your CI/Netlify/etc will give the contributor meaningful feedback should they make a mistake.
 
-# resources
+## ⚙️ Development
 
-## further readings
+By now, you should've covered the basic steps necessary to setup and run the application, as well as making some smaller contributions. Congrats! Now, for the rest of the README, our target group are your teammates, in particular the newest on the team 👋.
 
-## workshops, talks
+In this chapter, you'll elaborate about the way you go about developing the project.
 
-## important libraries
+### 🔁 Processes
+
+Document the virtues and values your development team agrees to here. How often do you want to deploy? How stable should branches (or `master`) be?
+
+Maybe you are using a [trunk-based development workflow](https://codecraft.vaamo.de/2014/12/19/simple-git-workflow-at-vaamo.html), maybe your organization calls for tickets being made in order to track time and changes 😱, or your commit messages should follow the [conventional commit history](https://github.com/bcoe/conventional-changelog-standard/blob/master/convention.md) format.
+
+This chapter should give new team members an overview about how you go about developing together on the project.
+
+### 🔨 Tooling
+
+The *Tooling* chapter should answer questions related to the tools you use every day while working on the project. There might be particularities with how the IDE needs to be setup, some *precommit* hooks that should not be omitted or docker images one can use in order to locally test the project in a more integrated manner.
+
+### 💅 Guidelines for coding style, conventions
+
+> If you're in doubt our might implement complex or critical features, please write a test that gives you (and future-you and me who will have to take care of maintenance) enough confidence in that it will notify us if the feature is broken (by failing).
+
+The nit-picky part. What coding style should everyone adhere to? What is your *definition of done* when it comes to test-coverage? Avoid flawed Pull Requests by mentioning your quality expectations here.
+
+If you have a particular way of structuring your modules and folders, explaining how to navigate through the codebase (maybe by giving an example), tremendously helps new team members in finding their way around the codebase.
+
+> The project structure is quite simple, adhering for the most parts to the way $FRAMEWORK does it. As a general rule, I try to keep conceptually coupled things as close to each other as possible - grouping files by how close they interact with each other (`/checkout-page`), not by what they are (<strike><code>/models</code></strike>).
+
+## 💡 Resources
+
+### 📖 Further Readings
+
+### 🎥 Workshops, Talks
+
+### 🔗 Important Libraries
