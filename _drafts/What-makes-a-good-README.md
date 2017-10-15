@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Why your repository needs a good README
+title: What makes a good README?
 image: /assets/readme_background.jpg
 image_preview: /assets/readme_background_preview.jpg
 image_alt: The README of the SoftwareCrafters/website project
@@ -60,11 +60,8 @@ If someone is running into problems setting up your project, chances are they ha
 
 Make sure to warn them about commands like `git clean -xfd` or `git checkout -f master` though - these will remove all untracked files, even those ignored through `.gitignore`, and undo all changes they did to tracked files - possibly resulting in data loss.
 
-# contributing
+## Contributing: What you should know if you want to change something
 
-## contribution workflow
-
-## verification and tests
 
 # development
 
