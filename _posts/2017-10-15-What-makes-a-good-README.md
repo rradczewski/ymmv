@@ -34,7 +34,7 @@ $ brew install nvm gnu-sed watchman  # Mac
 $ yaourt -S nvm                      # Linux
 ```
 
-There's always something. You usually need to install a version manager (looking at you, nvm, rvm and such), docker or vagrant. If your dependencies need some specific setup, place it here to make it visible before people start to setup the project.
+There's always something. You usually need to install a version manager (looking at you, nvm, rvm and such), docker or vagrant. If your dependencies need some specific setup, place the instructions here to make it visible before people start to setup the project.
 
 It's always a good idea to cover the major platforms and ecosystems your colleagues might have.
 
@@ -47,9 +47,9 @@ $ npm install       # Make sure all dependencies are up-to-date
 $ npm start         # Run the application
 ```
 
-Why bother adding `git pull` here you may ask. The answer is, I want everyone in the company to be able to run the latest version of our project on their machine, so I rather mention one more command than leaving them with an old version.
+Why bother adding `git pull` here you may ask. The answer is simple: I want everyone in the company to be able to run the latest version of our project on their machine, so I rather mention one more "obvious" command than leaving them with an old version.
 
-What I also do here (with `nvm install` and `npm install`), is cover updating dependencies should they have changed.
+What I also do here (with `nvm install` and `npm install`), is to cover updating all the dependencies should they have changed.
 
 ## 🔎 Housekeeping / Troubleshooting
 
@@ -65,13 +65,13 @@ $ npm test                # Run the tests
 $ npm start               # Does this work now?
 ```
 
-This is the paragraph you need to make sure to narrow down if it's an issue with the codebase or the persons machine. Maybe they have unstaged changes or missing dependencies - or your latest revision contains a severe bug that keeps them from running the application.
+This is the paragraph you need to make sure to narrow down if  an issue is due to the codebase or the persons machine. Maybe they have unstaged changes or missing dependencies - or your latest revision contains a severe bug that keeps them from running the application.
 
 Guide them through the process of cleaning up the repository, and, if everything else fails, explain where they should file an issue.
 
 Make sure to warn them about commands like `git clean -xfd` or `git checkout -f master` though - these will remove all untracked files, even those ignored through `.gitignore`, and undo all changes they did to tracked files - possibly resulting in data loss.
 
-As [@hollodotme](https://twitter.com/hollodotme) noted in the feedback [to this Post](https://github.com/rradczewski/ymmv/pull/3#discussion_r144734286), this section can also contain FAQs to specific problems, e.g. errors due to wrong environment variables or explanations for less verbose error messages and problems.
+As [@hollodotme](https://twitter.com/hollodotme) noted in the [feedback to this post](https://github.com/rradczewski/ymmv/pull/3#discussion_r144734286), this section can also contain FAQs to specific problems, e.g. errors due to wrong environment variables or explanations for less self-explanatory error messages and problems.
 
 ## 😍 Contributing
 
@@ -80,11 +80,11 @@ npm run test    # Run the tests
 npm run build   # Try building the application
 ```
 
-Now that you helped them get the project running, it's time to explain what they need to observe in order to contribute. Public repositories usually go for a `CONTRIBUTE.md`, a file that is also integrated into [GitHubs Pull Request & Issue workflow](https://github.com/blog/1184-contributing-guidelines), but in private repositories, it usually suffices to explain the steps necessary for people to get their changes into the app.
+Now that you helped them get the project running, it's time to explain what they need to observe in order to contribute to the project. Public repositories usually go for a `CONTRIBUTE.md`, a file that is also integrated into [GitHubs Pull Request & Issue workflow](https://github.com/blog/1184-contributing-guidelines), but in private repositories, it usually suffices to explain the steps necessary for people to get their changes into the app.
 
 The most important questions to answer here are *"Can I break something?"* and if so, *"How can I check that I didn't break something"* and *"How do I unbreak the app?"*.
 
-Explain how to run the tests locally to verify changes. If you're using a branching model, explain that contributions on a branch can not break the application running on a server. If you're working with *Pull Requests*, explain how your CI/Netlify/etc will give the contributor meaningful feedback should they make a mistake.
+Explain how to run the tests locally to verify changes. If you're using a branching model, explain that contributions on a branch can not break the application running on a server. If you're working with *Pull Requests*, explaining how your CI/Netlify/etc integration works will give the contributor meaningful feedback should they make a mistake.
 
 ## ⚙️ Development
 
@@ -96,7 +96,7 @@ In this chapter, you'll elaborate about the way you go about developing the proj
 
 Document the virtues and values your development team agrees to here. How often do you want to deploy? How stable should branches (or `master`) be?
 
-Maybe you are using a [trunk-based development workflow](https://codecraft.vaamo.de/2014/12/19/simple-git-workflow-at-vaamo.html), maybe your organization calls for tickets being made in order to track time and changes 😱, or your commit messages should follow the [conventional commit history](https://github.com/bcoe/conventional-changelog-standard/blob/master/convention.md) format.
+Maybe you are using a [trunk-based development workflow](https://codecraft.vaamo.de/2014/12/19/simple-git-workflow-at-vaamo.html), maybe your organization calls for tickets being made in order to track time and changes 😱, or your commit messages are supposed to follow the [conventional commit history format](https://github.com/bcoe/conventional-changelog-standard/blob/master/convention.md).
 
 This chapter should give new team members an overview about how you go about developing together on the project.
 
