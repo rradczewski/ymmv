@@ -5,7 +5,7 @@ image: /assets/readme_background.jpg
 image_preview: /assets/readme_background_preview.jpg
 image_alt: The README of the SoftwareCrafters/website project
 ---
-Have a look at your `README` right now. How easy is it for *anyone* to get your project up and running from scratch? What does someone need to know about making changes to the codebase? Chances are, if your README is not providing definite and up to date answers to these questions, you're making it harder than necessary for people to contribute and experiment.
+Have a look at the `README` in your current project. How easy is it for *anyone* to get your project up and running from scratch? What does someone need to know about making changes to the codebase? Chances are, if your README is not providing definite and up to date answers to these questions, you're making it harder than necessary for people to contribute and experiment.
 
 If you're the newest hire in a company or their onboarding-buddy, here's a good housekeeping task **for both of you**: Whatever project you need to setup on your machine, make sure to update the README and document all your findings as you set up the project. You reached your goal if someone completely unfamiliar with your project can set it up in a few minutes without major issues.
 
@@ -65,9 +65,13 @@ $ npm test                # Run the tests
 $ npm start               # Does this work now?
 ```
 
-If someone is running into problems setting up your project, chances are they have unstaged changes, broken dependencies, or happened to pull the latest changes that contain severe bugs. This is the paragraph you need to make sure to narrow down if it's an issue with the codebase or the persons machine.
+This is the paragraph you need to make sure to narrow down if it's an issue with the codebase or the persons machine. Maybe they have unstaged changes or missing dependencies - or your latest revision contains a severe bug that keeps them from running the application.
+
+Guide them through the process of cleaning up the repository, and, if everything else fails, explain where they should file an issue.
 
 Make sure to warn them about commands like `git clean -xfd` or `git checkout -f master` though - these will remove all untracked files, even those ignored through `.gitignore`, and undo all changes they did to tracked files - possibly resulting in data loss.
+
+As [@hollodotme](https://twitter.com/hollodotme) noted in the feedback [to this Post](https://github.com/rradczewski/ymmv/pull/3#discussion_r144734286), this section can also contain FAQs to specific problems, e.g. errors due to wrong environment variables or explanations for less verbose error messages and problems.
 
 ## 😍 Contributing
 
@@ -108,7 +112,7 @@ The nit-picky part. What coding style should everyone adhere to? What is your *d
 
 If you have a particular way of structuring your modules and folders, explaining how to navigate through the codebase (maybe by giving an example), tremendously helps new team members in finding their way around the codebase.
 
-> The project structure is quite simple, adhering for the most parts to the way $FRAMEWORK does it. As a general rule, I try to keep conceptually coupled things as close to each other as possible - grouping files by how close they interact with each other (`/checkout-page`), not by what they are (<strike><code>/models</code></strike>).
+> The project structure is quite simple, adhering for the most parts to the way $FRAMEWORK does it. As a general rule, We try to keep conceptually coupled things as close to each other as possible - grouping files by how close they interact with each other (`/checkout-page`), not by what they are (<strike><code>/models</code></strike>).
 
 ## 💡 Resources
 
