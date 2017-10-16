@@ -208,6 +208,18 @@
 
   }
 
+  h2, h3, h4 {
+    position: relative;
+    a {
+      text-decoration: none;
+      &:hover:before {
+        content: '🔗';
+        position: absolute;
+        left: -45px;
+      }
+    }
+  }
+
   line-height: 1.58;
   letter-spacing: -0.02em;
 
