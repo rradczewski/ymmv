@@ -35,7 +35,10 @@
 
   <!-- From https://github.com/mmistakes/hpstr-jekyll-theme/blob/master/_includes/head.html -->
   {% if site.twitter_username %}<!-- Twitter Cards -->
-    {% if page.image %}
+    {% if page.image_share %}
+      <meta name="twitter:card" content="summary_large_image">
+      <meta name="twitter:image" content="{{ site.url }}{{ page.image_share | relative_url }}">
+    {% elsif page.image %}
       <meta name="twitter:card" content="summary_large_image">
       <meta name="twitter:image" content="{{ site.url }}{{ page.image | relative_url }}">
     {% else %}

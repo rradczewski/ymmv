@@ -2,6 +2,7 @@
 layout: post
 title: What makes a good README?
 image: /assets/readme_background.jpg
+image_share: /assets/readme_card.png
 image_preview: /assets/readme_background_preview.jpg
 image_alt: The README of the SoftwareCrafters/website project
 ---
