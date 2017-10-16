@@ -17,8 +17,7 @@ I owe a lot to the communities out there, which is why I'm trying to give someth
 I'm all in for working with you, if...
  - you need a senior developer to build or support a team
  - you want to establish a culture of professionalism, compassion and growth in your company
- - you would like to host a workshop for your employees on plenty of topics, be it JavaScript, EventSourcing or Craft/XP/DevOps values
- - you want to host a coderetreat in your company
+ - you would like to host a coderetreat or workshop for your employees on plenty of topics, be it JavaScript, EventSourcing or Craft/XP/DevOps values
 
 I'm very fond of a professional relationship with my clients. Mutual trust and openness are the most important aspects of a business relationship for me. I will ask you to establish me as part of the team from day one and to expect me to challenge aspects of your company where I see potential for improvements.
 
