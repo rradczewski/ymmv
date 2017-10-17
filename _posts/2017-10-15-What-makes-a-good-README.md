@@ -93,6 +93,20 @@ By now, you should've covered the basic steps necessary to setup and run the app
 
 In this chapter, you'll elaborate about the way you go about developing the project.
 
+### 🚢 Shipping
+
+*Can't believe I missed this when initially publishing this blogpost 😅*.
+
+> CircleCI is taking care of building, testing and deploying our app. You can have a look at our `config.yml` and the `/deployment` folder to get an idea on how it works.
+>
+> Basically, CircleCI invokes `npm run build` which builds the javascript and bundles it under `/build`. The `/build` folder and the appspec.yml, which describes how AWS CodeDeploy should deploy the application, are zipped and moved to a folder called /S3_UPLOAD/, which is then synced to S3. Afterwards, AWS CodeDeploy is triggered to deploy the artifact to our systems.
+
+If you want people to deploy often and early, this chapter can not be missing from the README. It should cover how the deployment works and should link to important scripts and build steps that are involved with creating the project artifact.
+
+If your CI is taking care of the deployment, linking to its configuration file and an example build will help people get a feeling for what is happening during a deployment. If you're deploying by hand (😱), list all the commands and prerequisites here as well.
+
+In case you're not rolling forward, explaining the rollback process should be covered as well.
+
 ### 🔁 Processes
 
 Document the virtues and values your development team agrees to here. How often do you want to deploy? How stable should branches (or `master`) be?
