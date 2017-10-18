@@ -1,10 +1,7 @@
 ---
 layout: post
-title: "Why? Pair-Programming Interviews"
-excerpt: I recently been tasked to interview a candidate for one of my clients. The candidate could choose from either coming to my client for some Pair Programming, or they could've done a Coding Exercise. I'm happy they chose the former, because it gave me the opportunity to reason about this ritual in particular
+title: "Awesome technical interviews: Part #1"
 ---
-
-_In [this ongoing series](/) I explore why we have specific rituals and from there try to reason how they should be implemented so they live up to their original idea._
 
 I recently been tasked to interview a candidate for one of my clients. The candidate could choose from either coming to my client for some *Pair Programming*, or they could've done a *Coding Exercise*.
 I'm happy they chose the former, because it gave me the opportunity to reason about this *ritual* in particular.
