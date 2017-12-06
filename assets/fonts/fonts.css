@@ -13,21 +13,45 @@
        url({{ "/assets/fonts/cutive-mono-v5-latin-regular.ttf" | relative_url }}) format('truetype'), /* Safari, Android, iOS */
        url({{ "/assets/fonts/cutive-mono-v5-latin-regular.svg#CutiveMono" | relative_url }}) format('svg'); /* Legacy iOS */
 }
-
-/* open-sans-regular - latin */
+/* lato-regular - latin */
 @font-face {
-  font-family: 'Open Sans';
+  font-family: 'Lato';
   font-style: normal;
   font-weight: 400;
-  src: url({{ "/assets/fonts/open-sans-v14-latin-regular.eot" | relative_url }}); /* IE9 Compat Modes */
-  src: local('Open Sans Regular'), local('OpenSans-Regular'),
-       url({{ "/assets/fonts/open-sans-v14-latin-regular.eot?#iefix" | relative_url }}) format('embedded-opentype'), /* IE6-IE8 */
-       url({{ "/assets/fonts/open-sans-v14-latin-regular.woff2" | relative_url }}) format('woff2'), /* Super Modern Browsers */
-       url({{ "/assets/fonts/open-sans-v14-latin-regular.woff" | relative_url }}) format('woff'), /* Modern Browsers */
-       url({{ "/assets/fonts/open-sans-v14-latin-regular.ttf" | relative_url }}) format('truetype'), /* Safari, Android, iOS */
-       url({{ "/assets/fonts/open-sans-v14-latin-regular.svg#OpenSans" | relative_url }}) format('svg'); /* Legacy iOS */
+  src: url({{ '/assets/fonts/lato-v14-latin-regular.eot' | relative_url }}); /* IE9 Compat Modes */
+  src: local('Lato Regular'), local('Lato-Regular'),
+       url({{ '/assets/fonts/lato-v14-latin-regular.eot?#iefix' | relative_url }}) format('embedded-opentype'), /* IE6-IE8 */
+       url({{ '/assets/fonts/lato-v14-latin-regular.woff2' | relative_url }}) format('woff2'), /* Super Modern Browsers */
+       url({{ '/assets/fonts/lato-v14-latin-regular.woff' | relative_url }}) format('woff'), /* Modern Browsers */
+       url({{ '/assets/fonts/lato-v14-latin-regular.ttf' | relative_url }}) format('truetype'), /* Safari, Android, iOS */
+       url({{ '/assets/fonts/lato-v14-latin-regular.svg#Lato' | relative_url }}) format('svg'); /* Legacy iOS */
 }
-
+/* lato-700 - latin */
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 700;
+  src: url({{ '/assets/fonts/lato-v14-latin-700.eot' | relative_url }}); /* IE9 Compat Modes */
+  src: local('Lato Bold'), local('Lato-Bold'),
+       url({{ '/assets/fonts/lato-v14-latin-700.eot?#iefix' | relative_url }}) format('embedded-opentype'), /* IE6-IE8 */
+       url({{ '/assets/fonts/lato-v14-latin-700.woff2' | relative_url }}) format('woff2'), /* Super Modern Browsers */
+       url({{ '/assets/fonts/lato-v14-latin-700.woff' | relative_url }}) format('woff'), /* Modern Browsers */
+       url({{ '/assets/fonts/lato-v14-latin-700.ttf' | relative_url }}) format('truetype'), /* Safari, Android, iOS */
+       url({{ '/assets/fonts/lato-v14-latin-700.svg#Lato' | relative_url }}) format('svg'); /* Legacy iOS */
+}
+/* lato-900 - latin */
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 900;
+  src: url({{ '/assets/fonts/lato-v14-latin-900.eot' | relative_url }}); /* IE9 Compat Modes */
+  src: local('Lato Black'), local('Lato-Black'),
+       url({{ '/assets/fonts/lato-v14-latin-900.eot?#iefix' | relative_url }}) format('embedded-opentype'), /* IE6-IE8 */
+       url({{ '/assets/fonts/lato-v14-latin-900.woff2' | relative_url }}) format('woff2'), /* Super Modern Browsers */
+       url({{ '/assets/fonts/lato-v14-latin-900.woff' | relative_url }}) format('woff'), /* Modern Browsers */
+       url({{ '/assets/fonts/lato-v14-latin-900.ttf' | relative_url }}) format('truetype'), /* Safari, Android, iOS */
+       url({{ '/assets/fonts/lato-v14-latin-900.svg#Lato' | relative_url }}) format('svg'); /* Legacy iOS */
+}
 /* noto-serif-regular - latin */
 @font-face {
   font-family: 'Noto Serif';
