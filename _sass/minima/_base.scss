@@ -122,6 +122,26 @@ blockquote {
   > :last-child {
     margin-bottom: 0;
   }
+
+  &.letter {
+    background-color: #FFF;
+    margin: $spacing-unit auto;
+    max-width: $content-width/8*5;
+    font-family: $base-font-family;
+    font-style: normal;
+    a {
+      text-decoration-skip: unset;
+    }
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.15);
+
+    padding: 35px;
+    font-size: $small-font-size;
+    @include media-query($on-laptop) {
+      padding: 10px;
+    }
+
+  }
 }
 
 
