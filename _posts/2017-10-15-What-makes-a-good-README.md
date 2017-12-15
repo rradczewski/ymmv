@@ -16,7 +16,7 @@ Let me encourage you to go the extra mile on this one, it will make life so much
 
 ## 🤔 Your project at a glance: What and how?
 
-Your `README` is the first thing you see when you go on a project repository, be it on github oder gitlab. The first question it should answer is: *Is this what I'm looking for?*
+Your `README` is the first thing you see when you go on a project repository, be it on GitHub or GitLab. The first question it should answer is: *Is this what I'm looking for?*
 
 What is the project good for? Is it the frontend? Is it the backend? Is it a collection of database migration scripts?
 If it is deployed, here's a good place to put links to the deployments.
