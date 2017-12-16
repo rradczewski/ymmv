@@ -10,7 +10,7 @@ image_alt: A photo of a screen showing FizzBuzz a popular albeit horribly ineffe
 
 This year marked the first year since 2014 I did technical interviews again. When the CTO of my previous client approached me and asked me to do the technical interviews for the front-end team, I was excited to pick the topic up again after such a long time.
 
-With the first interviews quickly approaching, I reflected on the interviews I have been to in the past, sitting at the other side of the table as an interviewee, nervous, excited, very insecure or - on other occasions - at  [peak-Dunning-Kruger](https://en.wikipedia.org/wiki/Dunning%E2%80%93Kruger_effect). With the CTO's permission, I tried to create an interview process that mitigates all of the above.
+With the interviews quickly approaching, I reflected on the interviews I have been to in the past as an interviewee, sitting at the other side of the table, being nervous, excited, very insecure or - on other occasions - at  [peak-Dunning-Kruger](https://en.wikipedia.org/wiki/Dunning%E2%80%93Kruger_effect). With the CTO's permission, I tried to create an interview process that mitigates all of the above.
 
 ## Opening a can of worms
 
@@ -28,12 +28,13 @@ The result is a two-part series about how I conduct technical interviews, each c
 
 [**Part #1: Preparing the interview**]()
 
-The first post covers all the decisions that have to be made before inviting someone to a technical interview: What role are we actually looking for? Do we have enough capacity for mentoring someone intensively?
+The first post covers all the decisions that have to be made before having someone over for a technical interview: *What role are we actually looking for? Do we have enough capacity for mentoring someone intensively? What are the expectations of everyone involved?*
+
 It further covers picking an exercise, writing the invitation and establishes the mood I want to set in an interview.
 
 [**Part #2: Conducting the interview**]()
 
-Part two covers the day of the interview. Starting with setting your priorities and getting into the headspace, I'm walking you through the technical interview how I do it. I'm explaining my role in the day, my obligations and the things to look out for. We're talking about the importance of understanding power balances, unconscious bias and the necessity for timeboxing.
+Part two covers the day of the interview. Starting with setting your priorities and getting into the right mindset, I'm walking you through the way I do technical interviews. I'm explaining my role in the day, my obligations and the things to look out for. We're talking about the importance of understanding power balances, unconscious bias and the necessity for timeboxing.
 
 ## 🤗 Kudos
 
