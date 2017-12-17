@@ -32,7 +32,7 @@ Make sure everyone is aware and in agreement about the criteria *important* to y
 
 ## Take-Home exercise or Pair Programming?
 
-You should leave it to the interviewee to choose between a take-home exercise or a Pair Programming interview. There are [some downsides](https://cate.blog/2016/02/10/bad-interviews-are-a-company-problem-not-a-candidate-problem/) to take-home exercises, just as there are for on-site Pair Programming interviews, but remember that the person interviewing for the job might have other obligations that make it hard for them to visit your office for a few hours - just imagine having every company you're applying to ask you to come by for an afternoon very early into the process!
+You should leave it to the interviewee to choose between a take-home exercise or a Pair Programming interview. There are [some downsides](https://cate.blog/2016/02/10/bad-interviews-are-a-company-problem-not-a-candidate-problem/) to take-home exercises, just as there are for on-site Pair Programming interviews, but remember that the person interviewing for the job might have other obligations that make it hard for them to visit your office for a few hours - just imagine having every company you're applying to ask you to come by for an afternoon that early into the hiring process!
 
 Should the interviewee choose a take-home exercise, make sure you don't let this factor into your decision at all. After they sent around their solution, invite them to the office and let them walk you through the code for half an hour as an exercise.
 
@@ -44,7 +44,8 @@ Next up is picking the task. Having facilitated countless coding katas at our me
 
 My personal take on this is: I love to use production code as an exercise. What I did in the past is to pick something I have done recently in our code base and delete most tests and the implementation. If your code base is too big, it might make sense to delete distracting aspects of it for the exercise.
 
-Using your production code has some great advantages: You'll be deeply familiar with the Ins and Outs of the code in front of you. You have solved the problem before and can explain the requirements in depth, the interviewee can catch a short glimpse at the code they'd be working with and ultimately, they will get to know the domain you are working with a little.
+Using your production code has some great advantages:  
+You'll be deeply familiar with the Ins and Outs of the code in front of you. Furthermore, you have solved the problem before and can explain the requirements in depth. The interviewee can catch a short glimpse at the code they'd be working with and ultimately, they will get to know the domain you are working with a little.
 
 Fair warning though: If you're frustrated with the current state of your code base and if things can unexpectedly break, it might not be the perfect fit for an interview.
 
@@ -52,7 +53,7 @@ No matter if you choose a coding kata or your production code base, there is one
 
 Let me give you two examples:
 
-> You can filter the displayed results by limiting the price already. Our task will be similar, adding a filter to limit the results by their rating. Please implement the proper business logic and UI parts.
+> You can filter the displayed results by limiting the price already. Our task will be similar: Adding a filter to limit the results by their rating. Please implement the proper business logic and UI parts.
 
 > Implement a function that will return a human readable presentation of a given time span in seconds, e.g. `prettyPrint(140) => "2 minutes, 20 seconds"`.  
 > After that, add an option to only show the biggest unit and the second-biggest unit, given that it is not zero, e.g. `prettyPrint(90012, brevity: true) => "1 day, 1 hour`.
