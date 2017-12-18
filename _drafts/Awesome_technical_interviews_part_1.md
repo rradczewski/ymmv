@@ -6,7 +6,7 @@ image_share: /assets/interview_background_card.jpg
 image_preview: /assets/interview_background_preview.jpg
 image_alt: A photo of a screen showing FizzBuzz a popular albeit horribly ineffective coding exercise.
 ---
-From managing expectations throughout the company to writing the invitation mail, preparing an interview takes a considerable amount of time - Righteously so, because it's the most important meeting you'll be having this week.
+From managing expectations throughout the company to writing the invitation mail, preparing an interview takes a considerable amount of time - Justifiably so, because it's the most important meeting you'll be having this week.
 
 *This is Part #1 of my series on [Awesome Technical Interviews](). Part #2 can be found [here]().*
 
