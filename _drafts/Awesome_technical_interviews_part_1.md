@@ -18,7 +18,7 @@ The environment is important here as there needs to be a mutual understanding an
 
 ## Seeking clarification
 
-Let's start with a simple goal of everything laid out in this blogpost series:
+Let's start with a simple goal for everything laid out in this blogpost series:
 
 **Minimize surprises for the interviewee and everyone else involved at every point in the hiring process.**
 
