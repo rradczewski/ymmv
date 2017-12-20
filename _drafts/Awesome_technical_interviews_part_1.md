@@ -6,7 +6,7 @@ image_share: /assets/interview_background_card.jpg
 image_preview: /assets/interview_background_preview.jpg
 image_alt: A photo of a screen showing FizzBuzz a popular albeit horribly ineffective coding exercise.
 ---
-From managing expectations throughout the company to writing the invitation mail, preparing an interview takes a considerable amount of time - Justifiably so, because it's the most important meeting you'll be having this week.
+From managing expectations throughout the company to writing the invitation mail, preparing an interview takes a considerable amount of time - Rightfully so, because it's the most important meeting you'll be having this week.
 
 *This is Part #1 of my series on [Awesome Technical Interviews](). Part #2 can be found [here]().*
 
@@ -22,25 +22,25 @@ Let's start with a simple goal for everything laid out in this blogpost series:
 
 **Minimize surprises for the interviewee and everyone else involved at every point in the hiring process.**
 
-Everyone means everyone. **Everyone** in the company should know the criteria applied to the interviews. **You** should know everything about the companies expectations towards the new-hire. **The interviewee** should know everything about what is going to happen on the interview. **Your colleagues** should know who's going to visit the office and why.
+Everyone means everyone. **Everyone** in the team should know the criteria applied to the interviews. **You** should know everything about the teams expectations towards the new-hire. **The interviewee** should know everything about what is going to happen on the interview. **The team** should know who's going to visit the office and why.
 
 Make sure you understand the [complexity of the project and the role](https://lizkeogh.com/2013/07/21/estimating-complexity/) you're hiring for and make sure it is well communicated between the teams and line-managers. Chances are, your company does nothing that hasn't been done before on a technical level, so you might not need a specialist, but a curious person that is willing to get familiar with a new ecosystem.  
 
 Do you have the capacity to train people and a proper mentor ship process in your company? If so, that means technical requirements become less important - what else is it you should focus on?
 
-Make sure everyone is aware and in agreement about the criteria *important* to your company and of the criteria that you deemed *not important*. Interviewing handbooks like the [the one Medium published this year](https://medium.engineering/mediums-engineering-interview-process-b8d6b67927c4) are a valuable resource for you to find out what your companies criteria should be.
+Make sure everyone is aware and in agreement about the criteria *important* to your company and of the criteria that you deemed *not important*. Interviewing handbooks like [the one Medium published this year](https://medium.engineering/mediums-engineering-interview-process-b8d6b67927c4) are a valuable resource for you to find out what your companies criteria should be.
 
-## Take-Home exercise or Pair Programming?
+## Take home exercise or pair programming?
 
-You should leave it to the interviewee to choose between a take-home exercise or a Pair Programming interview. There are [some downsides](https://cate.blog/2016/02/10/bad-interviews-are-a-company-problem-not-a-candidate-problem/) to take-home exercises, just as there are for on-site Pair Programming interviews, but remember that the person interviewing for the job might have other obligations that make it hard for them to visit your office for a few hours - just imagine having every company you're applying to ask you to come by for an afternoon that early into the hiring process!
+You should leave it to the interviewee to choose between a take home exercise or a pair programming interview. There are [some downsides](https://cate.blog/2016/02/10/bad-interviews-are-a-company-problem-not-a-candidate-problem/) to take-home exercises, just as there are for on-site pair programming interviews, but remember that the person interviewing for the job might have other obligations that make it hard for them to visit your office for a few hours - just imagine having every company you're applying to ask you to come by for an afternoon that early into the hiring process!
 
 Should the interviewee choose a take-home exercise, make sure you don't let this factor into your decision at all. After they sent around their solution, invite them to the office and let them walk you through the code for half an hour as an exercise.
 
-In the following, I'm assuming that the interviewee picked the *Pair Programming interview*.
+In the following, I'm assuming that the interviewee picked the *pair programming interview*.
 
 ## Picking a task
 
-Next up is picking the task. Having facilitated countless coding katas at our meetup in Berlin, I hereby promise that a task can not be small enough for an hour of Pair Programming. Check out the [Kata-Log](http://kata-log.rocks/), a list of coding exercises compiled by the amazing [@egga_de](http://kata-log.rocks/) for inspiration if you like.
+Next up is picking the task. Having facilitated countless coding katas at our meetup in Berlin, I hereby promise that a task can not be small enough for an hour of pair programming. Check out the [Kata-Log](http://kata-log.rocks/), a list of coding exercises compiled by the amazing [@egga_de](https://twitter.com/egga_de) for inspiration if you like.
 
 My personal take on this is: I love to use production code as an exercise. What I did in the past is to pick something I have done recently in our code base and delete most tests and the implementation. If your code base is too big, it might make sense to delete distracting aspects of it for the exercise.
 
@@ -53,7 +53,7 @@ No matter if you choose a coding kata or your production code base, there is one
 
 Let me give you two examples:
 
-> You can filter the displayed results by limiting the price already. Our task will be similar: Adding a filter to limit the results by their rating. Please implement the proper business logic and UI parts.
+> You can already filter the displayed results by limiting the price. Our task will be similar: Adding a filter to limit the results by their rating. Please implement the proper business logic and UI parts.
 
 > Implement a function that will return a human readable presentation of a given time span in seconds, e.g. `prettyPrint(140) => "2 minutes, 20 seconds"`.  
 > After that, add an option to only show the biggest unit and the second-biggest unit, given that it is not zero, e.g. `prettyPrint(90012, brevity: true) => "1 day, 1 hour`.
