@@ -45,6 +45,8 @@ Furthermore, thank you Markus and Jean-Louis for trusting me in allowing me to t
 ## 📖 Further Readings
 
 - [@benjamin](https://twitter.com/benjamin)'s excellent [feedback](https://github.com/rradczewski/ymmv/issues/1) to an early draft of this article. 💗
-- [@catehstn](https://twitter.com/catehstn)'s amazing blog [Accidentally in Code](https://cate.blog/)
+- [@catehstn](https://twitter.com/catehstn)'s amazing blog [Accidentally in Code](https://cate.blog/), in particular:
+  - [How i interview](https://cate.blog/2015/04/01/how-i-interview/)
+  - [12 challenging steps to being a better interviewer](https://cate.blog/2015/10/07/12-challenging-steps-to-being-a-better-interviewer/)
 - The [Medium Hiring Guide](https://medium.engineering/mediums-engineering-interview-process-b8d6b67927c4) for interviewers
 - The [session result]({{ "assets/pairprogramming_interviews.jpg" | relative_url }}) from one of my sessions at SoCraTes 2017 about Pair Programming Interviews
