@@ -5,5 +5,10 @@
     <a class="site-title" href="{{ "/" | relative_url}}" title="Your Mileage May Vary - @rradczewski"><span class="site-title-text">{{ site.title | escape }}</span></a>
     <p class="site-subtitle">{{ site.subtitle | escape }}</p>
   </div>
-
+  {% if jekyll.environment == 'staging' %}
+    <div class="staging-warning">
+      <p>Hi 👋 You are looking at the <b>staging</b> environment of my blog. <b>Please do not link to the pages and blogposts here</b>. Published posts appear on the <b>production</b> site, <a href="https://ymmv.craftswerk.io">ymmv.craftswerk.io</a>.</p>
+      <p>I appreciate your feedback on the drafts here though, either <a href="mailto:feedback@craftswerk.io">personally</a> or via <a href="https://github.com/rradczewski/ymmv/issues/">GitHub Issues</a>.
+    </div>
+  {% endif %}
 </header>

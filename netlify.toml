@@ -1,5 +1,5 @@
 [build]
-  command = "jekyll build"
+  command = "JEKYLL_ENV=production jekyll build"
   publish = "_site"
 
 [context.deploy-preview]
@@ -7,5 +7,5 @@
   publish = "_site"
 
 [context.draft]
-  command = "jekyll build --drafts"
+  command = "JEKYLL_ENV=staging jekyll build --drafts"
   publish = "_site"
