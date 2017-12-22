@@ -6,7 +6,7 @@ image_share: /assets/interview_background_card.jpg
 image_preview: /assets/interview_background_preview.jpg
 image_alt: A photo of a screen showing FizzBuzz a popular albeit horribly ineffective coding exercise.
 ---
-*Confession time*: I used to quiz people on FizzBuzz on their job interview when I started interviewing people for my own company five years ago. I no longer do that - instead, I try to create an environment were people can strive and show their best: on production code, on their machine, with me navigating.
+*Confession time*: I used to quiz people on FizzBuzz on their job interview when I started interviewing people for my own company five years ago. I no longer do that - instead, I try to create an environment where people can strive and show their best: on production code, on their machine, with me navigating.
 
 This year marked the first year since 2014 I did technical interviews again. When the CTO of my previous client approached me and asked me to do the technical interviews for the front-end team, I was excited to pick the topic up again after such a long time.
 
@@ -16,7 +16,7 @@ With the interviews quickly approaching, I reflected on the interviews I have be
 
 After the first interview I conducted this year, which ultimately lead to hiring the first permanently employed front-end developer at that client 🎉, I started drafting this post [summarizing my ideas](https://github.com/rradczewski/ymmv/blob/85635a60851aa8e0aeccd80d53bb9b3e4cbcd4f8/_drafts/Why_-_Pair_Programming_Interviews.md) back then.
 
-![The first commit to this blogpost, dating back to Sun Apr 23, 2017]({{ "assets/first_commit_pp_interviews.png" | relative_url }})
+![The first commit to this blog post, dating back to Sun Apr 23, 2017]({{ "assets/first_commit_pp_interviews.png" | relative_url }})
 
 Armed with lots of feedback from Benjamin, Samir, Sandro and the people who joined my session at SoCraTes 2017, it quickly grew from laying out the process of *Pair Programming* in interviews to a more exhaustive explanation of how I'm conducting interviews.
 
@@ -40,13 +40,13 @@ Part two covers the day of the interview. Starting with setting your priorities 
 
 Thank you [@benjamin](https://twitter.com/benjamin) for your invaluable feedback on my ideas, the chance to record the first [CTO.coffee](https://cto.coffee) episode on *Hiring & Interviewing* and for being the first person to show me how a good hiring process can look like.
 
-Furthermore, thank you Markus and Jean-Louis for trusting me in allowing me to try out the methods I'm laying out in these blogposts in your companies.
+Furthermore, thank you Markus and Jean-Louis for trusting me in allowing me to try out the methods I'm laying out in these blog posts in your companies.
 
 ## 📖 Further Readings
 
-- [@benjamin](https://twitter.com/benjamin)'s excellent [feedback](https://github.com/rradczewski/ymmv/issues/1) to an early draft of this article. 💗
+- [@benjamin](https://twitter.com/benjamin)'s excellent [feedback](https://github.com/rradczewski/ymmv/issues/1) on an early draft of this article. 💗
 - [@catehstn](https://twitter.com/catehstn)'s amazing blog [Accidentally in Code](https://cate.blog/), in particular:
-  - [How i interview](https://cate.blog/2015/04/01/how-i-interview/)
+  - [How I interview](https://cate.blog/2015/04/01/how-i-interview/)
   - [12 challenging steps to being a better interviewer](https://cate.blog/2015/10/07/12-challenging-steps-to-being-a-better-interviewer/)
 - The [Medium Hiring Guide](https://medium.engineering/mediums-engineering-interview-process-b8d6b67927c4) for interviewers
 - The [session result]({{ "assets/pairprogramming_interviews.jpg" | relative_url }}) from one of my sessions at SoCraTes 2017 about Pair Programming Interviews
