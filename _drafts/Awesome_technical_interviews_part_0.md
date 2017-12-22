@@ -26,13 +26,13 @@ In the meantime, Benjamin and I recorded [the first episode](https://cto.coffee/
 
 The result is a two-part series about how I conduct technical interviews, each covering a different phase of the whole process.
 
-[**Part #1: Preparing the interview**]()
+[**Part #1: Preparing the interview**]({% link _drafts/Awesome_technical_interviews_part_1.md %})
 
 The first post covers all the decisions that have to be made before having someone over for a technical interview: *What role are we actually looking for? Do we have enough capacity for mentoring someone intensively? What are the expectations of everyone involved?*
 
 It further covers picking an exercise, writing the invitation and establishes the mood I want to set in an interview.
 
-[**Part #2: Conducting the interview**]()
+[**Part #2: Conducting the interview**]({% link _drafts/Awesome_technical_interviews_part_2.md %})
 
 Part two covers the day of the interview. Starting with setting your priorities and getting into the right mindset, I'm walking you through the way I do technical interviews. I'm explaining my role in the day, my obligations and the things to look out for. We're talking about the importance of understanding power balances, unconscious bias and the necessity for timeboxing.
 

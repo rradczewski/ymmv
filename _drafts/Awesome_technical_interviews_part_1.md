@@ -8,7 +8,7 @@ image_alt: A photo of a screen showing FizzBuzz a popular albeit horribly ineffe
 ---
 From managing expectations throughout the company to writing the invitation mail, preparing an interview takes a considerable amount of time - Rightfully so, because it's the most important meeting you'll be having this week.
 
-*This is Part #1 of my series on [Awesome Technical Interviews](). Part #2 can be found [here]().*
+*This is Part #1 of my series on [Awesome Technical Interviews]({% link _drafts/Awesome_technical_interviews_part_0.md %}). Part #2 can be found [here]({% link _drafts/Awesome_technical_interviews_part_2.md %}).*
 
 ## Context
 

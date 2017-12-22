@@ -18,7 +18,7 @@ If you are unsure about the experience of the interviewee, you might want to mak
 
 ## Managing expectations
 
-Remember the goal from [Part #1]():
+Remember the goal from [Part #1]({% link _drafts/Awesome_technical_interviews_part_1.md %}):
 
 **Minimize surprises for the interviewee and everyone else involved at every point in the hiring process.**
 
