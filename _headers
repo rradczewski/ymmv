@@ -1,0 +1,13 @@
+---
+---
+/*
+  Link: <{{ "/assets/fonts/fonts.css" | relative_url }}>; rel=preload; as=stylesheet
+  Link: <{{ "/assets/main.css" | relative_url }}>; rel=preload; as=stylesheet
+  Link: <{{ "/assets/fonts/cutive-mono-v5-latin-regular.woff2" | relative_url }}>; rel=preload; as=font
+  Link: <{{ "/assets/fonts/lato-v14-latin-regular.woff2" | relative_url }}>; rel=preload; as=font
+  Link: <{{ "/assets/fonts/lato-v14-latin-700.woff2" | relative_url }}>; rel=preload; as=font
+  Link: <{{ "/assets/fonts/lato-v14-latin-900.woff2" | relative_url }}>; rel=preload; as=font
+  Link: <{{ "/assets/fonts/noto-serif-v4-latin-regular.woff2" | relative_url }}>; rel=preload; as=font
+  Link: <{{ "/assets/fonts/noto-serif-v4-latin-italic.woff2" | relative_url }}>; rel=preload; as=font
+  Link: <{{ "/assets/fonts/noto-serif-v4-latin-700.woff2" | relative_url }}>; rel=preload; as=font
+  Link: <{{ "/assets/fonts/noto-serif-v4-latin-700italic.woff2" | relative_url }}>; rel=preload; as=font
