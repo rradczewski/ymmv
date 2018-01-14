@@ -35,41 +35,26 @@ Once the two of us settled down, the first important question I ask is:
 
 And I mean that. Bad luck happens and Moore's Law (*by definition*) strikes on the worst occasions. The interview is one of the most important meetings someone will have during their employment at a company; if their mind is somewhere else or they are feeling sick, I accept that and reschedule the interview.
 
-## What to pay attention to?
-
-
-
-
-<TODO>==================== Drafted until here ====================</TODO>
-
-- Managing their expectations
-- Welcoming them at the office
-- Explaining what is going to happen
-- Ask them if they feel fine or if you should reschedule.
-
-
-
-- Managing expectations about what we should achieve
+If everything is well, I proceed with explaining the agenda of the day: We will pair for exactly one hour, then have a short retrospective about the session and finally close down the meeting with a coffee.
 
 ## The pairing
 
-- Goal:
-  - Find out how the candidate works with problems
-  - See if they are open to a conversation
-- Not Goals:
-  - Culture Fit
-  - Grilling someone
-  - Creating an artificial and awfully inaccurate performance measure of that persons skill
+In the case that the interviewee brought their own laptop, the next few minutes will be spent waiting for *git*, *npm*, *IntelliJ* or about every tool needed to setup the code base and run the tests, so I take this time to explain the interviewee that the next hour is not about getting things done or finishing the task (**!**), but about seeing how our collaboration works out and how they approach the problem in a pairing setup. There is no need to be mysterious about this - quite the opposite! The more the explicitly you lay out your expectations, the more comfortable the interviewee is going to be with showing their best.
 
+Not everyone is used to pairing, so it's important for me to explain that I'm their partner in this and that I'm looking to have discussions with them, not quiz them on the task. I will answer every question they will have and should I be at a loss, it's completely fine for us to resort to StackOverflow.
+
+Pairing with them also means getting a grasp of their overall skill level: How fast they are with the IDE, how knowledgeable they are in the programming language and its ecosystem, what kind of questions they ask or discussions they start. It's important for me to not be too picky here though. You should have certain expectations towards someone who's applying for a *Senior Developer* role, but an hour is nowhere enough to categorize someone on an engineering ladder, so I tick this box as early as possible and move on.
+
+## My observations
+
+I will closely watch our interactions throughout the pairing session and take notes whenever I deem something to be relevant enough. This can irritate the interviewee, which is why I make sure to warn them about me writing down something every so often. Again, I can be completely transparent with them about why I do this: I need to relay my impression to others at some point later. Writing down notes now prevents me from recalling something from my memory, which gets worse the more time passes and the more I do between the pairing session and writing down my impression.
+
+<TODO>
 - Things to cover:
   - Interactions
   - Keyboard engagement
   - Knowing the answer to a problem (letting people make errors, crucial to every learning process)
   - Exploring a problem space
+</TODO>
 
 ## The retrospective
-
-## The result
-
-- Writing down results
-- unconscious bias
