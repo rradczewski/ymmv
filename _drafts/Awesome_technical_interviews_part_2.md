@@ -8,6 +8,8 @@ image_alt: A photo of a screen showing FizzBuzz a popular albeit horribly ineffe
 ---
 Think about it - there are only a few occasions in your professional life that are as exceptional and stressful as interviewing for a new job. The power balances lined up against you, the unknown ahead of you. As an interviewer, it is now your task to mitigate all that.
 
+*This is Part #2 of my series on [Awesome Technical Interviews]({% link _drafts/Awesome_technical_interviews_part_0.md %}). Part #1 can be found [here]({% link _drafts/Awesome_technical_interviews_part_1.md %}).*
+
 ## Preparations
 
 The invitation is sent out, the interviewee accepted and the interview is still a week or two away; Time to plan the day! That interview will be the most important meeting I'm having that day, so I go and reschedule everything before and after the interview.
