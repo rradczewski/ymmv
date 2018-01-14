@@ -86,4 +86,4 @@ Until then, if you have any other questions, feel free to send me a mail :)
 Looking forward to meeting you!
 </blockquote>
 
-With the invitation sent, let me walk you through how the day of the interview is going to go down in [Part #2]().
+With the invitation sent, let me walk you through how the day of the interview is going to go down in [Part #2]({% link _drafts/Awesome_technical_interviews_part_2.md %}).
