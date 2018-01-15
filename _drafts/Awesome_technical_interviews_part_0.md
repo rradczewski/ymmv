@@ -8,13 +8,13 @@ image_alt: A photo of a screen showing FizzBuzz a popular albeit horribly ineffe
 ---
 *Confession time*: I used to quiz people on FizzBuzz on their job interview when I started interviewing people for my own company five years ago. I no longer do that - instead, I try to create an environment where people can strive and show their best: on production code, on their machine, with me navigating.
 
-This year marked the first year since 2014 I did technical interviews again. When the CTO of my previous client approached me and asked me to do the technical interviews for the front-end team, I was excited to pick the topic up again after such a long time.
+Last year marked the first year since 2014 I did technical interviews again. When the CTO approached me and asked me to do the technical interviews for the front-end team, I was excited to pick the topic up again after such a long time.
 
 With the interviews quickly approaching, I reflected on the interviews I have been to in the past as an interviewee, sitting at the other side of the table, being nervous, excited, very insecure or - on other occasions - at  [peak-Dunning-Kruger](https://en.wikipedia.org/wiki/Dunning%E2%80%93Kruger_effect). With the CTO's permission, I tried to create an interview process that mitigates all of the above.
 
 ## Opening a can of worms
 
-After the first interview I conducted this year, which ultimately lead to hiring the first permanently employed front-end developer at that client 🎉, I started drafting this post [summarizing my ideas](https://github.com/rradczewski/ymmv/blob/85635a60851aa8e0aeccd80d53bb9b3e4cbcd4f8/_drafts/Why_-_Pair_Programming_Interviews.md) back then.
+After the first interview I conducted that year, which ultimately lead to hiring the first permanently employed front-end developer at that client 🎉, I started drafting this post [summarizing my ideas](https://github.com/rradczewski/ymmv/blob/85635a60851aa8e0aeccd80d53bb9b3e4cbcd4f8/_drafts/Why_-_Pair_Programming_Interviews.md) back then.
 
 ![The first commit to this blog post, dating back to Sun Apr 23, 2017]({{ "assets/first_commit_pp_interviews.png" | relative_url }})
 
