@@ -66,3 +66,13 @@ The retrospective is about seeing them reflect on the previous hour. I will shar
 - How did you like the path we went down for the solution?
 - Did you learn anything new in the last hour?
 - What would you change from here?
+
+With the retrospetive closed off, I thank the candidate for their time and explain how we go from here. I usually ask if they have a deadline until which they would like to hear back from us and that they could reach out to me anytime in case they have questions about the company.
+
+The meeting doesn't end here for me though: The next half hour is spent on me refining my notes and actively looking for biases I could have overlooked that might influence my impression. After that, I meet with the line manager and relay my impression to them (not the notes though).
+
+## That's it!
+
+So this is how I have been conducting technical interviews at my clients. If you like to read more, make sure to checkout the [*Further Readings*]({% link _drafts/Awesome_technical_interviews_part_0.md %}#-further-readings) I added in the introduction post.
+
+If you want me to bring this process to your company, send me a mail at [hello@craftswerk.io](mailto:hello@craftswerk.io) so we can talk about the specifics over a coffee.
