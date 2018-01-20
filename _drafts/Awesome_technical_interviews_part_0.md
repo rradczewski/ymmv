@@ -10,7 +10,7 @@ image_alt: A photo of a screen showing FizzBuzz a popular albeit horribly ineffe
 
 Last year marked the first year since 2014 I did technical interviews again. When the CTO approached me and asked me to do the technical interviews for the front-end team, I was excited to pick the topic up again after such a long time.
 
-With the interviews quickly approaching, I reflected on the interviews I have been to in the past as an interviewee, sitting at the other side of the table, being nervous, excited, very insecure or - on other occasions - at  [peak-Dunning-Kruger](https://en.wikipedia.org/wiki/Dunning%E2%80%93Kruger_effect). With the CTO's permission, I tried to create an interview process that mitigates all of the above.
+With the interviews quickly approaching, I reflected on the interviews I have been to in the past as an interviewee, sitting on the other side of the table, being nervous, excited, very insecure or - on other occasions - at  [peak-Dunning-Kruger](https://en.wikipedia.org/wiki/Dunning%E2%80%93Kruger_effect). With the CTO's permission, I tried to create an interview process that mitigates all of the above.
 
 ## Opening a can of worms
 
