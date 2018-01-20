@@ -40,7 +40,7 @@ Part two covers the day of the interview. Starting with setting your priorities 
 
 Thank you [@benjamin](https://twitter.com/benjamin) for your invaluable feedback on my ideas, the chance to record the first [CTO.coffee](https://cto.coffee) episode on *Hiring & Interviewing* and for being the first person to show me how a good hiring process can look like.
 
-Furthermore, thank you Markus and Jean-Louis for trusting me in allowing me to try out the methods I'm laying out in these blog posts in your companies.
+Furthermore, thank you Markus and Jean-Louis, for trusting me in allowing me to try out the methods I'm laying out in these blog posts in your companies.
 
 ## 📖 Further Readings
 

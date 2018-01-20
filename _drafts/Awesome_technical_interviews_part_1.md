@@ -22,17 +22,17 @@ Let's start with the goal I have in mind for everything laid out in this blog po
 
 **Minimize surprises for the interviewee and everyone else involved at every point in the hiring process.**
 
-Everyone means everyone. **Everyone** in the team should know the criteria applied to the interviews. **I** must be aware of the teams expectations towards the new-hire. **The interviewee** should know everything about what is going to happen on the interview. **The team** should know who's going to visit the office and why.
+Everyone means everyone. **Everyone** in the team should know the criteria applied to the interviews. **I** must be aware of the team's expectations towards the new-hire. **The interviewee** should know everything about what is going to happen on the day of the interview. **The team** should know who's going to visit the office and why.
 
-The [complexity of the project and the role](https://lizkeogh.com/2013/07/21/estimating-complexity/) I'm hiring for is something that is very important to me. I make sure it is well communicated between the teams and line-managers. Chances are, a company does nothing that hasn't been done before on a technical level, so they might not need a specialist, but a curious person that is willing to get familiar with a new ecosystem.  
+The [complexity of the project and the role](https://lizkeogh.com/2013/07/21/estimating-complexity/) I'm hiring for is something that is very important to me. I make sure it is well communicated to the teams and line-managers. Chances are, a company does nothing that hasn't been done before on a technical level, so they might not need a specialist, but a curious person that is willing to get familiar with a new ecosystem.  
 
-Does the company have the capacity to train people and do they have a proper mentor ship process? If so, that means technical requirements become less important - what else is it one should focus on then?
+Does the company have the capacity to train people and do they have a proper mentorship process? If so, that means technical requirements become less important - what else is it one should focus on then?
 
-I strive to make sure that everyone is aware and in agreement about the criteria *important* to the company and of the criteria that they explicityly deemed *not important*. Interviewing handbooks like [the one Medium published this year](https://medium.engineering/mediums-engineering-interview-process-b8d6b67927c4) are a valuable resource to find out what a companies criteria should be.
+I strive to make sure that everyone is aware and in agreement about the criteria *important* to the company and of the criteria that they explicitly deemed *not important*. Interviewing handbooks like [the one Medium published this year](https://medium.engineering/mediums-engineering-interview-process-b8d6b67927c4) are a valuable resource to find out what a companies criteria should be.
 
-## Take home exercise or pair programming?
+## Take-home exercise or pair programming?
 
-I leave it to the interviewee to choose between a take home exercise or a pair programming interview. There are [some downsides](https://cate.blog/2016/02/10/bad-interviews-are-a-company-problem-not-a-candidate-problem/) to take-home exercises, just as there are for on-site pair programming interviews, but remember that the person interviewing for the job might have other obligations that make it hard for them to visit the office for a few hours - just imagine having every company you're applying to ask you to come by for an afternoon that early into the hiring process!
+I leave it to the interviewee to choose between a take-home exercise or a pair programming interview. There are [some downsides](https://cate.blog/2016/02/10/bad-interviews-are-a-company-problem-not-a-candidate-problem/) to take-home exercises, just as there are for on-site pair programming interviews, but remember that the person interviewing for the job might have other obligations that make it hard for them to visit the office for a few hours - just imagine having every company you're applying to ask you to come by for an afternoon that early into the hiring process!
 
 Should the interviewee choose a take-home exercise, I will not let this decision factor into the decision at all. After they sent around their solution, I invite them to the office and let them walk me through the code for half an hour as an exercise.
 
@@ -40,7 +40,7 @@ In the following though, I'm assuming that the interviewee picked the *pair prog
 
 ## Picking a task
 
-Having facilitated countless coding katas at our meetup in Berlin, I hereby promise that a task can not be small enough for an hour of pair programming. [Kata-Log](http://kata-log.rocks/), a list of coding exercises compiled by the amazing [@egga_de](https://twitter.com/egga_de) is a great source of inspiration for me.
+Having facilitated countless coding katas at our meetup in Berlin, I hereby promise that a task cannot be small enough for an hour of pair programming. [Kata-Log](http://kata-log.rocks/), a list of coding exercises compiled by the amazing [@egga_de](https://twitter.com/egga_de) is a great source of inspiration for me.
 
 My personal take on the task is this though: I love to use production code as an exercise. What I did in the past is to pick something I have done recently in a code base and delete most tests and the implementation. If the code base is too big, it might make sense to delete distracting aspects of it for the exercise.
 
@@ -62,7 +62,7 @@ Let me give you two examples:
 
 Now that I've picked the task, it's time to draft the invitation for the interviewee.
 
-I of course remember how nervous I've been at every interview, checking the location of the office and the scheduled time every other minute as the interview came closer, which is why I now pay close attention to being very verbose when it comes to how the interview is going to happen.
+I, of course, remember how nervous I've been at every interview, checking the location of the office and the scheduled time every other minute as the interview came closer, which is why I now pay close attention to being very verbose when it comes to how the interview is going to happen.
 
 Remember my goal: **Minimize surprises for the interviewee and everyone else involved at every point in the hiring process.**
 

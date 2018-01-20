@@ -14,7 +14,7 @@ Think about it - there are only a few occasions in your professional life that a
 
 The invitation is sent out, the interviewee accepted and the interview is still a week or two away; Time to plan the day! That interview will be the most important meeting I'm having that day, so I go and reschedule everything before and after the interview.
 
-I will be the *Navigator*, so I'm making sure I understand the task I picked. In case I chose to use the production code base, I delete the folder and setup everything from scratch. If you chose the same, repeat this until you are sure that it can be done in the matter of a few minutes. If you're unsure, try it on a colleague's machine as well. Export the work directory to a fresh git repository and make sure you know the candidates credentials so you can invite them to the repository just before the pairing starts.
+I will be the *Navigator*, so I'm making sure I understand the task I picked. In case I chose to use the production code base, I delete the folder and setup everything from scratch. If you chose the same, repeat this until you are sure that it can be done in the matter of a few minutes. If you're unsure, try it on a colleague's machine as well. Export the working directory to a fresh git repository and make sure you know the candidate's credentials so you can invite them to the repository just before the pairing starts.
 
 Whenever I'm very unsure about the experience of the interviewee, I make sure to make up your mind about which guidance I want to give and how I could change and steer the task to become easier or harder. This is a crucial part of my preparations because it is up to me to make the interview a pleasant and insightful experience.
 
@@ -41,7 +41,7 @@ If everything is well, I proceed with explaining the agenda of the day: We will 
 
 ## The pairing
 
-In the case that the interviewee brought their own laptop, the next few minutes will be spent waiting for *git*, *npm*, *IntelliJ* or about every tool needed to setup the code base and run the tests, so I take this time to explain the interviewee that the next hour is not about getting things done or finishing the task (**!**), but about seeing how our collaboration works out and how they approach the problem in a pairing setup. There is no need to be mysterious about this - quite the opposite! The more explicitly you lay out your expectations, the more comfortable the interviewee is going to be with showing their best.
+In the case that the interviewee brought their own laptop, the next few minutes will be spent waiting for *git*, *npm*, *IntelliJ* or about every tool needed to set up the code base and run the tests, so I take this time to explain the interviewee that the next hour is not about getting things done or finishing the task (**!**), but about seeing how our collaboration works out and how they approach the problem in a pairing setup. There is no need to be mysterious about this - quite the opposite! The more explicitly you lay out your expectations, the more comfortable the interviewee is going to be with showing their best.
 
 Not everyone is used to pairing, so it's important for me to explain that I'm their partner in this and that I'm looking to have discussions with them, not quiz them on the task. I will answer every question they will have and should I be at a loss too, it's completely fine for us to resort to *StackOverflow*.
 
@@ -63,16 +63,16 @@ In the retrospective, I want to understand the candidates experience with the pa
 
 The retrospective is about seeing them reflect on the previous hour. I will share positive observations I made (e.g. *I liked how you extracted a function for choosing between singular and plural*) and will ask questions to see how the candidate reflects on their work:
 
-- How did you like the path we went down for the solution?
+- How do you like our solution to the problem?
 - Did you learn anything new in the last hour?
 - What would you change from here?
 
-With the retrospetive closed off, I thank the candidate for their time and explain how we go from here. I usually ask if they have a deadline until which they would like to hear back from us and that they could reach out to me anytime in case they have questions about the company.
+With the retrospective closed off, I thank the candidate for their time and explain how we go from here. I usually ask if they have a deadline until which they would like to hear back from us and that they could reach out to me anytime in case they have questions about the company.
 
 The meeting doesn't end here for me though: The next half hour is spent on me refining my notes and actively looking for biases I could have overlooked that might influence my impression. After that, I meet with the line manager and relay my impression to them (not the notes though).
 
 ## That's it!
 
-So this is how I have been conducting technical interviews at my clients. If you like to read more, make sure to checkout the [*Further Readings*]({% link _drafts/Awesome_technical_interviews_part_0.md %}#-further-readings) I added in the introduction post.
+So this is how I have been conducting technical interviews at my clients'. If you like to read more, make sure to check out the [*Further Readings*]({% link _drafts/Awesome_technical_interviews_part_0.md %}#-further-readings) I added in the introduction post.
 
 If you want me to bring this process to your company, send me a mail at [hello@craftswerk.io](mailto:hello@craftswerk.io) so we can talk about the specifics over a coffee.
