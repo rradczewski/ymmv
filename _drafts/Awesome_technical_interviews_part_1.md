@@ -6,15 +6,13 @@ image_share: /assets/interview_background_card.jpg
 image_preview: /assets/interview_background_preview.jpg
 image_alt: A photo of a screen showing FizzBuzz a popular albeit horribly ineffective coding exercise.
 ---
-From managing expectations throughout the company to writing the invitation mail, preparing an interview takes a considerable amount of time - Rightfully so, because it's the most important meeting you'll be having this week.
+From managing expectations throughout the company to writing the invitation mail, preparing an interview takes a considerable amount of time—rightfully so, because it's the most important meeting you'll be having this week.
 
 *This is Part #1 of my series on [Awesome Technical Interviews]({% link _drafts/Awesome_technical_interviews_part_0.md %}). Part #2 can be found [here]({% link _drafts/Awesome_technical_interviews_part_2.md %}).*
 
 ## Context
 
-I guess a fair bit of warning is appropriate at this point: My experience comes from working with young companies, with teams that like to be involved in processes like hiring. My clients never did rocket science, but develop apps and software for businesses and private people.
-
-The environment is important here as there needs to be a mutual understanding and support for an interview process like this in every part of the company.
+I guess a fair bit of warning is appropriate at this point: my experience comes from working with young companies, with teams that like to be involved in processes like hiring. My clients usually don't do rocket science, but develop apps and software for businesses and private people. This also means that most of the time, having very specific skills is nice, but by no means a necessity.
 
 ## Seeking clarification
 
@@ -22,17 +20,17 @@ Let's start with the goal I have in mind for everything laid out in this blog po
 
 **Minimize surprises for the interviewee and everyone else involved at every point in the hiring process.**
 
-Everyone means everyone. **Everyone** in the team should know the criteria applied to the interviews. **I** must be aware of the team's expectations towards the new-hire. **The interviewee** should know everything about what is going to happen on the day of the interview. **The team** should know who's going to visit the office and why.
+Everyone means everyone. **Everyone** in the team should know the criteria applied to the interviews. **I** must be aware of the team's expectations towards the new hire. **The interviewee** should know everything about what is going to happen on the day of the interview. **The team** should know who's going to visit the office and why.
 
-The [complexity of the project and the role](https://lizkeogh.com/2013/07/21/estimating-complexity/) I'm hiring for is something that is very important to me. I make sure it is well communicated to the teams and line-managers. Chances are, a company does nothing that hasn't been done before on a technical level, so they might not need a specialist, but a curious person that is willing to get familiar with a new ecosystem.  
+The [complexity of the project and the role](https://lizkeogh.com/2013/07/21/estimating-complexity/) I'm hiring for is something that is very important to me. I make sure it is well communicated to the teams and line managers. Chances are, a company does nothing that hasn't been done before on a technical level, so they might not need a specialist, but a curious person that is willing to get familiar with a new ecosystem.  
 
 Does the company have the capacity to train people and do they have a proper mentorship process? If so, that means technical requirements become less important - what else is it one should focus on then?
 
-I strive to make sure that everyone is aware and in agreement about the criteria *important* to the company and of the criteria that they explicitly deemed *not important*. Interviewing handbooks like [the one Medium published this year](https://medium.engineering/mediums-engineering-interview-process-b8d6b67927c4) are a valuable resource to find out what a companies criteria should be.
+I strive to make sure that everyone is aware and in agreement about the criteria *important* to the company and of the criteria that they explicitly deemed *not important*. Interviewing handbooks like [the one Medium published this year](https://medium.engineering/mediums-engineering-interview-process-b8d6b67927c4) are a valuable resource to find out what a company's criteria should be.
 
 ## Take-home exercise or pair programming?
 
-I leave it to the interviewee to choose between a take-home exercise or a pair programming interview. There are [some downsides](https://cate.blog/2016/02/10/bad-interviews-are-a-company-problem-not-a-candidate-problem/) to take-home exercises, just as there are for on-site pair programming interviews, but remember that the person interviewing for the job might have other obligations that make it hard for them to visit the office for a few hours - just imagine having every company you're applying to ask you to come by for an afternoon that early into the hiring process!
+I leave it to the interviewee to choose between a take-home exercise or a pair programming interview. There are [some downsides](https://cate.blog/2016/02/10/bad-interviews-are-a-company-problem-not-a-candidate-problem/) to take-home exercises, just as there are for on-site pair programming interviews, but remember that the person interviewing for the job might have other obligations that make it hard for them to visit the office for a few hours—just imagine if you applied to a bunch of companies and they all asked you to come by for an afternoon that early into the hiring process!
 
 Should the interviewee choose a take-home exercise, I will not let this decision factor into the decision at all. After they sent around their solution, I invite them to the office and let them walk me through the code for half an hour as an exercise.
 
@@ -87,3 +85,5 @@ Looking forward to meeting you!
 </blockquote>
 
 With the invitation sent, let me walk you through how the day of the interview is going to go down in [Part #2]({% link _drafts/Awesome_technical_interviews_part_2.md %}).
+
+*If you want me to bring this process to your company, send me a mail at [hello@craftswerk.io](mailto:hello@craftswerk.io) so we can talk about the specifics over a coffee or via video chat.*

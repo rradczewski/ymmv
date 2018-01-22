@@ -6,7 +6,7 @@ image_share: /assets/interview_background_card.jpg
 image_preview: /assets/interview_background_preview.jpg
 image_alt: A photo of a screen showing FizzBuzz a popular albeit horribly ineffective coding exercise.
 ---
-*Confession time*: I used to quiz people on FizzBuzz on their job interview when I started interviewing people for my own company five years ago. I no longer do that - instead, I try to create an environment where people can strive and show their best: on production code, on their machine, with me navigating.
+*Confession time*: I used to quiz people on FizzBuzz on their job interview when I started interviewing people for my own company five years ago. I no longer do that—instead, I try to create an environment where people can strive and show their best: on production code, on their machine, with me navigating.
 
 Last year marked the first year since 2014 I did technical interviews again. When the CTO approached me and asked me to do the technical interviews for the front-end team, I was excited to pick the topic up again after such a long time.
 
@@ -14,7 +14,7 @@ With the interviews quickly approaching, I reflected on the interviews I have be
 
 ## Opening a can of worms
 
-After the first interview I conducted that year, which ultimately lead to hiring the first permanently employed front-end developer at that client 🎉, I started drafting this post [summarizing my ideas](https://github.com/rradczewski/ymmv/blob/85635a60851aa8e0aeccd80d53bb9b3e4cbcd4f8/_drafts/Why_-_Pair_Programming_Interviews.md) back then.
+After the first interview I conducted that year, which ultimately lead to hiring the first permanently-employed front-end developer at that client 🎉, I started drafting this post [summarizing my ideas](https://github.com/rradczewski/ymmv/blob/85635a60851aa8e0aeccd80d53bb9b3e4cbcd4f8/_drafts/Why_-_Pair_Programming_Interviews.md) back then.
 
 ![The first commit to this blog post, dating back to Sun Apr 23, 2017]({{ "assets/first_commit_pp_interviews.png" | relative_url }})
 
@@ -41,6 +41,10 @@ Part two covers the day of the interview. Starting with setting your priorities 
 Thank you [@benjamin](https://twitter.com/benjamin) for your invaluable feedback on my ideas, the chance to record the first [CTO.coffee](https://cto.coffee) episode on *Hiring & Interviewing* and for being the first person to show me how a good hiring process can look like.
 
 Furthermore, thank you Markus and Jean-Louis, for trusting me in allowing me to try out the methods I'm laying out in these blog posts in your companies.
+
+Finally, thank you [@samirtalwar](https://twitter.com/samirtalwar) for proofreading all of this 🤗. 
+
+*If you want me to bring this process to your company, send me a mail at [hello@craftswerk.io](mailto:hello@craftswerk.io) so we can talk about the specifics over a coffee or via video chat.*
 
 ## 📖 Further Readings
 

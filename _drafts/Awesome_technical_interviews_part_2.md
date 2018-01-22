@@ -14,9 +14,9 @@ Think about it - there are only a few occasions in your professional life that a
 
 The invitation is sent out, the interviewee accepted and the interview is still a week or two away; Time to plan the day! That interview will be the most important meeting I'm having that day, so I go and reschedule everything before and after the interview.
 
-I will be the *Navigator*, so I'm making sure I understand the task I picked. In case I chose to use the production code base, I delete the folder and setup everything from scratch. If you chose the same, repeat this until you are sure that it can be done in the matter of a few minutes. If you're unsure, try it on a colleague's machine as well. Export the working directory to a fresh git repository and make sure you know the candidate's credentials so you can invite them to the repository just before the pairing starts.
+I will be the *Navigator*, so I'm making sure I understand the task I've picked. In case I've chosen to use the production code base, I delete the folder and setup everything from scratch. If you've chosen the same, repeat this until you are sure that it can be done in the matter of a few minutes. If you're unsure, try it on a colleague's machine as well. Export the working directory to a fresh Git repository and make sure you know the candidate's credentials so you can invite them to the repository just before the pairing starts.
 
-Whenever I'm very unsure about the experience of the interviewee, I make sure to make up your mind about which guidance I want to give and how I could change and steer the task to become easier or harder. This is a crucial part of my preparations because it is up to me to make the interview a pleasant and insightful experience.
+Whenever I'm unsure about the experience of the interviewee, I make sure to make up your mind about which guidance I want to give and how I could change and steer the task to become easier or harder. This is a crucial part of my preparations because it is up to me to make the interview a pleasant and insightful experience.
 
 ## Managing expectations
 
@@ -30,12 +30,12 @@ The more aware I am of these expectations towards me and the interview itself, t
 
 ## Good to see you!
 
-On the day of the interview, I unmute my phone so I don't miss a message from the interviewee. Once they arrive, I try to be the first person to greet them. From this point on, I have to be aware of the fact that there will be a power imbalance in my interactions with the interviewee: I will be calling the shots on everything that's going to happen and the interviewee's well-being is in my hand.
+On the day of the interview, I unmute my phone so I don't miss a message from the interviewee. Once they arrive, I try to be the first person to greet them. From this point on, I have to be aware of the fact that there will be a power imbalance in my interactions with the interviewee: I will be calling the shots on everything that's going to happen and the interviewee's well-being is in my hands.
 
 Once the two of us settled down, the first important question I ask is:  
 *"Are you well? I promise that there is no disadvantage for you if we reschedule this interview because you are not feeling well."*  
 
-And I mean that. Bad luck happens and *Moore's Law* by definition strikes on the worst occasions. The interview is one of the most important meetings someone will have during their employment at a company; if their mind is somewhere else or they are feeling sick, I accept that and reschedule the interview.
+And I mean that. Bad luck happens and [*Murphy's Law*](https://en.wikipedia.org/wiki/Murphy%27s_law) by definition strikes on the worst occasions. The interview is one of the most important meetings someone will have during their employment at a company; if their mind is somewhere else or they are feeling sick, I accept that and reschedule the interview.
 
 If everything is well, I proceed with explaining the agenda of the day: We will pair for exactly one hour, then have a short retrospective about the session over a coffee.
 
@@ -43,7 +43,7 @@ If everything is well, I proceed with explaining the agenda of the day: We will 
 
 In the case that the interviewee brought their own laptop, the next few minutes will be spent waiting for *git*, *npm*, *IntelliJ* or about every tool needed to set up the code base and run the tests, so I take this time to explain the interviewee that the next hour is not about getting things done or finishing the task (**!**), but about seeing how our collaboration works out and how they approach the problem in a pairing setup. There is no need to be mysterious about this - quite the opposite! The more explicitly you lay out your expectations, the more comfortable the interviewee is going to be with showing their best.
 
-Not everyone is used to pairing, so it's important for me to explain that I'm their partner in this and that I'm looking to have discussions with them, not quiz them on the task. I will answer every question they will have and should I be at a loss too, it's completely fine for us to resort to *StackOverflow*.
+Not everyone is used to pairing, so it's important for me to explain that I'm their partner in this and that I'm looking to have discussions with them, not quiz them on the task. I will answer every question they will have and should I be at a loss too, it's completely fine for us to resort to *Stack Overflow*.
 
 Pairing with them also means getting a grasp of their overall skill level: How fast they are with the IDE, how knowledgeable they are in the programming language and its ecosystem, what kind of questions they ask or discussions they start. It's important for me to not be too picky here though: You should have certain expectations towards someone who's applying for a *Senior Developer* role, but an hour is nowhere enough to categorize someone on an engineering ladder, so I tick this box as early as possible and move on.
 
@@ -69,10 +69,10 @@ The retrospective is about seeing them reflect on the previous hour. I will shar
 
 With the retrospective closed off, I thank the candidate for their time and explain how we go from here. I usually ask if they have a deadline until which they would like to hear back from us and that they could reach out to me anytime in case they have questions about the company.
 
-The meeting doesn't end here for me though: The next half hour is spent on me refining my notes and actively looking for biases I could have overlooked that might influence my impression. After that, I meet with the line manager and relay my impression to them (not the notes though).
+The meeting doesn't end here for me though: The next half hour is spent on me refining my notes and actively looking for biases I could have overlooked that might influence my impression. After that, I meet with the line manager and relay my impression to them.
 
 ## That's it!
 
-So this is how I have been conducting technical interviews at my clients'. If you like to read more, make sure to check out the [*Further Readings*]({% link _drafts/Awesome_technical_interviews_part_0.md %}#-further-readings) I added in the introduction post.
+So this is how I have been conducting technical interviews at my clients so far. If you'd like to read more, make sure to check out the [*Further Readings*]({% link _drafts/Awesome_technical_interviews_part_0.md %}#-further-readings) I added in the introduction post.
 
-If you want me to bring this process to your company, send me a mail at [hello@craftswerk.io](mailto:hello@craftswerk.io) so we can talk about the specifics over a coffee.
+*If you want me to bring this process to your company, send me a mail at [hello@craftswerk.io](mailto:hello@craftswerk.io) so we can talk about the specifics over a coffee or via video chat.*
