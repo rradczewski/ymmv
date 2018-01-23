@@ -66,6 +66,15 @@
   }
 }
 
+.staging-warning {
+  margin: 0 auto;
+  max-width: 700px;
+  box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.15);
+  line-height: initial;
+  background: #faa;
+  padding: 10px;
+  a { text-decoration: underline; }
+}
 
 
 /**
@@ -230,6 +239,7 @@
 
   todo {
     display: block;
+    white-space: pre-wrap;
     padding: 5px 5px 5px 15px;
     font-weight: bold;
     font-family: sans-serif;

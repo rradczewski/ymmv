@@ -29,8 +29,11 @@ markdown: kramdown
 
 plugins:
   - jekyll-feed
+include:
+  - _headers
 exclude:
   - Gemfile
   - Gemfile.lock
   - ^README.md$
+  - _drafts/README.md
   - .gitignore

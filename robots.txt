@@ -1,0 +1,6 @@
+---
+---
+{%- unless jekyll.environment == 'production' -%}
+User-agent: *
+Disallow: /
+{%- endunless -%}
