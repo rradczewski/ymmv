@@ -8,7 +8,7 @@ image_alt: A photo of a screen showing FizzBuzz a popular albeit horribly ineffe
 ---
 Think about it - there are only a few occasions in your professional life that are as exceptional and stressful as interviewing for a new job. The power balances lined up against you, the unknown ahead of you. As an interviewer, it is now your task to mitigate all that.
 
-*This is Part #2 of my series on [Awesome Technical Interviews]({% link _drafts/Awesome_technical_interviews_part_0.md %}). Part #1 can be found [here]({% link _drafts/Awesome_technical_interviews_part_1.md %}).*
+*This is Part #2 of my series on [Awesome Technical Interviews]({% link _posts/2018-01-23-Awesome_technical_interviews_part_0.md %}). Part #1 can be found [here]({% link _posts/2018-01-23-Awesome_technical_interviews_part_1.md %}).*
 
 ## Preparations
 
@@ -20,7 +20,7 @@ Whenever I'm unsure about the experience of the interviewee, I make sure to make
 
 ## Managing expectations
 
-I'll keep reiterating my goal from [Part #1]({% link _drafts/Awesome_technical_interviews_part_1.md %}):
+I'll keep reiterating my goal from [Part #1]({% link _posts/2018-01-23-Awesome_technical_interviews_part_1.md %}):
 
 **Minimize surprises for the interviewee and everyone else involved at every point in the hiring process.**
 
@@ -73,6 +73,6 @@ The meeting doesn't end here for me though: The next half hour is spent on me re
 
 ## That's it!
 
-So this is how I have been conducting technical interviews at my clients so far. If you'd like to read more, make sure to check out the [*Further Readings*]({% link _drafts/Awesome_technical_interviews_part_0.md %}#-further-readings) I added in the introduction post.
+So this is how I have been conducting technical interviews at my clients so far. If you'd like to read more, make sure to check out the [*Further Readings*]({% link _posts/2018-01-23-Awesome_technical_interviews_part_0.md %}#-further-readings) I added in the introduction post.
 
 *If you want me to bring this process to your company, send me a mail at [hello@craftswerk.io](mailto:hello@craftswerk.io) so we can talk about the specifics over a coffee or via video chat.*

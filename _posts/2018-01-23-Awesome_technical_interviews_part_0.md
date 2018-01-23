@@ -26,13 +26,13 @@ In the meantime, Benjamin and I recorded [the first episode](https://cto.coffee/
 
 The result is a two-part series about how I conduct technical interviews, each covering a different phase of the whole process.
 
-[**Part #1: Preparing the interview**]({% link _drafts/Awesome_technical_interviews_part_1.md %})
+[**Part #1: Preparing the interview**]({% link _posts/2018-01-23-Awesome_technical_interviews_part_1.md %})
 
 The first post covers all the decisions that have to be made before having someone over for a technical interview: *What role are we actually looking for? Do we have enough capacity for mentoring someone intensively? What are the expectations of everyone involved?*
 
 It further covers picking an exercise, writing the invitation and establishes the mood I want to set in an interview.
 
-[**Part #2: Conducting the interview**]({% link _drafts/Awesome_technical_interviews_part_2.md %})
+[**Part #2: Conducting the interview**]({% link _posts/2018-01-23-Awesome_technical_interviews_part_2.md %})
 
 Part two covers the day of the interview. Starting with setting your priorities and getting into the right mindset, I'm walking you through the way I do technical interviews. I'm explaining my role in the day, my obligations and the things to look out for. We're talking about the importance of understanding power balances, unconscious bias and the necessity for timeboxing.
 
@@ -42,7 +42,7 @@ Thank you [@benjamin](https://twitter.com/benjamin) for your invaluable feedback
 
 Furthermore, thank you Markus and Jean-Louis, for trusting me in allowing me to try out the methods I'm laying out in these blog posts in your companies.
 
-Finally, thank you [@samirtalwar](https://twitter.com/samirtalwar) for proofreading all of this 🤗. 
+Finally, thank you [@samirtalwar](https://twitter.com/samirtalwar) for proofreading all of this 🤗.
 
 *If you want me to bring this process to your company, send me a mail at [hello@craftswerk.io](mailto:hello@craftswerk.io) so we can talk about the specifics over a coffee or via video chat.*
 

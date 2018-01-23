@@ -8,7 +8,7 @@ image_alt: A photo of a screen showing FizzBuzz a popular albeit horribly ineffe
 ---
 From managing expectations throughout the company to writing the invitation mail, preparing an interview takes a considerable amount of time—rightfully so, because it's the most important meeting you'll be having this week.
 
-*This is Part #1 of my series on [Awesome Technical Interviews]({% link _drafts/Awesome_technical_interviews_part_0.md %}). Part #2 can be found [here]({% link _drafts/Awesome_technical_interviews_part_2.md %}).*
+*This is Part #1 of my series on [Awesome Technical Interviews]({% link _posts/2018-01-23-Awesome_technical_interviews_part_0.md %}). Part #2 can be found [here]({% link _posts/2018-01-23-Awesome_technical_interviews_part_2.md %}).*
 
 ## Context
 
@@ -84,6 +84,6 @@ Until then, if you have any other questions, feel free to send me a mail :)
 Looking forward to meeting you!
 </blockquote>
 
-With the invitation sent, let me walk you through how the day of the interview is going to go down in [Part #2]({% link _drafts/Awesome_technical_interviews_part_2.md %}).
+With the invitation sent, let me walk you through how the day of the interview is going to go down in [Part #2]({% link _posts/2018-01-23-Awesome_technical_interviews_part_2.md %}).
 
 *If you want me to bring this process to your company, send me a mail at [hello@craftswerk.io](mailto:hello@craftswerk.io) so we can talk about the specifics over a coffee or via video chat.*
