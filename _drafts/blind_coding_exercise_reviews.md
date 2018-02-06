@@ -4,7 +4,7 @@ title: "Blind reviews on coding exercises"
 ---
 A coding assignment can give you lots of insights into how a candidate approaches a problem. There's only one thing I want to avoid, though: *Unconscious bias*. This is why I mask the original committer and then ask a colleague to review the assignment.
 
-As I layed out in my blogposts on [*Awesome Technical Interviews*]({% link _posts/2018-01-23-Awesome_technical_interviews_part_0.md %}), I let candidates choose between a take-home exercise or a Pair Programming session as a coding exercise. While pair programming will allow me to interact with the candidate and empathize with them, the code review of a take-home exercise lacks this context and thus is even more subject to the reviewers internalized [biases](http://blog.dizzyd.com/blog/2014/11/24/bias/).
+As I laid out in my blog posts on [*Awesome Technical Interviews*]({% link _posts/2018-01-23-Awesome_technical_interviews_part_0.md %}), I let candidates choose between a take-home exercise or a Pair Programming session as a coding exercise. While pair programming will allow me to interact with the candidate and empathize with them, the code review of a take-home exercise lacks this context and thus is even more subject to the reviewers internalized [biases](http://blog.dizzyd.com/blog/2014/11/24/bias/).
 
 In order to avoid this, I will A) ask a colleague to review the code and B) anonymize the submission in order to let the code speak for itself.
 
@@ -14,7 +14,7 @@ Luckily, and with a few tweaks, we can use *Pull Requests* to make reviewing as 
 
 ## Setting up the repository
 
-I created a repository on GitHub (`coding-assignments`) that will contain all the coding exercises that are due to be reviewed on an individual branch. If you have a structured approach or guidelines towards code reviews, the [`README.md`]({% link _posts/2017-10-15-What-makes-a-good-README.md %}) on `master` is the right place to put it. 
+I created a repository on GitHub (`coding-assignments`) that will contain all the coding exercises that are due to be reviewed on an individual branch. If you have a structured approach or guidelines towards code reviews, the [`README.md`]({% link _posts/2017-10-15-What-makes-a-good-README.md %}) on `master` is the right place to put it.
 
 Candidates usually send me either a tarball with their repository, or they invite me to a repository. Either way, the following commands add the repository as a remote, fetch the commits and checkout the branch I'm interested in.
 
@@ -33,7 +33,7 @@ git checkout -b foobar FOOBAR/master
 
 ## Masking the author
 
-To remove the original author from the branch, we will use `git filter-branch`, one of the very powerful commands `git` exposes. It's basically a `map` over a range of commits, allowing you to change a commits content and meta data through a shell script.
+To remove the original author from the branch, we will use `git filter-branch`, one of the very powerful commands `git` exposes. It's basically a `map` over a range of commits, allowing you to change a commits content and metadata through a shell script.
 
 ```sh
 git filter-branch --env-filter '
@@ -55,7 +55,7 @@ After running this command, all commits on this branch should have their committ
 
 Now, in case the coding assignment isn't done on a repository forked from the one we are working on, we have to rewrite history a little as to integrate the branch into our repository.
 
-In order for GitHub to let us create a Pull Request, the branches `master` and `foobar` need to have a common ancestor, which is why we're going to rebase `foobar` onto `master`. We need to specify  [`theirs`](https://git-scm.com/docs/merge-strategies#merge-strategies-ours) as the strategy-option to the `recursive` merging algorithm, because we want to have the committers version of e.g. the `README.md`.
+In order for GitHub to let us create a Pull Request, the branches `master` and `foobar` need to have a common ancestor, which is why we're going to rebase `foobar` onto `master`. We need to specify  [`theirs`](https://git-scm.com/docs/merge-strategies#merge-strategies-ours) as the strategy-option to the `recursive` merging algorithm because we want to have the committers version of e.g. the `README.md`.
 
 ```sh
 git rebase master foobar --strategy-option=theirs
