@@ -33,7 +33,7 @@ git checkout -b foobar FOOBAR/master
 
 ## Masking the author
 
-To remove the original author from the branch, we will use `git filter-branch`, one of the very powerful commands `git` exposes. It's basically a `map` over a range of commits, allowing you to change a commits content and metadata through a shell script.
+To remove the original author from the branch, we will use `git filter-branch`, one of the more powerful commands `git` exposes. It's basically a `map` over a range of commits, allowing you to change a commits content and metadata through a shell script.
 
 ```sh
 git filter-branch --env-filter '
@@ -68,3 +68,7 @@ The branch should now have the same commits as `master`, followed by all commits
 ## Creating the Pull Request
 
 Our branch is now ready to be pushed to the GitHub repository, a simple `git push origin foobar` should suffice. You can now create a Pull Request as usual and request a review from one or more of your colleagues 🎉.
+
+The last step is of course to invite the candidate to a meeting where the reviewer will offer their constructive feedback on the code.
+
+*If you want me to bring this process and my approach towards hiring to your company, send me a mail at [hello@craftswerk.io](mailto:hello@craftswerk.io) so we can talk about the specifics over a coffee or via video chat.*
