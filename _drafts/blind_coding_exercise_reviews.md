@@ -2,7 +2,7 @@
 layout: post
 title: "Blind reviews on coding exercises"
 ---
-A coding assignment can give you lots of insights into how a candidate approaches a problem. There's only one thing I want to avoid, though: *Unconscious bias*. This is why I mask the original committer and then ask a colleague to review the assignment.
+A coding assignment can give you lots of valuable insights into how a candidate approaches a problem, their thought process and finally how they document their changes. There's only one thing I want to avoid, though: *Unconscious bias*. This is why I mask the original committer and then ask a colleague to review the assignment.
 
 As I laid out in my blog posts on [*Awesome Technical Interviews*]({% link _posts/2018-01-23-Awesome_technical_interviews_part_0.md %}), I let candidates choose between a take-home exercise or a Pair Programming session as a coding exercise. While pair programming will allow me to interact with the candidate and empathize with them, the code review of a take-home exercise lacks this context and thus is even more subject to the reviewers internalized [biases](http://blog.dizzyd.com/blog/2014/11/24/bias/).
 
