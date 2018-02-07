@@ -14,9 +14,10 @@ Luckily, and with a few tweaks, we can use *Pull Requests* to make reviewing as 
 
 ## Setting up the repository
 
-I created a repository on GitHub (`coding-assignments`) that will contain all the coding exercises that are due to be reviewed on an individual branch. If you have a structured approach or guidelines towards code reviews, the [`README.md`]({% link _posts/2017-10-15-What-makes-a-good-README.md %}) on `master` is the right place to put it.
+I created a repository on GitHub (`coding-assignments`) that will contain all the coding exercises that are due to be reviewed on an individual branch.
+On the `master` branch, you should lay out all information the reviewer needs to do a proper review. The [`README.md`]({% link _posts/2017-10-15-What-makes-a-good-README.md %}) should contain all guidelines regarding the review, the context in which the code was produced and the expectations towards the reviewer.
 
-Candidates usually send me either a tarball with their repository, or they invite me to a repository. Either way, the following commands add the repository as a remote, fetch the commits and checkout the branch I'm interested in.
+Now, candidates usually send me either a tarball with their repository, or they invite me to a repository. Either way, the following commands add the repository as a remote, fetch the commits and checkout the branch I'm interested in.
 
 ```sh
 # Depending on if you have a remote repository or a tarball,
