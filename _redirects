@@ -1,0 +1,2 @@
+# Redirect everything to HTTPS
+http://ymmv.craftswerk.io/* 		https://ymmv.craftswerk.io/:splat 301!
