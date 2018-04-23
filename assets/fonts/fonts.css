@@ -3,6 +3,7 @@
 /* cutive-mono-regular - latin */
 @font-face {
   font-family: 'Cutive Mono';
+  font-display: swap;
   font-style: normal;
   font-weight: 400;
   src: url({{ "/assets/fonts/cutive-mono-v5-latin-regular.eot" | relative_url }}); /* IE9 Compat Modes */
@@ -16,6 +17,7 @@
 /* lato-regular - latin */
 @font-face {
   font-family: 'Lato';
+  font-display: swap;
   font-style: normal;
   font-weight: 400;
   src: url({{ '/assets/fonts/lato-v14-latin-regular.eot' | relative_url }}); /* IE9 Compat Modes */
@@ -29,7 +31,8 @@
 /* lato-700 - latin */
 @font-face {
   font-family: 'Lato';
-  font-style: normal;
+  font-display: swap;
+font-style: normal;
   font-weight: 700;
   src: url({{ '/assets/fonts/lato-v14-latin-700.eot' | relative_url }}); /* IE9 Compat Modes */
   src: local('Lato Bold'), local('Lato-Bold'),
@@ -42,7 +45,8 @@
 /* lato-900 - latin */
 @font-face {
   font-family: 'Lato';
-  font-style: normal;
+  font-display: swap;
+font-style: normal;
   font-weight: 900;
   src: url({{ '/assets/fonts/lato-v14-latin-900.eot' | relative_url }}); /* IE9 Compat Modes */
   src: local('Lato Black'), local('Lato-Black'),
@@ -55,7 +59,8 @@
 /* noto-serif-regular - latin */
 @font-face {
   font-family: 'Noto Serif';
-  font-style: normal;
+  font-display: swap;
+font-style: normal;
   font-weight: 400;
   src: url({{ "/assets/fonts/noto-serif-v4-latin-regular.eot" | relative_url }}); /* IE9 Compat Modes */
   src: local('Noto Serif'), local('NotoSerif'),
@@ -69,7 +74,8 @@
 /* noto-serif-italic - latin */
 @font-face {
   font-family: 'Noto Serif';
-  font-style: italic;
+  font-display: swap;
+font-style: italic;
   font-weight: 400;
   src: url({{ "/assets/fonts/noto-serif-v4-latin-italic.eot" | relative_url }}); /* IE9 Compat Modes */
   src: local('Noto Serif Italic'), local('NotoSerif-Italic'),
@@ -83,7 +89,8 @@
 /* noto-serif-700 - latin */
 @font-face {
   font-family: 'Noto Serif';
-  font-style: normal;
+  font-display: swap;
+font-style: normal;
   font-weight: 700;
   src: url({{ "/assets/fonts/noto-serif-v4-latin-700.eot" | relative_url }}); /* IE9 Compat Modes */
   src: local('Noto Serif Bold'), local('NotoSerif-Bold'),
@@ -97,7 +104,8 @@
 /* noto-serif-700italic - latin */
 @font-face {
   font-family: 'Noto Serif';
-  font-style: italic;
+  font-display: swap;
+font-style: italic;
   font-weight: 700;
   src: url({{ "/assets/fonts/noto-serif-v4-latin-700italic.eot" | relative_url }}); /* IE9 Compat Modes */
   src: local('Noto Serif Bold Italic'), local('NotoSerif-BoldItalic'),
