@@ -16,17 +16,17 @@ I owe a lot to the communities out there, which is why I'm trying to give someth
 
 ## What I believe
 
-My beliefs haven't really changed since I became a freelancer almost two years ago, so that [announcement]({{ site.baseurl }}{% link _posts/2017-02-06-Continuing_my_journey_as_a_Freelance_Software_Crafter.md %}#developing-software) still stands as of today. I'm still fond of testing, will still work on bringing developers and users closer together, shorten every feedback loop that I see and do my best to support people so they enjoy their work.
+My beliefs haven't changed since I became a freelancer almost two years ago, so that [announcement]({{ site.baseurl }}{% link _posts/2017-02-06-Continuing_my_journey_as_a_Freelance_Software_Crafter.md %}#developing-software) still stands as of today. I'm still fond of testing, will still work tirelessly on bringing developers and users closer together, shorten every feedback loop that I see and do my best to support people so they enjoy their work.
 
 More than ever though, I believe that great environments foster great teams, that developing is still means to an end and that the best code is the one that's never written.
 
 ## What I do
 
-While I'm happy to get involved in all the aspects of a team working together to create software, I am also perfectly fine with constraining myself to a well-outlined role. I'm a proficient programmer, but also an experienced mentor and leader.
+While I'm happy to get involved in all the aspects of a team working together to create software, I am also perfectly happy with focusing on a well-outlined role in a development team. I'm a proficient programmer, but also an experienced mentor and leader.
 
 ### Coaching / Training
 
-Companies usually hire me to bring my sense of agility and my experience with crafting software into their teams. Be it establishing retrospectives and productive daily stand-ups in the teams, listening to people and their concerns or bridging the gap between developers and users - when I see something where I can help and have an impact, I won't hesitate but get to work.
+Companies hire me to bring my sense of agility and my experience with crafting software into their teams. This includes establishing retrospectives and productive daily stand-ups in the teams, listening to people and their concerns and bridging the gap between developers and users. Putting it short: When I see something where I can help and have an impact, I won't hesitate but get to work.
 
 I also give workshops where I create a space for teams to explore e.g. *Pair Programming* as a tool in their agile toolbox. These workshops don't just happen out of the blue, but I'm making sure they're well prepared and revised afterward and fit what the team wants to do and needs. There shall be [no prisoners](https://retromat.org/en/?id=1) in my workshops!
 
@@ -34,8 +34,7 @@ I also give workshops where I create a space for teams to explore e.g. *Pair Pro
 
 The ecosystems I'm most knowledgeable in are JavaScript/Node.JS and Java/JVM-languages. I'm maintaining a few libraries for JavaScript ([`expect-redux`](https://github.com/rradczewski/expect-redux), [`flowtypify`](https://github.com/rradczewski/flowtypify), [`simple-eventstore`](https://github.com/rradczewski/simple-eventstore)) and can coach and train people in both ecosystems.
 
-Further, I've worked with a broad range of development environments throughout my professional career, from *C++/Qt* desktop applications to *custom JavaScript interpreters* embedded into CRM systems; from self-written *event-sourced Scala back-ends* to full-fledged *Spring Java applications* talking to message queues running on mainframes.  
-Having this broad experience and understanding of the underlying principles of software engineering enables me to get into new ecosystems very quickly.
+Further, I've worked with a broad range of development environments throughout my professional career, from *C++/Qt* desktop applications to *custom JavaScript interpreters* embedded into CRM systems; from self-written *event-sourced Scala back-ends* to full-fledged *Spring Java applications* talking to message queues running on mainframes. With this broad experience and understanding of the underlying principles of software engineering, I am able to get into new ecosystems very quickly.
 
 My way of working is deeply aligned with the *XP Principles*, so refactoring, testing and continuous integration and deployment are a *necessity* for me.
 
