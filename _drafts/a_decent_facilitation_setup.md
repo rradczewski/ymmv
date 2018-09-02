@@ -17,9 +17,9 @@ For drawing on a flipchart, my go-to brand has been *Neuland* markers ever since
 ![Neuland Outliner]({{ "assets/facilitation_setup/outliner.jpg" | relative_url }})
 
 For colors, I recommend you pick a color you like [on this color wheel](https://color.adobe.com/create/color-wheel/?base=2&rule=Triad&selected=0&name=My%20Color%20Theme&mode=rgb&rgbvalues=0.6027817349030464,0.06999999999999998,0.7,1,0.7551170835223047,0.09999999999999998,0.8456852934968992,0,1,0.07999999999999999,0.8,0.5760214645748966,0.03500000000000003,0.7,0.49313093603098085&swatchOrder=0,1,2,3,4
-) and try to match them to the closest color available as a [No.One with wedge nib](https://eu.neuland.com/markers-more/neuland-markers/neuland-no.one-wedge-nib-single-colours.html). The [No.One's with brush nib](https://eu.neuland.com/markers-more/neuland-markers/artmarker-brush-nib-0.5-7-mm-single-colours.html?c=763) are nice too, but I find it harder to draw consistent lines with them.
+) and try to match all three of them to the closest color available as a [No.One with wedge nib](https://eu.neuland.com/markers-more/neuland-markers/neuland-no.one-wedge-nib-single-colours.html). The [No.One's with brush nib](https://eu.neuland.com/markers-more/neuland-markers/artmarker-brush-nib-0.5-7-mm-single-colours.html?c=763) are nice too, but I find it harder to draw consistent lines with them.
 
-Don't forget to get a shadow color for either. I recommend either **(101) grey** or **(102) light grey**.
+And don't forget to get a shadow color, like **(101) grey** or **(102) light grey**.
 
 If you're looking to get into sketchnotes, everything mentioned above holds true for the *fine.One* line by *Neuland* as well. For precise drawings, I found [Staedtler pigment liners](https://www.staedtler.com/intl/en/products/products-for-colouring/fineliners/pigment-liner-308-fineliner-308-sb6p/) to be cheaper and of equal quality compared to the *Sketch.One* fineliners by *Neuland*.
 
