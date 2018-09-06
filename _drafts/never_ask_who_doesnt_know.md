@@ -29,6 +29,5 @@ If you want to be really inviting and feel comfortable doing so, you can also ex
 
 Make sure to account for the time it takes to get on the same page when you call for a meeting or a workshop. I found using proper timeboxes and an agenda to structure a meeting is much more productive than rushing through the basics and loosing people in the process.
 
---
-
+<br/><br/>
 _**From the Toolbox** is a compilation of small practices, tools and life-hacks I collected over the years._

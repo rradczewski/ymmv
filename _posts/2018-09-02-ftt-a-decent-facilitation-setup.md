@@ -65,4 +65,5 @@ Another nice tape to have is [*Tesa Masking Tape for Curves*](https://www.tesa.c
 
 If you're looking for nametags beyond the cheap *masking tape + sharpie* solution, [Herma's 4412 textile labels](https://www.herma.co.uk/product/textilename-labels-a4-special-4412/) can be used with laser printers, don't smear if you use them with sharpies and don't leave any residue on clothing after removing them. While they're not cheap, I found it really adds to the atmosphere if everyone has a nice professional nametag on them.
 
+<br/><br/>
 _**From the Toolbox** is a compilation of small practices, tools and life-hacks I collected over the years._
