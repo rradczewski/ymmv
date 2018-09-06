@@ -277,6 +277,13 @@
     text-decoration-skip: ink;
   }
 
+  sup {
+    padding-left: 3px;
+    a {
+      text-decoration: none;
+    }
+  }
+
   h2 {
     font-size: 30px;
 
