@@ -29,6 +29,7 @@ markdown: kramdown
 
 plugins:
   - jekyll-feed
+  - jekyll-redirect-from
 include:
   - _headers
   - _redirects
