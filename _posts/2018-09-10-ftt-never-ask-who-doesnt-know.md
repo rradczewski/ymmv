@@ -16,7 +16,7 @@ Another aspect to consider is that, especially with complex topics (e.g. archite
 
 ### Pattern
 
-So instead of asking people to willingly expose their ignorance, take a softwer approach and ask whether they'd like to hear a quick primer on your understanding of topic *$YYY*.
+So instead of asking people to willingly expose their ignorance, take a softer approach and ask whether they'd like to hear a quick primer on your understanding of topic *$YYY*.
 
 > Would you like to hear a quick primer on topic $YYY?  
 > Is it okay if I start with a primer on topic $YYY?
@@ -25,7 +25,7 @@ The latter is particularly useful in signaling interest without exposing oneself
 
 If you want to be really inviting and feel comfortable doing so, you can also expose your ignorance - after all we are only human and nobody can be expected to know everything.
 
-This way, you use your authority to establish a fail-safe environment and you might might just find the group more engaged. Here’s an example of the softer approach:
+This way, you use your authority to establish a fail-safe environment and you might just find the group more engaged. Here’s an example of the softer approach:
 
 > I'll try to give you a quick overview of what I understood, if that is alright. Please feel free to add your own thoughts at the end so we're on the same page.
 
