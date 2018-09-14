@@ -24,15 +24,15 @@ If the pace of the meeting does not allow for someone to speak up, the meeting w
 
 Whenever you ask a question and no one seems to speak up immediately, silently count to 10.
 
-> Do you have any questions left about $YYY?
-> (10...9...8...7...6...5...4...3...2...1...0)
-> Alright, then we'll continue with $ZZZ
+> Do you have any questions left about $YYY?  
+> (10...9...8...7...6...5...4...3...2...1...0)  
+> Alright, then we'll continue with $ZZZ  
 
 But don’t stop there. If someone has already spoken up, once they finish, restart your count to 10 to ensure everyone in the group the chance to respond.
 
-> Thanks $PERSON. Anyone else would like to add something?
-> (10...9...8...7...6...5...4...3...2...1...0)
-> Alright, then we'll continue with $ZZZ
+> Thanks $PERSON. Anyone else would like to add something?  
+> (10...9...8...7...6...5...4...3...2...1...0)  
+> Alright, then we'll continue with $ZZZ  
 
 This might seem awkward at first, but people will quickly notice that you’re merely providing space for other participants to chime in.
 
