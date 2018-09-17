@@ -12,7 +12,7 @@ Your expectation was that each participant would leave well informed, with a gra
 
 ### Reasoning
 
-In a typical group discussion, power dynamics and authority leave some people cautious of contribution. As the the facilitator, it’s first and foremost your responsibility to invite only people who should be on the call to be there. The harder part is then making sure that these fellow collaborators feel comfortable enough to contribute to the discussion or to speak up if they have any questions.
+In a typical group discussion, power dynamics and authority leave some people cautious of contribution. As the facilitator, it’s first and foremost your responsibility to invite only people who should be on the call to be there. The harder part is then making sure that these fellow collaborators feel comfortable enough to contribute to the discussion or to speak up if they have any questions.
 
 A virtual meeting also comes with trivial technical hurdles. Take for example the un-muting of microphones when a group is sitting together at one location[^1], working with a conference room set-up without individual headsets. In a setup like this, just to avoid disrupting the flow of the conversation, you find yourself treading on eggshells. This can ultimately keep people from contributing.
 
