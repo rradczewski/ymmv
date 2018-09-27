@@ -12,7 +12,6 @@ function loadProgressiveImage(container) {
 
   window.setTimeout(function() {
     if (imageLoaded) return;
-    console.log("Showing preview woop");
     preview.classList.add("progressive-image-preview-loaded");
   }, 0);
 }
