@@ -11,8 +11,15 @@
     class="{{ include.classes }} progressive-image"
     alt="{{ include.image_alt }}"
     role="presentation"
-    data-src="{{ include.image | relative_url }}"
-    src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
+    src="{% imagesrc 1600xauto {{ include.image }} %}"
+    srcset="{% imagesrc 600xauto {{ include.image }} %} 600w,
+            {% imagesrc 700xauto {{ include.image }} %} 700w,
+            {% imagesrc 800xauto {{ include.image }} %} 800w,
+            {% imagesrc 1000xauto {{ include.image }} %} 1000w"
+    sizes="(max-width: 600px) 600px,
+           (max-width: 700px) 700px,
+           (max-width: 800px) 800px,
+           100vw"
   />
 </div>
 <noscript>

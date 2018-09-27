@@ -15,7 +15,7 @@ With the interviews quickly approaching, I reflected on the interviews I have be
 
 After the first interview I conducted that year, which ultimately lead to hiring the first permanently-employed front-end developer at that client 🎉, I started drafting this post [summarizing my ideas](https://github.com/rradczewski/ymmv/blob/85635a60851aa8e0aeccd80d53bb9b3e4cbcd4f8/_drafts/Why_-_Pair_Programming_Interviews.md) back then.
 
-![The first commit to this blog post, dating back to Sun Apr 23, 2017]({{ "assets/first_commit_pp_interviews.png" | relative_url }})
+![The first commit to this blog post, dating back to Sun Apr 23, 2017]({% imagesrc 800xauto assets/first_commit_pp_interviews.jpg %})
 
 Armed with lots of feedback from Benjamin, Samir, Sandro and the people who joined my session at SoCraTes 2017, it quickly grew from laying out the process of *Pair Programming* in interviews to a more exhaustive explanation of how I'm conducting interviews.
 

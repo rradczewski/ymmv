@@ -19,7 +19,7 @@
 
   .progressive-image-preview {
     opacity: 0;
-    &.progressive-image-preview-loaded {
+    &.progressive-image-preview-show {
       opacity: 1;
       filter: blur(8px);
     }
