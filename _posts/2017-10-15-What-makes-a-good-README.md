@@ -3,7 +3,6 @@ layout: post
 title: What makes a good README?
 image: /assets/readme_background.jpg
 image_share: /assets/readme_card.png
-image_preview: /assets/readme_background_preview.jpg
 image_alt: The README of the SoftwareCrafters/website project
 ---
 Have a look at the `README` in your current project. How easy is it for *anyone* to get your project up and running from scratch? What does someone need to know about making changes to the codebase? Chances are, if your README is not providing definite and up to date answers to these questions, you're making it harder than necessary for people to contribute and experiment.

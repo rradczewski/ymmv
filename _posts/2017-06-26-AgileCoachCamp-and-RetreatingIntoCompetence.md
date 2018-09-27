@@ -2,7 +2,6 @@
 layout: post
 title: "The Agile Coach Camp 2017 and Retreating Into Competence"
 image: /assets/retreating_into_competence.jpg
-image_preview: /assets/retreating_into_competence_preview.jpg
 image_alt: A photo taking outside of the venue in Rückersbach, showing parts of a terrace, some green and trees and a path through that.
 ---
 I had a great time as a first-timer at the [Agile Coach Camp Germany](http://agilecoachcamp.de/), but sometimes, learning new things can get very overwhelming.

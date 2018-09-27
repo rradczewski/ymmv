@@ -3,7 +3,6 @@ layout: post
 title: "Awesome Technical Interviews #2: Conducting the interview"
 image: /assets/interview_background.jpg
 image_share: /assets/interview_background_card.jpg
-image_preview: /assets/interview_background_preview.jpg
 image_alt: A photo of a screen showing FizzBuzz a popular albeit horribly ineffective coding exercise.
 ---
 Think about it - there are only a few occasions in your professional life that are as exceptional and stressful as interviewing for a new job. The power balances lined up against you, the unknown ahead of you. As an interviewer, it is now your task to mitigate all that.

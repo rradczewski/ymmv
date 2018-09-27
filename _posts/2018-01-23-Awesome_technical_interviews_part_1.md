@@ -3,7 +3,6 @@ layout: post
 title: "Awesome Technical Interviews #1: Preparing the interview"
 image: /assets/interview_background.jpg
 image_share: /assets/interview_background_card.jpg
-image_preview: /assets/interview_background_preview.jpg
 image_alt: A photo of a screen showing FizzBuzz a popular albeit horribly ineffective coding exercise.
 ---
 From managing expectations throughout the company to writing the invitation mail, preparing an interview takes a considerable amount of time—rightfully so, because it's the most important meeting you'll be having this week.

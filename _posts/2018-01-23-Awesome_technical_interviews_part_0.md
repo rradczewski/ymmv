@@ -3,7 +3,6 @@ layout: post
 title: "Awesome Technical Interviews"
 image: /assets/interview_background.jpg
 image_share: /assets/interview_background_card.jpg
-image_preview: /assets/interview_background_preview.jpg
 image_alt: A photo of a screen showing FizzBuzz a popular albeit horribly ineffective coding exercise.
 ---
 *Confession time*: I used to quiz people on FizzBuzz on their job interview when I started interviewing people for my own company five years ago. I no longer do that—instead, I try to create an environment where people can strive and show their best: on production code, on their machine, with me navigating.
