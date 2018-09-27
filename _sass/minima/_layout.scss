@@ -186,6 +186,7 @@
   width: -webkit-calc(100% + (#{$spacing-unit} * 2));
   width:         calc(100% + (#{$spacing-unit} * 2));
   margin-left: -$spacing-unit;
+  margin-bottom: 30px;
 
   @include media-query($content-width + $spacing-unit * 2) {
     width: -webkit-calc(100% + (#{$spacing-unit}));

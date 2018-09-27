@@ -27,6 +27,13 @@ permalink: /:categories/:year/:month/:title
 # Build settings
 markdown: kramdown
 
+image:
+  output: assets/generated
+  presets:
+    placeholder:
+      width: 0
+      height: 0
+
 plugins:
   - jekyll-feed
   - jekyll-redirect-from

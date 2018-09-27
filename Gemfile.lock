@@ -32,6 +32,8 @@ GEM
       rb-inotify (~> 0.9, >= 0.9.7)
       ruby_dep (~> 1.2)
     mercenary (0.3.6)
+    mimemagic (0.3.2)
+    mini_magick (4.9.2)
     minima (2.1.1)
       jekyll (~> 3.3)
     pathutil (0.16.0)
@@ -56,6 +58,8 @@ DEPENDENCIES
   jekyll (= 3.6.0)
   jekyll-feed (~> 0.6)
   jekyll-redirect-from
+  mimemagic
+  mini_magick
   minima (~> 2.0)
   tzinfo-data
 
