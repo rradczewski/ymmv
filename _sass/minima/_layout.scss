@@ -58,6 +58,34 @@
   }
 }
 
+@include media-query($on-palm) {
+  body.layout-post {
+    .site-title {
+      margin: 0;
+      text-align: left;
+      display: inline-block;
+      padding-right: 30px;
+      .site-title-text {
+        &, &:after, &:before {
+          font-size: 25px;
+          line-height: 25px;
+        }
+        &:after {
+          letter-spacing: -5px;
+        }
+      }
+    }
+
+    .site-subtitle {
+      margin-bottom: 0px;
+      font-size: 16px;
+      text-align: left;
+      display: inline-block;
+      letter-spacing: normal;
+    }
+  }
+}
+
 .site-nav {
   .page-link {
     color: $text-color;
