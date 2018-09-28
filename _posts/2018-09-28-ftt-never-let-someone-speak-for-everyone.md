@@ -20,7 +20,7 @@ See also [*Never Ask "Who doesn't know $YYY"*]({% link _posts/2018-09-10-ftt-nev
 
 A workshop is there for people to learn, a meeting is there to get everyone on the same page, move forward decisions and to hear different opinions. If somebody speaks for the group (even if that very person is you), you might be putting these well intentioned goals in jeopardy, so tread lightly.
 
-Often, we make assumptions about the experience of others, aligning those assumptions with our own experience. If you end up dominating a meeting, and yeah, [that might be a systemic issue](https://www.nytimes.com/2017/06/14/business/women-sexism-work-huffington-kamala-harris.html) (or [two](http://geekfeminism.wikia.com/wiki/Splaining)), it's up to you to hold back and give space to others. If you end up taking the initiative and speaking for others, make sure you speak for them and not through them.
+It's normal to make assumptions about the experience of others, aligning those assumptions with our own experience. If you end up dominating a meeting, and yeah, [that might be a systemic issue](https://www.nytimes.com/2017/06/14/business/women-sexism-work-huffington-kamala-harris.html) (or [two](http://geekfeminism.wikia.com/wiki/Splaining)), it's up to you to hold back and give space to others. If you end up taking the initiative and speaking for others, make sure you speak for them and not through them.
 
 ### Pattern
 
