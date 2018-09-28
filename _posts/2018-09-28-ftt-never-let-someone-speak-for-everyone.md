@@ -20,7 +20,7 @@ See also [*Never Ask "Who doesn't know $YYY"*]({% link _posts/2018-09-10-ftt-nev
 
 A workshop is there for people to learn, a meeting is there to get everyone on the same page, move forward decisions and to hear different opinions. If somebody speaks for the group (even if that very person is you), you might be putting these well intentioned goals in jeopardy, so tread lightly.
 
-Often, we make assumptions about the experience of others, aligning those assumptions with our own experience. If you end up dominating a meeting, and yeah, [that might be a systemic issue](https://www.nytimes.com/2017/06/14/business/women-sexism-work-huffington-kamala-harris.html) (or [two](http://geekfeminism.wikia.com/wiki/Splaining)), it's up to you to hold back and give space to others. If you end up taking the initiative and speaking for others, make sure you speak for them and not through them. If it helps, leadership is giving others the space to lead, so step up and step back.
+Often, we make assumptions about the experience of others, aligning those assumptions with our own experience. If you end up dominating a meeting, and yeah, [that might be a systemic issue](https://www.nytimes.com/2017/06/14/business/women-sexism-work-huffington-kamala-harris.html) (or [two](http://geekfeminism.wikia.com/wiki/Splaining)), it's up to you to hold back and give space to others. If you end up taking the initiative and speaking for others, make sure you speak for them and not through them.
 
 ### Pattern
 
@@ -36,7 +36,7 @@ If tensions are high or you're running out of time, you can always invite people
 > 10...9...8...7...6...5...4...3...2...1...0  
 > Alright. In case you think of something afterwards, feel free to catch me and I'll make sure to pass the answer on to the group.
 
-This gives people a way to answer their questions in a less exposing and more welcoming environment. If you notice this happens a lot, it might be a good idea to establish more structure for the workshop. For example, a proper framing can allow new voices and opinions to flourish, which ultimately benefits the whole group.
+This gives people a way to answer their questions in a less exposing and more welcoming environment. If you notice this happens a lot, it might be a good idea to establish more supporting structure for the workshop/meeting. A proper format and some framing - you can borrow exercises from [retrospectives](https://retromat.org/en/) - can allow new voices and opinions to flourish, which ultimately benefits the whole group.
 
 --
 
