@@ -11,7 +11,7 @@
   font-size: $base-font-size*0.9;
   font-style: italic;
   padding-right: 7px;
-  letter-spacing: 1.3px;
+  letter-spacing: 0.5px;
   margin-bottom: 25px;
   @include media-query($on-palm) {
     font-size: $base-font-size*0.8;
@@ -20,7 +20,7 @@
 }
 
 .site-title {
-  font-family: "Cutive Mono", monospace;
+  font-family: "Cutive Mono", "Consolas", "Menlo", "Nimbus Mono PS", "Courier", "Courier New", "Lucida Typewriter", monospace;
   text-shadow: #999 0px 3px 10px;
   text-align: center;
   display: block;
@@ -64,8 +64,10 @@
       margin: 0;
       text-align: left;
       display: inline-block;
-      padding-right: 30px;
+      padding-right: 20px;
       .site-title-text {
+        font-weight: 600;
+        letter-spacing: 1px;
         &, &:after, &:before {
           font-size: 25px;
           line-height: 25px;
