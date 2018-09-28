@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "From the Toolbox: Never speak for everyone in the room"
+title: "From the Toolbox: Never let someone speak for everyone"
 ---
 Here's an easy one: You’re asking around whether anyone has any questions, somebody responds with "no" and you - caught in the moment - move on.  
 The conversation evolves and nobody bats an eyelid. But hang on, somebody might have been left behind today because of your willingness to take one reply for many.
