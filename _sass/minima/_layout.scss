@@ -206,6 +206,7 @@
 
       @include media-query($on-palm) {
         height: 70px;
+        opacity: 0.2;
       }
     }
   }
