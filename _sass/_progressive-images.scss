@@ -1,17 +1,13 @@
 .progressive-image-container {
   position: relative;
   width: 100%;
-  padding-top: 40.6%;
 
-  img {
-    box-shadow: 0;
-  }
-
-  .progressive-image,
   .progressive-image-preview,
   .progressive-image-placeholder {
+    box-shadow: none;
     position: absolute;
     top: 0px;
+    z-index: -1;
     left: 0px;
     bottom: 0px;
     right: 0px;

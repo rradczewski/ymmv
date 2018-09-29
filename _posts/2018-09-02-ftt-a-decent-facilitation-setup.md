@@ -2,6 +2,8 @@
 layout: post
 title: "From the Toolbox: A decent facilitation setup"
 redirect_from: "/2018/09/A_decent_facilitation_setup"
+image: /assets/a_decent_facilitation_setup.jpg
+image_alt: "A flipchart with table tennis rackets drawn on it and some markers"
 ---
 A good set of pens and paper makes facilitation and drawing much more fun. In this post I list all the pens, Post-Its and other workshop materials that always have to be in my toolbox, no matter if I'm facilitating a coderetreat or a retrospective, or just happen to be out to meet with some friends...
 
