@@ -5,15 +5,13 @@
     class="{{ include.classes }} progressive-image"
     alt="{{ include.image_alt }}"
     role="presentation"
-    src="{% imagesrc 1600xauto {{ include.image }} %}"
+    src="{% imagesrc 1000xauto {{ include.image }} %}"
     srcset="{% imagesrc 600xauto {{ include.image }} %} 600w,
-            {% imagesrc 700xauto {{ include.image }} %} 700w,
             {% imagesrc 800xauto {{ include.image }} %} 800w,
             {% imagesrc 1000xauto {{ include.image }} %} 1000w"
-    sizes="(max-width: 600px) 600px,
-           (max-width: 700px) 700px,
-           (max-width: 800px) 800px,
-           100vw"
+    sizes="(max-width: 600px) 100vw,
+           (max-width: 799px) 100vw,
+           800px"
   />
   <img
     class="{{ include.classes }} progressive-image-preview"
