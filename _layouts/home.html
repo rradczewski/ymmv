@@ -13,6 +13,13 @@ layout: default
         <h2>
           <a class="post-link" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
         </h2>
+        {% if post.image %}
+          <div
+            class="post-background-image"
+            style="background-image:
+            url('{% imagesrc 500xauto {{ post.image }} %}')"
+          >&nbsp;</div>
+        {% endif %}
         <p class="post-content">{{ post.excerpt | remove: '<p>' | remove: '</p>' }} <a class="read-more" href="{{ post.url | relative_url }}">more...</a></p>
       </li>
     {% endfor %}

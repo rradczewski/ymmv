@@ -189,12 +189,38 @@
   list-style: none;
 
   > li {
-    margin-bottom: $spacing-unit;
+    margin-bottom: $spacing-unit*2;
+    position: relative;
+    z-index: 2;
+
+    .post-background-image {
+      filter: blur(2px) grayscale(1);
+      background-size: cover;
+      background-position: top center;
+      box-shadow: #999 0px 3px 10px;
+      border-radius: 1px;
+      position: absolute;
+      z-index: -1;
+      top: -10px;
+      left: -15px;
+      right: -15px;
+      bottom: -20px;
+      opacity: 0.1;
+
+      @include media-query($on-palm) {
+        position: initial;
+        filter: grayscale(1);
+        height: 70px;
+        opacity: 0.15;
+        margin: 10px 0;
+      }
+    }
   }
 
   @include media-query($on-palm) {
     margin-top: -20px;
   }
+
 }
 
 .post-meta {
