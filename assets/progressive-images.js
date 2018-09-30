@@ -1,28 +1,38 @@
 function loadProgressiveImage(container) {
+  if (container.dataset.loadProgressiveImage) return;
+  container.dataset.loadProgressiveImage = true;
+
   const preview = container.querySelector(".progressive-image-preview");
   const image = container.querySelector(".progressive-image");
 
-  let imageLoaded = !!image.complete;
-  if (imageLoaded) {
+  const onImageLoaded = function() {
+    preview.classList.add("progressive-image-preview-remove");
     image.classList.add("progressive-image-loaded");
-    return;
-  }
-
-  // Load both
-  image.onload = function() {
-    imageLoaded = true;
-    image.classList.add("progressive-image-loaded");
-    delete image.onload;
   };
 
+  // Load both
+  const listener = image.addEventListener(
+    "load",
+    function() {
+      onImageLoaded();
+    },
+    { once: true }
+  );
+
+  preview.classList.add("progressive-image-preview-show");
+
   window.setTimeout(function() {
-    if (imageLoaded) return;
-    preview.classList.add("progressive-image-preview-show");
-  }, 50);
+    if (image.complete) {
+      onImageLoaded();
+    }
+  }, 100);
 }
 
-document.addEventListener("DOMContentLoaded", function() {
+function loadAll(e) {
   document
     .querySelectorAll(".progressive-image-container")
     .forEach(loadProgressiveImage);
-});
+}
+
+document.addEventListener("readystatechange", loadAll);
+document.addEventListener("DOMContentLoaded", loadAll);

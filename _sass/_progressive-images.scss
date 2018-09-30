@@ -2,31 +2,37 @@
   position: relative;
   width: 100%;
 
-  .progressive-image-preview,
+  .progressive-image,
   .progressive-image-placeholder {
-    box-shadow: none;
     position: absolute;
     top: 0px;
-    z-index: -1;
     left: 0px;
     bottom: 0px;
     right: 0px;
   }
 
   .progressive-image-preview {
+    z-index: -1;
     opacity: 0;
+    box-shadow: none;
     &.progressive-image-preview-show {
       opacity: 1;
       filter: blur(8px);
+      &.progressive-image-preview-remove {
+        transition: 1000ms;
+        opacity: 0;
+      }
     }
   }
 
   .progressive-image-placeholder {
+    z-index: -1;
     background-image: url(data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==);
   }
 
   .progressive-image {
     opacity: 0;
+    z-index: 1;
     &.progressive-image-loaded {
       transition: 1000ms;
       opacity: 1;

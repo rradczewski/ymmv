@@ -2,6 +2,12 @@
   <div class="progressive-image-placeholder">&nbsp;</div>
   {% capture image_preview %}{% imagesrc 250xauto {{ include.image }} %}{% endcapture %}
   <img
+    class="{{ include.classes }} progressive-image-preview"
+    alt="{{ include.image_alt }}"
+    role="presentation"
+    src="{% base64 {{ image_preview }} %}"
+  />
+  <img
     class="{{ include.classes }} progressive-image"
     alt="{{ include.image_alt }}"
     role="presentation"
@@ -12,12 +18,6 @@
     sizes="(max-width: 600px) 100vw,
            (max-width: 799px) 100vw,
            800px"
-  />
-  <img
-    class="{{ include.classes }} progressive-image-preview"
-    alt="{{ include.image_alt }}"
-    role="presentation"
-    src="{% base64 {{ image_preview }} %}"
   />
 </div>
 <noscript>
