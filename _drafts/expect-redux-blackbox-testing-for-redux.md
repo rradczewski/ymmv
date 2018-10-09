@@ -2,6 +2,9 @@
 layout: post
 title: "expect-redux: A simple testing library for redux apps"
 excerpt: "expect-redux solves a simple problem I kept having when I started out developing JS apps with React and Redux: Getting a proper Given-When-Then test setup working for feature and interaction tests."
+image: "assets/expect-redux-header.jpg"
+image_alt: "The logo of expect-redux"
+image-listing: "assets/expect-redux.jpg"
 ---
 _It's been two years since I published my first npm package [expect-redux](https://github.com/rradczewski/expect-redux/), a testing library for redux. With the latest release, I figured it's time to present what it does and why I continue to use it in my projects._
 
