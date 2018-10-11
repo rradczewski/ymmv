@@ -57,9 +57,9 @@
   <meta property="og:url" content="{{ site.url }}{{ page.url }}">
   <meta property="og:site_name" content="{{ site.title | escape }}">
   {% if page.image %}
-    <meta name="og:image" content="{{ site.url }}{{ page.image | relative_url }}">
+    <meta property="og:image" content="{{ site.url }}{{ page.image | relative_url }}">
   {% else %}
-    <meta name="og:image" content="{{ site.url }}{{ "twitter_card_image.png" | relative_url }}">
+    <meta property="og:image" content="{{ site.url }}{{ "twitter_card_image.png" | relative_url }}">
   {% endif %}
   <noscript><style> .progressive-image { display: none }</style></noscript>
 </head>
