@@ -16,7 +16,7 @@ layout: default
     <h1 class="post-title" itemprop="name headline">{{ page.title | escape }}</h1>
     {% if page.image %}
     <div class="post-image-wrapper">
-      {% include progressive-image.html classes="post-image" image=page.image %}
+      {% include progressive-image.html image_alt=page.image_alt classes="post-image" image=page.image %}
     </div>
     {% endif %}
   </header>
