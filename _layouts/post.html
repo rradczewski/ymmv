@@ -28,4 +28,8 @@ layout: default
   {% if site.disqus.shortname %}
     {% include disqus_comments.html %}
   {% endif %}
+  <div class="post-share">
+    <a href="http://www.twitter.com/share?text={{ 'Check out "' | append: page.title | append: '" by @rradczewski' | cgi_escape }}&url={{ site.url | append: page.url | url_escape }}"><button>Share on <span class="icon icon--twitter">{% include icon-twitter.svg %}</span></button></a>
+    <a href="https://www.linkedin.com/shareArticle?mini=true&title={{ page.title | cgi_escape}}&summary={{ page.excerpt | cgi_escape }}&url={{ site.url | append: page.url | url_escape }}"><button>Share on <span class="icon icon--linkedin">{% include icon-linkedin.svg %}</span></button></a>
+  </div>
 </article>

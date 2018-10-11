@@ -21,6 +21,7 @@ description: ""
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://ymmv.craftswerk.io" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: rradczewski
+linkedin_username: rradczewski
 github_username:  rradczewski
 
 permalink: /:categories/:year/:month/:title
