@@ -4,11 +4,11 @@ title: "From the Toolbox: Everything needs a retrospective"
 image: "assets/everything-needs-a-retrospective.jpg"
 image_alt: "A photocollage of the retro results of a few retros. Lots of colorful post its on flipcharts with drawings on them"
 ---
-I spend most of my time at work collaborating with people. Everything, from mentoring developers over creating a enjoyable engineering culture to building great products involves at least two individuals. To understand what works and what does not and to continuously improve our way of working, I strive to add retrospectives to every collaboration, be it a meeting or a pairing session.
+We spend most of our time at work collaborating with people. Everything, from mentoring someone over creating a enjoyable engineering culture to building great products involves at least two individuals. To understand what works and what does not and to continuously improve our way of working, I strive to add retrospectives to every collaboration, be it a meeting or a pairing session.
 
 ### Context
 
-You're in a meeting, a mentoring or a pairing session, or really any situation where collaboration between individuals happens. You want to understand how everyone present perceived the meeting, share your own observations and first and foremost you want to improve every following collaboration.
+You're in a meeting, a mentoring or a pairing session, or really any situation where collaboration between individuals happens. You want to understand how everyone present perceived the meeting, share your own observations but first and foremost, you want to improve every following collaboration.
 
 In situations where you are mentoring, you want to understand how your methods are received and if you can do anything to improve the learning experience for your mentee.
 
@@ -18,7 +18,7 @@ Establishing a feedback channel like retrospectives gives everyone the option to
 
 ### Pattern
 
-Plan, announce and account for a short 5-minute retrospective at the end of any of your collaborations.
+Plan, announce and account for a short 5-minute retrospective at the end of any of your collaborations. 
 
 If you want to gather some quick feedback, asking every attendee to answer a single question will already provide you with valuable insights.
 
