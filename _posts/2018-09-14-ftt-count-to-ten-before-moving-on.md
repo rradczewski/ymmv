@@ -1,6 +1,8 @@
 ---
 layout: post
 title: "From the Toolbox: Count to 10 before moving on"
+image: /assets/count-to-ten-before-moving-on.jpg
+image_alt: "A red traffic light"
 ---
 In a virtual meeting, both psychological and technical barriers are in play that can keep people from contributing to the conversation. You can fix this by introducing a little structure and by counting to 10.
 
