@@ -173,6 +173,15 @@
   }
 }
 
+@include media-query($on-palm) {
+  table.collapsing-table {
+    td {
+      width: initial !important;
+      display: block;
+    }
+  }
+}
+
 /**
  * Page content
  */
@@ -376,10 +385,10 @@
   }
 
   h4 {
-    font-size: $base-desktop-font-size*1.05;
+    font-size: $base-desktop-font-size;
 
     @include media-query($on-laptop) {
-      font-size: $base-font-size*1.05;
+      font-size: $base-font-size;
     }
   }
 }
