@@ -193,6 +193,12 @@
     position: relative;
     z-index: 2;
 
+    &:hover .post-background-image {
+      transition: 500ms;
+      opacity: 0.6;
+      filter: none;
+    }
+
     .post-background-image {
       filter: grayscale(1);
       background-size: cover;
