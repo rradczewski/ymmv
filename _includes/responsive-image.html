@@ -1,0 +1,12 @@
+<img
+  class="{{ include.classes }}"
+  alt="{{ include.image_alt }}"
+  role="presentation"
+  src="{% imagesrc 1000xauto {{ include.image }} %}"
+  srcset="{% imagesrc 600xauto {{ include.image }} %} 600w,
+          {% imagesrc 800xauto {{ include.image }} %} 800w,
+          {% imagesrc 1000xauto {{ include.image }} %} 1000w"
+  sizes="(max-width: 600px) 100vw,
+         (max-width: 799px) 100vw,
+         800px"
+/>

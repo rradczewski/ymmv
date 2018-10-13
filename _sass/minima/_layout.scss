@@ -337,6 +337,15 @@
     display: block;
     margin: 30px auto;
     box-shadow: #999 0px 3px 10px;
+
+    &.no-decoration {
+      background: none;
+      box-shadow: none;
+    }
+
+    &.right {
+      float: right;
+    }
   }
 
   h2, h3, h4, h5 {
