@@ -3,7 +3,7 @@ layout: post
 title: "Coffee Kanban & the case for stopping the line"
 image: /assets/the-case-for-stopping-the-line.jpg
 image_alt: "An aeropress coffee maker in front of a tea pot"
-excerpt: "At more than one occasion this year, I ran a workshop that combined two of my dearest topics: Coffee and Kanban. I got consultants, developers, testers and product managers to try to optimize the flow of coffee. The most interesting insight for me? You should make people feel comfortable to stop the line."
+excerpt: "At multiple occasions this year, I ran a workshop that combined two of my dearest topics: Coffee and Kanban. I got consultants, developers, testers and product managers to try to optimize the flow of coffee. The most interesting insight for me? You should make people feel comfortable to stop the line."
 ---
 *<small>Cover photo by [Daniel Temme](https://twitter.com/dtemme)</small>*
 
@@ -11,18 +11,20 @@ excerpt: "At more than one occasion this year, I ran a workshop that combined tw
 
 ## What is Coffee Kanban?
 
-Coffee Kanban is a workshop I had the idea for when preparing for [SoCraTes 2018](https://www.socrates-conference.de/). Just like every year, I packed all my coffee equipment and some beans from my local roasteries to share with the other attendees and so did they. Between us, we had about 5 kilogram of delicious third wave coffee and every conceivable method of brewing it.
+Coffee Kanban is a workshop I had the idea for when preparing for [SoCraTes 2018](https://www.socrates-conference.de/). Just like every year, I packed all my coffee equipment and got some fresh coffee beans from my local roasters to share with the other attendees, and so did they. Between us, we must have had about 5 kilos of delicious third wave coffee and every conceivable method of brewing it.
 
 <blockquote class="twitter-tweet" data-conversation="none" data-lang="en"><p lang="en" dir="ltr">Some more to be jealous about <br>You missed the coffee Kanban <a href="https://twitter.com/hashtag/socrates2018?src=hash&amp;ref_src=twsrc%5Etfw">#socrates2018</a> <a href="https://t.co/sc0JZ5GY61">pic.twitter.com/sc0JZ5GY61</a></p>&mdash; nat ann (@AnnNat) <a href="https://twitter.com/AnnNat/status/1033015354967121921?ref_src=twsrc%5Etfw">August 24, 2018</a></blockquote>
 
-In the last years, a lot of attendees of SoCraTes conference were eager to learn how to make good coffee but it was difficult for them to find someone to show them as we'd mostly just rush from session to session and stopped only to quickly make ourselves a coffee.
+In the last years, a lot of attendees of SoCraTes conference were eager to learn how to make a good coffee themselves but it was difficult for them to find someone to show them as our skilled baristas mostly just rushed from session to session and stopped only to quickly make a coffee for themselves.
 
-Add to that the fact that I'm very fond of Kanban and its origins in manufacturing and with that, the idea was born to create a coffee manufacturing line utilizing Kanban principles.
+Add to this grave deficiency the fact that I'm very fond of Kanban and its origins in manufacturing and with that, the idea was born to create a coffee manufacturing line utilizing Kanban principles. Other than for my other workshops, I didn't have a a specific goal in mind. I merely believed that designing it would be an interesting challenge and that the workshop would hold lots insights to gain which can easily be applied to product development!
+
+After running the workshop a couple of times now, I'm convinced that it didn't just only teach people how to brew better coffee, but also helped us understand how to continuously improve a moving system and what parts and effects we should pay attention to.
 
 ## Designing the factory floor
 
-The one thing I find most challenging about mentoring is teaching something that - by then - comes completely natural to me. Coffee making is one of these - every morning, every move I do is spot on:  
-From first weighting the water so it can heat while I weight and grind the beans and prepare the AeroPress, to slightly tilting the stamp after pouring the water to create suction that will keep the water inside the AeroPress - each of these moves happens subconsciously. Explicating each of those steps didn't come that easy to me, something I found very peculiar.
+The one thing I find most challenging about mentoring is teaching something that comes completely natural to me after having done it hundreds of times in my life. Coffee making is one of these - every morning, every move I do is spot on:  
+From first weighting the water so it can heat while I weight and grind the beans and prepare the AeroPress, to slightly tilting and then lifting the stamp after pouring the water to create suction that will keep the water inside the AeroPress - each of these moves happens subconsciously. Explicating each of those steps didn't come that easy to me, something I found very peculiar.
 
 {% include responsive-image.html image="assets/coffee-kanban-cards.jpg" classes="no-decoration" %}
 
