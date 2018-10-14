@@ -173,6 +173,7 @@
   }
 }
 
+
 @include media-query($on-palm) {
   table.collapsing-table {
     td {
@@ -281,6 +282,10 @@
 }
 
 .post-content {
+  table {
+    margin: 0 auto;
+  }
+
   margin-bottom: $spacing-unit;
   font-family: $serif-font-family;
   font-size: $base-desktop-font-size;
