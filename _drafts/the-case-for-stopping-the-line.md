@@ -34,12 +34,12 @@ What I ended up where 13 distinct steps[^1] that I had index cards designed for.
 
 I owe a big **Thank You** to [Leanovate](https://www.leanovate.de/) for letting me crash yet another one of their company-internal LeanovateDays to test-drive this workshop and for their invaluable feedback. We ended up producing a mess in their kitchen after lunch, but the workshop and the retrospective provided me with so many things to revisit that it really helped flesh out the workshop right in time for the upcoming first public run of the workshop.
 
-For SoCraTes 2018, I iterated over the station setup, aggregating them so a person is assigned to a station, such as grinding or brewing, with around 4 distinct but related tasks.
-I further designated the cups to be the "kanban container", the item that flows through the system and added an order-sticker on it so we could keep track of the order and its metrics as it passes from station to station.
+For SoCraTes 2018, I iterated over the station setup, aggregating them so a person is assigned to a station, such as **Grind** or **Brew**, each with around 4 distinct but related tasks.
+I further designated the cups to be the "kanban container", the item that flows through the system, and added an order-sticker to it so we could keep track of an order and its metrics as it passes from station to station.
 
 <blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr"><a href="https://twitter.com/hashtag/socrates2018?src=hash&amp;ref_src=twsrc%5Etfw">#socrates2018</a> the awesome <a href="https://twitter.com/rradczewski?ref_src=twsrc%5Etfw">@rradczewski</a> prepped the a super cool workshop about coffee and kanban. Don’t miss it! <a href="https://t.co/dBe9eRhxoF">pic.twitter.com/dBe9eRhxoF</a></p>&mdash; Benjamin Reitzammer (@benjamin) <a href="https://twitter.com/benjamin/status/1032892909874499585?ref_src=twsrc%5Etfw">August 24, 2018</a></blockquote>
 
-We set up the factory floor where we always put our coffee gear, right in the hallway where people could order a coffee before they go to another session. The session on Friday was so interesting that we ran another one on Saturday and we made sure to measure both **Cycle Time** (the time it takes to brew a coffee, from grabbing the order cup) and **Lead Time** (the time it takes from ordering to receiving the coffee).
+We set up the factory floor where we always put our coffee gear, right in the hallway where people could order a coffee before they go to another session. The session on Friday turned out to be so interesting that we ran another one on Saturday. We made sure to measure both **Cycle Time** (the time it takes to brew a coffee, from grabbing the order cup) and **Lead Time** (the time it takes from ordering to receiving the coffee).
 
 Let me spill the beans to you right away: Putting it mildly, we were rather slow in the first session. Average **Lead Time** was about 18 minutes, even though we **Cycle Time** floated around at about 9 minutes. One poor soul had to wait 40 minutes for their coffee 😱.
 
