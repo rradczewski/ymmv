@@ -89,9 +89,14 @@ With enough slack at hand, one worker at the **Brew**-station thought of the fol
 
 ## A simulation with a nice side-effect
 
-Overall, I consider the time and money I spent on creating *Coffee Kanban* well spent. Not just did teach more people than ever how to make good coffee using an AeroPress, but we also simulated a Kanban system, packed with valuable insights about process management, collaboration and agile principles. And of course, the conference attendees and I had great coffee made for us!
+I consider the time and money I spent on creating *Coffee Kanban* well spent. Not just did teach more people than ever how to make good coffee using an AeroPress, but we also simulated a Kanban system, packed with valuable insights about process management, collaboration and agile principles. And of course, the conference attendees and I had great coffee made for us!
 
-There are more simulations like *Coffee Kanban* out there, such as [getKanban](https://getkanban.com/), the [Kanban Pizza Game](https://www.agile42.com/en/training/kanban-pizza-game/) or [FeatureBan](https://www.agendashift.com/featureban), that I'm eager to take a look at and to try them out at another conference, but I'm also really satisfied with the results we gathered through these workshops at Leanovate, SoCraTes 2018 and the ProductCamp Berlin 2018.
+There are more simulations like *Coffee Kanban* out there, such as [getKanban](https://getkanban.com/), the [Kanban Pizza Game](https://www.agile42.com/en/training/kanban-pizza-game/) or [FeatureBan](https://www.agendashift.com/featureban), that I'm eager to take a look at and to try them out at another conference, but I'm also really satisfied with the insights we gathered through these workshops at Leanovate, SoCraTes 2018 and the ProductCamp Berlin 2018.
+
+I'm not surprised that coffee making proved to be such a great topic for the workshop, mostly because it's something a lot of people know, do or at least see every day. It's fascinating to me to see how the process changes as you scale it from me preparing my morning coffee to serving it to dozens and hundreds of customers in a café; how some shops focus on the artisan qualities of hand-brewed coffee, while others scale towards lower **Lead Times** and compensate the lesser quality with lifestyle aspects and fancy toppings.
+
+I'm equally unsurprised that this has been picked up by more people fond of agile principles  and process management, like [Samir](https://twitter.com/SamirTalwar), who has written more on this in "[A Continuous Flow Of Coffee
+](https://monospacedmonologues.com/2018/01/a-continuous-flow-of-coffee/)". I suggest you pour yourself another cup and head over to his blog!
 
 [^1]: I only pictured 12 of the 13 steps above, because aligning 13 elements in a grid never looks good and the only missing one is the last one asking to "Serve The Coffee".
 
