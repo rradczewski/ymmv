@@ -4,7 +4,7 @@ title: "From the Toolbox: Everything needs a check-in"
 image: "assets/everything-needs-a-check-in.jpg"
 image_alt: "A street crossing with warnings to look left and right"
 ---
-Just as much as [everything needs a retrospective]({% link _drafts/ftt-everything-needs-a-retrospective.md %}), your mentoring sessions and meetings will leave people more satisfied and happier if you make sure to check-in with them first. Learn about where people are coming from and how they like to learn first and you'll find that it benefits everyone in the room.
+Just as much as [everything needs a retrospective]({% link _posts/2018-10-17-ftt-everything-needs-a-retrospective.md %}), your mentoring sessions and meetings will leave people more satisfied and happier if you make sure to check-in with them first. Learn about where people are coming from and how they like to learn first and you'll find that it benefits everyone in the room.
 
 I've been running a rather unconventional session at the conferences I went to: A session that teaches kanban principles to the participants and observers through building an assembly line to make coffee - The **Coffee Kanban Session**.
 
@@ -51,7 +51,7 @@ I like this one because I myself appreciate knowing what's about to happen. Prep
 ### **"Let's just learn as we go"**  
 *☕ Get the filter paper, let's make a mess and have some coffee!*
 
-This is how the meeting would probably happen without a check-in. I understand this as a sign that the other person is confident to raise questions while we're working. I'll make sure to do a retrospective ([Everything Needs A Retrospective]({% link _drafts/ftt-everything-needs-a-retrospective.md %}) so we can revisit our modus operandi.
+This is how the meeting would probably happen without a check-in. I understand this as a sign that the other person is confident to raise questions while we're working. I'll make sure to do a retrospective ([Everything Needs A Retrospective]({% link _posts/2018-10-17-ftt-everything-needs-a-retrospective.md %}) so we can revisit our modus operandi.
 
 ### **"You do it and I'll ask questions"**  
 *☕ Forget your muscle memory of making hundreds of coffees - explain as you go!*

@@ -77,7 +77,7 @@ The **Heating**-station, tasked with supplying a steady stream of teapots with h
 
 **Lesson Learned:** Retrospectives (or Daily-Standups!) are necessary means to encourage stepping out of the trenches and reflect on the collaboration itself. Regular check-points for introspection will lead to smaller optimizations that steer towards more productivity.
 
-Related to this insight: [*From The Toolbox: Everything Needs A Retrospective*]({% link _drafts/ftt-everything-needs-a-retrospective.md %})
+Related to this insight: [*From The Toolbox: Everything Needs A Retrospective*]({% link _posts/2018-10-17-ftt-everything-needs-a-retrospective.md %})
 
 ### Insight #3: Encourage self-organization, make conscious decisions
 
