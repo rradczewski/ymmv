@@ -16,7 +16,11 @@ In situations where you are mentoring, you want to hone in on how your methods a
 
 ### Reasoning
 
-Establishing a feedback channel like retrospectives gives everyone the opportunity to voice their feelings towards a meeting. Just as unheard frustrations can turn into conflicts, positive feedback can easily fall under the table as people rush out of a meeting. You further avoid misunderstandings if you give people a chance to voice their concerns right after a meeting, and by that, you'll avoid all the frustration that would otherwise build up due to miscommunication right away.
+Retrospectives are an established format meant to provide a space to step outside of a process and reflect about its inner workings on a meta-level.
+
+Establishing such a feedback channel gives everyone the opportunity to voice their feelings and concerns towards a meeting and thus gives you the chance to improve every future encounter.
+
+Just as unheard frustrations can turn into conflicts, positive feedback can easily fall under the table as people rush out of a meeting. You avoid misunderstandings if you give people a chance to voice their concerns right after a meeting, and by that, you'll avoid all the frustration that would otherwise build up due to miscommunication right away.
 
 ### Pattern
 
