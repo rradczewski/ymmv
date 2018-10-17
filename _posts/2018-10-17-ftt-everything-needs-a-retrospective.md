@@ -4,7 +4,7 @@ title: "From the Toolbox: Everything needs a retrospective"
 image: "assets/everything-needs-a-retrospective.jpg"
 image_alt: "A photocollage of the retro results of a few retros. Lots of colorful post its on flipcharts with drawings on them"
 ---
-We spend most of our time at work collaborating with people. Everything, from mentoring someone, to co-creating great products and engineering cultures involves more than one single individual. But, when reflecting on how we can continuously improve, understanding exactly what works and what doesn't can be tricky. That's why, in each collaboration, I strive to hold a retrospective right at the end to transform the way we relate to each other and to improve our ways of working together.
+We spend most of our time at work collaborating with people. Everything, from mentoring someone, to co-creating great products and engineering cultures involves more than just a single individual. But, when reflecting on how we can continuously improve, understanding exactly what works and what doesn't can be tricky. That's why, in each collaboration, I strive to hold a retrospective right at the end to transform the way we relate to each other and to improve our ways of working together.
 
 ### Context
 
@@ -16,13 +16,13 @@ In situations where you are mentoring, you want to hone in on how your methods a
 
 ### Reasoning
 
-Establishing a feedback channel like retrospectives gives everyone the opportunity to voice their feelings towards a meeting. Just as unheard frustrations can turn into conflicts, positive feedback can easily fall under the table as people rush out of a meeting.
+Establishing a feedback channel like retrospectives gives everyone the opportunity to voice their feelings towards a meeting. Just as unheard frustrations can turn into conflicts, positive feedback can easily fall under the table as people rush out of a meeting. You further avoid misunderstandings if you give people a chance to voice their concerns right after a meeting, and by that, you'll avoid all the frustration that would otherwise build up due to miscommunication right away.
 
 ### Pattern
 
 Plan, announce and account for a short 5-minute retrospective at the end of your collaborations.
 
-If you want to gather some quick feedback, asking every attendee to answer a single question will already provide you with valuable insights. This question might be:
+If you just want to gather some quick feedback, asking every attendee to answer a short question will already provide you with valuable insights. This question might be:
 
 > Do you feel like this was time well spent? If not, what would you change?  
 > Do you feel that you leave this meeting well informed?
