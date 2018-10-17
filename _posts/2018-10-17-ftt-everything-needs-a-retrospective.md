@@ -28,23 +28,23 @@ Plan, announce and account for a short 5-minute retrospective at the end of your
 
 If you just want to gather some quick feedback, asking every attendee to answer a short question will already provide you with valuable insights. This question might be:
 
-> Do you feel like this was time well spent? If not, what would you change?  
-> Do you feel that you leave this meeting well informed?
-> Do you feel like all your questions where properly addressed?
+> - Do you feel like this was time well spent? If not, what would you change?  
+> - Do you feel that you leave this meeting well informed?  
+> - Do you feel like all your questions where properly addressed?
 
 If you got some more time and Post-It's, ask everyone to take a minute and write down their observations, feelings and of course their kudos, e.g. with the [4 Ls method](https://retromat.org/en/?id=78).
 
-> What I Loved  
-> What I Learned  
-> What I Lacked  
-> What I Longed For  
+> - What I Loved  
+> - What I Learned  
+> - What I Lacked  
+> - What I Longed For  
 
 Let them quickly share their insights afterwards. Make sure to not stretch the time-box though!
 
 Equally in a mentoring situation, ask constructive questions that accommodate feedback on how your mentoring was perceived - it's about the mentee's learning experience after all!
 
-> Is there anything we can change next time to improve this for you?  
-> How was the pace? Did we take enough breaks?
+> - Is there anything we can change next time to improve this for you?  
+> - How was the pace? Did we take enough breaks?
 
 I have found again and again that this is time well spent. Not only do you catch misunderstandings and issues before they build up, you also gain valuable insights that will improve every future collaboration. I hope you'll find this working for you too.
 
