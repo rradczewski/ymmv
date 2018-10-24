@@ -26,7 +26,7 @@ After running the workshop a couple of times now, I'm convinced that it didn't j
 The one thing I find most challenging about mentoring is teaching something that comes completely natural to me after having done it hundreds of times in my life. Coffee making is one of these - every morning, every move I do is spot on:  
 From first weighting the water so it can heat while I weight and grind the beans and prepare the AeroPress, to slightly tilting and then lifting the stamp after pouring the water to create suction that will keep the water inside the AeroPress - each of these moves happens subconsciously. Explicating each of those steps didn't come that easy to me, something I found very peculiar.
 
-{% include responsive-image.html image="assets/coffee-kanban-cards.jpg" classes="no-decoration" %}
+{% include responsive-image.html image="assets/coffee-kanban-cards.jpg" classes="no-decoration" image_alt="The station descriptions of every station used in coffee kanban, from weighting and grinding the beans to blooming the coffee a bit and then pouring the rest" %}
 
 What I ended up where 13 distinct steps[^1] that I had index cards designed for. These would serve as the **Stations** of the factory floor, with people being assigned to at most one station at any time.
 
@@ -34,7 +34,7 @@ What I ended up where 13 distinct steps[^1] that I had index cards designed for.
 
 I owe a big **Thank You** to [Leanovate](https://www.leanovate.de/) for letting me crash yet another one of their company-internal LeanovateDays to test-drive this workshop and for their invaluable feedback. We ended up producing a mess in their kitchen after lunch, but the workshop and the retrospective provided me with so many things to revisit that it really helped flesh out the workshop right in time for the upcoming first public run of the workshop.
 
-{% include responsive-image.html image="assets/coffee-kanban-order-cup.jpg" %}
+{% include responsive-image.html image="assets/coffee-kanban-order-cup.jpg" image_alt="The cup we used for Coffee Kanban with an order sticker on it that has the name of the customer, their order, the start and finish time on it." %}
 
 For SoCraTes 2018, I iterated over the station setup, aggregating them so a person is assigned to a station, such as **Grind** or **Brew**, each with around 4 distinct but related tasks.
 I further designated the cups to be the "kanban container", the item that flows through the system, and added an order-sticker to it so we could keep track of an order and its metrics as it passes from station to station.
@@ -49,8 +49,8 @@ But the first session was purely about experimenting with the format, so we didn
 
 <table class="collapsing-table">
 <tr>
-<td style="width: 50%; padding: 5px;">{% include responsive-image.html image="/assets/coffee-kanban-socrates2018-1.jpg" %}</td>
-<td style="width: 50%; padding: 5px;">{% include responsive-image.html image="/assets/coffee-kanban-socrates2018-2.jpg" %}</td>
+<td style="width: 50%; padding: 5px;">{% include responsive-image.html image="/assets/coffee-kanban-socrates2018-1.jpg" image_alt="the statistics for the first day" %}</td>
+<td style="width: 50%; padding: 5px;">{% include responsive-image.html image="/assets/coffee-kanban-socrates2018-2.jpg" image_alt="the statistics for the second day" %}</td>
 </tr>
 </table>
 
