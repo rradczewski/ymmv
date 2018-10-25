@@ -1,56 +1,79 @@
 ---
 layout: post
-title: "expect-redux: A simple testing library for redux apps"
-excerpt: "expect-redux solves a simple problem I kept having when I started out developing JS apps with React and Redux: Getting a proper Given-When-Then test setup working for feature and interaction tests."
+title: "expect-redux: Better interaction tests with redux"
 image: "assets/expect-redux-header.jpg"
 image_alt: "The logo of expect-redux"
 image-listing: "assets/expect-redux.jpg"
 ---
-_It's been two years since I published my first npm package [expect-redux](https://github.com/rradczewski/expect-redux/), a testing library for redux. With the latest release, I figured it's time to present what it does and why I continue to use it in my projects._
+[`expect-redux`](https://github.com/rradczewski/expect-redux/) solves a simple problem I kept having when I started out developing JS apps with React and Redux: Getting a proper **Given-When-Then** test setup working for feature and interaction tests, no matter which side-effect library the project is using. Here's why I think it's useful for everyone working with redux.
 
-`expect-redux` solves a simple problem I kept having when I started out developing JS apps with React and Redux: Getting a proper **Given-When-Then** test setup working for feature and interaction tests.
+It has already been two years since I published the first version of `expect-redux`, back when I was working at vaamo. With the latest release, I figured it's time to really show off what it does and why I continue to use it in my projects.
 
-Back then, I was just coming from working on an eventsourced back-end application, and react and redux immediately felt familiar to me - just within a slightly different context and with different names: **Aggregate state** (*given*) becomes the **mounted app** (with the redux store of course), a **command** (*when*) is given by **user input** and the results are not **events**, but new **actions** (*then*) dispatched to the store.
+## Redux in the wild
 
-The definition above already gives you a hint about the testing subjects I see in a typical webapp: The redux store isn't a persisted data storage, but the state provider to the UI. It's perfectly reasonable to model the store after the use cases you're looking to implement and thus the way you structure the UI and your react code.
+The one thing I immediately loved about the whole React/Redux ecosystem is how easily testable it is. With `jsdom` and `enzyme`, my tests never felt closer to running in a browser than ever, without actually running `phantomjs`. Even large acceptance tests will run in a few hundred milliseconds, everywhere, from CI to a docker container to my local machine, with no more setup than running `npm install`.
 
-As both will be tightly coupled anyways, testing them in isolation usually only works for complex visual components or very complex application states, but will feel overzealous for lots of features.
+`redux` in particular is an amazing library because of its minimal API surface area and the profound impact it has on how you design a frontend application. All business logic suddenly becomes easily testable in isolation and it's trivially easy to construct a specific application state for a test.
 
-## Layer testing only takes you so far
+But in practice, redux rarely comes alone. Throughout my time working with redux, I've seen a similar pattern emerge in the projects I'm working in: We start the project with some simple synchronous side-effects and a few `fetch`-calls that are easily taken care of using [`redux-thunk`](https://github.com/reduxjs/redux-thunk), but sooner or later the project grows beyond the simple use-cases where redux-thunk shines in.
 
-In my experience, testing the individual layers in a react-redux app will give me a wrong sense of safety, as you're quick to omit the code that is not in your react component, nor in your reducer: all your business logic.
+*Here's how a minimal test of a thunk can look like:*
+```js
+import { fetchData } from './effects';
 
-![The different layers one would find in a typcial react-redux app from left to right: visual components, smart components, glue code with react-redux, effects and store middleware like saga or rxobservable and finally the store reducer. effects and store middlewares are greyed out to illustrate how easily they're omitted as testing objective]({% link assets/expectredux_layers_wo_glue.png %})
+it('should dispatch the data to the store', async () => {
+  const dispatch = jest.fn();
+  const dataService = jest.fn().mockResolvedValue([1, 2, 3]);
 
-Testing that business logic sometimes isn't easy though:  
-Take for example `redux-saga`, a very popular middleware for redux that helps with modeling processes in redux: Their [docs on testing](https://redux-saga.js.org/docs/advanced/Testing.html) advise you to white-box-test your saga, basically re-implementing and re-asserting every step the saga does in your test (in the correct order).
+  // Thunk syntax: (dispatch, getState, extraArguments) => ?
+  await fetchData(dispatch, undefined, { dataService });
 
-## Focus on testing features instead
-
-We've come a long way when it comes to testing web apps. Gone are the days of firing up a headless browser and running selenium for your interaction tests and karma for your unit tests. Not to say they're completely useless, but if my tests using `enzyme` and `jsdom` pass I'm already fairly confident that my code is working correctly, so confident that I only test for visual discrepancies between browsers.
-
-With the testing tools available to us, I can write hundreds of tests that fully mount an app with all its layers untouched and test a single aspect of its functionality and still stay under a minute for a full test run - and this is exactly where `expect-redux` comes in.
-
-```jsx
-import React from 'react';
-import { expectRedux, storeSpy } from 'expect-redux';
-import App from './App';
-import configureStore from './configureStore';
-
-it('will increase the counter when the button is pressed', () => {
-  // Given
-  const store = configureStore({}, [storeSpy]);
-  const component = mount(<App store={store} />);
-
-  // When
-  component.find('#increase-locally').simulate('click');
-
-  // Then
-  return expectRedux(store)
-    .toDispatchAnAction()
-    .ofType('INCREASE_COUNTER_LOCALLY');
+  expect(dispatch).toHaveBeenCalledWith({
+    type: 'DATA_RETRIEVED', payload: [1, 2, 3]
+  });
 });
 ```
 
-Instead of mocking away the store and testing the business logic in isolation, `expect-redux` allows you to write very descriptive tests that assert a single (user-) interaction with your application and the effect it is supposed to have with regards to the application state.  
-It allows you to test that _clicking a button will increase a counter_, all while treating everything between the button's `onClick` handler and the action as a black box, an unnecessary implementation detail.
+At this point, the team will look right and left of `redux-thunk` and eventually settle for [`redux-saga`](https://redux-saga.js.org/) or [`redux-observable`](https://redux-observable.js.org/).
+Both libraries, although they are based on completely different paradigms, allow you to model these complex business processes and side-effects while taking care of error handling and asynchronicity just fine.
+
+## Testing pains
+
+<TODO>
+- Testing with side-effects isn't easy because of timing issues, asynchronicity
+- Being able to test them properly is necessary as they are the heart of your application
+- The faster and concise your tests are, the Better
+- They're tightly coupled to redux and to the library's paradigm (yield vs observables) but you can't easily put a test-harness around them
+- Integrating tests need to keep asynchronicity in mind, mess with setTimeout and waits and all
+</TODO>
+
+## Patterns to cope with it
+
+<TODO>
+You have several ways of testing them anyways:
+- Whitebox testing them (see redux-observable diagrams and redux-saga)
+- Splitting up tests between large integration tests (E2E & ext. stubs) and small confined unit-tests, but not testing the seams and layers in between
+- Add timeouts & waits that wait for specific conditions - turns testing brittle and slow
+</TODO>
+
+## ENTERUNT expect-redux
+
+<TODO>
+expect-redux works with the latter pattern but makes it fast and improves test-readability and conciseness (haha)
+
+Tests behaviour from current-state to triggering an action and observing it's effects.
+
+It doesn't assert the eventual state (outcome), as it is derivative of the actual transition anyway and would couple the next state to your test of the current state and its transitions.
+
+It only requires you to isolate actual side-effects so you can mock them during tests (`fetch` calls et al)
+
+with jsdom being that fast, you can run tests similar to E2E tests but fast and without external dependencies like a browser.
+
+You don't need brittle waits between commands in your tests as expect-redux will take care of that. You can define assertions that if failed will give you proper error messages that show the current state of your app and how it should've been. Understand why your app is not doing what you want.
+</TODO>
+
+## The bigger picture
+
+<TODO>
+expect-redux brings asynchronicity-agnostic testing to redux while making tests easier to read and maintain and the code easier to refactor (as you don't depend on resulting state but on actions).
+</TODO>
