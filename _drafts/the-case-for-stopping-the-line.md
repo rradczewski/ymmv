@@ -11,7 +11,7 @@ excerpt: "At multiple occasions this year, I ran a workshop that combined two of
 
 ## What is Coffee Kanban?
 
-The Coffee Kanban workshop was the brainchild of my preparation for the [SoCraTes 2018](https://www.socrates-conference.de/).
+The Coffee Kanban workshop was the brainchild of my preparation for my favorite conference of each year, the [SoCraTes 2018](https://www.socrates-conference.de/) unconference held in Soltau in the north of Germany.
 
 Just like every year, I packed all my coffee equipment and got some fresh coffee beans from my local roasters to share with the other attendees, and so did others. Between us, we must have had about 5 kilos of delicious third wave coffee and every conceivable method of brewing it.
 
