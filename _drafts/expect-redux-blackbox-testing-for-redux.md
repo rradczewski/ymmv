@@ -52,6 +52,7 @@ Both libraries, although they are based on completely different paradigms, allow
 <TODO>
 You have several ways of testing them anyways:
 - Whitebox testing them (see redux-observable diagrams and redux-saga)
+  - Libraries like [`redux-saga-test-plan`](https://github.com/jfairbank/redux-saga-test-plan) can help with that, but you still very much test redux-saga lingo and not outcomes in redux.
 - Splitting up tests between large integration tests (E2E & ext. stubs) and small confined unit-tests, but not testing the seams and layers in between
 - Add timeouts & waits that wait for specific conditions - turns testing brittle and slow
 </TODO>
