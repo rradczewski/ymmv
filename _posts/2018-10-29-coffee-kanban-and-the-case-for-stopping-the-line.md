@@ -1,9 +1,9 @@
 ---
 layout: post
-title: "Coffee Kanban & the case for stopping the line"
+title: "Coffee Kanban & the case for Stopping The Line"
 image: /assets/the-case-for-stopping-the-line.jpg
 image_alt: "An aeropress coffee maker in front of a tea pot"
-excerpt: "At multiple occasions this year, I ran a workshop that combined two of my dearest topics: Coffee and Kanban. I got consultants, developers, testers and product managers to work together to optimize the flow of coffee. My most interesting insight? In any flurry of activity, you should make people feel comfortable enough to stop the line."
+excerpt: "At multiple occasions this year, I ran a workshop that combined two of my dearest topics: Coffee and Kanban. I got consultants, developers, testers and product managers to work together to optimize the flow of coffee. My most interesting insight? In any flurry of activity, you should make people feel comfortable enough to Stop The Line."
 ---
 *<small>Cover photo by [Daniel Temme](https://twitter.com/dtemme)</small>*
 
@@ -19,7 +19,7 @@ Just like every year, I packed all my coffee equipment and got some fresh coffee
 
 There has always been a tradition for this kind of coffee co-creation at SoCraTes. In previous years, many attendees were itching to learn how to make a good coffee themselves. But with the seasoned baristas rushing from session to session, it was difficult to get the on hand expertise to make that perfect cuppa.
 
-Now luckily, we can blend this grave deficiency with the coincidence that I’m very fond of Kanban and I’m even more curious about its origins in manufacturing. And with that, the idea was born to create a coffee manufacturing line utilizing Kanban principles. Unlike with the other workshops I give, I didn’t have a specific goal in mind. This was about the interesting challenge of the design process and a keen lookout for applicable product development insights!
+Now luckily, we can blend this grave deficiency with the coincidence that I’m very fond of Kanban and I’m even more curious about its origins in manufacturing. And with that, the idea was born to create a coffee manufacturing line utilizing Kanban principles. Unlike with the other workshops I give, I didn’t have a very specific goal in mind. This was about the interesting challenge of the design process and a keen lookout for applicable product development insights!
 
 After running the workshop a couple of times now, I’m convinced that it didn’t merely teach people how to brew better coffee. The workshop also helped us understand how to continuously improve a moving system and to pay attention and prioritise its component parts.
 
