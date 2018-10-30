@@ -5,9 +5,7 @@ image: "assets/expect-redux-header.jpg"
 image_alt: "The logo of expect-redux"
 image-listing: "assets/expect-redux.jpg"
 ---
-[`expect-redux`](https://github.com/rradczewski/expect-redux/) solves a simple problem I kept having when I started out developing JS apps with React and Redux: Getting a proper **Given-When-Then** test setup working for feature and interaction tests, no matter which side-effect library the project is using. Here's why I think it's useful for everyone working with redux.
-
-It has already been two years since I published the first version of `expect-redux`, back when I was working at vaamo. With the latest release `v4`, I figured it's time to really show off what it does and why I continue to use it in my projects.
+[`expect-redux`](https://github.com/rradczewski/expect-redux/) solves a simple problem I kept having when I started out developing JS apps with React and Redux: Getting a proper **Given-When-Then** test setup working for feature and interaction tests, no matter which side-effect library the project is using. In this post I want to show a couple of different approaches towards testing redux and explain why I think `expect-redux` useful for everyone working with redux.
 
 ## Redux in the wild
 
