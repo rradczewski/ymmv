@@ -101,7 +101,8 @@ app.get('/merchants', (req, res) => {
 
 Monitor the performance penalty of requests accessing the repository. Once invoking the transformation for each request becomes too costly in terms of performance, cache the derived data through [memoization](https://en.wikipedia.org/wiki/Memoization) or similar caching methods. Take extensive measures to prevent the cache from becoming stale or in an inconstent state, e.g. by requiring timestamps as an additional parameter for each memoized request in order to preserve determinism.
 
-While this sounds very costly and the code looks more complicated under the hood, this approach will make it easier to change the transformation (even retroactively) even if it's been widely used for a while. At the same time, you preserve the capability to easily extract more information from the *Single Source Of Truth* whenever you need it.
+While this sounds very costly at first and the code looks a bit more complicated under the hood, this approach will make it easier to change the transformation (even retroactively) even if it's been widely used for a while. At the same time, you preserve the capability to easily extract more information from the *Single Source Of Truth* whenever you need it.
+
 --
 
 _**From the Toolbox** is a compilation of small practices, tools and life-hacks I collected over the years._
