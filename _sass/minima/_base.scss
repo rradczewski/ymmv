@@ -153,6 +153,9 @@ blockquote {
 pre,
 code {
   font-size: $small-font-size;
+  @include media-query($on-laptop) {
+    font-size: $small-font-size*0.9;
+  }
   border: 1px solid $grey-color-light;
   background-color: #eef;
 }

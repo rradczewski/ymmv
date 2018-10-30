@@ -286,6 +286,18 @@
     margin: 0 auto;
   }
 
+  :not(pre) > code {
+    background: #eee;
+    font-size: $base-desktop-font-size*0.90;
+    border: none;
+
+    @include media-query($on-laptop) {
+      font-size: $base-font-size*0.90;
+    }
+  }
+
+
+
   margin-bottom: $spacing-unit;
   font-family: $serif-font-family;
   font-size: $base-desktop-font-size;
