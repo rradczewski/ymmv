@@ -176,7 +176,7 @@ The following actions got dispatched to the store instead (2):
          ERROR_WHILE_CALLING      {"error":{ ... }}
 ```
 
-While it's tempting to assert on the resulting state instead of the actions that are dispatched, I see the actions as the definitive effect of a process and less what the state will result in (which is derived from just those actions anyway). Asserting on the actions will decouple the behavior I'm implementing from the implementation of the state that would follow - we're testing the transition given the state, not the resulting state.
+While it's tempting to assert on the resulting state instead of the actions that are dispatched, I see the actions as the definitive effect of a process and less what the state will result in (which is derived from just those actions anyway). Asserting on the actions will decouple the behavior I'm implementing from the implementation of the state that would follow - we're testing the transition given a prior state, not the resulting state.
 
 And it's still quite fast: The exhaustive test suite of `expect-redux` with 70 individual testcases takes less than 2 seconds on my machine to run, even though it creates redux stores for each test, uses `setTimeout` to "assert" that something won't happen and tests how errors are rendered.
 
@@ -230,7 +230,7 @@ it("will work with correct credentials", async () => {
 
 ## The case for `expect-redux`
 
-I really appreciate the expressiveness `expect-redux` adds to my tests, but it also got me thinking about testing scopes a lot. With tests that closely resemble E2E tests, but much faster and without the fragility of automated browser tests, I can put easily write tests for a whole feature without worrying about the implementation details of the business process middleware I'm using.
+I really appreciate the expressiveness `expect-redux` adds to my tests, but it also got me thinking about testing scopes a lot. With tests that closely resemble E2E tests, but at the same time are much faster and without the fragility of automated browser tests, I can easily write tests for a whole feature without worrying about the implementation details of the business process middleware I'm using.
 
 But outside of these feature tests, I found that whenever asynchronicity became a necessary design consideration, `expect-redux` helped me keep my tests readable and made them less coupled to the actual implementation. I was quite impressed myself to find out that the feature tests I wrote for the [examples](https://github.com/rradczewski/expect-redux/tree/master/examples) are completely identical, no matter if I was using  [`redux-observable`](https://github.com/rradczewski/expect-redux/blob/master/examples/redux-observable-example/src/login.epic.with-expect-redux.test.js) or [`redux-saga`](https://github.com/rradczewski/expect-redux/blob/master/examples/redux-saga-example/src/loginFlow.saga.with-expect-redux.test.js) as a process manager!
 
