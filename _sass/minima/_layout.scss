@@ -363,6 +363,12 @@
     &.right {
       float: right;
     }
+
+    &.reset {
+      display: initial;
+      margin: initial;
+      box-shadow: none;
+    }
   }
 
   h2, h3, h4, h5 {

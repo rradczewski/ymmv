@@ -1,11 +1,11 @@
 ---
 layout: post
-title: "expect-redux: Better interaction tests with redux"
+title: "expect-redux: better interaction tests with redux"
 image: "assets/expect-redux-header.jpg"
 image_alt: "The logo of expect-redux"
 image-listing: "assets/expect-redux.jpg"
 ---
-[`expect-redux`](https://github.com/rradczewski/expect-redux/) solves a simple problem I kept having when I started out developing JS apps with React and Redux: Getting a proper **Given-When-Then** test setup working for feature and interaction tests, no matter which side-effect library the project is using. In this post I want to show a couple of different approaches towards testing redux and explain why I think `expect-redux` useful for everyone working with redux.
+[`expect-redux`](https://github.com/rradczewski/expect-redux/) solves a simple problem I kept having when I started out developing JavaScript apps with React and Redux: Getting a proper **Given-When-Then** test setup working for feature and interaction tests, no matter which side-effect library the project is using. In this post I want to show a couple of different approaches towards testing redux and explain why I think `expect-redux` useful for everyone working with redux.
 
 ## Redux in the wild
 
@@ -236,5 +236,5 @@ But outside of these feature tests, I found that whenever asynchronicity became 
 
 Make sure to give it a try and let me know what you think!
 
-- [`expect-redux on GitHub`](https://github.com/rradczewski/expect-redux)
-- [`expect-redux on NPM`](https://github.com/rradczewski/expect-redux)
+- [`expect-redux` on <span class="icon icon--github">{% include icon-github.svg %}</span> GitHub](https://github.com/rradczewski/expect-redux)
+- [`expect-redux` on NPM](https://www.npmjs.com/package/expect-redux) [<img src="https://img.shields.io/npm/v/expect-redux.svg" alt="version badge on npm" class="reset">](https://www.npmjs.com/package/expect-redux)
