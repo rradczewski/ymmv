@@ -5,15 +5,15 @@ image: "assets/expect-redux-header.jpg"
 image_alt: "The logo of expect-redux"
 image-listing: "assets/expect-redux.jpg"
 ---
-[`expect-redux`](https://github.com/rradczewski/expect-redux/) solves a simple problem I kept having when I started out developing JavaScript apps with React and Redux: Getting a proper **Given-When-Then** test setup working for feature and interaction tests, no matter which side-effect library the project is using. In this post I want to show a couple of different approaches towards testing redux and explain why I think `expect-redux` useful for everyone working with redux.
+[`expect-redux`](https://github.com/rradczewski/expect-redux/) solves a big problem I kept running into when I started developing JavaScript apps with React and Redux: Getting a proper and readable **Given-When-Then** test structure working for feature and interaction tests, no matter which side-effect library the project is using. In this post I want to show you a couple of different approaches towards testing redux and explain why I think `expect-redux` is useful for everyone working with redux.
 
 ## Redux in the wild
 
-The one thing I immediately loved about the whole React/Redux ecosystem is how easily testable it is. With `jsdom` and `enzyme`, my tests never felt closer to running in a browser than ever, without actually running `phantomjs`. Even large acceptance tests will run in a few hundred milliseconds, everywhere, from CI to a docker container to my local machine, with no more setup than running `npm install`.
+What I immediately loved about the whole React/Redux ecosystem is how easily testable it is. With `jsdom` and `enzyme`, my tests never felt closer to running in a browser than ever, without actually running in `phantomjs`. Even large acceptance tests will run in a few hundred milliseconds, everywhere, from CI to a docker container to my local machine, with no more setup than running `npm install`.
 
-`redux` in particular is an amazing library because of its minimal API surface area and the profound impact it has on how you design a frontend application. All business logic suddenly becomes easily testable in isolation and it's trivially easy to construct a specific application state for a test, something that immediately rang familiar to me when I started using it for the UI of a backend that was built upon EventSourcing.
+`redux` in particular is an amazing library because of its minimal API surface area and the profound impact it has on how you design a frontend application. All domain state and its transitions suddenly become easily testable in isolation. It's also trivially easy to construct a specific application state for a test, something that immediately rang familiar to me when I started using it for the UI of a backend that was built upon [EventSourcing](https://martinfowler.com/eaaDev/EventSourcing.html).
 
-But in practice, redux rarely comes alone. Throughout my time working with redux, I've seen a similar pattern emerge in the projects I'm working in: We start the project with some simple synchronous side-effects and a few `fetch`-calls that are easily taken care of using [`redux-thunk`](https://github.com/reduxjs/redux-thunk), but sooner or later the project grows beyond the simple use-cases where redux-thunk shines in.
+But in practice, `redux` rarely comes alone. Throughout my time working with `redux`, I've seen a similar pattern emerge in the projects I'm working in: We start the project with some simple synchronous side-effects and a few `fetch`-calls that are easily taken care of using [`redux-thunk`](https://github.com/reduxjs/redux-thunk), but sooner or later the project grows beyond the simple use-cases where `redux-thunk` shines in.
 
 *Here's how a minimal test of a thunk can look like:*
 ```js
@@ -32,14 +32,14 @@ it('should dispatch the data to the store', async () => {
 });
 ```
 
-At this point, the team will look right and left of `redux-thunk` and eventually settle for [`redux-saga`](https://redux-saga.js.org/) or [`redux-observable`](https://redux-observable.js.org/).
+Beyond this point, the team will look right and left of `redux-thunk` and eventually settle for [`redux-saga`](https://redux-saga.js.org/) or [`redux-observable`](https://redux-observable.js.org/).
 Both libraries, although they are based on completely different paradigms, allow you to model these complex business processes and side-effects while taking care of error handling and asynchronicity just fine.
 
 ## Testing pains
 
-The problem with both libraries is, that while they are very expressive in their own lingo, you have to leave the simplicity of `redux` and `redux-thunk` behind and eventually find yourself building generator functions (`redux-saga`) or composing functions that transform emitted actions (`redux-observable`). These sagas or epics are fed into a `runSaga` or `runEpic` function that runs after the reducers in redux did their thing and the connection between dispatching an action and running a process because of that get lost in the framework.
+The thing with both libraries is, that while they are very expressive in their own lingo, you have to leave the simplicity of `redux` and `redux-thunk` behind. You eventually find yourself building generator-functions (`redux-saga`) or composing functions that transform emitted actions (`redux-observable`). These sagas or epics are fed into a `runSaga` or `runEpic` function that runs after the reducers in `redux` did their thing. The connection between dispatching an action and starting a process because of that gets lost in the framework.
 
-While `redux-thunk` allows you to e.g. wait for a Promise to resolve (the return value of your effect is passed back through the `dispatch` call), both `redux-saga` ([`middleware.js#L40-L48`](https://github.com/redux-saga/redux-saga/blob/master/packages/core/src/internal/middleware.js#L40-L48)) and `redux-observable` ([`createEpicMiddleware.js#L51-L65`](https://github.com/redux-observable/redux-observable/blob/master/src/createEpicMiddleware.js#L51-L65)) will not pass the result of a process back to your `dispatch` call. This isn't necessarily bad, but it again forces you to rethink how you build your application around asynchronously running processes. A very placative example of this is routing after a process is finished - you'll find yourself connecting `redux` with the browser router to solve that one, be it by passing `history` around or with [`redux-saga-router`](https://github.com/jfairbank/redux-saga-router) or [`connected-react-router`](https://github.com/supasate/connected-react-router).
+While `redux-thunk` allows you to wait for a `Promise` to resolve, as the return value of your effect is passed back through the `dispatch` call, both `redux-saga`[^1] and `redux-observable`[^2] will not pass the result of a process back to your `dispatch` call. This isn't necessarily bad, but it again forces you to rethink how you build your application around asynchronously running processes. A very placative example of this is routing after a process is finished - you'll find yourself connecting `redux` with the browser router to solve that one, be it by passing `history` around or with [`redux-saga-router`](https://github.com/jfairbank/redux-saga-router) or [`connected-react-router`](https://github.com/supasate/connected-react-router).
 
 I eventually found myself in the ironic situation that while my business processes grew in complexity that I absolutely wanted to put under test, at the same time the mechanism I chose to cope with just that complexity makes it harder to test them properly as my processes now run outside of my (programmatic) control.
 
@@ -238,3 +238,6 @@ Make sure to give it a try and let me know what you think!
 
 - [`expect-redux` on <span class="icon icon--github">{% include icon-github.svg %}</span> GitHub](https://github.com/rradczewski/expect-redux)
 - [`expect-redux` on NPM](https://www.npmjs.com/package/expect-redux) [<img src="https://img.shields.io/npm/v/expect-redux.svg" alt="version badge on npm" class="reset">](https://www.npmjs.com/package/expect-redux)
+
+[^1]: [`middleware.js#L40-L48`](https://github.com/redux-saga/redux-saga/blob/master/packages/core/src/internal/middleware.js#L40-L48)
+[^2]: [`createEpicMiddleware.js#L51-L65`](https://github.com/redux-observable/redux-observable/blob/master/src/createEpicMiddleware.js#L51-L65)
