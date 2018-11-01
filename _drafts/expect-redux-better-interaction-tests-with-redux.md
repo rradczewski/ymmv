@@ -9,9 +9,9 @@ image-listing: "assets/expect-redux.jpg"
 
 ## Redux in the wild
 
-What I immediately loved about the whole React/Redux ecosystem is how easily testable it is. With `jsdom` and `enzyme`, my tests never felt closer to running in a browser than ever, without actually running in `phantomjs`. Even large acceptance tests will run in a few hundred milliseconds, everywhere, from CI to a docker container to my local machine, with no more setup than running `npm install`.
+What I immediately loved about the whole React/Redux ecosystem is how easily testable it is. With `jsdom` and `enzyme`, my tests never felt closer to running in a browser than ever, without actually running in something like `phantomjs`. Even large acceptance tests will run in a few hundred milliseconds, everywhere, from CI to a docker container to my local machine, with no more setup than running `npm install`.
 
-`redux` in particular is an amazing library because of its minimal API surface area and the profound impact it has on how you design a frontend application. All domain state and its transitions suddenly become easily testable in isolation. It's also trivially easy to construct a specific application state for a test, something that immediately rang familiar to me when I started using it for the UI of a backend that was built upon [EventSourcing](https://martinfowler.com/eaaDev/EventSourcing.html).
+`redux` in particular is an amazing library because of its minimal API surface area and the profound impact it has on how you design a frontend application. All domain state and its transitions suddenly become easily testable in isolation. It's also trivially easy to construct a specific application state for a test, something that was immediately familiar to me when I started using it for the UI of a backend that was built upon [EventSourcing](https://martinfowler.com/eaaDev/EventSourcing.html).
 
 But in practice, `redux` rarely comes alone. Throughout my time working with `redux`, I've seen a similar pattern emerge in the projects I'm working in: We start the project with some simple synchronous side-effects and a few `fetch`-calls that are easily taken care of using [`redux-thunk`](https://github.com/reduxjs/redux-thunk), but sooner or later the project grows beyond the simple use-cases where `redux-thunk` shines in.
 
@@ -37,7 +37,7 @@ Both libraries, although they are based on completely different paradigms, allow
 
 ## Testing pains
 
-The thing with both libraries is, that while they are very expressive in their own lingo, you have to leave the simplicity of `redux` and `redux-thunk` behind. You eventually find yourself building generator-functions (`redux-saga`) or composing functions that transform emitted actions (`redux-observable`). These sagas or epics are fed into a `runSaga` or `runEpic` function that runs after the reducers in `redux` did their thing. The connection between dispatching an action and starting a process because of that gets lost in the framework.
+The thing with both libraries is, that while they are very expressive in their own lingo, you have to leave the simplicity of `redux` and `redux-thunk` behind. You eventually find yourself building generator-functions (`redux-saga`) or composing functions that transform emitted actions (`redux-observable`). These sagas or epics are fed into a `runSaga` or `runEpic` function when you construct the store and then run after the reducers in `redux` did their thing. The connection between dispatching an action and starting a process because of that gets lost in the framework.
 
 While `redux-thunk` allows you to wait for a `Promise` to resolve, as the return value of your effect is passed back through the `dispatch` call, both `redux-saga`[^1] and `redux-observable`[^2] will not pass the result of a process back to your `dispatch` call. This isn't necessarily bad, but it again forces you to rethink how you build your application around asynchronously running processes. A very common example of this is navigating to another page after a process is finished - you'll find yourself connecting `redux` with the browser router to solve that one, either by passing `history` around or with [`redux-saga-router`](https://github.com/jfairbank/redux-saga-router) or [`connected-react-router`](https://github.com/supasate/connected-react-router).
 
@@ -47,7 +47,7 @@ I eventually found myself in the ironic situation that while my business process
 
 Soon, my feature-tests were riddled with `setTimeout` calls to make sure that the event queue was flushed before I ran my assertions, something that obviously is a rather brittle workaround that will sooner or later either cause wrong-negatives or just slow down your test runs in general.
 
-If I still wanted to test the processes themselves, I had to whitebox-test them. Both `redux-saga` and `redux-observable` give you tools to do that:
+If I still wanted to test the processes themselves, I had to whitebox-test them. Both `redux-saga` and `redux-observable` give you tools to do that, but I have my reservations about them. Let me make the case for each one of them:
 
 ### redux-saga
 
@@ -89,7 +89,7 @@ Luckily `redux-saga` will let you run your saga with a test-specific store and d
 
 With [`redux-saga-test-plan`](https://github.com/jfairbank/redux-saga-test-plan), there's a testing library that, while closely tied to testing a saga, is very similar to `expect-redux`: It will run the saga and only assert on specific behavior (e.g. `put` calls), but does not require you to know anything about how the saga is implemented.
 
-<small>An example test taken from [the README of `redux-saga-test-plan`](https://github.com/jfairbank/redux-saga-test-plan#simple-example):</small>
+<a name="redux-saga-test-plan-example" class="hidden">Redux-Testplan-Example</a><small>An example test taken from [the README of `redux-saga-test-plan`](https://github.com/jfairbank/redux-saga-test-plan#simple-example):</small>
 ```js
 it('just works!', () => {
   const api = {
@@ -184,6 +184,37 @@ While it's tempting to assert on the resulting state instead of the actions that
 And it's still quite fast: The exhaustive test suite of `expect-redux` with 70 individual testcases takes less than 2 seconds on my machine to run, even though it creates redux stores for each test, uses `setTimeout` to "assert" that something won't happen and tests how errors are rendered.
 
 `expect-redux` ultimately allows me to write tests that are integrated into `react`, `redux` or whatever middleware or process manager I'm using, and at the same time it allows me to very expressively assert that a specific feature is working.
+
+Let's rewrite the example using `redux-saga-test-plan` I showed earlier so it works with `expect-redux`:
+
+<small>The example from [above](#redux-saga-test-plan-example) rewritten with `expect-redux`</small>
+```js
+import { createStore } from 'redux';
+import { runSaga } from 'redux-saga';
+import { expectRedux, storeSpy } from 'expect-redux';
+import { userSaga } from './api';
+
+it('just works!', () => {
+  const store = createStore(() => ({}), storeSpy);
+  const api = {
+    fetchUser: id => ({ id, name: 'Tucker' }),
+  };
+
+  runSaga(store, userSaga, api);
+  store.dispatch({ type: 'REQUEST_USER', payload: 42 });
+
+  return expectRedux(store)
+    .toDispatchAnAction()
+    .matching({
+      type: 'RECEIVE_USER',
+      payload: { id: 42, name: 'Tucker' },
+    });
+});
+```
+
+While it looks a bit more verbose than with `redux-saga-test-plan`, it preserves the *Given-When-Then* structure and allows you to use a store like you would use in your application code.
+
+From here, I can even go further and mount the complete app including a fully configured store and run a feature test on that:
 
 <small>A sample test that mounts the whole `App`, clicks a button and asserts that a certain method is dispatched (from the [`redux-thunk-example`](https://github.com/rradczewski/expect-redux/blob/master/examples/redux-thunk-example/src/App.t-effect.test.js#L8-L21)):</small>
 
