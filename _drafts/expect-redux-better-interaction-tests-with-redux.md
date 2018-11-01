@@ -4,6 +4,7 @@ title: "expect-redux: better interaction tests with redux"
 image: "assets/expect-redux-header.jpg"
 image_alt: "The logo of expect-redux"
 image-listing: "assets/expect-redux.jpg"
+hide_reading_time: true
 ---
 [`expect-redux`](https://github.com/rradczewski/expect-redux/) solves a big problem I kept running into when I started developing JavaScript apps with React and Redux: Getting a proper and readable **Given-When-Then** test structure working for feature and interaction tests, no matter which side-effect library the project is using. In this post I want to show you a couple of different approaches towards testing redux and explain why I think `expect-redux` is useful for everyone working with redux.
 
