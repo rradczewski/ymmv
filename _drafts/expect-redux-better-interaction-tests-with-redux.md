@@ -12,9 +12,9 @@ hide_reading_time: true
 
 What I immediately loved about the whole React/Redux ecosystem is how easily testable it is. With `jsdom` and `enzyme`, my tests never felt closer to running in a browser than ever, without actually running in something like `phantomjs`. Even large acceptance tests will run in a few hundred milliseconds, everywhere, from CI to a docker container to my local machine, with no more setup than running `npm install`.
 
-`redux` in particular is an amazing library because of its minimal API surface area and the profound impact it has on how you design a frontend application. All domain state and its transitions suddenly become easily testable in isolation. It's also trivially easy to construct a specific application state for a test, something that was immediately familiar to me when I started using it for the UI of a backend that was built upon [EventSourcing](https://martinfowler.com/eaaDev/EventSourcing.html).
+`redux` in particular is an amazing library because of its minimal API surface area and the profound impact it has on how you design a frontend application. All domain state and its transitions suddenly become easily testable in isolation. It's also trivially easy to construct a specific application state for a test by dispatching the right actions, something that was immediately familiar to me when I started using `redux` for the UI of a backend that was built with  [EventSourcing](https://martinfowler.com/eaaDev/EventSourcing.html).
 
-But in practice, `redux` rarely comes alone. Throughout my time working with `redux`, I've seen a similar pattern emerge in the projects I'm working in: We start the project with some simple synchronous side-effects and a few `fetch`-calls that are easily taken care of using [`redux-thunk`](https://github.com/reduxjs/redux-thunk), but sooner or later the project grows beyond the simple use-cases where `redux-thunk` shines in.
+But in practice, `redux` rarely comes alone. Throughout my time working with `redux`, I've seen a pattern emerge in the projects I'm working in: We start the project with some simple synchronous side-effects and a few `fetch`-calls that are easily taken care of using [`redux-thunk`](https://github.com/reduxjs/redux-thunk), but sooner or later the project grows beyond the simple use-cases where `redux-thunk` shines in.
 
 <small>Here's how a minimal test of a thunk can look like:</small>
 ```js
@@ -84,7 +84,7 @@ test('doStuffThenChangeColor', assert => {
 });
 ```
 
-My issue with this approach is that you need to make sure to carefully call `gen.next()` until you reach something you want to run your assertion on (e.g. the call to `put` above). Add or remove a `yield` step in between that technically doesn't change the behavior your test asserts and you still have to add or remove a call to `gen.next()` so your test stays green. It effectively forces you to follow the exact implementation in your test and thus adds a lot of noise and coupling to the implementation to a test.
+My issue with manually advancing the generator-function is that you need to make sure to carefully call `gen.next()` until you reach something you want to run your assertion on (e.g. the call to `put` above). Add or remove a `yield` step in between that technically doesn't change the behavior your test asserts and you still have to add or remove a call to `gen.next()` so your test stays green. It effectively forces you to follow the exact implementation in your test and thus adds a lot of noise and coupling to the implementation to a test.
 
 Luckily `redux-saga` will let you run your saga with a test-specific store and dependencies through [`runSaga`](https://redux-saga.js.org/docs/api/), but this takes you right back to the start, as you need to assert on the actions dispatched to the store now (exactly what `expect-redux` allows you to do), but you still have to know when to assert. We're effectively back at either establishing synchronicity or using `setTimeout`.
 
@@ -213,7 +213,7 @@ it('just works!', () => {
 });
 ```
 
-While it looks a bit more verbose than with `redux-saga-test-plan`, it preserves the *Given-When-Then* structure and allows you to use a store like you would use in your application code.
+While it looks a bit more verbose than with `redux-saga-test-plan`, it preserves the *Given-When-Then* structure and allows you to use a store like you would use in your application code with its native API like `dispatch` and `getState`.
 
 From here, I can even go further and mount the complete app including a fully configured store and run a feature test on that:
 
@@ -236,7 +236,7 @@ it('will increase the counter', () => {
 });
 ```
 
-I no longer need to work around asynchronicity by polling or flushing the event queue. Instead, I can even write tests that are similar in scope to E2E tests, but don't rely on browser timings, but the "domain events" that redux yields instead. This makes large tests a little more bearable, as the error message will quickly point to where the test is failing.
+I no longer need to work around asynchronicity by polling or flushing the event queue. Instead, I can even write tests that are similar in scope to E2E tests, but don't rely on browser timings and use the "domain events" that you dispatch as actions. This makes large tests a little more bearable, as the error message will quickly point to where the test is failing.
 
 <small>An integration test that fills a form, submits it and waits for two events to be dispatched before asserting that the component correctly reflects the new state (from the [`redux-saga-example`](https://github.com/rradczewski/expect-redux/blob/master/examples/redux-saga-example/src/App.test.js#L30-L50))</small>
 ```js
@@ -272,6 +272,8 @@ But even outside of these feature tests, I found that whenever asynchronicity be
 Make sure to give it a try and let me know what you think!
 
 - [`expect-redux` on <span class="icon icon--github">{% include icon-github.svg %}</span> GitHub](https://github.com/rradczewski/expect-redux)
+  - [`/examples`](https://github.com/rradczewski/expect-redux/tree/master/examples) has examples for `redux-thunk`, `redux-saga` and `redux-observable`
+  - [API docs](https://github.com/rradczewski/expect-redux#api)
 - [`expect-redux` on NPM](https://www.npmjs.com/package/expect-redux) [<img src="https://img.shields.io/npm/v/expect-redux.svg" alt="version badge on npm" class="reset">](https://www.npmjs.com/package/expect-redux)
 
 [^1]: [`middleware.js#L40-L48`](https://github.com/redux-saga/redux-saga/blob/master/packages/core/src/internal/middleware.js#L40-L48)
