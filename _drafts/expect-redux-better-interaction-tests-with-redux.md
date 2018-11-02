@@ -6,7 +6,7 @@ image_alt: "The logo of expect-redux"
 image-listing: "assets/expect-redux.jpg"
 hide_reading_time: true
 ---
-[`expect-redux`](https://github.com/rradczewski/expect-redux/) solves a big problem I kept running into when I started developing JavaScript apps with React and Redux: Getting a proper and readable **Given-When-Then** test structure working for feature and interaction tests, no matter which side-effect library the project is using. In this post I want to show you a couple of different approaches towards testing redux and explain why I think `expect-redux` is useful for everyone working with redux.
+[`expect-redux`](https://github.com/rradczewski/expect-redux/) solves a big problem I kept running into when I started developing JavaScript apps with React and Redux: Getting a proper and readable **Given-When-Then** test structure working for feature and interaction tests, no matter which side-effect library the project is using. In this post I want to show you a couple of different approaches towards testing redux apps and explain why I think `expect-redux` is useful for everyone working with react and redux.
 
 ## Redux in the wild
 
@@ -48,7 +48,7 @@ I eventually found myself in the ironic situation that while my business process
 
 Soon, my feature-tests were riddled with `setTimeout` calls to make sure that the event queue was flushed before I ran my assertions, something that obviously is a rather brittle workaround that will sooner or later either cause wrong-negatives or just slow down your test runs in general.
 
-If I still wanted to test the processes themselves, I had to whitebox-test them. Both `redux-saga` and `redux-observable` give you tools to do that, but I have my reservations about them. Let me make the case for each one of them:
+If I still wanted to test the processes themselves, I had to whitebox-test them. Both `redux-saga` and `redux-observable` give you tools to do that, but I have my reservations about them. Let's take a look at both of them:
 
 ### redux-saga
 
@@ -153,7 +153,7 @@ In any case, you'll end up with testing a lot of your crucial business logic in 
 
 With both `redux-saga` and `redux-observable` being hard to unit-test, I looked at ways to improve those tests that asserted the behavior of a process in the broader context of the application, the interaction tests. When I say *interaction*, I specifically don't talk about integrating with external APIs, but with the other parts of the frontend application. `expect-redux` helps with those dreaded tests where I had to use `setTimeout` and mocked stores to assert on the actions that were eventually dispatched.
 
-<small>A simple test that uses `expect-redux` to assert that something is dispatched (from the [README](https://github.com/rradczewski/expect-redux#expect-redux---black-box-testing-for-redux))</small>
+<small>A simple test that uses `expect-redux` to assert that something is dispatched (from the [README](https://github.com/rradczewski/expect-redux))</small>
 ```js
 it("should dispatch SUCCESSFULLY_CALLED on success", () => {
   const store = createStore(...);
@@ -236,7 +236,7 @@ it('will increase the counter', () => {
 });
 ```
 
-I no longer need to work around asynchronicity by polling or flushing the event queue. Instead, I can even write tests that are similar in scope to E2E tests, but don't rely on browser timings and use the "domain events" that you dispatch as actions. This makes large tests a little more bearable, as the error message will quickly point to where the test is failing.
+I no longer need to work around asynchronicity by polling or flushing the event queue. Instead, I can even write tests that are similar in scope to browser tests, but don't rely on browser timings and use the "domain events" that you dispatch as actions. This makes large tests a little more bearable, as the error message will quickly point to where the test is failing.
 
 <small>An integration test that fills a form, submits it and waits for two events to be dispatched before asserting that the component correctly reflects the new state (from the [`redux-saga-example`](https://github.com/rradczewski/expect-redux/blob/master/examples/redux-saga-example/src/App.test.js#L30-L50))</small>
 ```js
@@ -265,7 +265,7 @@ it("will work with correct credentials", async () => {
 
 ## The case for `expect-redux`
 
-I really appreciate the expressiveness that `expect-redux` adds to my tests, but it also got me thinking about testing scopes a lot. With tests that closely resemble E2E tests, but at the same time are much faster and without the fragility of automated browser tests, I can easily write acceptance tests for a whole feature without worrying about the implementation details.
+I really appreciate the expressiveness that `expect-redux` adds to my tests, but it also got me thinking about testing scopes a lot. With tests that closely resemble browser tests in their scope, but at the same time are much faster and without the fragility of automating an actual browser, I can easily write acceptance tests for a whole feature without worrying about the implementation details.
 
 But even outside of these feature tests, I found that whenever asynchronicity became a necessary design consideration, `expect-redux` helped me keep my tests readable and made them less coupled to the actual implementation. I was quite impressed myself to find out that the feature tests I wrote for the [examples](https://github.com/rradczewski/expect-redux/tree/master/examples) are completely identical, no matter if I was using  [`redux-observable`](https://github.com/rradczewski/expect-redux/blob/master/examples/redux-observable-example/src/login.epic.with-expect-redux.test.js) or [`redux-saga`](https://github.com/rradczewski/expect-redux/blob/master/examples/redux-saga-example/src/loginFlow.saga.with-expect-redux.test.js) as a process manager!
 
