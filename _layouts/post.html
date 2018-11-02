@@ -11,7 +11,9 @@ layout: default
         {{ page.date | date: "%b %-d, %Y" }}
       </time>
       {% if site.author %} • <a href="https://twitter.com/{{ site.twitter_username }}"><span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">{{ site.author }}</span></span></a>{% endif %}
-      {% if minutesToRead != 0 %} • {{ minutesToRead }} minutes to read{% endif %}
+      {% unless page.hide_reading_time %}
+        {% if minutesToRead != 0 %} • {{ minutesToRead }} minutes to read{% endif %}
+      {% endunless %}
     </p>
     <h1 class="post-title" itemprop="name headline">{{ page.title | escape }}</h1>
     {% if page.image %}
