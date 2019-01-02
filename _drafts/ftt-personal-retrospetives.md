@@ -51,6 +51,8 @@ The retrospective is divided into three parts, the reflection, looking-forward a
 
 ## Resolutions
 
+<TODO>Pixelated picture of the kanban board</TODO>
+
 --
 
 [^1]: As you'll see later on, Christmas holidays only coincidentally happen to be a time where I can retreat without distractions. I wouldn't mind doing a personal retrospective throughout the year, but it's much easier to start during a time of few to no distractions and go from there.
