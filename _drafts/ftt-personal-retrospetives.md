@@ -1,9 +1,9 @@
 ---
 layout: post
 tags: ["From The Toolbox"]
-title: "From the Toolbox: Personal Retrospetives"
-#image: "assets/ftt-dont-persist-what-you-can-calculate.jpg"
-#image_alt: "An old calculator (resulta 7)"
+title: "From the Toolbox: Personal Retrospectives"
+image: "assets/ftt-personal-retrospectives.jpg"
+image_alt: "A stylish pen ontop of a notebook next to a cup of coffee on a wooden table"
 ---
 Every year since 2014, I retreat over the christmas holidays to have a personal retrospective. Over the course of two days, I reflect on the past year and make New Years resolutions that I'm actually keen on following through. Even if you only have a couple of hours to retreat, it's still a valuable exercise that I invite you to try yourself.
 
