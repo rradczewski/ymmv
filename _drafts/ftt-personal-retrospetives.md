@@ -25,9 +25,9 @@ Holding them for the last few years has helped me focus my efforts on aspects of
 
 # Pattern
 
-## Retrospective
+The retrospective is divided into three parts, the reflection, looking-forward and creating manageable resolutions. I tend to do one of them per day, with some time on the second day to reflect on the results from the reflection part. Creating manageable resolutions comes last and mostly involves gathering some more dry facts and sitting down and creating the resolutions so they're tangible and sincere.
 
-### Framing
+## Retrospective
 
 <TODO>
 - Places I've been to (friends, cities, countries)
@@ -48,6 +48,8 @@ Holding them for the last few years has helped me focus my efforts on aspects of
 - Goals and Stepping Stones (OKRs)
 - Revisiting goals throughout the year
 </TODO>
+
+## Resolutions
 
 --
 
