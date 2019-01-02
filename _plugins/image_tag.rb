@@ -21,7 +21,6 @@ require 'mini_magick'
 
 module ImageGeneration
   def ImageGeneration::generate_image(instance, site_source, site_dest, image_source, image_dest)
-
     image_source_path = File.join(site_source, image_source, instance[:src])
     unless File.exists?image_source_path
       puts "Missing: #{image_source_path}"
@@ -84,8 +83,8 @@ module ImageGeneration
         i.gravity "center"
         i.extent "#{gen_width}x#{gen_height}"
         #i.crop "#{gen_width}x#{gen_height}+0+0"
-        i.layers "Optimize"
       end
+
 
       image.write gen_dest_file
     end
