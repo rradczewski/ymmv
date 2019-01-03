@@ -4,6 +4,7 @@ tags: ["From The Toolbox"]
 title: "From the Toolbox: Personal Retrospectives"
 image: "assets/ftt-personal-retrospectives.jpg"
 image_alt: "A stylish pen on top of a notebook next to a cup of coffee on a wooden table"
+excerpt: "Every year since 2014, I retreat over the Christmas holidays and hold a personal retrospective all by myself. Over the course of one or two days, I reflect on the past year and make New Year's resolutions, and actually ones that I was pretty successful following through with so far. And even if you only have a couple of hours to retreat, it's still a valuable exercise that I invite you to try for yourself - even though Christmas is only over right now."
 ---
 Every year since 2014, I retreat over the Christmas holidays and hold a personal retrospective all by myself. Over the course of one or two days, I reflect on the past year and make New Year's resolutions[^1], and actually ones that I was pretty successful following through with so far. And even if you only have a couple of hours to retreat, it's still a valuable exercise that I invite you to try for yourself - even though Christmas is only over right now.
 
