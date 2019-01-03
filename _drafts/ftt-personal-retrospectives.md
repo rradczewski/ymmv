@@ -60,13 +60,15 @@ I have a natural *WIP-limit* and only so much time at hand to work on them, whic
 
 > A personal example is my nicotine consumption: While I've never found the courage to quit, through my resolutions, I successfully switched to an electronic cigarette and I've been reducing my nicotine consumption carefully ever since - to a point where I personally still enjoy the ritual and am less concerned about my health, which considerably improved over the last two years.[^5]
 
-This is the most tedious part, as the resolutions contribute towards reaching a goal. My instinct is to formulate the resolutions in a way that makes them measurable or trackable, but sometimes, in particular with deeply personal goals, a feeling, a change in life quality is more important than something quantifiable.
+This is the most tedious part, as the resolutions should contribute towards reaching a goal, so a lot of care has to go into this. My (professional) instinct usually tells me to formulate the resolutions in a way that makes them measurable or trackable, but sometimes, in particular with deeply personal goals, a feeling, a change in life quality is more important than something quantifiable.
 
 {% include responsive-image.html image="assets/ftt-personal-retrospectives-kanban-board.jpg" image_alt="Two pages from my personal kanban board showing my resolutions for 2018 (pixelated of course)" %}
 
-<TODO>
-- Revisiting goals throughout the year
-</TODO>
+Last year I started putting these resolutions on two dedicated pages of my *Personal Kanban Board* as pictured above. This way, I always have them with me and can revisit them anytime and they can become part of my every-day workflow.
+
+For this year, I plan to revisit the goals and results from this year's retrospective after half a year, to see if I can change priorities or even drop and add some resolutions from the list.
+
+I've been doing this for the last four years now and each session went better than the previous one, with the method evolving and my outlook being more constructive than ever. So even if Christmas is already gone for the time being and you can only spare a few hours and - even better, if you don't follow my format but come up with your own - I'm sure it'll be a good exercise in self-actualisation.
 
 --
 
