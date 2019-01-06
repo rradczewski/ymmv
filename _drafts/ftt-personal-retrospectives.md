@@ -6,11 +6,11 @@ image: "assets/ftt-personal-retrospectives.jpg"
 image_alt: "A stylish pen on top of a notebook next to a cup of coffee on a wooden table"
 excerpt: "Every year since 2014, I retreat over the Christmas holidays and hold a personal retrospective all by myself. Over the course of one or two days, I reflect on the past year and make New Year's resolutions, and actually ones that I was pretty successful following through with so far. And even if you only have a couple of hours to retreat, it's still a valuable exercise that I invite you to try for yourself - even though Christmas is only over right now."
 ---
-Every year since 2014, I retreat over the Christmas holidays and hold a personal retrospective all by myself. Over the course of one or two days, I reflect on the past year and make New Year's resolutions[^1], and actually ones that I was pretty successful following through with so far. And even if you only have a couple of hours to retreat, it's still a valuable exercise that I invite you to try for yourself - even though Christmas is only over right now.
+Every year since 2014, I retreat over the Christmas holidays and hold a personal retrospective all by myself. Over the course of one or two days, I reflect on the past year and make New Year's resolutions[^1], and for once these are resolutions that I'm pretty successful following through with so far. And even if you only have a couple of hours to retreat, it's still a valuable exercise that I invite you to try for yourself - even though Christmas is only over right now.
 
-My inspiration to do this came from a conversation I must've had at [SoCraTes 2014](https://socrates-conference.de/). A fellow participant <TODO>WHO?</TODO> told us how they're running their yearly retrospective: They write their own apprenticeship diploma, reflecting on their past year from an imaginative mentor-perspective and offering advice for the year to come.
+My inspiration to do this came from a conversation I had at [SoCraTes 2014](https://socrates-conference.de/). [Martin Heider](https://twitter.com/martinheider) explained how he's doing his yearly retrospective to me: He crafts his own apprenticeship diploma, reflecting on his past year from an imaginative mentor-perspective and offering advice to him for the year to come.
 
-Back then I was less fond of writing prose, so instead of writing a letter to myself, I covered my couch table in [paper](https://www.ikea.com/us/en/catalog/products/80324072/) and started drawing a mind-map. Since then, I improved the format every year to the point that people got curious about my method, which is why I'm sharing it now. For obvious reasons, I won't share the results of my personal retrospectives, though.
+Back then I was less fond of writing prose, so instead of writing a letter to myself, I covered my couch table in [paper](https://www.ikea.com/us/en/catalog/products/80324072/) and started drawing a mind-map. Since then, I improved the format every year. As it happens, people got curious about my method when they asked what I'm up for over Christmas, which is why I'm sharing it now. For obvious reasons, I won't share the results of my personal retrospectives, though 😛.
 
 # Context
 
@@ -20,17 +20,17 @@ Even though I employ methods I learned in my professional career, I don't want t
 
 # Reasoning
 
-My reason to hold these retrospectives is that I want to look at the past year, and not just my achievements or the good things that happened, but plainly the *amplitudes*, the up's and down's of the year and see where they lead me. From there, I'm carefully considering my wishes for the future to see how I can achieve them.
+My reason to hold these retrospectives is that I want to look at the past year, not just my achievements or the good things that happened, but plainly the *amplitudes*, the up's and down's of the year and see where they lead me. From there, I want to carefully consider my wishes for the future and see how I can achieve them.
 
-Holding them for the last few years has helped me focus my efforts on aspects of my life, both private and professional, that seemed untameable.
+Holding them for the last few years has helped me focus my efforts on aspects of my life, both private and professional, that previously seemed untameable.
 
 # Pattern
 
-The retrospective is divided into three parts, the reflection, looking-forward and creating manageable resolutions. I tend to do one of them per day, with some time on the second day to reflect on the results from the reflection part. Creating manageable resolutions comes last and mostly involves gathering some more dry facts and sitting down and creating the resolutions so they're tangible and sincere.
+The retrospective is divided into three parts: the reflection, looking-forward and creating manageable resolutions. I tend to do one of them per day, with some time on the second day to reflect on the results from the reflection part. Creating manageable resolutions comes last and mostly involves gathering some more dry facts and sitting down and creating the resolutions so they're tangible and sincere.
 
 ## Retrospective
 
-I start the retrospective by putting myself into the right mindset: To get things going, I revisit noteworthy events throughout the year by flicking through my calendar, making lists as I go on. The purpose of this exercise is to focus myself on things that either left a mark in my memory and to rediscover all the interactions and experiences I encountered this year:
+I start the retrospective by putting myself into the right mindset: To get things going, I revisit noteworthy events that happened throughout the year by flicking through my calendar, making lists as I go on. The purpose of this exercise is to focus myself on things that left a mark in my memory and to rediscover all the interactions and experiences I encountered this year:
 
 - **Places** I've been to - Any place that I consider important goes onto that list, be it countries I've traveled to, friends I frequently visited that year or clubs that I enjoyed going to.
 - **People** I've been with - Again, there's no exact indicator that someone should go on the list; people I spent a lot of time working with, people I hadn't seen in a long time or even people who bothered me throughout the year.
@@ -45,9 +45,10 @@ The purpose of this exercise is to reflect on the resolutions, celebrate achieve
 
 ## Prospective[^3]
 
-I start the *Prospective* part by creating a Mind-Map around two sentences: **I feel...**, where I gather keywords around my personal mindset, my emotions and my mental health, and **I wish...**, where in I start formulating things I'd like to improve in the next year.
+I start the *Prospective* part by creating a Mind-Map around two sentences:  
+**I feel...**, where I gather keywords around my personal mindset, my emotions and my mental health, and **I wish...**, where in I start formulating things I'd like to improve in the next year.
 
-While this part can feel overwhelming really quickly as you fill your mind-map, remember that these things have been on your mind the whole time. Only by writing it down you get a chance of weighting your options and decide what you'd like to work on, how they're intertwined and how sometimes your resolutions revolve around a central theme that you've been pushing away for quite some time.
+While this part can feel overwhelming really quickly as you fill your mind-map, remember that these things have been on your mind the whole time already. Only by writing them down you get the chance to weight your options and decide what you'd like to work on, to see how they're intertwined and how sometimes your resolutions revolve around a central theme that you've been pushing away for quite some time.
 
 Borrowing from the concept of [OKRs](https://en.wikipedia.org/wiki/OKR)[^4], I start creating **Goals** for myself, each a little ambitious in itself, just how Toyota formulate their goals as **True North Goals**, ideal ways things should be. A constant reminder about them being next to unreachable is important, but in the true sense of the metaphor, it keeps your compass aligned to your **True North**.
 
@@ -57,7 +58,7 @@ The result of this method is a little notebook full of **Goals**, why I want to 
 
 The most important aspect of resolutions to me is that they should improve my life in the long run. They might vary in how ambitious they are and how much impact they have on my life, but once they're formulated, I can work on them one at a time.
 
-I have a natural *WIP-limit* and only so much time at hand to work on them, which is why most of the time for this exercise is spent trying to break them down into chunks that I can work on in a matter of hours or days.
+I have a natural *WIP-limit* (1) and only so much time at hand to work on them, which is why most of the time for this exercise is spent trying to break them down into chunks that I can work on in a matter of hours or days.
 
 > A personal example is my nicotine consumption: While I've never found the courage to quit, through my resolutions, I successfully switched to an electronic cigarette and I've been reducing my nicotine consumption carefully ever since - to a point where I personally still enjoy the ritual and am less concerned about my health, which considerably improved over the last two years.[^5]
 
@@ -65,9 +66,9 @@ This is the most tedious part, as the resolutions should contribute towards reac
 
 {% include responsive-image.html image="assets/ftt-personal-retrospectives-kanban-board.jpg" image_alt="Two pages from my personal kanban board showing my resolutions for 2018 (pixelated of course)" %}
 
-Last year I started putting these resolutions on two dedicated pages of my *Personal Kanban Board* as pictured above. This way, I always have them with me and can revisit them anytime and they can become part of my every-day workflow.
+Last year I started putting these resolutions on two dedicated pages of my *Personal Kanban Board* as pictured above. This way, I always have them with me and can revisit them anytime and they can become part of my every-day workflow. I used the Post-It's this year as I went through the list of last year's resolutions to see which ones worked out and which ones didn't.
 
-For this year, I plan to revisit the goals and results from this year's retrospective after half a year, to see if I can change priorities or even drop and add some resolutions from the list.
+For this year, I plan to revisit the goals and results from this year's retrospective every three months, to see if I can change priorities or even drop and add some resolutions from the list. Of course, this ritual is a resolution in itself that went on my Personal Kanban Board.
 
 I've been doing this for the last four years now and each session went better than the previous one, with the method evolving and my outlook being more constructive than ever. So even if Christmas is already gone for the time being and you can only spare a few hours and - even better, if you don't follow my format but come up with your own - I'm sure it'll be a good exercise in self-actualisation.
 
