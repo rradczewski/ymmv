@@ -404,6 +404,15 @@
       content: "TODO ON THIS PAGE";
       display: block;
     }
+
+  }
+  p > todo {
+    display: inline-block;
+    border: none;
+    padding: 5px;
+    &:before {
+      content: "";
+    }
   }
 
   img {
