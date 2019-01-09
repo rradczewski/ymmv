@@ -36,6 +36,8 @@ I start the retrospective by putting myself into the right mindset: To get thing
 - **People** I've been with - Again, there's no exact indicator that someone should go on the list; people I spent a lot of time working with, people I hadn't seen in a long time or even people who bothered me throughout the year.
 - **Concerts** I've been to and **Music** I've listened to throughout the year - This one is a rather specific one, but as I enjoy music and concerts a lot, I make sure to note these down as well as I associate a lot through music. Using Spotify has helped tremendously with this as they publish your personal Top 100 each year around Christmas.
 
+{% include responsive-image.html image="assets/ftt-personal-retrospectives-lists.jpg" image_alt="Photos of the lists I'm making on paper roll" %}
+
 Going back to last year's resolutions, I gather all those resolutions that have been important to me - either because I successfully followed through with them or because they fell under the table even though I would've liked to follow through with them.
 
 From here, I start writing down **Three Words** that come to my mind reflecting on the year. Once the first three are written down, the next three come to my mind, so I repeat this until I notice common themes around the words I've written down so far. For each theme, I note down why I suspect it came to my mind and how it shaped the year for me.
