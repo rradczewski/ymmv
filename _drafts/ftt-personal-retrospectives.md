@@ -43,6 +43,8 @@ Going back to last year's resolutions, I gather all those resolutions that have 
 From here, I start writing down **Three Words** that come to my mind reflecting on the year. Once the first three are written down, the next three come to my mind, so I repeat this until I notice common themes around the words I've written down so far. For each theme, I note down why I suspect it came to my mind and how it shaped the year for me.
 As I write down my notes, I add the resolutions from last year (see below to learn how easy that is if you use a Personal Kanban board anyways) to the text as I see fit.
 
+<TODO>Picture of the notebook full of notes on the goals from last year</TODO>
+
 The purpose of this exercise is to reflect on the resolutions, celebrate achievements (by myself, for once) and find out which of those resolutions I didn't follow through are still important to me. This is prep-work for the *Prospective* and serves as a starting point to see which resolutions I'd like to make this year.
 
 ## Prospective[^3]
@@ -53,6 +55,8 @@ I start the *Prospective* part by creating a Mind-Map around two sentences:
 While this part can feel overwhelming really quickly as you fill your mind-map, remember that these things have been on your mind the whole time already. Only by writing them down you get the chance to weight your options and decide what you'd like to work on, to see how they're intertwined and how sometimes your resolutions revolve around a central theme that you've been pushing away for quite some time.
 
 Borrowing from the concept of [OKRs](https://en.wikipedia.org/wiki/OKR)[^4], I start creating **Goals** for myself, each a little ambitious in itself, just how Toyota formulate their goals as **True North Goals**, ideal ways things should be. A constant reminder about them being next to unreachable is important, but in the true sense of the metaphor, it keeps your compass aligned to your **True North**.
+
+<TODO>Picture of the notebook with example Goals, preambles and a few Resolutions</TODO>
 
 The result of this method is a little notebook full of **Goals**, why I want to achieve them and with some ideas for **Resolutions** on how I can move forward in achieving them.
 
