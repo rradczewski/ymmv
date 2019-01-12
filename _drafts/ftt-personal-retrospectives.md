@@ -30,7 +30,7 @@ The retrospective is divided into three parts: the reflection, looking-forward a
 
 ## Retrospective
 
-I start the retrospective by putting myself into the right mindset: To get things going, I revisit noteworthy events that happened throughout the year by flicking through my calendar, making lists as I go on. The purpose of this exercise is to focus myself on things that left a mark in my memory and to rediscover all the interactions and experiences I encountered this year:
+I start the retrospective by putting myself into the right mindset: To get things going, I revisit noteworthy events that happened throughout the year by flicking through my calendar, making lists on the paper on my table as I go on. The purpose of this exercise is to focus myself on things that left a mark in my memory and to rediscover all the interactions and experiences I encountered this year:
 
 - **Places** I've been to - Any place that I consider important goes onto that list, be it countries I've traveled to, friends I frequently visited that year or clubs that I enjoyed going to.
 - **People** I've been with - Again, there's no exact indicator that someone should go on the list; people I spent a lot of time working with, people I hadn't seen in a long time or even people who bothered me throughout the year.
@@ -43,9 +43,13 @@ Going back to last year's resolutions, I gather all those resolutions that have 
 From here, I start writing down **Three Words** that come to my mind reflecting on the year. Once the first three are written down, the next three come to my mind, so I repeat this until I notice common themes around the words I've written down so far. For each theme, I note down why I suspect it came to my mind and how it shaped the year for me.
 As I write down my notes, I add the resolutions from last year (see below to learn how easy that is if you use a Personal Kanban board anyways) to the text as I see fit.
 
-<TODO>Picture of the notebook full of notes on the goals from last year</TODO>
+The resolutions that didn't make it on the poster find their way to the notebook next, where I revisit each one of them and briefly note down whether I followed through with them and if so, how it went; if I didn't complete them, I write down why I think I didn't bother with them and whether I should revisit them this year.
 
-The purpose of this exercise is to reflect on the resolutions, celebrate achievements (by myself, for once) and find out which of those resolutions I didn't follow through are still important to me. This is prep-work for the *Prospective* and serves as a starting point to see which resolutions I'd like to make this year.
+The result of this is a notebook filled with last year's resolutions and how I kept up with them, as you can see below (though pixelated).
+
+{% include responsive-image.html image="assets/ftt-personal-retrospectives-retro-book.jpg" image_alt="Collage of the pages on 2018 from this years retrospective" %}
+
+Again, the purpose of this exercise is to reflect on the resolutions, celebrate achievements (by myself, for once) and find out which of those resolutions I didn't follow through are still important to me. This is prep-work for the *Prospective* and serves as a starting point to see which resolutions I'd like to make this year.
 
 ## Prospective[^3]
 
@@ -56,7 +60,7 @@ While this part can feel overwhelming really quickly as you fill your mind-map, 
 
 Borrowing from the concept of [OKRs](https://en.wikipedia.org/wiki/OKR)[^4], I start creating **Goals** for myself, each a little ambitious in itself, just how Toyota formulate their goals as **True North Goals**, ideal ways things should be. A constant reminder about them being next to unreachable is important, but in the true sense of the metaphor, it keeps your compass aligned to your **True North**.
 
-<TODO>Picture of the notebook with example Goals, preambles and a few Resolutions</TODO>
+{% include responsive-image.html image="assets/ftt-personal-retrospectives-example-goals-page.jpg" image_alt="A (made-up) example of a page describing my goals" %}
 
 The result of this method is a little notebook full of **Goals**, why I want to achieve them and with some ideas for **Resolutions** on how I can move forward in achieving them.
 
