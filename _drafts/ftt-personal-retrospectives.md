@@ -28,6 +28,8 @@ Holding them for the last few years has helped me focus my efforts on aspects of
 
 The retrospective is divided into three parts: the reflection, looking-forward and creating manageable resolutions. I tend to do one of them per day, with some time on the second day to reflect on the results from the reflection part. Creating manageable resolutions comes last and mostly involves gathering some more dry facts and sitting down and creating the resolutions so they're tangible and sincere.
 
+The whole process involves a lot of drawing as I found it helps me being completely free to add notes and remarks whenever I see fit. I further found that writing everything by hand results in more careful wording, even though I'm not that used to handwriting any more. Get out the good fountain pen that's been collecting dust in your drawer, it really helps!
+
 ## Retrospective
 
 I start the retrospective by putting myself into the right mindset: To get things going, I revisit noteworthy events that happened throughout the year by flicking through my calendar, making lists on the paper on my table as I go on. The purpose of this exercise is to focus myself on things that left a mark in my memory and to rediscover all the interactions and experiences I encountered this year:
@@ -42,6 +44,9 @@ Going back to last year's resolutions, I gather all those resolutions that have 
 
 From here, I start writing down **Three Words** that come to my mind reflecting on the year. Once the first three are written down, the next three come to my mind, so I repeat this until I notice common themes around the words I've written down so far. For each theme, I note down why I suspect it came to my mind and how it shaped the year for me.
 As I write down my notes, I add the resolutions from last year (see below to learn how easy that is if you use a Personal Kanban board anyways) to the text as I see fit.
+
+{% include responsive-image.html image="assets/ftt-personal-retrospectives-poster.jpg" image_alt="The (pixelated) poster I made in 2018" %}
+
 
 The resolutions that didn't make it on the poster find their way to the notebook next, where I revisit each one of them and briefly note down whether I followed through with them and if so, how it went; if I didn't complete them, I write down why I think I didn't bother with them and whether I should revisit them this year.
 
@@ -80,7 +85,7 @@ Last year I started putting these resolutions on two dedicated pages of my *Pers
 
 For this year, I plan to revisit the goals and results from this year's retrospective every three months, to see if I can change priorities or even drop and add some resolutions from the list. Of course, this ritual is a resolution in itself that went on my Personal Kanban Board.
 
-I've been doing this for the last four years now and each session went better than the previous one, with the method evolving and my outlook being more constructive than ever. So even if Christmas is already gone for the time being and you can only spare a few hours and - even better, if you don't follow my format but come up with your own - I'm sure it'll be a good exercise in self-actualisation.
+I've been doing this for the last four years now and each session went better than the previous one, with the method evolving and my outlook being more constructive than ever. So even if Christmas is already gone for the time being and you can only spare a few hours and - even better, if you don't follow my format but come up with your own - I'm sure it'll be a good exercise in self-actualization.
 
 --
 
