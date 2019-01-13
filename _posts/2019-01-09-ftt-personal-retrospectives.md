@@ -10,7 +10,7 @@ Each year since 2014, I retreat over the Christmas holidays and hold a personal 
 
 My inspiration to do this came from a conversation I had at [SoCraTes 2014](https://socrates-conference.de/). [Martin Heider](https://twitter.com/martinheider) explained how he's doing his yearly retrospective to me: He crafts his own apprenticeship diploma, reflecting on his past year from an imaginative mentor-perspective and offering advice to himself for the year to come.
 
-Back then I was less fond of writing prose, so instead of writing a letter to myself, I covered my couch table in [paper](https://www.ikea.com/us/en/catalog/products/80324072/) and started drawing a mind-map. Since then, I have improved the format every year. This year, when talking Christmas plans, people have become curious about about my method. This is why I'm sharing it with you now. For obvious reasons, I won't disclose the results of my personal retrospectives, though.
+Back then I was less fond of writing prose, so instead of writing a letter to myself, I covered my couch table in [paper](https://www.ikea.com/us/en/catalog/products/80324072/) and started drawing a mind-map. Since then, I have improved the format every year. This year, when talking Christmas plans, people have become curious about my method. This is why I'm sharing it with you now. For obvious reasons, I won't disclose the results of my personal retrospectives, though.
 
 # Context
 
