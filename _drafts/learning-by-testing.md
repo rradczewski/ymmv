@@ -11,3 +11,7 @@ Once you move past learning the syntax, a language finally becomes a powerful to
 By now, I imagine you're familiar with my obsession for feedback loops. Whenever tasked with something where I find myself not knowing either requirements or the code-base, the question "How do I know if I'm going into the right direction" helps me find out where I need to dive in deeper, the requirement or the code. As my current roles involve coaching developers a lot, I found this question to be equally useful in mentoring situations where the mentees next learning angle is to move away from hacking to proper software engineering.
 
 {% include responsive-image.html image="assets/learning-by-testing-test-annotated.png" image_alt="An annotated test in JavaScript" %}
+
+As many others, I learned programming by playing around and hacking to just get the computer to do what I wanted to achieve. PHP, being my first programming language, was incredible for just that, but it also meant that my first projects were crude snippet collections that only accidentally aligned in a way that seemed to be working.
+
+The engineers I mentor today are past that point, but still sometimes find themselves taking too little care to understand the problem first. Applying test-driven-development in this situation means you need to take a break and lay out your assumptions first. Apart from helping us both stay aligned, it also helps moving their practices away from hackery towards a more structured practice.
