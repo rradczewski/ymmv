@@ -45,3 +45,28 @@ it("should prevent the user from closing if it has unsaved changes", () => {
 ```
 
 The moment you're both happy with the description, you not only spend a lot of time on a string, you created a common understanding of the task and already have an idea how to approach it 🎉. A common reflex to unlearn is to rush through making a proper description. Just as a commit message, it feels like the least important piece to spend time on when coding. But the discipline is rewarded with less friction, in the pair, but also in the future when others need to work on the code-base (or you yourself, coming back to it after 6 months).
+
+```js
+it("should prevent the user from closing if it has unsaved changes", () => {
+  // Given
+
+  // When
+
+  // Then
+});
+```
+
+To write the actual test code, the best approach I've found so far is still the classic *Given-When-Then* structure, written as comments in the function body. Depending on how far we can start as small as writing our assumptions in comments below, explaining the code we'd like to write:
+
+```js
+it("should prevent the user from closing if it has unsaved changes", () => {
+  // Given
+  /// There's a form with something written in it that wasn't saved
+
+  // When
+  /// The user tries to click the close button
+
+  // Then
+  /// Nothing should happen
+});
+```
