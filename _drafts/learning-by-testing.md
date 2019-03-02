@@ -10,14 +10,10 @@ Once you move past learning the syntax, a language finally becomes a powerful to
 
 If you happened to read my previous articles, I assume you're familiar with my obsession for feedback loops. Whenever I find myself not knowing either requirements or the code-base too well, I will put processes in place that help me answer the question: "How do I know if I'm going into the right direction".
 That feedback loop helps me uncover disparities between requirements and code, and approach the right people with something to explain myself further.
- 
+
 As my current roles involve coaching developers a lot, I found this question and the feedback loop of tests to be a good starting point in mentoring situations, where the mentee's next learning angle is to move away from hacking to proper software engineering.
 
 As many others, I learned programming by playing around and hacking to just get the computer to do what I wanted to achieve. PHP, being my first programming language, was incredible for just that, but it also meant that my first projects were crude snippet collections that only accidentally aligned in a way that seemed to be working.
-
-<TODO>Totally wrong, `onSave` and all </TODO>
-
-{% include responsive-image.html image="assets/learning-by-testing-test-annotated.png" image_alt="An annotated test in JavaScript" %}
 
 The engineers I mentor today are well past that point, but it still happens that too little care is taken by them to understand the problem first. Applying test-driven-development in this situation means you need to take a break and lay out your assumptions first. Apart from helping us both stay aligned when pairing, it also helps moving their practices away from hackery towards a more structured practice.
 
