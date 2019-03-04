@@ -103,3 +103,7 @@ Once you had this discussion, settled for a test and eventually got it to pass, 
 > - Once that happened, the onCloseSpy should not have been called. Makes sense! **I'd trust that the form is still there considering there's no other way to dismiss the form.**
 
 Going through the test one-by-one might reveal that you still need to make changes to either description or implementation. Having it properly reflect what you've been implementing, is a necessary chore to make sure that the test is still useful a few months down the line, so don't call it a day before going over it!
+
+It requires a lot of patience from both you and your mentee, but I have yet to find a more effective teaching method to foster deeper understanding of a requirement. Additionally, the test will provide such a rapid feedback loop that you'll find yourself stuck far fewer times than when you were testing your changes manually. Whenever you are though, the test will hopefully reveal the culprit much quicker than manual debugging methods. If everything goes well, you not only had a very productive pairing session, but also guided someone on their path towards more awareness and cool-headed and disciplined practice.
+
+*I'm providing both coaching on mentoring and mentoring itself to my clients in Berlin, all over Germany and world-wide through remote work. Send me a message via [hello@craftswerk.io](mailto:hello@craftswerk.io) if you're interested in me improving the engineering and collaboration culture of your team!*
