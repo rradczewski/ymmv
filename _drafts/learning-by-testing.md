@@ -74,3 +74,32 @@ it("should prevent the user from closing if it has unsaved changes", () => {
   /// Nothing should happen
 });
 ```
+
+In my experience, each step in *Given-When-Then* is harder to formulate than the previous one. Setting up the world is one thing, but understanding which action to simulate, in particular on which abstraction (think mouse click, button press, triggering the event handler) can already spark an interesting discussion.
+
+```js
+it("should prevent the user from closing if it has unsaved changes", () => {
+  // Given
+  const onCloseSpy = jest.spy();
+  renderForm({ onClose: onCloseSpy });
+  fillInComment("this is an unsaved change");
+
+  // When
+  clickCloseButton();
+
+  // Then
+  expect(onCloseSpy).toNotHaveBeenCalled();
+});
+```
+
+The *Then*-step eventually is the hardest, as you need to understand how you verify that the world has changed, and in particular how it should have changed. It can be difficult to distinguish first-level effects from cascading effects, so this makes for another interesting discussion. E.g. in our example, is the fact that our `onClose` handler isn't called the right choice? Or should we expect the form to still be there instead? What's the reasonable abstraction to pick here?
+
+Once you had this discussion, settled for a test and eventually got it to pass, it's time to reflect on the test again (🙋 refactoring!): Do description and implementation still match? Does your interpretation of both still match the requirement? Let's walk through both in an inner monologue to try:
+
+> - So this is a test for making sure that a user doesn't **accidentally** close the form when they have unsaved changes.  
+> - The **only way** to dismiss the form in our application is to click the close button.  
+> - Now in the implementation, the test sets up an empty renderForm with a spy on the `onClose` event handler. **Seems like this one is invoked whenever the form should be removed from the DOM.**  
+> - The action triggered is a simulated button click on the "close"-button. I'd assume this is a `.find` call on the mounted component and a `.simulate` call to create a fake click event.  
+> - Once that happened, the onCloseSpy should not have been called. Makes sense! **I'd trust that the form is still there considering there's no other way to dismiss the form.**
+
+Going through the test one-by-one might reveal that you still need to make changes to either description or implementation. Having it properly reflect what you've been implementing, is a necessary chore to make sure that the test is still useful a few months down the line, so don't call it a day before going over it!
