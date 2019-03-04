@@ -239,9 +239,9 @@
     position: relative;
     z-index: 2;
 
-    &:hover .post-background-image {
-      opacity: 1;
-      filter: none;
+    &:hover .post-background-image, .post-background-image-in-viewport {
+      opacity: 1 !important;
+      filter: none !important;
     }
 
     .post-background-image {
