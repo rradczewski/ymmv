@@ -8,6 +8,8 @@ Taking the time to write good tests has helped me tremendously demystify every c
 
 Once you move past learning the syntax, a language finally becomes a powerful tool to wield. From here, a vast array of knowledge only waits to be discovered, like frameworks, paradigms or design patterns. The most powerful, structured method to expand your knowledge about a language and its ecosystem at this point is testing. Not only does it provide you with guidance through the unknowns, it also teaches you to carefully map between requirement and code, and to truly understand the task you're trying to accomplish.
 
+{% include responsive-image.html image="assets/learning-by-testing-feedback-loops.png" image_alt="Feedback loops when coding, TDD fastest, Stakeholder Feedback slowest" %}
+
 If you happened to read my previous articles, I assume you're familiar with my obsession for feedback loops. Whenever I find myself not knowing either requirements or the code-base too well, I will put processes in place that help me answer the question: "How do I know if I'm going into the right direction".
 That feedback loop helps me uncover disparities between requirements and code, and approach the right people with something to explain myself further.
 
