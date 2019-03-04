@@ -17,9 +17,9 @@ As my current roles involve coaching developers a lot, I found this question and
 
 As many others, I learned programming by playing around and hacking to just get the computer to do what I wanted to achieve. PHP, being my first programming language, was incredible for just that, but it also meant that my first projects were crude snippet collections that only accidentally aligned in a way that seemed to be working.
 
-The engineers I mentor today are well past that point, but it still happens that too little care is taken by them to understand the problem first. Applying test-driven-development in this situation means you need to take a break and lay out your assumptions first. Apart from helping us both stay aligned when pairing, it also helps moving their practices away from hackery towards a more structured practice.
+The engineers I mentor today are well past that point. No matter what point in your career though, the pressure of deadlines and wrongful expectations to be "a quick problem-solver" can still capture you and make you fall back into move-fast-tunnel-vision. Applying test-driven-development in this situation forces you to take a break and lay out your assumptions first. Apart from helping us both stay aligned when pairing, it also helps moving your practices away from get-sh*t-done-hackery towards a more structured practice.
 
-It requires practice though. Just as with commit messages, we're quick to dismiss the description of a test as something not worth investing time in. In both cases, the immediate value isn’t obvious – after all we usually have a CI system that will fail if tests not pass, but not when the description is bad – so it requires not just discipline, but also some understanding about the value of these exercises to keep the practice going.
+It requires practice though. Just as with commit messages, we're quick to dismiss the description of a test as something not worth investing time in. In both cases, the immediate value isn't obvious – after all we usually have a CI system that will fail if tests not pass, but not when the description is bad – so it requires not just discipline, but also some understanding about the value of these exercises to keep the practice going.
 
 ```js
 it("should disable the close button", () => {
