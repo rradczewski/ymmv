@@ -4,24 +4,26 @@ title: "Learning By Testing"
 image: "assets/learning-by-testing.jpg"
 image_alt: "Architecture sketch with a fine pen on top next to a ruler"
 ---
-Taking the time to write good tests has helped me tremendously demystify every codebase I had to work with. As you tackle an unknown from both sides – what you think the world looks like now and also after something happened – you also learn to translate requirements into code, and vis versa. This approach is most useful when mentoring, as it invites both of you to think more about the reasons why you have to write code in the first place and how to verify you're doing the right thing.
+Taking the time to write good tests has helped me tremendously demystify every codebase I had to work with. As you tackle an unknown from both sides – what you think the world looks like now and also after something happened – you also learn to translate requirements into code, and vis versa. I found this approach most useful when mentoring, as it invites both of you to think more about the reasons why you have to write code in the first place and how to verify you're doing the right thing.
 
-Once you move past learning the syntax, a language finally becomes a powerful tool to wield. From here, a vast array of knowledge only waits to be discovered, like frameworks, paradigms or design patterns. The most powerful, structured method to expand your knowledge about a language and its ecosystem at this point is testing. Not only does it provide you with guidance through the unknowns, it also teaches you to carefully map between requirement and code, and to truly understand the task you're trying to accomplish.
+Once you move past learning the syntax, a language becomes a powerful tool to wield. From here, a vast array of knowledge only waits to be discovered, like frameworks, paradigms or design patterns. The most powerful, structured method to expand your knowledge about a language and its ecosystem at this point is testing to me. Not only does it provide you with guidance through the unknowns, it also teaches you to carefully map between requirement and code, and to truly understand the task you're trying to accomplish.
 
 This article is meant to offer my perspective on mentoring using test-driven development and to provide you with conversation starters for if you choose to try that approach with your mentee.
 
 {% include responsive-image.html image="assets/learning-by-testing-feedback-loops.png" image_alt="Feedback loops when coding, TDD fastest, Stakeholder Feedback slowest" %}
 
-If you happened to read my previous articles, I assume you're familiar with my obsession for feedback loops. Whenever I find myself not knowing either requirements or the code-base too well, I will put processes in place that help me answer the question: "How do I know if I'm going into the right direction".
+If you happened to read my previous articles, I assume you're familiar with my obsession for short feedback loops. Whenever I find myself not knowing either requirements or the code-base too well, I will put processes in place that help me answer the question: "How do I know if I'm going into the right direction".
 That feedback loop helps me uncover disparities between requirements and code, and approach the right people with something to explain myself further.
 
-As my current roles involve coaching developers a lot, I found this question and the feedback loop of tests to be a good starting point in mentoring situations, where the mentee's next learning angle is to move away from hacking to proper software engineering.
+As my current roles involve coaching developers a lot, I found said question and the feedback loop of tests to be a good starting point in those situations, where the mentee's learning angle is to take their time to reflect and take more care in their practice, somewhere between *Conscious incompetence* and *Conscious competence*.
 
-As many others, I learned programming by playing around and hacking to just get the computer to do what I wanted to achieve. PHP, being my first programming language, was incredible for just that, but it also meant that my first projects were crude snippet collections that only accidentally aligned in a way that seemed to be working.
+As many others, I learned programming by playing around and hacking to just get the computer to do what I wanted to achieve. PHP, being my first programming language, was incredible for just that, but it also meant that my first projects were crude snippet collections that only accidentally aligned in a way that seemed to be working. Mind that I’m praising PHP for what it has been for me, an approachable tool to learn programming — it has come a long way since then and I’m still fond of it.
 
-The engineers I mentor today are well past that point. No matter what point in your career though, the pressure of deadlines and wrongful expectations to be "a quick problem-solver" can still capture you and make you fall back into tunnel vision. Applying test-driven-development in this situation forces you to take a break and lay out your assumptions first. Apart from helping us both stay aligned when pairing, it also helps moving your practices away from get-sh*t-done-hackery towards a more structured practice.
+The engineers I mentor today are well past that point. But no matter at what point in your career you are, the pressure of deadlines and wrongful expectations to be "a quick problem-solver" can still capture you and make you fall back into tunnel vision. Applying test-driven-development in this situation forces you to take a break and lay out your assumptions first. Apart from helping us both stay aligned when pairing, it also helps moving your practices away from get-sh*t-done-hackery towards a more structured practice.
 
-It requires practice though. Just as with commit messages, we're quick to dismiss the description of a test as something not worth investing time in. In both cases, the immediate value isn't obvious – after all we usually have a CI system that will fail if tests not pass, but not when the description is bad – so it requires not just discipline, but also some understanding about the value of these exercises to keep the practice going.
+It requires practice though. Just as with commit messages, we're quick to dismiss the description of a test as something not worth investing time in. In both cases, the immediate value isn't obvious – after all we usually have a CI system that will fail if tests not pass, but not when the description is bad – so it requires not just discipline, but also understanding about the value of these exercises to keep the practice going.
+
+## Context is king
 
 ```js
 it("should disable the close button", () => {
@@ -39,7 +41,7 @@ it("should disable the close button whenever it has unsaved changes", () => {
 });
 ```
 
-The more you move away from implementation details and the more you describe the behavior, the better (of course, as you come to testing the actual implementation, it becomes harder to avoid and also less sensible).
+The more you move away from implementation details and the more you describe the behavior, the better. Of course, as you come to testing the actual implementation, it becomes harder to avoid and also less sensible.
 
 ```js
 it("should prevent the user from closing if it has unsaved changes", () => {
@@ -49,6 +51,8 @@ it("should prevent the user from closing if it has unsaved changes", () => {
 ```
 
 The moment you're both happy with the description, you not only „wasted“ a lot of time on a single string, you just created a common understanding of the task and probably already have an idea how to approach it 🎉. Even though it might still feel like the least important aspect of a test, your discipline is rewarded with less friction, not just in the pair, but also in the future when others need to work on the code-base (or you yourself, coming back to it after 6 months).
+
+## Enter the three stages of a drama
 
 ```js
 it("should prevent the user from closing if it has unsaved changes", () => {
@@ -75,7 +79,7 @@ it("should prevent the user from closing if it has unsaved changes", () => {
 });
 ```
 
-In my experience, each step in *Given-When-Then* is harder to formulate than the previous one. Setting up the world is one thing, but understanding which action to simulate, in particular on which abstraction (think mouse click, button press, triggering the event handler) can already spark an interesting discussion.
+In my experience, each step in *Given-When-Then* is harder to formulate than the previous one. Setting up the world is one thing, but understanding which action to simulate, in particular on which abstraction (e.g. choosing between a mouse click, button press or triggering the event handler) can already spark an interesting discussion.
 
 ```js
 it("should prevent the user from closing if it has unsaved changes", () => {
@@ -93,6 +97,8 @@ it("should prevent the user from closing if it has unsaved changes", () => {
 ```
 
 The *Then*-step eventually is the hardest, as you need to understand how you verify that the world has changed, and in particular how it should have changed. It can be difficult to distinguish first-level effects from cascading effects, so this makes for another interesting discussion. E.g. in our example, is the fact that our `onClose` handler isn't called the right choice? Or should we expect the form to still be there instead? What's the reasonable abstraction to pick here?
+
+## Reality check
 
 Once you had this discussion, settled for a test and eventually got it to pass, it's time to reflect on the test again (🙋 refactoring!): Do description and implementation still match? Does your interpretation of both still match the requirement? Let's walk through both in an inner monologue to try:
 
