@@ -33,6 +33,8 @@ it("should disable the close button", () => {
 
 A test that doesn't provide context will eventually become a burden, as it works on a lot of assumptions that won't be obvious once you need to work with it again.
 
+{% include responsive-image.html image="assets/learning-by-testing-where-does-this-belong-again.png" image_alt="a comic showing a person holding a paper trying to sort it in a huge stack of boxes representing commits." %}
+
 When you write the test, the description is where you make the plan, where you seek alignment between yourself and your pairing partner; what is there to be done? what are the important *moving parts* in this particular scenario? You don't need to be nit-picky, but the description should be close enough to the test code so one isn't stumped about some inconsistency when reading both.
 
 ```js
@@ -98,7 +100,7 @@ it("should prevent the user from closing if it has unsaved changes", () => {
 
 The *Then*-step eventually is the hardest, as you need to understand how you verify that the world has changed, and in particular how it should have changed. It can be difficult to distinguish first-level effects from cascading effects, so this makes for another interesting discussion. E.g. in our example, is the fact that our `onClose` handler isn't called the right choice? Or should we expect the form to still be there instead? What's the reasonable abstraction to pick here?
 
-## Reality check
+## Reality Check
 
 Once you had this discussion, settled for a test and eventually got it to pass, it's time to reflect on the test again (🙋 refactoring!): Do description and implementation still match? Does your interpretation of both still match the requirement? Let's walk through both in an inner monologue to try:
 
