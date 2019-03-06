@@ -66,7 +66,7 @@ it("should prevent the user from closing if it has unsaved changes", () => {
 });
 ```
 
-To write the actual test code, my favorite approach is still the classic *Given-When-Then* structure, always written as comments in the function body to provide guidance. Depending on how familiar we are with how the code-base works, we can start as small as writing our assumptions in comments below, imagining the code we'd like to write:
+To write the actual test code, my favorite approach is still the classic *Given-When-Then* structure, always written as comments in the function body to provide guidance. Depending on how familiar you are with how the code-base works, you can start as small as writing your assumptions in comments below, imagining the code you'd like to write:
 
 ```js
 it("should prevent the user from closing if it has unsaved changes", () => {
@@ -102,7 +102,7 @@ The *Then*-step eventually is the hardest, as you need to understand how you ver
 
 ## Reality Check
 
-Once you had this discussion, settled for a test and eventually got it to pass, it's time to reflect on the test again (🙋 refactoring!): Do description and implementation still match? Does your interpretation of both still match the requirement? Let's walk through both in an inner monologue to try:
+Once you had this discussion, settled for a test and eventually got it to pass, it's time to reflect on the test again (🙋 refactoring!): Do description and implementation still match? Does your interpretation of both still match the requirement? Let's walk through both in an inner monologue to find out:
 
 > - So this is a test for making sure that a user doesn't **accidentally** close the form when they have unsaved changes.  
 > - The **only way** to dismiss the form in our application is to click the close button.  
@@ -110,7 +110,7 @@ Once you had this discussion, settled for a test and eventually got it to pass, 
 > - The action triggered is a simulated button click on the "close"-button. I'd assume this is a `.find` call on the mounted component and a `.simulate` call to create a fake click event.  
 > - Once that happened, the onCloseSpy should not have been called. Makes sense! **I'd trust that the form is still there considering there's no other way to dismiss the form.**
 
-Going through the test line-by-line might reveal that you still need to make changes to either description or implementation. Having it properly reflect what you've been implementing, is a necessary chore to make sure that the test is still useful a few months down the line, so don't call it a day before going over it!
+Going through the test line-by-line might reveal that you still need to make changes to either description or implementation. Having it properly reflect what you've been implementing is a necessary chore in order to make sure that the test is still useful a few months down the line, so don't call it a day before going over it!
 
 It requires a lot of patience from both you and your mentee, but I have yet to find a more effective teaching method to foster deeper understanding of a requirement. Additionally, the test will provide such a rapid feedback loop that you'll find yourself stuck far fewer times than when you were testing your changes manually. Whenever you are though, the test will hopefully reveal the culprit much quicker than manual debugging methods. If everything goes well, you not only had a very productive pair programming session, but also guided someone on their path towards more awareness and disciplined practice.
 
