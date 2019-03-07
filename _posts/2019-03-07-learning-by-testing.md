@@ -4,7 +4,7 @@ title: "Learning By Testing"
 image: "assets/learning-by-testing.jpg"
 image_alt: "Architecture sketch with a fine pen on top next to a ruler"
 ---
-Taking the time to write good tests first has helped me tremendously demystify every codebase I had to work with. As you tackle an unknown from both sides – what you think the world looks like before, and also after something happened – you also learn to translate requirements into code, and vis versa. I found this approach most useful when mentoring, as it invites both of you to deliberately think more about the reasons why you have to write code in the first place and how to verify you're doing the right thing. As my current roles involve coaching developers a lot, I found this conversation about writing a test and the test's short feedback loop to be very helpful, especially whenever our goal is to not just expand my mentee's technical skills, but also to further develop their discipline to take the time to reflect and to take more care in their practice.
+Taking the time to write good tests first has helped me tremendously demystify every codebase I had to work with. As you tackle an unknown from both sides – what you think the world looks like before, and also after something happened – you also learn to translate requirements into code, and vis versa. I found this approach most useful when mentoring, as it invites both of you to deliberately think more about the reasons why you have to write code in the first place and how to verify you're doing the right thing. Read on to find out how such a mentoring session with me looks like.
 
 Once you move past learning the syntax, a language becomes a powerful tool to wield. From here, a vast array of knowledge only waits to be discovered, like frameworks, paradigms or design patterns. In my experience, testing is by far the most powerful, structured method to expand your knowledge about a language and its ecosystem. Not only does it provide you with guidance through the unknowns, it also teaches you to carefully map between requirement and code, and to truly understand the task you're trying to accomplish.
 
@@ -14,6 +14,8 @@ This article is meant to offer my perspective on mentoring using test-driven dev
 
 If you happened to read my previous articles, I assume you're familiar with my obsession for short feedback loops. Whenever I find myself not knowing either requirements or the code-base too well, I will put processes in place that help me answer the question: "How do I know if I'm going into the right direction".
 That feedback loop helps me uncover disparities between requirements and code, and approach the right people with something to explain myself further.
+
+As my current roles involve coaching developers a lot, I found that question and the feedback loop of tests to be very helpful whenever our goal is to not just expand their technical skills, but also to further develop the discipline to take the time to reflect and to take more care in their practice.
 
 As many others, I learned programming by playing around and hacking to just get the computer to do what I wanted to achieve. PHP, being my first programming language, was incredible for just that, but it also meant that my first projects were crude snippet collections that only accidentally aligned in a way that seemed to be working. Mind that I’m praising PHP for what it has been for me, an approachable tool to learn programming — it has come a long way since then and I’m still fond of it.
 
