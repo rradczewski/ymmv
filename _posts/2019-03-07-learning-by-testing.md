@@ -10,7 +10,7 @@ In the following, I will walk you through a typical mentoring session with a dev
 
 ## Slow down to go faster
 
-The first step is to take a lot of time upfront to write the description, something that is crucially important but oftentimes neglected. Just as with commit messages, we're quick to dismiss the description of a test as something not worth investing time in. In both cases, the immediate value isn't obvious – after all we usually have a CI system that will fail if tests not pass, but not when the description is bad – so it requires not just discipline, but also understanding about the value of these "chores" to keep the practice going.
+The first step is to take a lot of time upfront to write the description, something that is crucially important but oftentimes neglected. Just as with commit messages, we're quick to dismiss the description of a test as something not worth investing time in. In both cases, the immediate value isn't obvious – after all we usually have a CI system that will fail if tests not pass, but not when the description is bad – so it requires not just discipline, but also understanding about the value of these „chores“ to keep the practice going.
 
 ## Context is king
 
