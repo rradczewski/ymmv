@@ -24,7 +24,7 @@ A test that doesn't provide context will eventually become a burden, as it works
 
 {% include responsive-image.html image="assets/learning-by-testing-where-does-this-belong-again.png" image_alt="a comic showing a person holding a paper trying to sort it in a huge stack of boxes representing commits." %}
 
-When you write the test, the description is where you make the plan, where you seek alignment between yourself and your pairing partner; what is there to be done? what are the important *moving parts* in this particular scenario? You don't need to be nit-picky, but the description should be close enough to the test code so one isn't stumped about some inconsistency when reading both.
+When you write the test, the description is where you make the plan, where you seek alignment between yourself and your pairing partner; What is there to be done? What are the important *moving parts* in this particular scenario? You don't need to be nit-picky, but the description should be close enough to the test code so one isn't stumped about some inconsistency when reading both.
 
 ```js
 it("should disable the close button whenever it has unsaved changes", () => {
