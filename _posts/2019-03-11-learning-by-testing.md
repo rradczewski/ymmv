@@ -87,7 +87,7 @@ it("should prevent the user from closing if it has unsaved changes", () => {
 });
 ```
 
-The *Then*-step eventually is the hardest, as you need to understand how you verify that the world has changed, and in particular how it should have changed. It can be difficult to distinguish first-level effects from cascading effects, so this makes for another interesting discussion. E.g. in the example, is verifying that the `onClose` handler isn't called the right choice? Or should you expect the form to still be there instead? What's the reasonable abstraction to pick here? Many times, I found that my mentee's and my own opinions differ here for no other reason than personal taste and less experience, so we picked the one that felt the most consistent with other similar tests – after all, the principle of least surprise applies to the tests as well.
+The *Then*-step eventually is the hardest, as you need to understand how you verify that the world has changed, and in particular how it should have changed. It can be difficult to distinguish first-level effects from cascading effects, so this makes for another interesting discussion. E.g. in the example, is verifying that the `onClose` handler isn't called the right choice? Or should you expect the form to still be there instead? What's the reasonable abstraction to pick here? Many times, I found that my mentee's and my own opinions differ here for no other reason than personal taste and less because of experience, so we picked the one that felt the most consistent with other similar tests – after all, the principle of least surprise applies to the tests as well.
 
 ## Reality Check
 
