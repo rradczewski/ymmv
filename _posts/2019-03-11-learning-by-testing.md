@@ -107,4 +107,6 @@ Additionally, the test will provide such a rapid feedback loop that you'll find 
 
 If everything goes well, you not only had a very productive pair programming session, but also guided someone on their path towards more careful and prudent practice.
 
+*Thank you Adiya, Benjamin & Daniel for your invaluable feedback on this article!*
+
 *I'm providing both coaching on mentoring and mentoring itself to my clients in Berlin, all over Germany and world-wide through remote work. Send me a message via [hello@craftswerk.io](mailto:hello@craftswerk.io) if you're interested in me improving the engineering and collaboration culture of your team!*
