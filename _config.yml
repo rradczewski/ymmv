@@ -27,6 +27,7 @@ github_username:  rradczewski
 permalink: /:categories/:year/:month/:title
 # Build settings
 markdown: kramdown
+future: true
 
 image:
   output: assets/generated
