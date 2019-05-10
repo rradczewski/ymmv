@@ -2,15 +2,15 @@
 layout: post
 title: "Too Many Kudos"
 ---
-Kudos cards help you overcome the awkwardness of appreciating someone (why is it awkward anyway?). This makes them a really powerful ritual, but you still have to take the time and hand-write the card; something that may slip your mind if you are frequently out of the office. I built a slackbot that prints them for you, but I'm left wondering if this leads to kudos inflation, and ultimately devalues the heartfelt appreciation they're supposed to convey.
+Kudos cards help you overcome the awkwardness of sharing appreciations. This makes them a really powerful ritual, but you still have to take the time and hand-write the card; something that may slip your mind if you are frequently out of the office.
+I recently built a slackbot that prints them in the office for you, but I'm left wondering if this could lead to devaluing the heartfelt appreciation they're supposed to convey.
 In order to understand why this could be an issue, we first need to understand why they're so powerful in the first place.
 
-## Appreciation makes you vulnerable
+## Why is it awkward anyway?
 
-It's probably part of the human condition that
+I guess it's part of the human condition, that we're generally more likely to put someone down when they mess up, than to appreciate them when they stand with us and help us out. And I totally get it, a heartfelt appreciation makes you vulnerable – it's much easier to be cynical and detached.
 
-- Team Building
-- Appreciation
+When a team manages to create a space safe enough for showing this kind of vulnerability though, Kudos cards become an amazing catalyst for team-bonding. It's still a bit awkward, but with a proper ritual and a feigned sense of anonymity (more on that later), they create a space of compassion and empathy.
 
 ## The value of a kudos
 
