@@ -10,27 +10,29 @@ In order to understand why this could be an issue, we first need to understand w
 
 I guess it's part of the human condition, that we're generally more likely to put someone down when they mess up, than to appreciate them when they stand with us and help us out. And I totally get it, a heartfelt appreciation makes you vulnerable – it's much easier to be cynical and detached.
 
-When a team manages to create a space safe enough for showing this kind of vulnerability though, Kudos cards become an amazing catalyst for team-bonding. It's still a bit awkward, but with a proper ritual and a feigned sense of anonymity (more on that later), they create a space of compassion and empathy.
+When a team manages to create a space safe enough for showing this kind of vulnerability though, Kudos cards become an amazing catalyst for team-building. It's still a bit awkward to give someone a kudos, but with a proper ritual and a feigned sense of anonymity (more on that later), they create a space of compassion and empathy.
 
-## The value of a kudos
+## Why they work
 
-- Handwritten – pseudo-anonymously
-- Honesty – not playing games with kudos, no politics/diplomacy
-- "Content is king" – heartfelt appreciation of your person trumps appreciation of trivial actions
-- "Someone took the time to write the kudos in the first place"
-- "You might have an idea who that is"
-- "Writing style, emoji's transport more than a handwriting font could ever do"
-- You live with the fact that kudos can be repetitive and boring in order to keep up the ritual of it being appreciation given from one person to another person ~directly
+In my experience, the first reason kudos cards work so well is because they decouple your appreciation from the act of verbalizing it. It makes it easier to appreciate more, but also to give more heartfelt, personal praise to someone.
+
+<TODO>Image of a generated kudos card</TODO>
+
+I'm not the first one to come up with a (semi-)digital version of kudos. There are websites, an abundance of slack bots, there's even HR tools that make them part of your evaluation process – and trust me, I have a strong opinion on that. They all fall short on one thing though: The effort it takes to hand-craft a kudos card.
+
+<TODO>Image of a hand-written kudos card</TODO>
+
+A hand-written kudos card carries a personal note no digital tool can make up for. Someone took the time to carefully write a letter of appreciation to you. They scribbled a bit, added a smiley or an abundance of odd exclamation marks to stress how much they appreciated you. They add a personal note to an already very empathic act that emojis and gifs just can't live up to.
+
+You might even recognize the handwriting or have a suspicion about who wrote it to you – and that's part of the magic and excitement!
 
 ## Another kind of "anonymity"
 
-When developers think about anonymity, we think about the goal being that something can not be associated with you ever.
+When we hear the word "anonymity", we think about the goal being that something can not be associated with you ever.
 
-With kudos cards, anonymity serves a different purpose: The anonymity of a kudos card serves to make it less awkward to appreciate someone, so it's really only important until the message is delivered. Delivering them anonymously effectively helps those who'd otherwise feel too shy to appreciate someone and further allows to share more emotional appreciations that would leave the sender exposed and vulnerable.
+With kudos cards, anonymity serves a different purpose: The anonymity of a kudos card serves to make it less awkward to appreciate someone, so it's really only important until the message is delivered. Delivering them anonymously effectively helps those who'd otherwise feel too shy to appreciate someone and further allows to share more emotional appreciations that would leave the sender exposed and vulnerable. So yes, anonymity is important as an enabler, but not because confidentiality is the most important goal.
 
-It's not like you're collecting anonymous feedback that can be very negative and which could have negative consequences for the sender if they'd be exposed. It's a slightly less dangerous situation as you're "only" sharing positive feedback to begin with. For those kind of situations, "Letters to the management" can be a valuable exercise, but then anonymity has to be preserved at all costs.
-
-## Appreciation isn't binary
+## Kudos as a commodity
 
 - Inflationary use of kudos drowns "valuable" kudos in "appreciative, but less personal ones"
 - "Thank you for helping me move the table earlier today" vs. "Thanks for helping me overcome my imposter syndrome, your validation helps me survive in our industry"
