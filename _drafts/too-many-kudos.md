@@ -22,7 +22,7 @@ I'm not the first one to come up with a (semi-)digital version of kudos. There a
 
 {% include responsive-image.html image="assets/too-many-kudos-handwritten.jpg" image_alt="A handwritten, heartfelt appreciation I received once" %}
 
-A hand-written kudos card carries a personal note no digital tool can make up for. Someone took the time to carefully write a letter of appreciation to you. They scribbled a bit, added a smiley or an abundance of odd exclamation marks to stress how much they appreciated you. They add a personal note to an already very empathic act that emojis and gifs just can't live up to.
+A hand-written kudos card carries a personal note no digital tool can make up for. It means someone took the time to carefully write a letter of appreciation to you. Maybe they scribbled a bit, changed the wording, added a smiley or an abundance of odd exclamation marks to stress just how much they appreciated you. This all adds a personal note to an already very empathic act that emojis and gifs just can't live up to.
 
 You might even recognize the handwriting or have a suspicion about who wrote it to you – and that's part of the magic and excitement!
 
