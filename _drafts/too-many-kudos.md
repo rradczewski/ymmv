@@ -1,6 +1,8 @@
 ---
 layout: post
 title: "Too Many Kudos"
+image: "assets/too-many-kudos.jpg"
+image_alt: "A printed kudos card that says 'Itttts worrrrkiiiing' on a table"
 ---
 Kudos cards help you overcome the awkwardness of sharing appreciations. This makes them a really powerful ritual, but you still have to take the time and hand-write the card; something that may slip your mind if you are frequently out of the office.
 I recently built a slackbot that prints them in the office for you, but I'm left wondering if this could lead to devaluing the heartfelt appreciation they're supposed to convey.
@@ -16,11 +18,9 @@ When a team manages to create a space safe enough for showing this kind of vulne
 
 In my experience, the first reason kudos cards work so well is because they decouple your appreciation from the act of verbalizing it. It makes it easier to appreciate more, but also to give more heartfelt, personal praise to someone.
 
-<TODO>Image of a generated kudos card</TODO>
-
 I'm not the first one to come up with a (semi-)digital version of kudos. There are websites, an abundance of slack bots, there's even HR tools that make them part of your evaluation process – and trust me, I have a strong opinion on that. They all fall short on one thing though: The effort it takes to hand-craft a kudos card.
 
-<TODO>Image of a hand-written kudos card</TODO>
+{% include responsive-image.html image="assets/too-many-kudos-handwritten.jpg" image_alt="A handwritten, heartfelt appreciation I received once" %}
 
 A hand-written kudos card carries a personal note no digital tool can make up for. Someone took the time to carefully write a letter of appreciation to you. They scribbled a bit, added a smiley or an abundance of odd exclamation marks to stress how much they appreciated you. They add a personal note to an already very empathic act that emojis and gifs just can't live up to.
 
