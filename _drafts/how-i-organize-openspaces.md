@@ -15,6 +15,15 @@ As with every rule, there's a catch to it: If you've organized events like this 
 The reason I organize it myself though is that I want to be able to shape it in any way I'd like before inviting others to contribute. An example for this is Friday. At this point, not even I know exactly what's going to happen on Friday. What I know is that there's a room, we'll get food there and about 30 of the attendees of the Saturday event. From here, I can focus all my energy on reaching out to people I always wanted to hear talk. 
 
 ## Attendees, plural.
+[Picture of radialsystem v]
+When I arrived in Berlin a few years ago, I brought with me the idea of running an Open Space event here, just as the ones we used to run in Münster, the ones that got me excited about Software Craft, TDD, coderetreats and all the cool stuff we're doing. My problem back then was that I felt like I need to make the event Berlin-worthy: A huge unconference in an interesting venue, with some framework program for the hundreds of attendees and all. 
+Naturally, and not the least because I didn't feel like paying a downpayment of a few grand for a venue, this didn't materialize for some time.
+
+[Picture of leanovate's office]
+The moment I saw Leanovate's new office was the moment I understood that just 50 people in a company office were enough (well actually plenty) back in Münster, and they will be in Berlin. I will always stick to that number for a couple of reasons:
+- 50 people is large enough to allow for some anonymity, but at the same time it's small enough to allow for meaningful connections and for creating group-belonging
+- 50 people is a crowd I can comfortably facilitate, especially given that I know a lot of the attendees and can provide framing around mindful communication in groups.
+- not everything, no actually most things aren't better at scale.
 
 ## Food
 
