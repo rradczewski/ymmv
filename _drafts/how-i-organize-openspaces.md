@@ -4,7 +4,7 @@ title: "How-To: SoCraTes Day Berlin"
 ---
 With the registration open and the waiting lists bursting at their seams, SoCraTes Day Berlin is well on it's way for its third edition. I'm glad people are returning and are even inviting their friends, because that means I'm doing something right. What that is? Well, let's find out...
 
-This post will be a huge brain-dump I imagine and I hope it serves both people who want to join us at SoCraTes Day Berlin but would like to know what they're getting into first, and those who'd like to create something like SoCraTes Day Berlin themselves.
+This post will be a huge brain-dump I imagine and I hope it serves both people who want to join us at SoCraTes Day Berlin but would like to know what they're getting into first, and those who'd like to create something like SoCraTes Day Berlin themselves. 
 
 ## Organizer, singular.
 
@@ -25,6 +25,10 @@ The moment I saw Leanovate's new office was the moment I understood that just 50
 - 50 people is a crowd I can comfortably facilitate, especially given that I know a lot of the attendees and can provide framing around mindful communication in groups.
 - 50 people is few enough to accommodate special requirements as much as I can possibly do, especially when it comes to dietary requirements.
 - not everything, no actually most things aren't better at scale, so why scale this ;).
+
+## Before the event
+
+
 
 ## Food
 
