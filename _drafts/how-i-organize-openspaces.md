@@ -23,14 +23,23 @@ Naturally, and not the least because I didn't feel like paying a downpayment of 
 The moment I saw Leanovate's new office was the moment I understood that just 50 people in a company office were enough (well actually plenty) back in Münster, and they will be in Berlin. I will always stick to that number for a couple of reasons:
 - 50 people is large enough to allow for some anonymity, but at the same time it's small enough to allow for meaningful connections and for creating group-belonging
 - 50 people is a crowd I can comfortably facilitate, especially given that I know a lot of the attendees and can provide framing around mindful communication in groups.
-- not everything, no actually most things aren't better at scale.
+- 50 people is few enough to accommodate special requirements as much as I can possibly do, especially when it comes to dietary requirements.
+- not everything, no actually most things aren't better at scale, so why scale this ;).
 
 ## Food
 
+Caterer can't provide you with food? Here's their menu, what would you like instead?
+
 ## Content
+
+Content and attendees
 
 ## Framing
 
+Mindfulness
+
 ## Schedule
+
+What happens on Saturday?	
 
 ## Diversity
