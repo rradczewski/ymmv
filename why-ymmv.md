@@ -15,4 +15,4 @@ This is also why I'm doing it in the open. My [Drafts](https://github.com/rradcz
 
 --
 
-[Imprint/Impressum]({{ site.baseurl }}{% link imprint.md %}), because §5 TMG.
+[Imprint/Impressum]({% link imprint.md %}), because §5 TMG.

@@ -10,13 +10,13 @@ permalink: /about/
 
 # Hi, I'm Raimo
 
-I'm a [self-employed Software Crafter]({{ site.baseurl }}{% post_url 2017-02-06-Continuing_my_journey_as_a_Freelance_Software_Crafter %}) from Berlin, Germany. I help companies build a culture suited to grow and empower people and have them enjoy their work. I also write a lot of code (mostly in JavaScript, React, Redux lately), am fond of Domain-Driven Design and an advocate for Test-Driven-Development.
+I'm a [self-employed Software Crafter]({% post_url 2017-02-06-Continuing_my_journey_as_a_Freelance_Software_Crafter %}) from Berlin, Germany. I help companies build a culture suited to grow and empower people and have them enjoy their work. I also write a lot of code (mostly in JavaScript, React, Redux lately), am fond of Domain-Driven Design and an advocate for Test-Driven-Development.
 
-I owe a lot to the communities out there, which is why I'm trying to give something back, by sharing my experience through this blog (read [here]({{ site.baseurl }}{% link why-ymmv.md %}) why it's called *YMMV*) and by organizing the [SoCraTes Day Berlin](http://www.socratesday.berlin/), the [Global Day of Coderetreat](http://www.coderetreat.org), the [worldwide Software Craftsmanship Slack](http://slack.softwarecraftsmanship.org/) and I'm also helping out at the [Domain-Driven Design Meetup Berlin](https://www.meetup.com/Domain-Driven-Design-Berlin/).
+I owe a lot to the communities out there, which is why I'm trying to give something back, by sharing my experience through this blog (read [here]({% link why-ymmv.md %}) why it's called *YMMV*) and by organizing the [SoCraTes Day Berlin](http://www.socratesday.berlin/), the [Global Day of Coderetreat](http://www.coderetreat.org), the [worldwide Software Craftsmanship Slack](http://slack.softwarecraftsmanship.org/) and I'm also helping out at the [Domain-Driven Design Meetup Berlin](https://www.meetup.com/Domain-Driven-Design-Berlin/).
 
 ## What I believe
 
-My beliefs haven't changed since I became a freelancer almost two years ago, so that [announcement]({{ site.baseurl }}{% link _posts/2017-02-06-Continuing_my_journey_as_a_Freelance_Software_Crafter.md %}#developing-software) still stands as of today. I'm still fond of testing, will still work tirelessly on bringing developers and users closer together, shorten every feedback loop that I see and do my best to support people so they enjoy their work.
+My beliefs haven't changed since I became a freelancer almost two years ago, so that [announcement]({% link _posts/2017-02-06-Continuing_my_journey_as_a_Freelance_Software_Crafter.md %}#developing-software) still stands as of today. I'm still fond of testing, will still work tirelessly on bringing developers and users closer together, shorten every feedback loop that I see and do my best to support people so they enjoy their work.
 
 More than ever though, I believe that great environments foster great teams, that developing is still means to an end and that the best code is the one that's never written.
 
@@ -46,4 +46,4 @@ If you're interested in working with me, please send me a mail at [hello@craftsw
 
 --
 
-[Imprint/Impressum]({{ site.baseurl }}{% link imprint.md %}), because §5 TMG.
+[Imprint/Impressum]({% link imprint.md %}), because §5 TMG.
