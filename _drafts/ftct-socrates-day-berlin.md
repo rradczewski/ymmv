@@ -39,6 +39,6 @@ Same applies in the worst-case: If you feel drained and burned out, you don't ow
 
 If you're still up for the task, here's the topics I will cover bit by bit (sustainable pace and all 😉):
 
-- [No Photos, Bitte.]({% link _drafts/ftct-no-photos-bitte.md %}) - How to gather consensus without exposing the outliers, esp. when collectively deciding on a photo policy and when asking the attendees to keep to a commonly shared language.
-- [Counterintuitive Catering] - How to provide catering to 50 people, accommodate special dietary requirements and why there will never be meat at an event I organize.
 - [Format and Facilitation: OpenSpace] - Why OpenSpaces are my go-to format, how I facilitate them and what to look out for.
+- [Counterintuitive Catering] - How to provide catering to 50 people, accommodate special dietary requirements and why there will never be meat at an event I organize.
+- [No Photos, Bitte.]({% link _drafts/ftct-no-photos-bitte.md %}) - How to gather consensus without exposing those deviating from the default, especially when collectively deciding on a photo policy and when asking the attendees to keep to a commonly shared language.
