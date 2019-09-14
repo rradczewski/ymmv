@@ -1,3 +1,4 @@
+<figure>
 <img
   class="{{ include.classes }}"
   alt="{{ include.image_alt }}"
@@ -10,3 +11,5 @@
          (max-width: 799px) 100vw,
          800px"
 />
+<figcaption class="img-caption">{{ include.image_alt }}{%- if include.source %} (<a href="{{ include.source}}">Source</a>){% endif %}</figcaption>
+</figure>
