@@ -30,7 +30,7 @@ The moment I saw Leanovate's new office was the moment I understood that just 50
 - **50 people** is large enough to allow for some anonymity, but at the same time it's small enough to allow for meaningful connections and for creating group-belonging
 - **50 people** is a crowd I can comfortably facilitate, especially given that I know a lot of the attendees and can provide framing around mindful communication in groups.
 - **50 people** is few enough to accommodate special requirements as much as I can possibly do, especially when it comes to dietary requirements.
-- not everything, no actually most things aren't better at scale, so why scale this ;).
+- not everything – no actually **most things** – aren't better at scale, so why scale this 😉.
 
 The most important point I want to make here is: if you're organizing community events, your capacities and your energy determines how much you can do, and that's perfectly fine. If your event can have an impact on a handful people, that makes it worth it. If you feel comfortable inviting a dozen or more, that's cool, too!
 
