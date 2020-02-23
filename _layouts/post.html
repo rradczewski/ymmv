@@ -31,7 +31,18 @@ layout: default
     {% include disqus_comments.html %}
   {% endif %}
   <div class="post-share">
-    <a href="http://www.twitter.com/share?text={{ 'Check out "' | append: page.title | append: '" by @rradczewski' | cgi_escape }}&url={{ site.url | append: page.url | cgi_escape }}"><button>Share on <span class="icon icon--twitter">{% include icon-twitter.svg %}</span></button></a>
-    <a href="https://www.linkedin.com/shareArticle?mini=true&url={{ site.url | append: page.url | cgi_escape }}"><button>Share on <span class="icon icon--linkedin">{% include icon-linkedin.svg %}</span></button></a>
+    <p>
+      <a href="http://www.twitter.com/share?text={{ 'Check out "' | append: page.title | append: '" by @rradczewski' | cgi_escape }}&url={{ site.url | append: page.url | cgi_escape }}"><button>Share on <span class="icon icon--twitter">{% include icon-twitter.svg %}</span></button></a>
+      <a href="https://www.linkedin.com/shareArticle?mini=true&url={{ site.url | append: page.url | cgi_escape }}"><button>Share on <span class="icon icon--linkedin">{% include icon-linkedin.svg %}</span></button></a>
+    </p>
+  </div>
+  <div class="post-related">
+    <p><strong>More articles on YMMV:</strong>
+      <ul>
+        {% for post in site.related_posts limit:3 %}
+          <li><a href="{{ post.url | relative_url }}">{{ post.title | escape }}</a></li>
+        {% endfor %}
+      </ul>
+    </p>
   </div>
 </article>
