@@ -43,7 +43,7 @@ and respectively
 
 > "You are allowed to take photos, but please still ask for permission to publish them. Please respect people's request if they would like you to delete the photo." 
 
-**or, in case at least one hand didn't go up:**
+**or, in case at least one hand didn't go up, but without exposing how many didn't raise their hands or even singling them out:**
 
 > "Okay, so our common language in the room is English, so please stick to that in every conversation. If you want to have a private conversation, please retreat so it's obvious to everyone that you're having a private conversation that is no one else's business." 
 
