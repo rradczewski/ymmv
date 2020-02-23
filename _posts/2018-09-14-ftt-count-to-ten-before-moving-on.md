@@ -1,5 +1,6 @@
 ---
 layout: post
+tags: ["From The Toolbox"]
 title: "From the Toolbox: Count to 10 before moving on"
 image: /assets/count-to-ten-before-moving-on.jpg
 image_alt: "A red traffic light"

@@ -1,5 +1,6 @@
 ---
 layout: post
+tags: ["From The Toolbox"]
 title: "From the Toolbox: Why you should never ask \"Who doesn't know $YYY\""
 ---
 If you really want to understand what people know, never ask them to expose their ignorance in public. You won't get an honest answer and here's why.

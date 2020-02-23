@@ -1,5 +1,6 @@
 ---
 layout: post
+tags: ["From The Toolbox"]
 title: "From the Toolbox: Everything needs a check-in"
 image: "assets/everything-needs-a-check-in.jpg"
 image_alt: "A street crossing with warnings to look left and right"

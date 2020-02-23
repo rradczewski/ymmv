@@ -1,5 +1,6 @@
 ---
 layout: post
+tags: ["From The Toolbox"]
 title: "From the Toolbox: A decent facilitation setup"
 redirect_from: "/2018/09/A_decent_facilitation_setup"
 image: /assets/a_decent_facilitation_setup.jpg

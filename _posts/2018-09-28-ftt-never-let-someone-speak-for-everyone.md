@@ -1,5 +1,6 @@
 ---
 layout: post
+tags: ["From The Toolbox"]
 title: "From the Toolbox: Never let someone speak for everyone"
 ---
 Here's an easy one: You’re asking around whether anyone has any questions, somebody responds with "no" and you - caught in the moment - move on.  
