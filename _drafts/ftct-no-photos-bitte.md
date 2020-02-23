@@ -23,7 +23,7 @@ In recent years, I started attending events in countries where I don't speak any
 
 Another example has been an incident that left a lasting impression on me – enough that I keep telling this story at every event I facilitate and each time, I can feel a lump in my throat. I once co-facilitated a company-internal workshop where one of the attendees stressed to please not have their photo taken. I didn't quite understand given that this has been a private event anyways but happily complied. In the afternoon, one of our closing sessions was to write a letter to your future self, put it in an envelope and address it to yourself. We would then mail it to you after eight weeks to give the attendees another chance to reflect on their learnings.
 
-It was during that session that the attendee who earlier asked for their photo not being taken grew very distressed, to the point that they had to leave the room. I later found out how their insistence on the photo policy and this incident were connected: in their past, they were the subject of a stalker who would crawl social media to find their workspace location and try to get their home address. A deeply disturbing situation that many of my friends can sadly relate to and certainly one that gives good reason to not wanting to have your photo (or any information about you) shared on socialmedia. It most certainly drove home the point for me on why enforced photo policies are important for an event to be safe.
+It was during that session that the attendee who earlier asked for their photo not being taken grew very distressed, to the point that they had to leave the room. I later found out how their insistence on the photo policy and this incident were connected: in their past, they were the subject of a stalker who would crawl social-media to find their workspace location and try to get their home address. A deeply disturbing situation that many of my friends can sadly relate to and certainly one that gives good reason to not wanting to have your photo (or any information about you) shared on social-media. It most certainly drove home the point for me on why enforced photo policies are important for an event to be safe.
 
 ## How to gather census and make your point
 
@@ -45,9 +45,10 @@ and respectively
 
 **or, in case at least one hand didn't go up:**
 
-> "Okay, so our common language is English, so please stick to that in every conversation. If you want to have a private conversation, please retreat so it's obvious to everyone that you're having a private conversation that is no one else's business." 
+> "Okay, so our common language in the room is English, so please stick to that in every conversation. If you want to have a private conversation, please retreat so it's obvious to everyone that you're having a private conversation that is no one else's business." 
 
 and respectively 
 
 > "People would like to not have their photos taken, so we enforce a strict no-photo-policy. Presenters are free to ask for their photos being taken beforehand, but under no circumstances are you allowed to take any photo of anyone except those who gave you explicit permission. Not in the background, not with their back turned to you."
 
+Using this approach we gathered the necessary information to make the call on either common language or photo-policy, we did our best to make sure that we're not exposing those deviating from the default – no matter the reason, and we can now move on to the introduction of our Code of Conduct, the format we'll be doing and how the rest of the day will go down.
