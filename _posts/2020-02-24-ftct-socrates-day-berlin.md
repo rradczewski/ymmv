@@ -1,5 +1,6 @@
 ---
 layout: post
+hide_related: true
 tags: ["From The Community Toolbox"]
 title: "From The Community Toolbox: SoCraTes Day Berlin"
 image: "assets/ftct-socrates-day-berlin.jpg"
