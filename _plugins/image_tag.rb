@@ -28,7 +28,9 @@ module ImageGeneration
     end
 
     image = MiniMagick::Image.open(image_source_path)
-    image.coalesce
+    if image.type == "GIF"
+      image.coalesce
+    end
     digest = Digest::MD5.hexdigest(image.to_blob).slice!(0..5)
 
     image_dir = File.dirname(instance[:src])
