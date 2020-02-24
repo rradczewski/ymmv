@@ -33,7 +33,7 @@ Now intuitively, one would just ask "Who here doesn't speak German?" (German bei
 
 Remember, as one single person not speaking German or not wanting to have their photo taken means that the event will take place in English or with a no-photo-policy, I'm not interested in consensus, number of votes for either or anything. 
 
-If I switch those questions around, asking **"Who here speaks German?"** and **"Who would like to have their photo being taken?"**, this will usually raise most hands and will leave those who don't raise their hand less exposed. And conveniently enough, I just need to look for a single hand not being up anyways, so the whole process takes only a few seconds.
+If I switch those questions around, asking **"Who here speaks German?"** and **"Who is happy to have their photo being taken?"**, this will usually raise most hands and will leave those who don't raise their hand less exposed. And conveniently enough, I just need to look for a single hand not being up anyways, so the whole process takes only a few seconds.
 
 After everyone has put their hands down again, I conclude either with
 
