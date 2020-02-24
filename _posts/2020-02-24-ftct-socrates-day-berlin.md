@@ -1,5 +1,6 @@
 ---
 layout: post
+hide_related: true
 tags: ["From The Community Toolbox"]
 title: "From The Community Toolbox: SoCraTes Day Berlin"
 image: "assets/ftct-socrates-day-berlin.jpg"
@@ -7,7 +8,7 @@ image_alt: "A orange-tinted sky with the tv tower at Alexanderplatz on the right
 ---
 When I started writing this blogpost, SoCraTes Day Berlin was well on its way for its third edition. The weekend turned out great and I was delighted to see people are returning and are even inviting their friends, because that means I'm doing something right. Here's what I did.
 
-This post is the first one in a series I call "*From The Community Toolbox*", along with the first tangible tip for facilitators, "[No Photos, Bitte.]({% link _drafts/ftct-no-photos-bitte.md %})". I hope it serves both people who want to join us at SoCraTes Day Berlin but would like to know what they're getting into first, and those who'd like to create something like SoCraTes Day Berlin themselves.
+This post is the first one in a series I call "*From The Community Toolbox*", along with the first tangible tip for facilitators, "[No Photos, Bitte.]({% link _posts/2020-02-24-ftct-no-photos-bitte.md %})". I hope it serves both people who want to join us at SoCraTes Day Berlin but would like to know what they're getting into first, and those who'd like to create something like SoCraTes Day Berlin themselves.
 
 ## Organizer, singular.
 
@@ -38,7 +39,7 @@ Same applies in the worst-case: if you feel drained and burned out, you don't ow
 
 If you're still up for the task, here's the topics I will cover bit by bit (sustainable pace and all 😉):
 
-- [No Photos, Bitte.]({% link _drafts/ftct-no-photos-bitte.md %}) - How to gather census without exposing those deviating from the default, especially when collectively deciding on a photo policy and when asking the attendees to keep to a commonly shared language.
+- [No Photos, Bitte.]({% link _posts/2020-02-24-ftct-no-photos-bitte.md %}) - How to gather census without exposing those deviating from the default, especially when collectively deciding on a photo policy and when asking the attendees to keep to a commonly shared language.
 - [Lotteries and diversity] - How to sell your tickets in "a fair way" and extending an invitation to underrepresented people and those who have to travel from afar.
 - [Format and Facilitation: OpenSpace] - Why OpenSpaces are my go-to format, how I facilitate them and what to look out for.
 - [Counterintuitive Catering] - How to provide catering to 50 people, accommodate special dietary requirements and why there will never be meat at an event I organize.

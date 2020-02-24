@@ -36,6 +36,7 @@ layout: default
       <a href="https://www.linkedin.com/shareArticle?mini=true&url={{ site.url | append: page.url | cgi_escape }}"><button>Share on <span class="icon icon--linkedin">{% include icon-linkedin.svg %}</span></button></a>
     </p>
   </div>
+  {% unless page.hide_related %}
   <div class="post-related">
     <p><strong>More articles on YMMV:</strong>
       <ul>
@@ -45,4 +46,5 @@ layout: default
       </ul>
     </p>
   </div>
+  {% endunless %}
 </article>

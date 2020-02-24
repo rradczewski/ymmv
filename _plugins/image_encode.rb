@@ -33,7 +33,7 @@ module Jekyll
       if self.cached_base64_codes.has_key? file
         encoded_image = self.cached_base64_codes[file]
       else
-        # p "Caching #{file} as local base64 string ..."
+        puts "Caching #{file} as local base64 string ..."
         encoded_image = Base64.strict_encode64(image_handle.read)
         self.cached_base64_codes.merge!(file => encoded_image)
       end
