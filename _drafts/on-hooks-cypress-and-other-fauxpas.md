@@ -9,6 +9,41 @@ duh
 
 + reference to scala implicits
 
+A naive hooks implementation
+
+```js
+const stack = [];
+let stackIndex = -1;
+
+
+const useState = (initialValue) => {
+    if(!stack[stackIndex]) 
+        stack[stackIndex] = initialValue;
+
+    let i = stackIndex++;
+    const value = stack[i];
+    const setter = (val) => (stack[i] = val);
+    return [value, setter];
+}
+
+const renderApplication = () => {
+    stackIndex = 0;
+
+    return `
+        ComponentA: ${MyComponent()}
+        ComponentB: ${MyComponent()}
+    `;
+}
+
+const MyComponent = () => {
+    const [foo, setFoo] = useState(1);
+    const [bar, setBar] = useState("A");
+
+    return foo+bar;
+}
+
+```
+
 # The fauxpax behind cypress
 
 ```js
@@ -32,10 +67,10 @@ context("Iterating over elements", () => {
     });
   });
 
-  specify("Iterating the cypress way until you found 2", async () => {
-    const lis = await cy.get("li");
+  specify("Iterating the cypress way until you found 2", () => {
+    const lis = cy.get("li");
     for (let li of lis) {
-      const as = await cy.get(li).find("a");
+      const as = cy.get(li).find("a");
       if (as.length === 1) {
         expect(as[0].innerHTML).to.equal("2");
         return;
