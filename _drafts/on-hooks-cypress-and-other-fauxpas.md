@@ -57,17 +57,18 @@ const App = () => (
   <div>
     <MyCounter initialValue={1}/>
     <MyCounter initialValue={2}/>
+  </div>
 )
 ```
 
 In the old days, you would've written a `class`-Component with `this.state = { value: props.value }` in the constructor, and subsequently updated the state via `this.setState({value: this.state.value+1})`.
 
-With react hooks, each "instance" of `MyCounter` has its own "memory cell", or "stack index", in which it stores `value`.
+With react hooks, each "instance" of `MyCounter` has its own global "memory cell", or "stack index", in which it stores `value`.
 
 The concept can be easier explained with a naive implementation:
 
 ```js
-// Global stack and stackIndex that `useState` can both access
+// Global stack and stackIndex that `useState` and renderApplication can both access
 const stack = [];
 let stackIndex = -1;
 
@@ -98,7 +99,8 @@ const MyComponent = () => {
 };
 ```
 
-```js
+{% highlight jsx %}
+```
 import React, { useState } from "react";
 
 const MyBarComponent = () => {
@@ -128,7 +130,7 @@ const App = () => (
 
 export default App;
 ```
-
+{% endhighlight %}
 
 SCALA IMPLICITS
 
@@ -136,30 +138,30 @@ SCALA IMPLICITS
 # The fauxpax behind cypress
 
 ```js
-context("Iterating over elements", () => {
+context("Basic flow control in cypress", () => {
   before(() => {
     cy.window().then(window => {
       window.document.write(`
         <ul>
-          <li>
-            <a href="#1a">1a</a>
-            <a href="#1b">1b</a>
-          </li>
-          <li>
+            <li>
+                <a href="#1a">1a</a>
+                <a href="#1b">1b</a>
+            </li>
+            <li>
             <a href="#2">2</a>
-          </li>
-          <li>
+            </li>
+            <li>
             <a href="#3">3</a>
-          </li>
+            </li>
         </ul>
-        `);
+      `);
     });
   });
 
-  specify("Iterating the cypress way until you found 2", () => {
-    const lis = cy.get("li");
+  specify("The JS idiomatic way that fails", async () => {
+    const lis = await cy.get("li");
     for (let li of lis) {
-      const as = cy.get(li).find("a");
+      const as = await cy.get(li).find("a");
       if (as.length === 1) {
         expect(as[0].innerHTML).to.equal("2");
         return;
