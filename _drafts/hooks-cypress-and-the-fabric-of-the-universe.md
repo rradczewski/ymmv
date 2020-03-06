@@ -154,7 +154,7 @@ Running this in development will have React yield a proper error and a warning, 
 
 ![The error message React yields when it discovers a disparity in the usage of hooks](/assets/hooks-cypress-and-the-fabric-of-the-universe--react-error.png)
 
-## Pattern mismatch
+## Pattern mismatch - expected "functions" but got "hooks" instead
 
 React isn't able to reason about me misusing the library at this point, and it never will be able to – it just doesn't have that information at its disposal. React is a library like any other, it doesn't have access to the interpreter and its AST, nor any reasonable capabilities to work around this at compile-time without massively inconveniencing those who are using it.
 
@@ -164,27 +164,19 @@ Not only has React tinkered with designs that are exclusive to interpreters and 
 
 *If I could've justified another detour at this point, I would've loved to implement hooks in clojurescript using `with-redef` and `defmacro` to show how another language with the required capabilities available to libraries could've solved this (and an ecosystem where that sort of behaviour wouldn't be unheard of)*
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+<hr/>
 
 # The cypress situation
+
+cypress has entered the space of browser-testing tools with quite a few interesting features: not only does it come in a neat package that makes getting started increadibly easy, but finally there's a browser-testing tool that caters to the interactivity that browser-testing and subsequently -debugging warrant for. 
+
+After using it for a bit in a recent project, I've been pleasantly surprised by the means it gives me to write and debug tests, but most importantly to me, by how easy it was to set it up on CI and provide meaningful feedback to me should a test fail. 
+
+I used selenium in that project before and found it helpful to have the tight integration with the backend JVM that selenium offers, as it allowed me to mock third parties without having to add a seam. **I couldn't make a good case for selenium though**, as not only the developers weren't familiar with java and selenium, but also because the version we were able to use was vastly outdated.
+
+It wasn't long before I found myself at odds with its API though: We had to put that whole legacy SPA under test, a fragile piece of software that wasn't build with testability in mind. 
+
+## cypress and the reinvention of the wheel
 
 ```js
 context("Basic flow control in cypress", () => {
