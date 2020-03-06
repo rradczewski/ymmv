@@ -9,9 +9,12 @@ pre.highlight code {
   background: inherit;
 }
 
-div.highlight {
+.highlight {
   background: #323232;
   box-shadow: #999 0px 3px 10px;
+  pre, code {
+    background: inherit;
+  }
 }
 
 pre.highlight {
@@ -20,8 +23,6 @@ pre.highlight {
 }
 
 .highlight {
-  background: inherit;
-
   table td {
     padding: 5px;
   }
