@@ -46,7 +46,7 @@ class Counter extends React.Component {
 Both approaches work around a particular language aspect of javascript: A method's `this` is depending on the call-site, not the site of definition. I understand how tedious and very alien this seems, especially if you come from a language where `this` always refers to the instance that was being called like Java. At the same time though, it's a pretty universal concept of the language, one that libraries provided universal workarounds for that were applicable in other libraries as well. The important thing about this: **My brain's pattern matching worked, no matter if I was doing this in `jQuery` 10 years ago, `knockoutJS` 8 years ago, or `React` 5 years ago.** Nowadays,
 this issue has further been taken care of with the introduction of [arrow-functions](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions) and its distinctive syntax.
 
-## *Enter React hooks*
+## Enter React hooks
 
 React hooks are magic. In a bad way my gut tells me. To cut it short, it effectively is the framework hiding global state from me, and linters enforcing that I don't accidentally mess with it in "the wrong way". Don't get me wrong, they're a pleasure to use and I wouldn't trade them for the verbosity of how we used to use classes or *higher-order-functions* whenever we needed local state. **At the same time they introduce a mechanism that I would've usually expected to be universally present in a language, rather than specifically bound to a framework.**
 
