@@ -172,11 +172,51 @@ cypress has entered the space of browser-testing tools with quite a few interest
 
 After using it for a bit in a recent project, I've been pleasantly surprised by the means it gives me to write and debug tests, but most importantly to me, by how easy it was to set it up on CI and provide meaningful feedback to me should a test fail. 
 
-I used selenium in that project before and found it helpful to have the tight integration with the backend JVM that selenium offers, as it allowed me to mock third parties without having to add a seam. **I couldn't make a good case for selenium though**, as not only the developers weren't familiar with java and selenium, but also because the version we were able to use was vastly outdated.
+I used selenium in that project before and found it helpful to have the tight integration with the backend JVM that selenium offers, as it allowed me to mock third parties without having to add a seam. **I couldn't make a solid case for selenium though**, as not only the developers weren't familiar with java and selenium, but also because the version we were able to use was vastly outdated, making the former a much bigger issue than usually.
 
-It wasn't long before I found myself at odds with its API though: We had to put that whole legacy SPA under test, a fragile piece of software that wasn't build with testability in mind. 
+It wasn't long before I found myself at odds with cypress' API though: We had to put that whole legacy SPA under test, a fragile piece of software that wasn't build with testability in mind. 
 
 ## cypress and the reinvention of the wheel
+
+Cypress automates browsers. It does this by injecting itself into the website under test and running your tests right there with time-travelling capabilities and native access to the browser DOM and its javascript APIs. Most importantly though, its API is build with the fragility of a browser-based test in mind: all methods that instrument or query the browser are asynchronous and retry automatically should they not yet find the element in question – a super handy feature indeed!
+
+```js
+context("A simple example", () => {
+  test("it types in a search query", () => {
+    // Waits until duckduckgo.com has been loaded successfully
+    cy.visit("https://duckduckgo.com/");
+    // Looks for the element and retries until it's there
+    cy.get("#search_form_input_homepage")
+      // Proceeds to type in text one-by-one
+      .type("async/await ES7");
+    // Looks for the element and retires until it's there
+    cy.get("#search_button_homepage")
+      // clicks it
+      .click();
+
+    // Waits/retries until the first search result is there
+    cy.get(".result__a:first")
+      // clicks it
+      .click();
+  })
+});
+```
+
+The result is a very conscise test that hides all the flakiness of a classic browser test in the framework 😍.
+
+The problem, which is explained [at length](https://docs.cypress.io/guides/core-concepts/introduction-to-cypress.html#Commands-Are-Promises) to warn you about it in its documentation, is that in order to achieve this, cypress reinvents asynchronous operations in javascript. In the name of dev-exp, cypress avoids [`then`-chains](https://docs.cypress.io/guides/core-concepts/introduction-to-cypress.html#Noisy-Promise-demonstration-Not-valid-code) by queueing all your calls to its API and only executing them one-by-one.
+
+An assertion always needs to be chained to these "commands", so it can properly be retried and only fails if cypress runs out of retries.
+
+```js
+cy.get(".result__a:first")
+  .its("href")
+  .should("contain", "mdn.io");
+```
+
+Effectively, cypress reimplements flow-control of my test hidden in its abstractions. This will work fine, especially as long as I can change the system-under-test so I don't need to conditionally branch off or iterate over a collection of elements and act on them, but it will again break my brain's pattern matching as soon as I need to work around cypress' own command queue.
+
+Let's use an (again, oversimplified) example to illustrate the point. Let's say I need to find the first `li` element that only has a single `a` as its child and run an assertion on it.
 
 ```js
 context("Basic flow control in cypress", () => {
@@ -184,22 +224,45 @@ context("Basic flow control in cypress", () => {
     cy.window().then(window => {
       window.document.write(`
         <ul>
-            <li>
-                <a href="#1a">1a</a>
-                <a href="#1b">1b</a>
-            </li>
-            <li>
-            <a href="#2">2</a>
-            </li>
-            <li>
-            <a href="#3">3</a>
-            </li>
+          <li>
+            <a>1a</a>
+            <a>1b</a>
+          </li>
+          <li>
+            <a>2</a>
+          </li>
+          <li>
+            <a>3</a>
+          </li>
         </ul>
       `);
     });
   });
+});
+```
 
-  specify("The JS idiomatic way that fails", async () => {
+Not knowing that cypress runs commands asynchronously, and without bothering to read the documentation first, I implemented this like I would do in selenium or in native browser javascript where DOM access is synchronous:
+
+```js
+  specify("TLDR, this is like selenium, right?", () => {
+    const lis = cy.get("li");
+    for (let li of lis) {
+      const as = cy.get(li).find("a");
+      if(as.length === 1) {
+        expect(as[0].innerHTML).to.equal("2");
+        return;
+      }
+    }
+    throw new Error("Didn't find the li");
+  });
+```
+
+I quickly noticed that this is not how cypress works at all – it's asynchronous after all and I should go back and read the documentation in order to not come off as absolutely ignorant while I'm making a point about cypress 😅!
+
+So off I went, adding `await` and `async` to my code. After all, cypress commands return something with a `then`-method  and my brain immediately pattern-matches that to `Promise` and thus `async`/`await`!
+
+```js
+  specify("async/await to the rescue", async () => {
     const lis = await cy.get("li");
     for (let li of lis) {
       const as = await cy.get(li).find("a");
@@ -210,7 +273,13 @@ context("Basic flow control in cypress", () => {
     }
     throw new Error("Didn't find the li");
   });
+```
 
+I then learned that `cy.find`, unlike `cy.get`, does not return a `then`-able, or `cy.get` can't make sense out of `li` or something else. In any case `as` didn't contain the `a`'s I was expecting. A `console.log` revealed that `lis` is a list of DOM-nodes though, so I was making progress at least – an ugly test is slighly better than no test.
+
+I reluctantly resorted to the native dom selectors, fully knowing that not only will I have to jump between abstractions, but I will also loose the retry-ability of cypress that I appreciated so much earlier.
+
+```js
   specify("Iterating with native selectors", async () => {
     const lis = await cy.get("li");
     for (let li of lis) {
@@ -222,8 +291,16 @@ context("Basic flow control in cypress", () => {
     }
     throw new Error("Didn't find the li");
   });
+```
 
-  specify("Iterating the promise-y way until you found 2", async () => {
+While this test finally works as expected, I had to make a big sacrifice already. I lost not only the retries, but also had to note down an exception to my brain's pattern matching: **"Some methods in cypress look and behave enough like Promises that await/async works, but others won't. Be on the lookout!"**. 
+
+That note went right next to the one reading **"Even though cypress runs in the browser, and it uses jquery-like selectors (or even jquery), unlike any other interaction with the DOM you're used to, all of cypress' DOM commands are async"**.
+
+At this point, I deleted my naive attempts and tried to understand how an idiomatic implementation would look like. I've been around when JavaScript was notoriously famous for its "callback hell", and I sure knew my patterns to work with that. I figured a recursively called function that puts commands onto cypress' command queue only right as they were needed in succession would help:
+
+```js
+  specify("Hello darkness my old friend", async () => {
     const elem = await findFirstElementWithASingleChild();
     expect(elem.innerHTML).to.equal("2");
   });
@@ -247,6 +324,12 @@ context("Basic flow control in cypress", () => {
 });
 ```
 
+✅, again! **Still, the final tally left me disillusioned and frustrated.** As I tried to pay more respect to cypress and its idiomatic way of instrumenting my browser, the test suffered from the workarounds I had to employ to make it work. 
+
+Cypress might be an amazing tool if you can easily change the system-under-test to be easier to test, but it failed me at a fundamental level: **My control over my tests and the flow-control patterns my brain is used to from any other library I've been familiar with in the javascript ecosystem.**
+
 ![Screenshot showing the first test failing](/assets/hooks-cypress-and-the-fabric-of-the-universe--cypress.png)
 
-##
+*(If you want the right answer to a question, post the wrong one. I think I've done my part here, so if anyone can help me I'd highly appreciate a heads-up at <a href="mailto:cypress-hell@craftswerk.io">cypress-hell@craftswerk.io</a>)*
+
+## The final verdict?
