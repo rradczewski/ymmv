@@ -2,6 +2,7 @@
 layout: post
 title: "On hooks, cypress and the fabric of the universe"
 image: "assets/hooks-cypress-and-the-fabric-of-the-universe.jpg"
+hide_reading_time: true
 ---
 
 I can't quite explicate what it is, but to this day, *React hooks* and *cypress* leave me with the slight terror that the fabric of our universe has been tinkered with. I'm bringing some receipts, but I'm not sure what my final verdict is.
