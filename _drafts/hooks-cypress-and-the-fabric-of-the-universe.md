@@ -6,6 +6,8 @@ image: "assets/hooks-cypress-and-the-fabric-of-the-universe.jpg"
 
 I can't quite explicate what exactly it is, but to this day, *react hooks* and *cypress* leave me with the slight terror that the fabric of our universe has been tinkered with. I'm bringing some receipts, but I'm not sure what my final verdict is.
 
+# The hooks situation
+
 When hooks came out in 2018, Daniel was writing [his book on React and TDD](https://www.packtpub.com/eu/web-development/mastering-react-test-driven-development), for which I was doing the technical review. We got excited about this novelty, both in a positive and negative way. On the one hand, a lot of chapters in the book suddenly needed to be rewritten to work with hooks (Daniel rightfully anticipated that hooks would be _the next big thing_), on the other hand, it seemed like a new approach to writing React that could make for much more conscise code and applications.
 
 One thing that stuck though was the feeling that React had been toying with something that was up until then the job of the interpreter: **the callstack**.
@@ -50,7 +52,7 @@ React hooks are magic. In a bad way my gut tells me. To cut it short, it effecti
 
 React hooks introduce what I call a "shadow stack" (the official docs call it "memory cells"). Plainly speaking (and probably vastly simplifing it), each call to a function like `useState` is assigned a number, from the first one at the top of the render tree to the last one at the leaves. A call to `useState` will always work on the "memory cell" with that number, and thus provide specific "local" state to a call to a function that does not have state as the language does not provide that.
 
-```js
+```jsx
 const MyCounter = ({initialValue}) => {
   const [value, setValue] = useState(initialValue);
   return <div>Count: {value} <button onClick={() => setValue(value+1)}>+</button></div>
@@ -112,7 +114,7 @@ The React docs call this the ["Rules of Hooks"](https://reactjs.org/docs/hooks-r
 This threat made it necessary to introduce [a linter plugin](https://www.npmjs.com/package/eslint-plugin-react-hooks) that comes with **create-react-app**. The linter plugin analyses your source code – something react can't possibly do at runtime because it doesn't have access to the interpreter or its AST – and errors if you accidentally violate one of these two rules. They further added warnings for both [rule #1](https://github.com/facebook/react/blob/235a6c4af67e3e1fbfab7088c857265e0c95b81f/packages/react-reconciler/src/ReactFiberHooks.js#L240-L285) and [rule #2](https://github.com/facebook/react/blob/235a6c4af67e3e1fbfab7088c857265e0c95b81f/packages/react/src/ReactHooks.js#L23-L35), although the former warning regarding unconditional calls to `useState` is stripped in production and react only errors when it used [more](https://github.com/facebook/react/blob/235a6c4af67e3e1fbfab7088c857265e0c95b81f/packages/react-reconciler/src/ReactFiberHooks.js#L590-L593) or [fewer](https://github.com/facebook/react/blob/235a6c4af67e3e1fbfab7088c857265e0c95b81f/packages/react-reconciler/src/ReactFiberHooks.js#L474-L478) hooks than in the previous render.
 
 
-{% highlight jsx %}
+```jsx
 import React, { useState } from "react";
 
 const MyBarComponent = () => {
@@ -140,12 +142,21 @@ const App = () => (
 );
 
 export default App;
-{% endhighlight %}
+```
 
 Running this in development will have React yield a proper error and a warning, telling me that the order of hooks differed from the previous render. It can't tell me more than that – it doesn't have any way of understanding my code and what the culprit is.
 
 ![The error message react yields when it discovers a disparity in the usage of hooks](/assets/hooks-cypress-and-the-fabric-of-the-universe--react-error.png)
 
+## Pattern mismatch
+
+Not only isn't React able to reason about me misusing the library at this point, it isn't actually ever able to reason about this – it just doesn't have that information at its disposal. React is a library like any other, it doesn't have access to the interpreter and its AST, nor any reasonable capabilities to work around this at compile-time without massively inconveniencing those who are using it.
+
+**Most importantly though**, my brain's pattern matching now fails me. Whenever I'm using React nowadays, my brain is fixated on finding functions starting with **<span style="color: red !important">`use...`</span>**, because those functions exert different behaviour than any other function in javascript. If any major library starts breaking the convention and starts to name their hooks differently than **<span style="color: red !important">`use...`</span>**, my brain will need to switch to high-alert for any function, as it could be a hook that doesn't work anything like a function call.
+
+Not only has React tinkered with designs that are exclusive to interpreters and compilers, making it necessary to use linters to make it dev-user-friendly, it has also massively impacted my capability of reading and understanding code.
+
+*If I could've justified another detour at this point, I would've loved to implement hooks in clojurescript using `with-redef` and `defmacro` to show how another language with the required capabilities available to libraries could've solved this*
 
 
 
@@ -167,11 +178,7 @@ Running this in development will have React yield a proper error and a warning, 
 
 
 
-
-
-
-
-# The fauxpax behind cypress
+# The cypress situation
 
 ```js
 context("Basic flow control in cypress", () => {
