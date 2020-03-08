@@ -357,3 +357,5 @@ But I think the aspects that make either great aren't those that I'm cross with.
 Hooks could've been implemented by explicitly passing a `context` to them. While that would've made it slightly more verbose, I'm convinced it would've ultimately benefited the experience of working with them. People learning React then wouldn't need to learn any new rules that forbid calling some methods conditionally, but instead learn about universal concepts like global and local state.
 
 Cypress could've made retries not a hidden feature of their API, but an explicit concept that developers need to understand and respect. In turn, this would presumably have made it possible to provide a universally understood `Promise` and thus `async`/`await`-compatible API. People learning cypress would not have to learn another way of handling asyncronicity, but a generally supported way that easily translates to other libraries and frameworks.
+
+For the time being, I hope these peeks behind the curtain offer you some deeper insights into how both react and cypress work and might help you should you encounter any of their pitfalls. 
