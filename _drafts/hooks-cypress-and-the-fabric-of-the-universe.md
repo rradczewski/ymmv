@@ -4,8 +4,15 @@ title: "On hooks, cypress and the fabric of the universe"
 image: "assets/hooks-cypress-and-the-fabric-of-the-universe.jpg"
 hide_reading_time: true
 ---
+It took me some time to pinpoint what it is, but to this day, _React hooks_ and _cypress_ leave me with the slight terror that the fabric of our universe has been tinkered with. I'm bringing some receipts, but I'm not sure what my final verdict is.
 
-I can't quite explicate what it is, but to this day, _React hooks_ and _cypress_ leave me with the slight terror that the fabric of our universe has been tinkered with. I'm bringing some receipts, but I'm not sure what my final verdict is.
+Both [React hooks](https://reactjs.org/docs/hooks-reference.html) and [cypress](https://cypress.io) are well received tools in the JavaScript communities, and rightfully so in my opinion. Their vanity approaches to two of the most cumbersome topics developers are facing, namely state management and respectively browser-testing, make working with them quite enjoyable.
+
+My issue with either of them boils down to the way they accomplish their feats: React hooks introduce state to functions that shouldn't have them through global state, and cypress invents its own command loop on top of JavaScript's own that looks just enough like the real one to confuse me. 
+
+I assume both achieve the promised amazing developer-experience only in the short-term and for narrow use-cases, while messing with my brain's pattern matching enough to make me wary each time I have to work in a codebase with them in it.
+
+The following essay will be a deep dive into the how's and why's of React hooks and cypress, assumptions and stated reasons they're implemented that way and ultimately why I'm fairly skeptical about their long-term effects on writing and reading application code that's making use of them.
 
 # The hooks situation
 
@@ -346,16 +353,18 @@ Cypress might be an amazing tool if you can easily change the system-under-test 
 
 _(If you want the right answer to a question, post the wrong one. I think I've done my part here, so if anyone can help me I'd highly appreciate a heads-up at <a href="mailto:cypress-hell@craftswerk.io">cypress-hell@craftswerk.io</a>)_
 
+<hr />
+
 # The final verdict?
 
-Let me start by saying that the purpose of this essay isn't to discourage anyone from using either hooks or cypress. They're in their own way fantastic evolutions of the development tooling we've grown used to.
+Let me finish by saying that the purpose of this essay isn't to discourage anyone from using either React hooks or cypress. They're in their own way fantastic evolutions of the development tooling we already know.
 
-Hooks is a giant leap forwards, away from convoluted `class`-Components and  HoC-components, to more expressive APIs and components. Cypress is a refreshing take on browser-testing, which has been overwhelming enough with all its complexity and pitfalls that selenium, the defacto standard, went unchallenged for years.
+React hooks are a giant leap forwards, away from convoluted `class`-Components and  HoC-components, to more expressive APIs and components with locally isolated state. Cypress is a refreshing take on browser-testing, which has been overwhelming enough with all its complexity and pitfalls that selenium, the defacto standard, went unchallenged for years.
 
-But I think the aspects that make either great aren't those that I'm cross with.
+But I think the aspects that make either great tools aren't those that I'm cross with.
 
-Hooks could've been implemented by explicitly passing a `context` to them. While that would've made it slightly more verbose, I'm convinced it would've ultimately benefited the experience of working with them. People learning React then wouldn't need to learn any new rules that forbid calling some methods conditionally, but instead learn about universal concepts like global and local state.
+React hooks could've been implemented by explicitly passing a `context` to them. While that would've made it slightly more verbose, I'm convinced it would've ultimately benefited the experience of working with them. People learning React then wouldn't need to learn any new rules that forbid calling some methods conditionally, but instead learn about universal concepts for managing global and local state they could apply in other systems.
 
-Cypress could've made retries not a hidden feature of their API, but an explicit concept that developers need to understand and respect. In turn, this would presumably have made it possible to provide a universally understood `Promise` and thus `async`/`await`-compatible API. People learning cypress would not have to learn another way of handling asyncronicity, but a generally supported way that easily translates to other libraries and frameworks.
+Cypress could've made retries not a hidden feature of their API, but an explicit concept that developers need to understand and respect. In turn, this would presumably have made it possible to provide a universally understood `Promise` and thus `async`/`await`-compatible API. People learning cypress would not have to learn another way of handling asyncronicity, but instead would learn a generally supported approach that easily translates to other libraries and frameworks.
 
-For the time being, I hope these peeks behind the curtain offer you some deeper insights into how both react and cypress work and might help you should you encounter any of their pitfalls. 
+I will certainly using and teaching either of them, but for the time being, I hope these "peeks behind the curtain" offer some deeper insights into how both React hooks and cypress work and might help anyone should they encounter any of the pitfalls outlined here.
