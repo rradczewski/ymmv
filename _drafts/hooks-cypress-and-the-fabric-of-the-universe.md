@@ -52,9 +52,11 @@ React hooks are magic. In an odd way my gut tells me. To cut it short, it effect
 
 ## Deep Dive: How hooks work
 
-React hooks introduce what I call a "shadow stack" (the official docs call it "memory cells"). I'm vastly over-simplifing it as the actual implementation uses a linked list, but think of it as each call to a function like `useState` being assigned a number from a global sequence, from the first one at the top of the render tree to the last ones at the leaves. **A call** to `useState` will always work on the "memory cell" with that number, and thus provide specific "local" state to that particular call of a function that usually wouldn't be able to have state due to the design of the language.
+React hooks introduce what I call a "shadow stack" (the official docs call it "memory cells"). I'm vastly over-simplifing it as the actual implementation uses a linked list, but you can think of it like this: 
 
-That's right, **every call** of a hooks-function has its own specific local state. Not only does the function have an identity, the call itself now has an identity that is relevant to the functioning of the application.
+Each call to a function like `useState` being assigned a number from a global sequence, from the first one at the top of the render tree to the last ones at the leaves. **A call** to `useState` will always work on the "memory cell" with that number, and thus provide specific "local" state to that particular call of a function that usually wouldn't be able to have state due to the design of the language.
+
+That's right, hooks makes it so that **every call** of a hooks-function has its own specific local state. Not only does the function have an identity, suddenly the call itself has an identity that is relevant to the functioning of the application.
 
 ```jsx
 const MyCounter = ({ initialValue }) => {
@@ -121,12 +123,12 @@ render(App);
 
 In the naive implementation, you can see that there are two important assumptions that make this work:
 
-1. `useState` is always called in the order it was called initially when calling `renderApplication`. It is never called **conditionally** or a **dynamic number of times**.
+1. `useState` is always called in the order it was called initially when calling `render`. It is never called **conditionally** or a **dynamic number of times**.
 2. `stackIndex` is always reset before any call to `useState` takes place.
 
-The React documentation call this the ["Rules of Hooks"](https://reactjs.org/docs/hooks-rules.html) and there's a good reason the docs are full of warnings and reminders about respecting these *Rules*. If you were to call `useState` conditionally or in a loop, React couldn't possibly match the call to its correct `stackIndex` and at worst you'd get the **wrong** "cell" content. Furthermore, as React can only keep track of the `stackIndex` inside its own renderloop, the function is worthless outside of it and at worst will further produce undefined behaviour in every part of the application where `useState` is used.
+The React documentation calls this the ["Rules of Hooks"](https://reactjs.org/docs/hooks-rules.html) and there's a good reason the docs are full of warnings and reminders about respecting these *Rules*. If you were to call `useState` conditionally or in a loop, React couldn't possibly match the call to its correct `stackIndex` and you might end up getting the **wrong** "cell's" content. Furthermore, as React can only keep track of the `stackIndex` inside its own renderloop, the function is worthless outside of it and at worst will further produce undefined behaviour in every part of your application where `useState` is used.
 
-This threat made it necessary to introduce [a linter plugin](https://www.npmjs.com/package/eslint-plugin-react-hooks) that comes e.g. with **create-react-app**. This linter plugin analyses your source code – something React can't possibly do at runtime because it doesn't have access to the interpreter or its AST – and errors if you accidentally violate one of these two rules. React further added warnings for both [rule #1](https://github.com/facebook/react/blob/235a6c4af67e3e1fbfab7088c857265e0c95b81f/packages/react-reconciler/src/ReactFiberHooks.js#L240-L285) and [rule #2](https://github.com/facebook/react/blob/235a6c4af67e3e1fbfab7088c857265e0c95b81f/packages/react/src/ReactHooks.js#L23-L35), although the former elaborate warning regarding unconditional calls to `useState` is stripped in production and React in production only errors when it used [more](https://github.com/facebook/react/blob/235a6c4af67e3e1fbfab7088c857265e0c95b81f/packages/react-reconciler/src/ReactFiberHooks.js#L590-L593) or [fewer](https://github.com/facebook/react/blob/235a6c4af67e3e1fbfab7088c857265e0c95b81f/packages/react-reconciler/src/ReactFiberHooks.js#L474-L478) hooks than in the previous render.
+This threat made it necessary to introduce [a linter plugin](https://www.npmjs.com/package/eslint-plugin-react-hooks) that comes e.g. with **create-react-app**. This linter plugin analyses your source code – something React can't possibly do at runtime because it doesn't have access to the interpreter or its AST – and errors if you accidentally violate one of these two rules. React further added warnings for both [rule #1](https://github.com/facebook/react/blob/235a6c4af67e3e1fbfab7088c857265e0c95b81f/packages/react-reconciler/src/ReactFiberHooks.js#L240-L285) and [rule #2](https://github.com/facebook/react/blob/235a6c4af67e3e1fbfab7088c857265e0c95b81f/packages/react/src/ReactHooks.js#L23-L35), although the former elaborate warning regarding unconditional calls to `useState` is stripped in production, where React then only errors whenever it finds that it used [more](https://github.com/facebook/react/blob/235a6c4af67e3e1fbfab7088c857265e0c95b81f/packages/react-reconciler/src/ReactFiberHooks.js#L590-L593) or [fewer](https://github.com/facebook/react/blob/235a6c4af67e3e1fbfab7088c857265e0c95b81f/packages/react-reconciler/src/ReactFiberHooks.js#L474-L478) hooks than in the previous render.
 
 ```jsx
 import React, { useState } from "react";
@@ -168,7 +170,7 @@ React isn't able to reason about me misusing the library at this point, and it n
 
 **Most importantly though, my brain's pattern matching now fails me**. Whenever I'm using React nowadays, my brain is fixated on finding functions starting with **<span style="color: red !important">`use...`</span>**, because those functions exert different behaviour than any other function in javascript. If any major library starts breaking the convention and starts to name their hooks differently than **<span style="color: red !important">`use...`</span>**, my brain will need to switch to high-alert for any function, as it could be a hook that doesn't work anything like a function call.
 
-Not only has React touched abstractions that are otherwise exclusive to interpreters and compilers, making it thus necessary to use linters to make it dev-user-friendly and to prevent the worst, it has also massively impacted my capability of reading and understanding code.
+Not only has React touched abstractions that are otherwise exclusive to interpreters and compilers, making it thus necessary to use linters in order to make it dev-user-friendly, **it has also massively impacted my capability of quickly reading and understanding code.**
 
 _If I could've justified another detour at this point, I would've loved to implement hooks in clojurescript using `with-redef` and `defmacro` to show how another language with the required capabilities available to libraries could've solved this (and an ecosystem where that sort of behaviour wouldn't be unheard of)_
 
@@ -178,9 +180,9 @@ _If I could've justified another detour at this point, I would've loved to imple
 
 [cypress](https://cypress.io) has entered the space of browser-testing tools with quite a few interesting features: not only does it come in a neat batteries-included-package with a UI that makes getting started increadibly easy, but finally there's a browser-testing tool that caters to the interactivity that browser-testing and subsequently -debugging warrant for.
 
-After using it for a bit in a recent project, I've been pleasantly surprised by the means it gives me to write and debug tests, but most importantly to me, by how easy it was to set it up on CI and provide meaningful feedback to me should a test fail.
+After using it for a bit in a recent project, I've been pleasantly surprised by the means it gives me to write and debug tests and most importantly to me, by how easy it was to set it up on CI and make it provide meaningful feedback to me should a test fail.
 
-I used *selenium* in that project before and found it helpful to have the tight integration with the backend JVM that selenium offers, as it allowed me to mock third parties without having to add a seam. **I still couldn't make a solid case for selenium though**, as not only the developers weren't familiar with java and selenium, but also because the version we were able to use was vastly outdated, making the former a much bigger issue than usually.
+I used *selenium* in that project before and found it helpful to have the tight integration with the backend JVM that selenium offers, as it allowed me to mock third parties without having to add a seam or other workarounds. **I still couldn't make a solid case for selenium though**, as not only the developers weren't familiar with java and selenium, but also because the version we were able to use was vastly outdated, making the former a much bigger issue than usually
 
 It wasn't long before I found myself at odds with cypress' API though: We had to put that whole legacy SPA under test, a fragile piece of software that wasn't build with testability in mind.
 
@@ -345,3 +347,13 @@ Cypress might be an amazing tool if you can easily change the system-under-test 
 _(If you want the right answer to a question, post the wrong one. I think I've done my part here, so if anyone can help me I'd highly appreciate a heads-up at <a href="mailto:cypress-hell@craftswerk.io">cypress-hell@craftswerk.io</a>)_
 
 # The final verdict?
+
+Let me start by saying that the purpose of this essay isn't to discourage anyone from using either hooks or cypress. They're in their own way fantastic evolutions of the development tooling we've grown used to.
+
+Hooks is a giant leap forwards, away from convoluted `class`-Components and  HoC-components, to more expressive APIs and components. Cypress is a refreshing take on browser-testing, which has been overwhelming enough with all its complexity and pitfalls that selenium, the defacto standard, went unchallenged for years.
+
+But I think the aspects that make either great aren't those that I'm cross with.
+
+Hooks could've been implemented by explicitly passing a `context` to them. While that would've made it slightly more verbose, I'm convinced it would've ultimately benefited the experience of working with them. People learning React then wouldn't need to learn any new rules that forbid calling some methods conditionally, but instead learn about universal concepts like global and local state.
+
+Cypress could've made retries not a hidden feature of their API, but an explicit concept that developers need to understand and respect. In turn, this would presumably have made it possible to provide a universally understood `Promise` and thus `async`/`await`-compatible API. People learning cypress would not have to learn another way of handling asyncronicity, but a generally supported way that easily translates to other libraries and frameworks.
