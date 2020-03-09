@@ -6,7 +6,7 @@ hide_reading_time: true
 ---
 It took me some time to pinpoint what it is, but to this day, _React hooks_ and _cypress_ leave me with the slight terror that the fabric of our universe has been tinkered with. I'm bringing some receipts, but I'm not sure what my final verdict is.
 
-Both [React hooks](https://reactjs.org/docs/hooks-reference.html) and [cypress](https://cypress.io) are well received tools in the JavaScript communities, and rightfully so in my opinion. Their vanity approaches to two of the most cumbersome topics developers are facing, namely state management and respectively browser-testing, make working with them quite enjoyable.
+Both [React hooks](https://reactjs.org/docs/hooks-reference.html) and [cypress](https://cypress.io) are well received tools in the JavaScript communities, and rightfully so in my opinion. Their novel approaches to two of the most cumbersome topics developers are facing, namely state management and respectively browser-testing, make working with them quite enjoyable.
 
 My issue with either of them boils down to the way they accomplish their feats: React hooks introduce state to functions that shouldn't have them through global state, and cypress invents its own command loop on top of JavaScript's own that looks just enough like the real one to confuse me. 
 
