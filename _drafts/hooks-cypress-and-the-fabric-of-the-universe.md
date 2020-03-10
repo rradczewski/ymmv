@@ -4,19 +4,19 @@ title: "On hooks, cypress and the fabric of the universe"
 image: "assets/hooks-cypress-and-the-fabric-of-the-universe.jpg"
 hide_reading_time: true
 ---
-It took me some time to pinpoint what it is, but to this day, _React hooks_ and _Cypress_ leave me with the slight terror that the fabric of our universe has been tinkered with. I'm bringing some receipts, but I'm not sure what my final verdict is.
+It took me some time to pinpoint what exactly why, but to this day, _React hooks_ and _Cypress_ leave me with the slight terror that the fabric of our universe has been tinkered with. I'm bringing some receipts, but I'm not sure what my final verdict is.
 
-Both [React hooks](https://reactjs.org/docs/hooks-reference.html) and [Cypress](https://cypress.io) are well received tools in the JavaScript communities, and rightfully so in my opinion. Their novel approaches to two of the most cumbersome topics developers are facing, namely state management and respectively browser-testing, make working with them quite enjoyable.
+Both [React hooks](https://reactjs.org/docs/hooks-reference.html) and [Cypress](https://cypress.io) are well-received tools in the JavaScript communities, and rightfully so. Each brings their novel approach to solving a commonly cumbersome topic that developers face, namely state management and browser-testing respectively. This in itself makes working with them highly enjoyable.
 
-My issue with both of them boils down to the way they accomplish their feats: React hooks introduce local call-dependent state to functions that shouldn't have state in the first place, and Cypress invents its own command loop on top of JavaScript's own that looks just enough like the real one to confuse me. 
+However, my issue with both of them boils down to the way they accomplish their feats: React hooks introduce local call-dependent state to functions that shouldn't have state in the first place, and Cypress implements its own command loop on top of JavaScript's own that is just different enough from the real one that I get confused. 
 
-I suspect that both achieve the promised amazing developer-experience only in the short-term and for narrow use-cases, while messing with my brain's pattern matching enough to make me wary each time I have to work in a codebase with them in it.
+I suspect that both achieve the promised amazing developer-experience only in the short-term and for narrow use-cases. Longer-term, they mess with my brain's pattern matching enough to make me suspicious each time I have to work in a codebase with them in it.
 
 The following essay will be a deep dive into the hows and whys of React hooks and Cypress, the assumptions and stated reasons they're implemented that way and ultimately why I'm fairly skeptical about their long-term effects on writing and reading application code that's making use of them.
 
 # The hooks situation
 
-When hooks came out in 2018, Daniel was writing [his book on React and TDD](https://www.packtpub.com/eu/web-development/mastering-react-test-driven-development), for which I was doing the technical review. We got excited about this novelty, both in a positive and negative way. On the one hand, a lot of chapters in the book suddenly needed to be rewritten to work with hooks (Daniel rightfully anticipated that hooks would be _the next big thing_), while on the other hand, it seemed like a new approach to writing React that could make for much more conscise code and thus applications.
+When hooks came out in 2018, Daniel was writing [his book on React and TDD](https://www.packtpub.com/eu/web-development/mastering-react-test-driven-development), for which I was doing the technical review. We got excited about this novelty, both in a positive and negative way. On the one hand, a lot of chapters in the book suddenly needed to be rewritten to work with hooks (Daniel rightfully anticipated that hooks would be _the next big thing_), while on the other hand, it seemed like a new approach to writing React that could make for much more concise code and thus applications.
 
 What stuck with me though was the feeling that React had been toying with something that up until then was the job of the interpreter: **the callstack**.
 
