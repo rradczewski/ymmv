@@ -4,7 +4,7 @@ title: "On hooks, cypress and the fabric of the universe"
 image: "assets/hooks-cypress-and-the-fabric-of-the-universe.jpg"
 hide_reading_time: true
 ---
-It took me some time to pinpoint what exactly why, but to this day, _React hooks_ and _Cypress_ leave me with the slight terror that the fabric of our universe has been tinkered with. I'm bringing some receipts, but I'm not sure what my final verdict is.
+It took me some time to pinpoint exactly why, but to this day, _React hooks_ and _Cypress_ leave me with the slight terror that the fabric of our universe has been tinkered with. I'm bringing some receipts, but I'm not sure what my final verdict is.
 
 Both [React hooks](https://reactjs.org/docs/hooks-reference.html) and [Cypress](https://cypress.io) are well-received tools in the JavaScript communities, and rightfully so. Each brings their novel approach to solving a commonly cumbersome topic that developers face, namely state management and browser-testing respectively. This in itself makes working with them highly enjoyable.
 
@@ -59,11 +59,11 @@ React hooks are magic. To cut it short, it effectively is the framework hiding g
 
 ## Deep Dive: How hooks work
 
-React hooks introduce so called "memory cells". I'm vastly over-simplifing it as the actual implementation uses a linked list, but you can think of it like this:
+React hooks introduce so called "memory cells". I'm vastly over-simplifing it as the actual implementation uses linked lists, but you can think of it like this:
 
-Each call to a function like `useState` being assigned a number from a global sequence, from the first one at the top of the render tree to the last ones at the leaves. **A call** to `useState` will always work on the "memory cell" with that number, and thus provide specific "local" state to that particular call of a function that usually wouldn't be able to have state due to the design of the language.
+Each call to a function like `useState` being assigned a number from a global sequence outside of your application code, from the first one at the top node of the current render tree to the last ones at the leaves. **A call** to `useState` will always work on the "memory cell" with that number, and thus provide specific "local" state to that particular call of a function that usually wouldn't be able to have state due to the design of the language.
 
-That's right, hooks makes it so that **every call** of a hooks-function has its own specific local state. Not only does the function have an identity, suddenly the call itself has an identity that is relevant to the functioning of the application.
+That's right, hooks makes it so that **every call** of a hooks-function has its own specific local state. Not only does the function have an identity, suddenly the call itself inside the rendering context has an identity that is relevant to the functioning of the application.
 
 ```jsx
 const MyCounter = ({ initialValue }) => {
@@ -107,16 +107,15 @@ const useState = initialValue => {
   return [value, setter];
 };
 
-const MyComponent = () => {
-  const [foo, setFoo] = useState(1);
-  const [bar, setBar] = useState("A");
+const MyCounter = () => {
+  const [count, setCount] = useState(1);
 
-  return foo + bar;
+  return "Count: " + count;
 };
 
 const App = () =>
-  `ComponentA: ${MyComponent()}` + "\n" + 
-  `ComponentB: ${MyComponent()}`;
+  `Counter A: ${MyCounter()}` + "\n" + 
+  `Counter B: ${MyCounter()}`;
 
 const render = rootComponent => {
   // Set stackIndex to 0 to start a fresh render
@@ -140,27 +139,27 @@ This threat made it necessary to introduce [a linter plugin](https://www.npmjs.c
 ```jsx
 import React, { useState } from "react";
 
-const MyBarComponent = () => {
-  const [bar, setBar] = useState("bar?");
+const MyChildComponent = () => {
+  const [childValue, setChildValue] = useState("Child Value");
 
-  return <div>Bar {bar}</div>;
+  return <div>ChildComponent: {childValue}</div>;
 };
 
-const MyFooComponent = () => {
-  const [woop, setWoop] = useState("woop?");
+const MyParentComponent = () => {
+  const [shouldExpand, setShouldExpand] = useState(false);
 
   return (
     <div>
-      {woop} <button onClick={() => setWoop("woop!")}>Set</button>
-      {woop == "woop!" && MyBarComponent()}
+      <button onClick={() => setShouldExpand(true)}>Expand</button>
+      {shouldExpand && MyChildComponent()}
     </div>
   );
 };
 
 const App = () => (
   <div className="App">
-    <MyFooComponent />
-    <MyFooComponent />
+    <MyParentComponent />
+    <MyParentComponent />
   </div>
 );
 
@@ -171,6 +170,8 @@ Running this in development will have React yield a proper error and a warning, 
 
 ![The error message React yields when it discovers a disparity in the usage of hooks](/assets/hooks-cypress-and-the-fabric-of-the-universe--react-error.png)
 
+*For the curious: This is caused by using `MyChildComponent` by calling it directly, thus making it part of the rendering of `MyParentComponent`. If you use `<MyChildComponent />` instead of calling it directly via `MyChildComponent()`, React will create a new context with its own "memory cells", so the error won't happen. While this certainly mitigates the error happening in practice, the systemic problems I lay out, especially those around learning these concepts, still persist.*
+
 ## Pattern mismatch - expected "functions" but got "hooks" instead
 
 React isn't able to reason about me misusing the library at this point, and it never will be able to – it just doesn't have that information at its disposal. React is a library like any other, it doesn't have access to the interpreter and its AST, nor any reasonable capabilities to work around this at compile-time without massively inconveniencing those who are using it.
@@ -180,6 +181,16 @@ React isn't able to reason about me misusing the library at this point, and it n
 Not only has React touched abstractions that are otherwise exclusive to interpreters and compilers, making it thus necessary to use linters in order to make it dev-user-friendly, **it has also massively impacted my capability of quickly reading and understanding code.**
 
 _If I could've justified another detour at this point, I would've loved to implement hooks in clojurescript using `with-redef` and `defmacro` to show how another language with the required capabilities available to libraries could've solved this (and an ecosystem where that sort of behaviour wouldn't be unheard of)_
+
+## The case for standard APIs
+
+The React ecosystem had quite a few prominent state management libraries over its existence. Some of them, like [`refunk`](https://github.com/jxnblk/refunk) or [`unstated`](https://github.com/jamiebuilds/unstated) have either been deprecated or have been reimplemented using hooks. [redux](https://redux.js.org/) on the other hand, is very much alive and has evolved standards (see [`redux-toolkit`](https://redux-toolkit.js.org/introduction/quick-start)) that help onboarding someone new onto a project and support my brain's pattern matching when looking at code. 
+
+The beauty of `redux` and the other libraries lies not only in how easy they are to comprehend, but also how you can test them. To a certain extend, they all use the language like it was designed, so testing them requires only a standard toolset like `jest` or `mocha`.
+
+Hooks and with them React fiber on the other hand required a lot of changes to existing tests because of the way asynchronicity and React's implementation had to suddenly be factored in. Not only did this break `shallow`-rendering, [`act`](https://reactjs.org/docs/test-utils.html#act) caused quite a lot of confusion at first because of odd error messages that couldn't be explained or removed easily (see e.g. [this issue](https://github.com/facebook/react/issues/15379)).
+
+This left me not only with the feeling that my pattern matching did no longer work, but also that the tests that usually gave me confidence were now less reliable than they were before.
 
 <hr/>
 
@@ -237,6 +248,29 @@ cy.get(".result__a:first")
 ```
 
 Effectively, **Cypress reimplements flow-control of my test, hidden in its abstractions**. This will work just fine as long as I can adapt the system-under-test in a way so I don't need to conditionally branch off or iterate over a collection of elements in my tests, **but it will again break my brain's pattern matching as soon as my tests need basic imperative flows because I can't change the system-under-test accordingly.**
+
+```js
+context("Cypress", () => {
+  specify("Basic flow control", () => {
+    console.log("Before Loop")
+
+    for (let i = 0; i < 10; i++) {
+      cy.window().then(window => console.log("In Loop "+i));
+    }
+
+    console.log("After Loop")
+  });
+});
+
+// Outputs:
+//  Before Loop
+//  After Loop
+//  In Loop 0
+//  ...
+//  In Loop 9
+```
+
+The snippet above and problem it has is something deeply ingrained into me, as it's a issue you frequently run into when your code is executed asynchronously, but you're trying to work with it synchronously. JavaScript has taken care of it through `async`/`await`, but cypress adds yet another layer to this.
 
 Let's use an (again, oversimplified) example to illustrate the point. Let's say I need to find the first `li` element that only has a single `a` as its child and run an assertion on it.
 
@@ -352,20 +386,22 @@ Cypress might be an amazing tool if you can easily change the system-under-test 
 
 ![Screenshot showing the first test failing](/assets/hooks-cypress-and-the-fabric-of-the-universe--cypress.png)
 
-_(If you want the right answer to a question, post the wrong one. I think I've done my part here, so if anyone can help me I'd highly appreciate a heads-up at <a href="mailto:cypress-hell@craftswerk.io">cypress-hell@craftswerk.io</a>)_
+With [`cypress-promise`](https://github.com/NicholasBoll/cypress-promise), there exists a library that enables Cypress to be used with `async`/`await`, enabling me to write tests the way I think they are the easiest to read. I would still have liked to see Cypress embrace the native `Promise` concepts as much as other tools like [TestCafe](https://devexpress.github.io/testcafe/) have done. 
 
 <hr />
 
 # The final verdict?
 
-Let me finish by saying that the purpose of this essay isn't to discourage anyone from using either React hooks or Cypress. They're in their own way fantastic evolutions of the development tooling we already know.
+Let me finish by saying that the purpose of this essay isn't to discourage anyone from using either React hooks or Cypress. They're in their own way fantastic evolutions of the development tooling we already know. 
 
 React hooks are a giant leap forwards, away from convoluted `class`-Components and  HoC-components, to more expressive APIs and components with locally isolated state. Cypress is a refreshing take on browser-testing, which has been overwhelming enough with all its complexity and pitfalls that Selenium, the defacto standard, hasn't really managed to address so far.
 
-But the aspects that make both great tools aren't those that I'm cross with.
+But the aspects that make both great tools aren't those that I'm cross with, but the fact that they require you to learn and use a concept that is only valid inside of their own ecosystem and doesn't translate to other frameworks or libraries that don't hide their complexity in favor of supposed developer experience.
 
 React hooks could've been implemented by explicitly passing a `context` to them. While that would've made it slightly more verbose, I'm convinced it would've ultimately benefited the experience of working with them. People learning React then wouldn't need to learn any new rules that forbid calling some methods conditionally, but instead learn about universal concepts for managing global and local state they could apply in other systems.
 
 Cypress could've made retries not a hidden feature of their API, but an explicit concept that developers need to understand and respect. In turn, this would have made it possible to provide a universally understood `Promise` and `async`/`await`-compatible API. People learning Cypress would not have to learn another way of handling asynchronicity, but instead would learn a generally supported approach that easily translates to other libraries and frameworks.
 
 I will certainly be using and teaching both of them, but for the time being, I hope these "peeks behind the curtain" offer some deeper insights into how both React hooks and Cypress work and might help anyone should they encounter any of the pitfalls outlined here.
+
+*Thank you [@d_ir](https://twitter.com/d_ir), [@marcoemrich](https://twitter.com/marcoemrich) and [@LineyJane](https://twitter.com/LineyJane) for your invaluable feedback and the discussions over this essay.*
