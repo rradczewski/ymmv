@@ -10,7 +10,7 @@ Both [React hooks](https://reactjs.org/docs/hooks-reference.html) and [Cypress](
 
 However, my issue with both of them boils down to the way they accomplish their feats: React hooks introduce local call-dependent state to functions that shouldn't have state in the first place, and Cypress implements its own command loop on top of JavaScript's own that is just different enough from the real one that I get confused. 
 
-I suspect that both achieve the promised amazing developer-experience only in the short-term and for narrow use-cases. Longer-term, they mess with my brain's pattern matching enough to make me suspicious each time I have to work in a codebase with them in it.
+I suspect that both achieve the promised amazing developer-experience only in the short-term and for narrow use-cases. Longer-term, they mess with my brain's pattern matching enough to make me suspicious each time I have to work in a codebase with them in it. I suspect this applies to others, especially those learning the language, too.
 
 The following essay will be a deep dive into the hows and whys of React hooks and Cypress, the assumptions and stated reasons they're implemented that way and ultimately why I'm fairly skeptical about their long-term effects on writing and reading application code that's making use of them.
 
@@ -50,20 +50,20 @@ class Counter extends React.Component {
 }
 ```
 
-Both approaches are necessary because of a particular language aspect of JavaScript: A method's `this` is depending on the call-site, not the site of the method definition. I understand how tedious and very alien this seems, especially if you come from a language where `this` always refers to the instance that was being called like Java. At the same time though, it's a pretty universal concept of the language, one that libraries provided universal solutions for that were translatable to other libraries as well. The important thing to note here: **My brain's pattern matching worked, no matter if I was doing this in `jQuery` 10 years ago, `knockoutJS` 8 years ago, or `React` 5 years ago.** Nowadays,
+Both approaches are necessary because of a particular language aspect of JavaScript: A method's `this` is depending on the call-site, not the site of the method definition. I understand how tedious and very alien this seems, especially if you come from a language where `this` always refers to the instance that was being called like Java. At the same time though, it's a pretty universal concept of the language, one that libraries provided universal solutions for that were translatable to other libraries as well. The important thing to note here: **My brain's pattern matching worked, no matter if I was doing this in `jQuery` 10 years ago, `knockoutJS` 8 years ago, or `React` 5 years ago.** Explaining this to students at any point in time enabled them to work in any of the other libraries. Nowadays,
 this issue has further been taken care of with the introduction of [arrow-functions](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions) and their distinctive syntax.
 
 ## Enter React hooks
 
-React hooks are magic. To cut it short, it effectively is the framework hiding global state from me, and linters and heuristics preventing me from accidentally messing with it in "the wrong way". Don't get me wrong, they're a pleasure to use and I wouldn't trade them for the verbosity of how we used to use classes or _higher-order-functions_ whenever we needed local state. **At the same time they introduce a mechanism that I would've usually expected to be universally present in a language, rather than specifically bound to a framework.**
+React hooks are magic. To cut it short, it effectively is the framework hiding global state from me, and linters and heuristics preventing me from accidentally messing with it in "the wrong way". Don't get me wrong, they're a pleasure to use and I wouldn't trade them for the verbosity of how we used to use classes whenever we needed local state. **At the same time they introduce a mechanism that I would've usually expected to be universally present in a language, rather than specifically bound to a framework.**
 
 ## Deep Dive: How hooks work
 
 React hooks introduce so called "memory cells". I'm vastly over-simplifing it as the actual implementation uses linked lists, but you can think of it like this:
 
-Each call to a function like `useState` being assigned a number from a global sequence outside of your application code, from the first one at the top node of the current render tree to the last ones at the leaves. **A call** to `useState` will always work on the "memory cell" with that number, and thus provide specific "local" state to that particular call of a function that usually wouldn't be able to have state due to the design of the language.
+Each call to a function like `useState` is being assigned a number from a global sequence outside of your application code, from the first one at the top node of the current render tree to the last ones at the leaves. **A call** to `useState` will always work on the "memory cell" with that number, and thus provide specific "local" state to that particular call of a function that usually wouldn't be able to have state due to the design of the language.
 
-That's right, hooks makes it so that **every call** of a hooks-function has its own specific local state. Not only does the function have an identity, suddenly the call itself inside the rendering context has an identity that is relevant to the functioning of the application.
+That's right, hooks makes it so that **every call** of a hooks-function has its own specific local state. Not only does the function have an identity, suddenly the call itself inside the rendering context has an identity that is relevant to the functioning of the application. Even for impure functions, this is quite a new category of impurity!
 
 ```jsx
 const MyCounter = ({ initialValue }) => {
@@ -170,7 +170,7 @@ Running this in development will have React yield a proper error and a warning, 
 
 ![The error message React yields when it discovers a disparity in the usage of hooks](/assets/hooks-cypress-and-the-fabric-of-the-universe--react-error.png)
 
-*For the curious: This is caused by using `MyChildComponent` by calling it directly, thus making it part of the rendering of `MyParentComponent`. If you use `<MyChildComponent />` instead of calling it directly via `MyChildComponent()`, React will create a new context with its own "memory cells", so the error won't happen. While this certainly mitigates the error happening in practice, the systemic problems I lay out, especially those around learning these concepts, still persist.*
+*For the curious: This is caused by using `MyChildComponent` by calling it directly, thus making its return value directly part of the rendering tree of `MyParentComponent`. If you use `<MyChildComponent />` instead of calling it directly via `MyChildComponent()`, React will create a new context with its own "memory cells", so the error won't happen. While this certainly mitigates the error happening in practice, the systemic problems I lay out, especially those around learning these concepts, still persist.*
 
 ## Pattern mismatch - expected "functions" but got "hooks" instead
 
