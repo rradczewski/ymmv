@@ -58,8 +58,6 @@ Randomly draw `C` people out of the complete pool of applicants. These are the w
 2. **Special lottery runs**  
 Randomly draw `A` (resp. `B`) people out of the `#A` (resp. `#B`) group of applicants. Remove those who won a ticket from the pool of applicants. The probability to win in these rounds is `p = A/#A` resp. `p = B/#B`.
 
-The chances of winning a ticket in the first lottery run will thus be `p_general = C/(#A+#B+#C)` for someone only applying for the general bucket and `p_group-a = C/(#A+#B+#C) + A/#A` resp. `p_group-b = C/(#A+#B+#C) + B/#B` for those applying for one of the extra buckets, and finally `p_group-a-b = C/(#A+#B+#C) + A/#A + B/#B` for someone applying for both extra buckets.
-
 In case someone cancels their ticket or does not confirm their attendance, the ticket is returned to its original bucket. 
 
 For SoCraTes Day Berlin 2018, I created a script that completely automates this process for me. In case you want to provide full transparency to your attendees, it can work with deterministic randomness and mask the email addresses to preserve anonimity. [It's available on GitHub](https://github.com/rradczewski/socratesdayberlin2018_lottery).
