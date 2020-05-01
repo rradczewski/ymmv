@@ -40,6 +40,6 @@ Same applies in the worst-case: if you feel drained and burned out, you don't ow
 If you're still up for the task, here's the topics I will cover bit by bit (sustainable pace and all 😉):
 
 - [No Photos, Bitte.]({% link _posts/2020-02-24-ftct-no-photos-bitte.md %}) - How to gather census without exposing those deviating from the default, especially when collectively deciding on a photo policy and when asking the attendees to keep to a commonly shared language.
-- [Lotteries and diversity] - How to sell your tickets in "a fair way" and extending an invitation to underrepresented people and those who have to travel from afar.
+- [You get a ticket, and you get a ticket!]({% link _posts/2020-05-01-ftct-you-get-a-ticket-and-you-get-a-ticket.md %}) - How to sell your tickets in "a fair way" and extending an invitation to underrepresented people and those who have to travel from afar.
 - [Format and Facilitation: OpenSpace] - Why OpenSpaces are my go-to format, how I facilitate them and what to look out for.
 - [Counterintuitive Catering] - How to provide catering to 50 people, accommodate special dietary requirements and why there will never be meat at an event I organize.
