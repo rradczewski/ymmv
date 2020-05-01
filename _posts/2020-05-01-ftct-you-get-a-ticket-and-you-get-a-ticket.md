@@ -1,9 +1,12 @@
 ---
 layout: post
-tags: ["From The Community Toolbox"]
-title: "From The Community Toolbox: You get a ticket! And you get a ticket! Everyone (hopefully) gets a ticket!"
-image: "assets/ftct-you-get-a-ticket-and-you-get-a-ticket.jpg"
-image_alt: "A lot of little lottery tickets in a pile"
+tags:
+- From The Community Toolbox
+title: 'From The Community Toolbox: You get a ticket! And you get a ticket! Everyone
+  (hopefully) gets a ticket!'
+image: assets/ftct-you-get-a-ticket-and-you-get-a-ticket.jpg
+image_alt: A lot of little lottery tickets in a pile
+date: 2020-05-01 16:39 +0200
 ---
 Organizing the lottery is probably the biggest task in the weeks before SoCraTes Day Berlin. But it's also the one where I can make a difference by extending a special invitation to people of underrepresented minorities and to those who have to make plans long beforehand. Here's how I create a reasonably fair lottery.
 
