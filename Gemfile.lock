@@ -39,7 +39,8 @@ GEM
       jekyll (>= 3.3, < 5.0)
     jekyll-watch (2.2.1)
       listen (~> 3.0)
-    kramdown (2.1.0)
+    kramdown (2.2.1)
+      rexml
     kramdown-parser-gfm (1.1.0)
       kramdown (~> 2.0)
     liquid (4.0.3)
@@ -55,24 +56,25 @@ GEM
       jekyll-seo-tag (~> 2.1)
     pathutil (0.16.2)
       forwardable-extended (~> 2.6)
-    public_suffix (4.0.3)
-    rb-fsevent (0.10.3)
+    public_suffix (4.0.4)
+    rb-fsevent (0.10.4)
     rb-inotify (0.10.1)
       ffi (~> 1.0)
-    rouge (3.16.0)
+    rexml (3.2.4)
+    rouge (3.18.0)
     safe_yaml (1.0.5)
-    sassc (2.2.1)
+    sassc (2.3.0)
       ffi (~> 1.9)
     terminal-table (1.8.0)
       unicode-display_width (~> 1.1, >= 1.1.1)
-    unicode-display_width (1.6.1)
+    unicode-display_width (1.7.0)
 
 PLATFORMS
   ruby
 
 DEPENDENCIES
   jekyll
-  jekyll-feed (~> 0.6)
+  jekyll-feed (~> 0.13)
   jekyll-redirect-from
   mimemagic
   mini_magick
@@ -80,4 +82,4 @@ DEPENDENCIES
   tzinfo-data
 
 BUNDLED WITH
-   1.17.3
+   2.0.2
