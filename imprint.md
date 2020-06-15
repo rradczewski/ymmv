@@ -7,9 +7,9 @@ permalink: /imprint/
 
 ```
 Raimo Radczewski
-c/o Office Club
-Pappelallee 78/79
-10437 Berlin
+c/o JuggleHUB
+Christburger Straße 23
+10405 Berlin
 
 Contact: info@craftswerk.io
 VAT-ID:  DE310288237
