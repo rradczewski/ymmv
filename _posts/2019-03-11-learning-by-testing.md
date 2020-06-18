@@ -36,7 +36,7 @@ As a rule of thumb, try to avoid talking about implementation details as much as
 
 ```js
 it("should prevent the user from closing if it has unsaved changes", () => {
-  // 💡 So the overall idea is that users don't loose their changes!
+  // 💡 So the overall idea is that users don't lose their changes!
   // 🤔 Doesn't this test also make the claim that there's only one way to close?
 })
 ```
