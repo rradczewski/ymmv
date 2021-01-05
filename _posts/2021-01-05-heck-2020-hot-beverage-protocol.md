@@ -21,7 +21,12 @@ While I'll happily skip online conferences and meetups after a long day, I'm les
 
 There are other tricks I've been employing to separate work and life when working remotely, such as keeping a separate account or even computer for work and deliberately switching that whenever I'm switching context, but nothing beats a deliberate break from the screen.
 
+So lately, if someone in the know wants to check-in with me, they might propose to employ the "Hot Beverage Protocol" (the more awkward the name, the better it works!). It's a mutual commitment to finish what we're working on in time, leave our dear screens, prepare a hot beverage and only hop on a videocall with the beverage in hand and no other thing on our mind.
 
+The best patterns are those that are fairly self-explanatory, and I'm sure this won't be a breakthrough discovery for anyone, but the effect has been quite noticable. Instead of just switching to the Zoom window on our screens, we abandon our previous context completely, h*ck we might even [walk through a door](https://www.scientificamerican.com/article/why-walking-through-doorway-makes-you-forget/), thus resetting our focus immediately, prepare a hot beverage and join the call with our undivided attention for the person we're about to talk to.
 
+> Me: **HBP** ?  
+> You: Gimme 5  
+> Me: Cool!  
 
-The best patterns are those that are fairly self-explanatory, and I'm sure this won't be a breakthrough discovery for anyone.
+Stay safe, stay healthy, insist on consensual behaviour in your pods, reach out to your friends, reach out if you need help. 
