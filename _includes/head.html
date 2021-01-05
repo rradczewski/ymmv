@@ -41,6 +41,9 @@
     {% elsif page.image %}
       <meta property="twitter:card" name="twitter:card" content="summary_large_image">
       <meta property="twitter:image" name="twitter:image" content="{{ site.url }}{% imagesrc 760x380 {{ page.image }} %}">
+    {% elsif page.video_poster %}
+      <meta property="twitter:card" name="twitter:card" content="summary_large_image">
+      <meta property="twitter:image" name="twitter:image" content="{{ site.url }}{% imagesrc 760x380 {{ page.video_poster }} %}">
     {% else %}
       <meta property="twitter:card" name="twitter:card" content="summary">
       <meta property="twitter:image" name="twitter:image" content="{{ site.url }}{{ "assets/raimo-large.jpg" | relative_url }}">
@@ -60,6 +63,8 @@
   <meta property="og:site_name" name="og:site_name" content="{{ site.title | escape }}">
   {% if page.image %}
     <meta property="og:image" name="og:image" content="{{ site.url }}{{ page.image | relative_url }}">
+  {% elsif page.video_poster %}
+    <meta property="og:image" name="og:image" content="{{ site.url }}{{ page.video_poster | relative_url }}">
   {% else %}
     <meta property="og:image" name="og:image" content="{{ site.url }}{{ "assets/raimo-large.jpg" | relative_url }}">
   {% endif %}
