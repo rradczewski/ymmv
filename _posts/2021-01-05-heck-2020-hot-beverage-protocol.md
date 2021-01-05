@@ -15,4 +15,13 @@ No essay on software development this time, and neither tips for running better 
 
 I've been an avid supporter of remote work, and not much has changed about that. One thing this year proved to me though is just how much time off-screen is necessary to make up for an eight-hour work day in permanent interaction with a screen. 
 
-While I'll happily skip online conferences and meetups after a long day of work, I'm less keen on skipping the few truly personal interactions with my friends. At the same time, my living room is now 
+While I'll happily skip online conferences and meetups after a long day, I'm less keen on skipping the few truly personal interactions with my friends. At the same time, my screen is now my living room, my office, my commute, my kitchen table and my favorite locality, all compressed into a headset, a webcam and a screen. Hardly "a change in scenery" that would otherwise help me shift gears.
+
+## The Hot Beverage Protocol
+
+There are other tricks I've been employing to separate work and life when working remotely, such as keeping a separate account or even computer for work and deliberately switching that whenever I'm switching context, but nothing beats a deliberate break from the screen.
+
+
+
+
+The best patterns are those that are fairly self-explanatory, and I'm sure this won't be a breakthrough discovery for anyone.
