@@ -20,6 +20,14 @@ layout: default
     <div class="post-image-wrapper">
       {% include progressive-image.html image_alt=page.image_alt classes="post-image" image=page.image %}
     </div>
+    {% elsif page.video %}
+    <div class="post-image-wrapper">
+      <video role="presentation" title="{{ page.video_alt }}" class="post-image" preload="metadata" playsinline autoplay loop muted {% if page.video_poster %}poster="{{ page.video_poster | relative_url }}"{% endif %}>
+        {% for vid in page.video %}
+        <source src="{{ vid | relative_url }}" type="video/{{ vid | split: '.' | last }}">
+        {% endfor %}
+      </video>
+      </div>
     {% endif %}
   </header>
 

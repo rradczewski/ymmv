@@ -4,28 +4,31 @@ layout: default
 
 <div class="home">
 
-   {{ content }}
+  {{ content }}
 
   <ul class="post-list">
     {% for post in site.posts %}
-      <li>
-        <p class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</p>
-        <h2>
-          <a class="post-link" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
-        </h2>
-        {% if post.image-listing %}
-          <div
-            class="post-background-image"
-            style="background-image:
-            url('{% imagesrc 500xauto {{ post.image-listing }} %}')"
-          >&nbsp;</div>
-        {% elsif post.image %}
-          <div
-            class="post-background-image"
-            style="background-image:
-            url('{% imagesrc 500xauto {{ post.image }} %}')"
-          >&nbsp;</div>
-        {% endif %}
+    <li>
+      <p class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</p>
+      <h2>
+        <a class="post-link" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
+      </h2>
+      {% if post.image-listing %}
+      <div class="post-background-image" style="background-image:
+            url('{% imagesrc 500xauto {{ post.image-listing }} %}')">&nbsp;</div>
+      {% elsif post.image %}
+      <div class="post-background-image" style="background-image:
+            url('{% imagesrc 500xauto {{ post.image }} %}')">&nbsp;</div>
+      {% elsif post.video_thumb %}
+      <div class="post-background-image">
+        <video role="presentation" title="{{ post.video_alt }}" playsinline preload="metadata" autoplay loop muted {% if page.video_thumb_poster %}poster="{{ post.video_thumb_poster | relative_url }}" {% endif
+          %}>
+          {% for vid in post.video_thumb %}
+          <source src="{{ vid | relative_url }}" type="video/{{ vid | split: '.' | last }}">
+          {% endfor %}
+        </video>
+      </div>
+      {% endif %}
         <p class="post-content">{{ post.excerpt | remove: '<p>' | remove: '</p>' }} <a class="read-more" href="{{ post.url | relative_url }}">more...</a></p>
       </li>
     {% endfor %}

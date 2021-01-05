@@ -257,9 +257,16 @@
       height: 130px;
       opacity: 0.15;
 
+      video {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+      }
+
       @include media-query($on-palm) {
         height: 70px;
         opacity: 0.2;
+        overflow: hidden;
       }
     }
   }
@@ -313,6 +320,12 @@
 
   @media print {
     display: none;
+  }
+  
+  video {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
   }
 }
 .post-image {
