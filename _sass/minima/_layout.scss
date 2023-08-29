@@ -156,7 +156,7 @@
 
 .footer-heading {
   font-size: 18px;
-  margin-bottom: $spacing-unit / 2;
+  margin-bottom: calc($spacing-unit / 2);
 }
 
 .contact-list,
@@ -174,7 +174,7 @@
 
 .footer-col {
   float: left;
-  margin-bottom: $spacing-unit / 2;
+  margin-bottom: calc($spacing-unit / 2);
 }
 
 .footer-col-1,
@@ -314,7 +314,7 @@
   @include media-query($content-width + $spacing-unit * 2) {
     width: -webkit-calc(100% + (#{$spacing-unit}));
     width: calc(100% + (#{$spacing-unit}));
-    margin-left: -($spacing-unit/2);
+    margin-left: calc(-1*$spacing-unit/2);
     padding: initial;
   }
 
@@ -336,8 +336,8 @@
 .post-content, .post-related {
   .footnotes {
     border-top: 1px solid black;
-    padding-top: $spacing-unit*2/3;
-    margin-top: $spacing-unit*2;
+    padding-top: calc($spacing-unit*2/3);
+    margin-top: calc($spacing-unit*2);
     letter-spacing: normal;
 
     ol > li, p {

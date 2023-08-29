@@ -54,7 +54,7 @@ ol,
 dl,
 figure,
 %vertical-rhythm {
-  margin-bottom: $spacing-unit / 2;
+  margin-bottom: calc($spacing-unit / 2);
 }
 
 /**
@@ -131,8 +131,8 @@ em {
 blockquote {
   color: #555;
   border-left: 4px solid $grey-color-light;
-  padding-left: $spacing-unit / 2;
-  margin-left: $spacing-unit / 2;
+  padding-left: calc($spacing-unit / 2);
+  margin-left: calc($spacing-unit / 2);
   font-size: $base-font-size;
   font-style: italic;
 
@@ -143,7 +143,7 @@ blockquote {
   &.letter {
     background-color: #fff;
     margin: $spacing-unit auto;
-    max-width: $content-width/8 * 5;
+    max-width: calc($content-width/8 * 5);
     font-family: $base-font-family;
     font-style: normal;
     a {
@@ -204,8 +204,8 @@ pre {
   @include media-query($on-laptop) {
     max-width: -webkit-calc(#{$content-width} - (#{$spacing-unit}));
     max-width: calc(#{$content-width} - (#{$spacing-unit}));
-    padding-right: $spacing-unit / 2;
-    padding-left: $spacing-unit / 2;
+    padding-right: calc($spacing-unit / 2);
+    padding-left: calc($spacing-unit / 2);
   }
 }
 
