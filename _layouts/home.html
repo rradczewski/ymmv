@@ -17,7 +17,7 @@ layout: default
       <div class="post-background-image" style="background-image:
             url('{% imagesrc 500xauto {{ post.image-listing }} %}')">&nbsp;</div>
       {% elsif post.image %}
-      <div class="post-background-image" style="background-image:
+      <div class="post-background-image {% if post.image_center %}post-background-image-vcenter{% endif %}" style="background-image:
             url('{% imagesrc 500xauto {{ post.image }} %}')">&nbsp;</div>
       {% elsif post.video_thumb %}
       <div class="post-background-image">

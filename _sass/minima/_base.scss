@@ -65,15 +65,24 @@ img {
   vertical-align: middle;
 }
 
+figure {
+  display: inline-block;
+}
+
+.image-container {
+  display: flex;
+}
+
 /**
  * Figures
  */
 figure > img {
   display: block;
+  max-height: 100%;
 }
 
 figcaption {
-  font-size: $small-font-size;
+  font-size: $small-font-size * 0.8;
 }
 
 /**
@@ -101,6 +110,7 @@ h4,
 h5,
 h6 {
   font-weight: $base-font-weight + 200;
+  clear: both;
 }
 
 /**

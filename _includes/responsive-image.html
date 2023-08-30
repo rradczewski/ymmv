@@ -1,15 +1,22 @@
-<figure>
-<img
-  class="{{ include.classes }}"
-  alt="{{ include.image_alt }}"
-  role="presentation"
-  src="{% imagesrc 1000xauto {{ include.image }} %}"
-  srcset="{% imagesrc 600xauto {{ include.image }} %} 600w,
+<div class="image-container {{ include.container_classes }}" style="{{ include.style }}">
+  <figure>
+    <img
+      class="{{ include.classes }}"
+      alt="{{ include.image_alt }}"
+      role="presentation"
+      src="{% imagesrc 1000xauto {{ include.image }} %}"
+      srcset="{% imagesrc 600xauto {{ include.image }} %} 600w,
           {% imagesrc 800xauto {{ include.image }} %} 800w,
           {% imagesrc 1000xauto {{ include.image }} %} 1000w"
-  sizes="(max-width: 600px) 100vw,
+      sizes="(max-width: 600px) 100vw,
          (max-width: 799px) 100vw,
          800px"
-/>
-<figcaption class="img-caption">{{ include.image_alt }}{%- if include.source %} (<a href="{{ include.source}}">Source</a>){% endif %}</figcaption>
-</figure>
+    />
+    <figcaption class="img-caption">
+      {{ include.image_alt }}{%- if include.source %} (<a
+        href="{{ include.source}}"
+        >Source</a
+      >){% endif %}
+    </figcaption>
+  </figure>
+</div>

@@ -121,7 +121,6 @@
   }
 }
 
-
 .site-nav {
   .page-link {
     color: $text-color;
@@ -239,7 +238,8 @@
     position: relative;
     z-index: 2;
 
-    &:hover .post-background-image, .post-background-image-in-viewport {
+    &:hover .post-background-image,
+    .post-background-image-in-viewport {
       opacity: 1 !important;
       filter: none !important;
     }
@@ -267,6 +267,10 @@
         height: 70px;
         opacity: 0.2;
         overflow: hidden;
+      }
+
+      &.post-background-image-vcenter {
+        background-position: center center;
       }
     }
   }
@@ -314,14 +318,14 @@
   @include media-query($content-width + $spacing-unit * 2) {
     width: -webkit-calc(100% + (#{$spacing-unit}));
     width: calc(100% + (#{$spacing-unit}));
-    margin-left: calc(-1*$spacing-unit/2);
+    margin-left: calc(-1 * $spacing-unit/2);
     padding: initial;
   }
 
   @media print {
     display: none;
   }
-  
+
   video {
     height: 100%;
     width: 100%;
@@ -333,14 +337,16 @@
   width: 100%;
 }
 
-.post-content, .post-related {
+.post-content,
+.post-related {
   .footnotes {
     border-top: 1px solid black;
-    padding-top: calc($spacing-unit*2/3);
-    margin-top: calc($spacing-unit*2);
+    padding-top: calc($spacing-unit * 2 / 3);
+    margin-top: calc($spacing-unit * 2);
     letter-spacing: normal;
 
-    ol > li, p {
+    ol > li,
+    p {
       margin-bottom: initial;
       line-height: normal;
     }
@@ -421,7 +427,6 @@
       content: "TODO ON THIS PAGE";
       display: block;
     }
-
   }
   p > todo {
     display: inline-block;
@@ -432,24 +437,39 @@
     }
   }
 
-  img {
-    display: block;
-    margin: 30px auto;
-    box-shadow: #999 0px 3px 10px;
-
-    &.no-decoration {
-      background: none;
-      box-shadow: none;
+  .image-container {
+    display: flex;
+    justify-content: center;
+    max-height: 80vh;
+    
+    img {
+      margin: 0 auto;
+      box-shadow: #999 0px 3px 10px;
+      &.no-decoration {
+        background: none;
+        box-shadow: none;
+      }
     }
 
+    figcaption {
+      padding-top: $spacing-unit / 2;
+    }
+    margin-bottom: $spacing-unit;
+      
     &.right {
       float: right;
+      margin: 30px;
     }
-
-    &.reset {
-      display: initial;
-      margin: initial;
-      box-shadow: none;
+    @include media-query($on-laptop) {
+      &.right {
+        float: none;
+        width: 100% !important;
+        margin: 0;
+        margin-bottom: $spacing-unit;
+        figure {
+          padding: 10px;
+        }
+      }
     }
   }
 
