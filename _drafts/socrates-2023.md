@@ -7,7 +7,7 @@ image_alt: "A welcome sign from 2016/2017 at Hotel Park Soltau, welcoming us wit
 ---
 _After missing my first SoCraTes since 2014 last year, I couldn't have hoped for a better (albeit delayed) reunification with everyone in 2023_
 
-It's been a fantastic experience returning to Soltau. It's not just all the people travelling there, but it's the familiarity with the space and the joy of discovering a hidden pathway I've never recognized, and the personell, who have been nothing but kind and accomodating to us, and of whom some have been there since the very beginning.
+It's been a fantastic experience returning to Soltau. It's not just all the people travelling there, but it's the familiarity with the space, then the joy of discovering a hidden pathway I've never noticed, and the personell, who have been nothing but kind and accomodating to us, and of whom some have been there since the very beginning.
 
 ## Organizing food for 200+ people, or making it harder for those who do
 
@@ -15,36 +15,80 @@ This year, there have been 5 volunteers taking up the task of sorting out the fo
 
 > To make sure that there's enough food for everyone despite allergies or dietary requirements, and to make it so they don't have to ask or wonder about allergies during the conference.
 
-We had to assume that the hotel didn't have enough label stands to label all food. As someone who's always happy to justify his evergrowing obsession with 3d modelling and printing, I was happy to fire up the printers and print about 30 label stands. Other participants joined the effort, and we've ended up with more stands than we needed. I will recycle the stands at [https://recyclingfabrik.com/](Recycling Fabrik), hoping they won't end up in a landfill.
+We had to assume that the hotel didn't have enough label stands to label all food. As someone who's always happy to justify his evergrowing obsession with 3d modelling and printing, I was eager to fire up the printers and print about 30 label stands. Other participants joined the effort, and we've ended up with more stands than we needed.  I will recycle the remains at [Recycling Fabrik](https://recyclingfabrik.com/) so they won't end up in a landfill.
 
 {% include responsive-image.html style="width: 30%" container_classes="right" image="assets/socrates-2023-label-stand.png" image_alt="The label stand we printed about 30 times, optimized to use as little plastic as possible." %}
 
-The first meal provided a proper reality check for us though, as our involvement extended to be a 2+ hour effort every day, just to read ingredients off packaging and create labels from that, and I'm very grateful for the hotel staff who helped us with that, and in particular [Njan](https://chaos.social/@njan), who sacrificed a considerable amount of their conference to be extra thorough. 
+The first meal provided a proper reality check for us though, as our work evolved into a 2+ hour effort every day, just to read ingredients off packagings and create labels from that. I'm very grateful for the hotel staff who helped us with all of this, and in particular [Njan](https://chaos.social/@njan), who sacrificed a considerable amount of their conference to be extra thorough. 
 
-It is obvious we need to change gears for next years, everyone involved agrees with that. Make the pain obvious, the coach in me says. Onto the next step then I sigh in response to that thought.
+It is obvious we need to change gears for next years, everyone involved agrees with that. *Make the pain obvious*, the coach in me says. *Let's do better next time then* I sigh in response to that thought.
 
 ## Running a 3-node kubernetes cluster for a digital schedule web-app
 
-Since the beginning of this year, [Chris](https://hachyderm.io/@krys) and I have been on a seemingly never-ending yakshave into kubernetes as part of a client engagement as Technical Agile Coaches. The yakshave involved [putting a kubernetes cluster and the infrastructure applications under test in a CI pipeline](https://gitlab.com/with-humans/devops-workshop/socrates/infrastructure/-/blob/main/.gitlab-ci.yml?ref_type=heads), testing out almost every ServiceMesh implementation there is (we ended up with [Linkerd](https://linkerd.io/)), adding observability ([LGTM](https://github.com/grafana)), a workflow runner ([Tekton](https://tekton.dev/)), an auth provider ([supertokens](https://supertokens.com/)) and finally glueing all of it together with IaC (using [pulumi](https://www.pulumi.com/)) and GitOps ([flux](https://fluxcd.io/)). At some point, we nested 2 layers of virtualization and 3 layers of docker daemons, an undertaking that I couldn't imagine working as flawless as it did.
+For about a year now, [Chris](https://hachyderm.io/@krys) and I have been on a seemingly never-ending yakshave into kubernetes as part of a client engagement as Technical Agile Coaches. The yakshave involved [putting a kubernetes cluster and the infrastructure applications under test in a CI pipeline](https://gitlab.com/with-humans/devops-workshop/socrates/infrastructure/-/blob/main/.gitlab-ci.yml?ref_type=heads), evaluating almost every ServiceMesh implementation there is (we ended up with [Linkerd](https://linkerd.io/)), adding observability ([LGTM](https://github.com/grafana)), a workflow runner ([Tekton](https://tekton.dev/)), an auth provider ([supertokens](https://supertokens.com/)) and finally glueing all of it together with IaC (using [pulumi](https://www.pulumi.com/)) and GitOps ([flux](https://fluxcd.io/)). At some point, we nested 2 layers of virtualization and 3 layers of docker daemons, an undertaking that I couldn't imagine working as flawless as it did.
 
 {% include responsive-image.html style="width: 30%" container_classes="right" image="assets/socrates-2023-ping-screenshot.png" image_alt="The app we built in SvelteKit for the conference, showing a map of the venue and the next sessions." %}
 
-This all ultimately served a purpose: We were honored to be trainers for this years training day, and the cluster served as the practical application of the principles we tought around **Continuous Delivery** and **Extreme Programming**. Unfortunately, the training turned out to be very compressed – the organizers apparently thought I was joking when we suggested we'd need 4-8 hours – and we ended up with only 1.5 hours 😬.
+This all ultimately served a greater purpose: We were honored to be trainers for this years training day, and the cluster served as the practical application of the principles we taught around **Continuous Delivery** and **Extreme Programming**. Unfortunately, the training turned out to be very compressed – the organizers apparently thought I was joking when we suggested we'd need 4-8 hours – and we ended up with only 1.5 hours 😬.
 
 Not just for the workshop, but as a treat for SoCraTes, we've built a digital floor plan of the venue in SvelteKit (thank you [Daniel](https://www.linkedin.com/in/daniel-irvine/) for your book on testing svelte 😉) and integrated it with the digital schedule written by [Jay](https://github.com/jay-peper) and [Toni](https://github.com/offbyoni) which we hosted as well. 
 
-The floor plan was built in a pipeline running on the cluster, was fully tested and progressively rolled out after the smoke tests passed. A full delivery pipeline run took less than 4 minutes to production, and as we of course have to practice what we preach, we've re-created the whole cluster from the ground the night before the conference. Our next goal will be to get the pipeline down to less than a minute – courtesy of our attention span not accomodating 4 minutes of watching a docker build anymore.
+The floor plan was built in a pipeline running on the cluster, was fully tested and progressively rolled out after the smoke tests passed. A complete delivery pipeline run took less than 4 minutes to production. As we of course have to practice what we preach, we've deleted, and re-created the whole cluster from the ground the night before the conference in less than an hour with little manual intervention. Our next goal will be to get the pipeline down to less than a minute – courtesy of our attention span not accomodating 4 minutes of watching integration tests from the console anymore.
+
+<blockquote>I want to bring back the times of editing PHP directly on the server, but with the safety net of a delivery pipeline with tests and progressive rollout – Chris</blockquote>
+
+<div class="image-gallery grid-2x grid-1x-sm">
+{% include responsive-image.html style="width: 100%" image="assets/socrates-2023-slides-1.png" image_alt="What we deem important when developing software nowadays: Feedback Quality, Cycle Time, No Waste, Full Ownership" %}
+{% include responsive-image.html style="width: 100%" image="assets/socrates-2023-slides-2.png" image_alt="Reducing the false-positives in your pipeline - optimize so your pipelines are not indicating green when they're really red" %}
+{% include responsive-image.html style="width: 100%" image="assets/socrates-2023-slides-3.png" image_alt="Banishing the boy who cried wolf in your CI pipeline – or getting rid of false-negatives that desensitize you to real issues" %}
+{% include responsive-image.html style="width: 100%" image="assets/socrates-2023-slides-4.png" image_alt="A full delivery cycle should take less than 1.5 hours nowadays, shouldn't it." %}
+</div>    
 
 ## Everything (else)
 
 Apart from organizing a few things (although I decisively reject the title of an organizer as my involvement doesn't come anywhere close to what the "real" organizers pull off each year), there of course have been excellent sessions, hallway chats, rants and discoveries, which I will try to summarize as follows:
 
-- Software Architect
-- Michel Grootjans on Flow
-- A new technique from Juke (numbering)
-- CI/CD Workshop on Training Day
-- Schedule making and K8s
-- Ensemble Exploratory Testing
-- Technical Agile Coaching
-- Monorepos
-- Trunk-based development
+### Is Software Architect a dying role?
+
+> The objectification of cultural capital in the form of academic qualifications is one way of neutralizing some of the properties it derives from the fact that, being embodied, it has the same biological limits as its bearer. This objectification is what makes the difference between the capital of the autodidact, which may be called into question at any time, or even the cultural capital of the courtier, which can yield only ill- defined profits, of fluctuating value, in the market of high-society exchanges, and the cultural capital academically sanctioned by legally guaranteed qualifications, formally independent of the person of their bearer.  
+>
+> – [”The Forms of Capital.”, Pierre Bourdieu. Pp. 241-258 in Handbook of Theory and Research for the Sociology of Education, edited by J. G. Richardson. New York: Greenwood Press](https://ia903102.us.archive.org/13/items/PierreBourdieuTheFormsOfCapital/Bourdieu,%20Pierre,%20The%20Forms%20of%20Capital,%20trans.%20Richard%20Nice,%20chapter%209%20in%20John%20G.%20Richardson%20(ed.),%20Handbook%20of%20Theory%20and%20Research%20for%20the%20Sociology%20of%20Education%20(Greenwood%20Press,%20Westport,%20CN,%201986).pdf)
+
+The only session I hosted this year was on a topic I've been pondering over for a while: Whether we've done away with the role of the Software Architect in the light of self-organisation and flat hierarchies, and whether that's a good or bad thing. In my head, my half-hearted understanding of institutionalized capital is teaming up with the chaos produced by [the tyranny of structurelessness](https://www.jofreeman.com/joreen/tyranny.htm) and those engineering teams I worked with, where the lack of a counterpart to the powerful product organisation tilted the scale towards unsustainable engineering and the big mistakes this left in its wake, which we had to clean up.
+
+It was refreshing to hear that while the attendees would happily wave goodbye to the ivory tower architects, the general agreement was that the responsibility had to be acknowledged and distributed. We've agreed that the lack of explicit training for a team without that role was a general issue.
+
+A catchy summary I took away from the session is as follows: **Architecture work prevents foul compromises in software engineering.**
+
+## A new facilitation technique from Juke
+
+It was also in this session that [Juke](https://twitter.com/Singsalad) taught me a facilitation technique I didn't know before: Instead of raising your hand to speak, raise fingers indicating your place in line. Decrement your fingers when the person in front of you does so.
+
+I'm almost sure it's well-known, but I was blown away how it helped facilitate a productive conversation. Thanks [Juke](https://twitter.com/Singsalad)!
+
+## Ensemble Exploratory Testing
+
+We've been referring to [Lisi Hocke's](https://mastodon.social/@lisihocke) training on Ensemble Exploratory Testing later that day during our training a lot, for example in response to the hypothetical question "What would your QAs do if they wouldn't be busy testing stuff developers should themselves test?". Lisi facilitated a great workshop, where we got to combine ensemble programming with exploratory testing of an API that wasn't exactly built to a standard. A fun exercise that hopefully will lead to more exploratory, collaborative testing sessions, and fewer test-plan checklists on our way to production.
+
+## Michel Grootjans on Flow
+
+At some point during the hallway chats at SoCraTes, it occured to me how long it's been since I've been rambling with other coaches on Kanban the last time, and how much I've enjoyed that in the past. Of those enduring my attempts to sneak in Kanban into the conversation, a lot of people spoke very highly about [Michel Grootjan's](https://mas.to/@michelgrootjans) session on flow, which I completely missed. Luckily, Michel seems to be equally passionate about Kanban, so in the spirit of a neverending unconference, he sat down with me on Sunday and gave me the readers digest version of his session, and showed me his amazing [flow simulator](https://github.com/michelgrootjans/explaining-flow).
+
+{% include responsive-image.html style="width: 100%" image="assets/socrates-2023-michel-flow.png" image_alt="A comparison in metrics of the same amount of work, with and without a WIP limit on the system. Lead Time with a WIP limit is less than 15% compared to without. Having a cross-functional team member as QA further reduced lead time and increased output, without adding additional staffing <b>and</b> reduced the time worked." %}
+
+Some time after Michel had to leave, other curious minds and I sat down and tinkered with this simulator, pondering over what beliefs we held were confirmed by these simulations. My thoughts:
+
+- It is a fantastic tool to show that WIP limits can have significant impact on **Lead Time**.
+- It shows how easy it is for the bottleneck to shift without you noticing – dev might take longer than QA, but as soon as you scale it, QA will catch up!
+- It **does not** show how ensemble programming or pair programming might be superior to individual development. For this, it would need features like **context switching penalty**, a measure of **quality** and/or **follow-up work**, a **distinction in experience and familiarity** for the individual roles, etc. It shows quite the opposite: A WIP limit of 1 will half throughput in this simulation!
+- I'd love for it to incorporate the concept of process improvements and experience – and how slack time enforced by a WIP limit is a catalyst that feeds back into the system.
+
+## Technical Agile Coaching
+
+[Eike](https://twitter.com/hansedev) hosted a session on *Technical Agile Coaching* where we deconstructed the individual parts of the phrase itself. [Pedro](https://www.linkedin.com/in/pedros/) and I agreed that while *XP Coach* is closer to the what we do, *Technical Agile Coach* certainly is easier to understand and thus better marketable 😬.
+
+We generally agreed that successes as Technical Agile Coaches mostly happen on the individual scale, with the teams we coach closely. Unless this is accompanied by a larger organization initiative, we can't effect too much change in the broader scheme of things. Comforting to hear others voice the same, frustrating as it's most of the times not the engineers, but the broader organization that would need to change.
+
+## Verdict
+
+See you next year 😉

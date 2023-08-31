@@ -437,6 +437,18 @@
     }
   }
 
+  .image-gallery {
+    display: grid;
+    gap: $spacing-unit;
+    &.grid-2x {
+      grid-template-columns: auto auto;
+    }
+    &.grid-1x-sm {
+      @include media-query($on-laptop) {
+        grid-template-columns: auto;
+      }
+    }
+  }
   .image-container {
     display: flex;
     justify-content: center;
@@ -452,7 +464,7 @@
     }
 
     figcaption {
-      padding-top: $spacing-unit / 2;
+      padding-top: calc($spacing-unit / 2);
     }
     margin-bottom: $spacing-unit;
       
