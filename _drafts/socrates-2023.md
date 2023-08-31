@@ -19,7 +19,7 @@ We had to assume that the hotel didn't have enough label stands to label all foo
 
 {% include responsive-image.html style="width: 30%" container_classes="right" image="assets/socrates-2023-label-stand.png" image_alt="The label stand we printed about 30 times, optimized to use as little plastic as possible." %}
 
-The first meal provided a proper reality check for us though, as our work evolved into a 2+ hour effort every day, just to read ingredients off packagings and create labels from that. I'm very grateful for the hotel staff who helped us with all of this, and in particular [Njan](https://chaos.social/@njan), who sacrificed a considerable amount of their conference to be extra thorough. 
+The first meal on Thursday provided a proper reality check for us though, as our work evolved into a 2+ hour effort every day, just to read ingredients off packagings and create labels from that. I'm very grateful for the hotel staff who helped us with all of this, and in particular [Njan](https://chaos.social/@njan), who sacrificed a considerable amount of their conference to be extra thorough. 
 
 It is obvious we need to change gears for next years, everyone involved agrees with that. *Make the pain obvious*, the coach in me says. *Let's do better next time then* I sigh in response to that thought.
 
@@ -46,9 +46,9 @@ The floor plan was built in a pipeline running on the cluster, was fully tested 
 
 ## Everything (else)
 
-Apart from organizing a few things (although I decisively reject the title of an organizer as my involvement doesn't come anywhere close to what the "real" organizers pull off each year), there of course have been excellent sessions, hallway chats, rants and discoveries, which I will try to summarize as follows:
+Apart from organizing a few things (although I decisively reject the title of an organizer as my involvement doesn't come anywhere close to what the **real organizers** pull off each year), there of course have been excellent sessions, hallway chats, rants and discoveries, which I will try to summarize as follows:
 
-### Is Software Architect a dying role?
+### Where did the Software Architects go?
 
 > The objectification of cultural capital in the form of academic qualifications is one way of neutralizing some of the properties it derives from the fact that, being embodied, it has the same biological limits as its bearer. This objectification is what makes the difference between the capital of the autodidact, which may be called into question at any time, or even the cultural capital of the courtier, which can yield only ill- defined profits, of fluctuating value, in the market of high-society exchanges, and the cultural capital academically sanctioned by legally guaranteed qualifications, formally independent of the person of their bearer.  
 >
@@ -72,13 +72,13 @@ We've been referring to [Lisi Hocke's](https://mastodon.social/@lisihocke) train
 
 ## Michel Grootjans on Flow
 
-At some point during the hallway chats at SoCraTes, it occured to me how long it's been since I've been rambling with other coaches on Kanban the last time, and how much I've enjoyed that in the past. Of those enduring my attempts to sneak in Kanban into the conversation, a lot of people spoke very highly about [Michel Grootjan's](https://mas.to/@michelgrootjans) session on flow, which I completely missed. Luckily, Michel seems to be equally passionate about Kanban, so in the spirit of a neverending unconference, he sat down with me on Sunday and gave me the readers digest version of his session, and showed me his amazing [flow simulator](https://github.com/michelgrootjans/explaining-flow).
+At some point during the hallway chats at SoCraTes, it occured to me how long it's been since I've been rambling with others on Kanban the last time, and how much I've enjoyed that in the past. Of those enduring my attempts to sneak in Kanban into the conversation, a lot of people spoke very highly about [Michel Grootjan's](https://mas.to/@michelgrootjans) session on flow, which I completely missed. Luckily, Michel seems to be equally passionate about Kanban, so in the spirit of a neverending unconference, he sat down with me on Sunday and gave me the readers digest version of his session, and showed me his amazing [flow simulator](https://github.com/michelgrootjans/explaining-flow).
 
 {% include responsive-image.html style="width: 100%" image="assets/socrates-2023-michel-flow.png" image_alt="A comparison in metrics of the same amount of work, with and without a WIP limit on the system. Lead Time with a WIP limit is less than 15% compared to without. Having a cross-functional team member as QA further reduced lead time and increased output, without adding additional staffing <b>and</b> reduced the time worked." %}
 
 Some time after Michel had to leave, other curious minds and I sat down and tinkered with this simulator, pondering over what beliefs we held were confirmed by these simulations. My thoughts:
 
-- It is a fantastic tool to show that WIP limits can have significant impact on **Lead Time**.
+- It is an excellent tool to show that WIP limits can have significant impact on **Lead Time**.
 - It shows how easy it is for the bottleneck to shift without you noticing – dev might take longer than QA, but as soon as you scale it, QA will catch up!
 - It **does not** show how ensemble programming or pair programming might be superior to individual development. For this, it would need features like **context switching penalty**, a measure of **quality** and/or **follow-up work**, a **distinction in experience and familiarity** for the individual roles, etc. It shows quite the opposite: A WIP limit of 1 will half throughput in this simulation!
 - I'd love for it to incorporate the concept of process improvements and experience – and how slack time enforced by a WIP limit is a catalyst that feeds back into the system.
