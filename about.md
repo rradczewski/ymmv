@@ -22,7 +22,7 @@ More than ever though, I believe that great environments foster great teams, tha
 
 ## What I do
 
-While I'm happy to get involved in all the aspects of a team working together to create software, I am also perfectly happy with focusing on a well-outlined role in a development team. I'm a proficient programmer, but also an experienced mentor and leader.
+I'm happy to consult in all the aspects of a team working together to create software. I'm a proficient programmer, but also an experienced coach and trainer..
 
 ### Coaching / Training
 
@@ -40,7 +40,7 @@ My way of working is deeply aligned with the *XP Principles*, so refactoring, te
 
 ## How I like to work
 
-I'm very fond of a professional relationship with my clients. Mutual trust and openness are crucial  aspects of a business relationship for me. I will ask you to establish me as part of the team from day one and to expect me to challenge and change aspects of your company where I see the potential for improvements.
+I'm very fond of a professional relationship with my clients. Mutual trust and openness are crucial  aspects of a business relationship for me. I will ask you to expect me to challenge and change aspects of your company where I see the potential for improvements.
 
 If you're interested in working with me, please send me a mail at [hello@craftswerk.io](mailto:hello@craftswerk.io). I prefer talking to the people I'd work with, so I'd kindly ask external recruiters to not contact me.
 
